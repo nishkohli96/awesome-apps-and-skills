@@ -58,7 +58,7 @@ Add this resource to the list: <URL>
    - name: the official product/repo name.
    - description: one line, under 160 chars, says what it does, no marketing words.
    - tags: 2-4 lowercase keywords.
-   - framework badge (only if the tool belongs to a single framework, e.g. a React or Next.js library; never a plain language), placed right after the type badge: react | nextjs (CONTRIBUTING.md has the badge table).
+   - framework badge (only if the tool belongs to a single framework, e.g. a React or Next.js library; never a plain language), placed right after the type badge. Use the framework's official shields.io badge with its logo, copied from the Framework badges table in CONTRIBUTING.md, or built as https://img.shields.io/badge/<Name>-<bg hex>?style=flat-square&logo=<simple-icons slug>&logoColor=<logo hex> for other frameworks.
    - pricing (only for websites/tools): free | freemium | paid, taken from the pricing page.
    - demoUrl (only if a live demo is linked).
    - Omit optional fields you cannot verify. Put each metadata item on its own line (end each line but the last with <br>), in this order: 🏷 tags, 💰 pricing, 🔗 [demo](url).

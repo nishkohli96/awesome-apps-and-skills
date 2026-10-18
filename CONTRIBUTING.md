@@ -40,12 +40,14 @@ Copy the badge for the entry's type, never change its color.
 
 ## Framework badges
 
-Don't add a language badge (node, python, rust and so on). Add a framework badge only when the tool belongs to a single framework, such as a React or Next.js library. Put it right after the type badge.
+Don't add a language badge (node, python, rust and so on). Add a framework badge only when the tool belongs to a single framework, such as a React or Next.js library. Put it right after the type badge, and use the framework's official shields.io badge with its logo, as below.
 
-| Framework | Hex | Badge markdown |
-|---|---|---|
-| `react` | 61dafb | `<img align="absmiddle" alt="react" src="https://img.shields.io/badge/react-61dafb?style=flat-square">` |
-| `nextjs` | 000000 | `<img align="absmiddle" alt="nextjs" src="https://img.shields.io/badge/nextjs-000000?style=flat-square">` |
+| Framework | Badge markdown |
+|---|---|
+| React | `<img align="absmiddle" alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">` |
+| Next.js | `<img align="absmiddle" alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">` |
+
+For any other framework, build the badge the same way: `https://img.shields.io/badge/<Name>-<bg hex>?style=flat-square&logo=<simple-icons slug>&logoColor=<logo hex>`. Take the slug from [simpleicons.org](https://simpleicons.org) and the hex colors from the framework's brand.
 
 ## Quality bar
 

@@ -31,7 +31,7 @@ _Tools for downloading, converting and editing video, audio and images._
 - **[EffectCraft](https://github.com/storytold/effectcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source motion graphics and compositing app written in Rust, a clean-room take on After Effects.<br>
   🏷 `motion-graphics` `compositing` `rust` `video`
-- **[Remotion](https://www.remotion.dev/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"> <img align="absmiddle" alt="react" src="https://img.shields.io/badge/react-61dafb?style=flat-square"><br>
+- **[Remotion](https://www.remotion.dev/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"> <img align="absmiddle" alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"><br>
   Framework for making videos and motion graphics with React code. Some companies need a paid license.<br>
   🏷 `video` `react` `motion-graphics` `programmatic-video`<br>
   💰 freemium
