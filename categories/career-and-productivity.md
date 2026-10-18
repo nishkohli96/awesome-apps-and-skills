@@ -4,7 +4,7 @@ _Resume, job search and personal productivity resources._
 
 ## Job Search
 
-- **[ai-job-search](https://github.com/MadsLorentzen/ai-job-search)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-fb8500?style=flat-square"><br>
+- **[ai-job-search](https://github.com/MadsLorentzen/ai-job-search)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-7d5ba6?style=flat-square"><br>
   Claude Code framework you fork to evaluate job postings, tailor CVs, write cover letters and prep interviews locally.<br>
   🏷 `job-search` `cv` `cover-letter` `claude-code`
 - **[career-ops](https://github.com/career-ops-hq/career-ops)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>

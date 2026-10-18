@@ -40,6 +40,9 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 
 ## Frontend Skills
 
+- **[awesome-design-skills](https://github.com/bergside/awesome-design-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Registry of 67 design-system skill files for AI agents, each with agent instructions and a human-readable design guide.<br>
+  🏷 `design-system` `agent-skills` `design-md` `ui`
 - **[Taste Skill](https://www.tasteskill.dev/)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Open-source skill files that stop AI coding agents from generating generic frontends, installed with one command.<br>
   🏷 `frontend` `design` `agent-skills` `anti-slop`

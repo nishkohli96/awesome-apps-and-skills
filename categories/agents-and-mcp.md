@@ -4,7 +4,7 @@ _MCP servers, agent frameworks and plugins, plus agent memory, LLM gateways and 
 
 ## Agents & Templates
 
-- **[awesome-llm-apps](https://github.com/shubhamsaboo/awesome-llm-apps)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-fb8500?style=flat-square"><br>
+- **[awesome-llm-apps](https://github.com/shubhamsaboo/awesome-llm-apps)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-7d5ba6?style=flat-square"><br>
   Collection of 100+ open-source AI agents, agent skills and RAG apps you can clone and run.<br>
   🏷 `ai-agents` `rag` `llm-apps` `templates`
 - **[OpenClaw](https://openclaw.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>

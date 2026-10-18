@@ -33,7 +33,7 @@ Copy the badge for the entry's type, never change its color.
 | `skill` | d97757 | `<img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square">` |
 | `mcp-server` | 0969da | `<img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square">` |
 | `plugin` | bf3989 | `<img align="absmiddle" alt="plugin" src="https://img.shields.io/badge/plugin-bf3989?style=flat-square">` |
-| `starter` | fb8500 | `<img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-fb8500?style=flat-square">` |
+| `starter` | 7d5ba6 | `<img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-7d5ba6?style=flat-square">` |
 | `guide` | 9a6700 | `<img align="absmiddle" alt="guide" src="https://img.shields.io/badge/guide-9a6700?style=flat-square">` |
 | `newsletter` | cf222e | `<img align="absmiddle" alt="newsletter" src="https://img.shields.io/badge/newsletter-cf222e?style=flat-square">` |
 | `video-channel` | 6e7781 | `<img align="absmiddle" alt="video-channel" src="https://img.shields.io/badge/video--channel-6e7781?style=flat-square">` |
