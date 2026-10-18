@@ -39,11 +39,11 @@ Add this resource to the list: <URL>
 2. CLASSIFY.
    - type, one of: website | web-tool | app | library | skill | mcp-server | plugin | starter | guide | newsletter | video-channel
    - category: read the title and description line of every categories/*.md and pick the single file that matches what the resource is USED FOR, not what it is built with.
-3. FILL the entry using the exact format in CONTRIBUTING.md (colored type badge from the badge table there, plus a language badge for code repos, then description, then one line per metadata item):
+3. FILL the entry using the exact format in CONTRIBUTING.md (colored type badge from the badge table there, plus a framework badge only for single-framework tools, then description, then one line per metadata item):
    - name: the official product/repo name.
    - description: one line, under 160 chars, says what it does, no marketing words.
    - tags: 2-4 lowercase keywords.
-   - language badge (only for code repos), placed right after the type badge: node | python | react | nextjs | rust | go | c | other (CONTRIBUTING.md has the badge table).
+   - framework badge (only if the tool belongs to a single framework, e.g. a React or Next.js library; never a plain language), placed right after the type badge: react | nextjs (CONTRIBUTING.md has the badge table).
    - pricing (only for websites/tools): free | freemium | paid, taken from the pricing page.
    - demoUrl (only if a live demo is linked).
    - Omit optional fields you cannot verify. Put each metadata item on its own line (end each line but the last with <br>), in this order: 🏷 tags, 💰 pricing, 🔗 [demo](url).

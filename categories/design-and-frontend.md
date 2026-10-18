@@ -25,7 +25,7 @@ _UI kits, design tools and frontend source-code apps._
   AI product design agent that turns prompts into UI mockups, components and full designs on an infinite canvas.<br>
   🏷 `ai-design` `ui` `mockups` `prototyping`<br>
   💰 freemium
-- **[Taste Skill](https://www.tasteskill.dev/)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"> <img align="absmiddle" alt="node" src="https://img.shields.io/badge/node-339933?style=flat-square"><br>
+- **[Taste Skill](https://www.tasteskill.dev/)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Open-source skill files that stop AI coding agents from generating generic frontends, installed with one command.<br>
   🏷 `frontend` `design` `agent-skills` `anti-slop`
 - **[threejs-skills](https://github.com/cloudai-x/threejs-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
@@ -35,6 +35,6 @@ _UI kits, design tools and frontend source-code apps._
   Library of production-ready UI transitions to copy and paste, or use with your coding agent through a skill.<br>
   🏷 `ui-motion` `transitions` `animation` `claude-skills`<br>
   💰 freemium
-- **[ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"> <img align="absmiddle" alt="python" src="https://img.shields.io/badge/python-3776ab?style=flat-square"><br>
+- **[ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   AI skill that gives coding agents design intelligence for building professional UI and UX across platforms.<br>
   🏷 `ui-ux` `design-system` `claude-skills`

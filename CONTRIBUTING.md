@@ -5,7 +5,7 @@ The easiest way: open Claude Code at the repo root and run the **"Add a resource
 To add one by hand, pick the file in `categories/` that matches **what the resource is used for**, and add an entry (alphabetical by name):
 
 ```md
-- **[Example](https://github.com/owner/example)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"> <img align="absmiddle" alt="node" src="https://img.shields.io/badge/node-339933?style=flat-square"><br>
+- **[Example](https://github.com/owner/example)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   One line, under 160 chars, no marketing fluff.<br>
   🏷 `typescript` `testing`<br>
   💰 free<br>
@@ -38,20 +38,14 @@ Copy the badge for the entry's type, never change its color.
 | `newsletter` | cf222e | `<img align="absmiddle" alt="newsletter" src="https://img.shields.io/badge/newsletter-cf222e?style=flat-square">` |
 | `video-channel` | 6e7781 | `<img align="absmiddle" alt="video-channel" src="https://img.shields.io/badge/video--channel-6e7781?style=flat-square">` |
 
-## Language badges
+## Framework badges
 
-For code repos, add one language badge right after the type badge. Use the repo's main language: `node`, `python`, `react`, `nextjs`, `rust`, `go` or `c`, or `other` for anything else. Skip it for websites and tools.
+Don't add a language badge (node, python, rust and so on). Add a framework badge only when the tool belongs to a single framework, such as a React or Next.js library. Put it right after the type badge.
 
-| Language | Hex | Badge markdown |
+| Framework | Hex | Badge markdown |
 |---|---|---|
-| `node` | 339933 | `<img align="absmiddle" alt="node" src="https://img.shields.io/badge/node-339933?style=flat-square">` |
-| `python` | 3776ab | `<img align="absmiddle" alt="python" src="https://img.shields.io/badge/python-3776ab?style=flat-square">` |
 | `react` | 61dafb | `<img align="absmiddle" alt="react" src="https://img.shields.io/badge/react-61dafb?style=flat-square">` |
 | `nextjs` | 000000 | `<img align="absmiddle" alt="nextjs" src="https://img.shields.io/badge/nextjs-000000?style=flat-square">` |
-| `rust` | b7410e | `<img align="absmiddle" alt="rust" src="https://img.shields.io/badge/rust-b7410e?style=flat-square">` |
-| `go` | 00add8 | `<img align="absmiddle" alt="go" src="https://img.shields.io/badge/go-00add8?style=flat-square">` |
-| `c` | 555555 | `<img align="absmiddle" alt="c" src="https://img.shields.io/badge/c-555555?style=flat-square">` |
-| `other` | 6e7781 | `<img align="absmiddle" alt="other" src="https://img.shields.io/badge/other-6e7781?style=flat-square">` |
 
 ## Quality bar
 
