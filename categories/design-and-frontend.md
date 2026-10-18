@@ -1,6 +1,6 @@
 # 🎨 Design & Frontend
 
-_UI kits, design tools and frontend source-code apps._
+_Design inspiration, design and prototyping tools, motion, and frontend skills._
 
 ## Design Inspiration
 

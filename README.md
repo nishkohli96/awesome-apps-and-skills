@@ -32,15 +32,15 @@ Each entry has a colored type badge:
 
 - [💻 Coding](categories/coding.md) – Skills, MCP servers and apps for writing, reviewing and shipping code.
 - [✍️ Writing & Editing](categories/writing-and-editing.md) – Tools and apps for drafting, editing and publishing text.
-- [📄 Documents & Files](categories/documents-and-files.md) – Create and edit docx, pptx, xlsx, and PDF files.
-- [🎬 Media](categories/media.md) – Tools for downloading, converting and editing video, audio and images.
+- [📄 Documents & Files](categories/documents-and-files.md) – Create, edit, store and share documents, slides, PDFs and files.
+- [🎬 Media](categories/media.md) – Tools for creating, editing, downloading and playing video, audio, images and 3D.
 - [📣 Marketing & SEO](categories/marketing-and-seo.md) – Tools and skills for SEO audits, content strategy and growth.
 - [💼 Business](categories/business.md) – Customer support, data, analytics and operations tools for running a business.
-- [🔎 Research & Knowledge](categories/research-and-knowledge.md) – Search, summarization and knowledge-base tooling.
-- [🎨 Design & Frontend](categories/design-and-frontend.md) – UI kits, design tools and frontend source-code apps.
+- [🔎 Research & Knowledge](categories/research-and-knowledge.md) – Research, data analysis, prediction and knowledge-base tooling.
+- [🎨 Design & Frontend](categories/design-and-frontend.md) – Design inspiration, design and prototyping tools, motion, and frontend skills.
 - [⚙️ Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.
 - [📈 Career & Productivity](categories/career-and-productivity.md) – Resume, job search and personal productivity resources.
-- [🤖 Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins.
+- [🤖 Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins, plus agent memory, LLM gateways and APIs, and web data tools for agents.
 - [🎓 Learning](categories/learning.md) – Guides, books, newsletters and channels worth following.
 
 ## Add a resource with AI

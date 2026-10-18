@@ -1,6 +1,6 @@
 # 🎬 Media
 
-_Tools for downloading, converting and editing video, audio and images._
+_Tools for creating, editing, downloading and playing video, audio, images and 3D._
 
 ## Video Editing & Recording
 

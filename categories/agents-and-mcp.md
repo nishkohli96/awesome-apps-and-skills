@@ -1,6 +1,6 @@
 # 🤖 Agents & MCP
 
-_MCP servers, agent frameworks and plugins._
+_MCP servers, agent frameworks and plugins, plus agent memory, LLM gateways and APIs, and web data tools for agents._
 
 ## Agents & Templates
 

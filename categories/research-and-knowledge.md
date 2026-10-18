@@ -1,6 +1,6 @@
 # 🔎 Research & Knowledge
 
-_Search, summarization and knowledge-base tooling._
+_Research, data analysis, prediction and knowledge-base tooling._
 
 ## Notes & Knowledge Bases
 
