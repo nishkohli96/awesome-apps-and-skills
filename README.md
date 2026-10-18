@@ -64,7 +64,8 @@ Add this resource to the list: <URL>
    - Omit optional fields you cannot verify. Put each metadata item on its own line (end each line but the last with <br>), in this order: 🏷 tags, 💰 pricing, 🔗 [demo](url).
 4. QUALITY BAR (CONTRIBUTING.md): repos need a license and a commit in the last 12 months; apps/starters need a way to run locally. If it fails, tell me why and do not add it.
 5. WRITE it into the chosen categories/*.md, under the best-fitting "##" subsection (read the existing subsection headings first). If none fits, create a new subsection with a short plain title. Keep entries alphabetical by name inside each subsection. If the file says "_No entries yet._", replace that line with a first subsection containing the entry.
-6. REPORT: the chosen type, category and subsection with a one-line reason, the final entry, and anything you could not verify. Do not commit.
+6. CHECK THE CATEGORY DESCRIPTION: read the italic subtitle under the H1 of the chosen categories/*.md. If it does not already cover what this tool is used for, extend that sentence (keep it short, one line) and copy the same wording into the matching line of the category list in README.md, so the two always match.
+7. REPORT: the chosen type, category and subsection with a one-line reason, whether you changed the category description, the final entry, and anything you could not verify. Do not commit.
 ```
 
 ## Contributing

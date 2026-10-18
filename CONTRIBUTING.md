@@ -2,7 +2,7 @@
 
 The easiest way: open Claude Code at the repo root and run the **"Add a resource with AI"** prompt from the [README](README.md#add-a-resource-with-ai) with your link. It verifies the link, picks the type and category, fills the metadata and adds the entry. Then open a PR.
 
-To add one by hand, pick the file in `categories/` that matches **what the resource is used for**, then add the entry under the best-fitting `##` subsection (create a new one if none fits). Keep entries alphabetical by name inside each subsection:
+To add one by hand, pick the file in `categories/` that matches **what the resource is used for**, then add the entry under the best-fitting `##` subsection (create a new one if none fits). Keep entries alphabetical by name inside each subsection. If the category's subtitle (the italic line under the title) doesn't cover what your tool is used for, extend it there and in the matching line of the category list in `README.md`:
 
 ```md
 - **[Example](https://github.com/owner/example)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
