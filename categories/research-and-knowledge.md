@@ -7,6 +7,10 @@ _Search, summarization and knowledge-base tooling._
   🏷 `obsidian` `second-brain` `pkm` `claude-skills`<br>
   🧱 python<br>
   🗓 2026-10-18
+- **[Consensus](https://consensus.app/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
+  AI academic search engine for finding, organizing and analyzing peer-reviewed research.<br>
+  🏷 `academic-search` `research` `papers` `ai-search`<br>
+  🗓 2026-10-18
 - **[Obsidian](https://obsidian.md/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
   Note-taking app that stores linked notes as local Markdown files, with plugins, graph view and canvas.<br>
   🏷 `note-taking` `markdown` `pkm` `knowledge-base`<br>

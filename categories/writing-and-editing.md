@@ -17,3 +17,9 @@ _Tools and apps for drafting, editing and publishing text._
   🏷 `ai-writing` `editing` `claude-skills`<br>
   🧱 python<br>
   🗓 2026-10-18
+- **[OpenWhispr](https://openwhispr.com/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  Open-source dictation app with local or cloud speech-to-text for dictation and meeting notes on desktop and iOS.<br>
+  🏷 `dictation` `speech-to-text` `meeting-notes` `privacy`<br>
+  🧱 node<br>
+  💰 freemium<br>
+  🗓 2026-10-18

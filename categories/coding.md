@@ -2,6 +2,11 @@
 
 _Skills, MCP servers and apps for writing, reviewing and shipping code._
 
+- **[caveman](https://github.com/juliusbrussee/caveman)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  Skill and proxy for coding agents that makes them reply in terse caveman-style language to save tokens.<br>
+  🏷 `token-saving` `claude-skills` `prompt-engineering`<br>
+  🧱 other<br>
+  🗓 2026-10-18
 - **[ponytail](https://github.com/dietrichgebert/ponytail)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
   Agent skill that makes AI coding agents write the least code: reuse, stdlib and YAGNI first.<br>
   🏷 `agent-skills` `yagni` `prompt-engineering`<br>

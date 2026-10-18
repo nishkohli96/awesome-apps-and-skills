@@ -7,6 +7,12 @@ _Tools for downloading, converting and editing video, audio and images._
   🏷 `ai-art` `filmmaking` `3d` `image-generation`<br>
   🧱 other<br>
   🗓 2026-10-18
+- **[Cap](https://cap.so/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  Open-source screen recorder for Mac, Windows and Linux with editing and link sharing, an alternative to Loom.<br>
+  🏷 `screen-recording` `loom-alternative` `video`<br>
+  🧱 other<br>
+  💰 freemium<br>
+  🗓 2026-10-18
 - **[EffectCraft](https://github.com/storytold/effectcraft)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
   Open-source motion graphics and compositing app written in Rust, a clean-room take on After Effects.<br>
   🏷 `motion-graphics` `compositing` `rust` `video`<br>
@@ -21,6 +27,12 @@ _Tools for downloading, converting and editing video, audio and images._
   Open-source non-destructive photo and RAW editor written in Rust that runs on your machine.<br>
   🏷 `photo-editing` `raw` `photography` `rust`<br>
   🧱 other<br>
+  🗓 2026-10-18
+- **[Nuclear](https://nuclearplayer.com/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  Free open-source desktop music player without ads or tracking, with search, playlists and streaming.<br>
+  🏷 `music-player` `streaming` `desktop`<br>
+  🧱 node<br>
+  💰 free<br>
   🗓 2026-10-18
 - **[OBS Studio](https://obsproject.com/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
   Free and open-source desktop app for video recording and live streaming to Twitch, YouTube and more.<br>
@@ -37,8 +49,22 @@ _Tools for downloading, converting and editing video, audio and images._
   Browser studio for generating images and video with 200+ AI models such as Flux, Kling and Veo.<br>
   🏷 `image-generation` `video-generation` `ai-studio`<br>
   🗓 2026-10-18
+- **[OpenCut](https://opencut.app/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
+  Open-source, privacy-first video editor that runs in your browser, an alternative to CapCut. In early beta.<br>
+  🏷 `video-editing` `capcut-alternative` `open-source`<br>
+  🗓 2026-10-18
 - **[PhotoCraft](https://github.com/storytold/photocraft)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
   Open-source photo editor written in Rust, a clean-room take on Photoshop with layers, masks and PSD support.<br>
   🏷 `photo-editing` `image-editor` `rust` `psd`<br>
   🧱 other<br>
+  🗓 2026-10-18
+- **[Remotion](https://www.remotion.dev/)** ![library](https://img.shields.io/badge/library-0a7ea4?style=flat-square)<br>
+  Framework for making videos and motion graphics with React code. Some companies need a paid license.<br>
+  🏷 `video` `react` `motion-graphics` `programmatic-video`<br>
+  🧱 react<br>
+  💰 freemium<br>
+  🗓 2026-10-18
+- **[Udio](https://www.udio.com/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
+  AI music generator for creating, discovering and sharing songs in seconds.<br>
+  🏷 `ai-music` `music-generation` `audio`<br>
   🗓 2026-10-18

@@ -31,6 +31,11 @@ _UI kits, design tools and frontend source-code apps._
   🏷 `ai-design` `ui` `mockups` `prototyping`<br>
   💰 freemium<br>
   🗓 2026-10-18
+- **[Taste Skill](https://www.tasteskill.dev/)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  Open-source skill files that stop AI coding agents from generating generic frontends, installed with one command.<br>
+  🏷 `frontend` `design` `agent-skills` `anti-slop`<br>
+  🧱 node<br>
+  🗓 2026-10-18
 - **[Transitions.dev](https://transitions.dev/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
   Library of production-ready UI transitions to copy and paste, or use with your coding agent through a skill.<br>
   🏷 `ui-motion` `transitions` `animation` `claude-skills`<br>
