@@ -29,3 +29,6 @@ _Customer support, data, analytics and operations tools for running a business._
 - **[founder-skill](https://github.com/Jakeschincariol/founder-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Eleven free Claude skills that test a business idea before launch, covering board review, marketing, finances and pricing.<br>
   🏷 `startup` `business-plan` `unit-economics` `claude-skills`
+- **[Minimalist Entrepreneur Skills](https://github.com/slavingia/skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Ten Claude Code skills based on The Minimalist Entrepreneur book by Sahil Lavingia, installed as a plugin.<br>
+  🏷 `startup` `entrepreneurship` `minimalist` `claude-skills`
