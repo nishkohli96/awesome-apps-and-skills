@@ -12,6 +12,21 @@ _MCP servers, agent frameworks and plugins._
   🏷 `ai-memory` `claude-code` `context` `agents`<br>
   🧱 node<br>
   🗓 2026-10-18
+- **[Firecrawl](https://www.firecrawl.dev/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
+  Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
+  🏷 `web-scraping` `ai-agents` `api` `crawler`<br>
+  💰 freemium<br>
+  🗓 2026-10-18
+- **[FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  Gateway that puts many free LLM provider tiers behind one OpenAI-compatible endpoint, with routing and failover. Personal use only.<br>
+  🏷 `llm-gateway` `free-llm` `openai-compatible` `routing`<br>
+  🧱 node<br>
+  🗓 2026-10-18
+- **[Headroom](https://github.com/headroomlabs-ai/headroom)** ![library](https://img.shields.io/badge/library-0a7ea4?style=flat-square)<br>
+  Compresses tool outputs, logs, files and RAG chunks before they reach the LLM. Works as a library, proxy or MCP server.<br>
+  🏷 `context-compression` `token-optimization` `proxy` `mcp`<br>
+  🧱 python<br>
+  🗓 2026-10-18
 - **[MiniMax](https://www.minimax.io/)** ![website](https://img.shields.io/badge/website-218bff?style=flat-square)<br>
   AI lab and platform offering multimodal models for text, video, speech and music, with an API and coding and design agents.<br>
   🏷 `llm` `multimodal` `ai-api` `agents`<br>

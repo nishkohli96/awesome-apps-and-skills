@@ -13,6 +13,11 @@ _Tools for downloading, converting and editing video, audio and images._
   🧱 other<br>
   💰 freemium<br>
   🗓 2026-10-18
+- **[claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  Claude skill that teaches Claude to create and edit motion graphics videos with Remotion from a plain-English prompt.<br>
+  🏷 `motion-graphics` `remotion` `video-editing` `claude-skills`<br>
+  🧱 node<br>
+  🗓 2026-10-19
 - **[EffectCraft](https://github.com/storytold/effectcraft)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
   Open-source motion graphics and compositing app written in Rust, a clean-room take on After Effects.<br>
   🏷 `motion-graphics` `compositing` `rust` `video`<br>
@@ -22,6 +27,11 @@ _Tools for downloading, converting and editing video, audio and images._
   Open-source nonlinear video editor written in Rust, a clean-room take on Premiere Pro.<br>
   🏷 `video-editing` `nonlinear-editor` `rust`<br>
   🧱 other<br>
+  🗓 2026-10-18
+- **[image-blaster](https://github.com/neilsonnn/image-blaster)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  Claude skills that turn a single image into a 3D environment, meshes and sound effects. Needs World Labs and FAL API keys.<br>
+  🏷 `3d` `image-to-3d` `gaussian-splat` `claude-skills`<br>
+  🧱 node<br>
   🗓 2026-10-18
 - **[LightCraft](https://github.com/storytold/lightcraft)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
   Open-source non-destructive photo and RAW editor written in Rust that runs on your machine.<br>
@@ -49,6 +59,12 @@ _Tools for downloading, converting and editing video, audio and images._
   Browser studio for generating images and video with 200+ AI models such as Flux, Kling and Veo.<br>
   🏷 `image-generation` `video-generation` `ai-studio`<br>
   🗓 2026-10-18
+- **[OpenChatCut](https://openchatcut.com/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  Local-first AI video editor you edit by chatting with an agent. The open-source edition is free, with a paid Pro desktop app.<br>
+  🏷 `video-editing` `ai-editor` `local-first` `open-source`<br>
+  🧱 node<br>
+  💰 freemium<br>
+  🗓 2026-10-18
 - **[OpenCut](https://opencut.app/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
   Open-source, privacy-first video editor that runs in your browser, an alternative to CapCut. In early beta.<br>
   🏷 `video-editing` `capcut-alternative` `open-source`<br>
@@ -68,3 +84,8 @@ _Tools for downloading, converting and editing video, audio and images._
   AI music generator for creating, discovering and sharing songs in seconds.<br>
   🏷 `ai-music` `music-generation` `audio`<br>
   🗓 2026-10-18
+- **[Wiggle](https://github.com/talknerdytome-labs/wiggle-claude-skill)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  Claude Code skill that turns static logos into animated Lottie, GIF and MP4 files with preset motion patterns.<br>
+  🏷 `logo-animation` `lottie` `animation` `claude-skills`<br>
+  🧱 python<br>
+  🗓 2026-10-19

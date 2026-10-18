@@ -2,6 +2,11 @@
 
 _Search, summarization and knowledge-base tooling._
 
+- **[BambooAI](https://github.com/pgalko/BambooAI)** ![library](https://img.shields.io/badge/library-0a7ea4?style=flat-square)<br>
+  AI data analyst that works step by step in Python and keeps a reproducible record. Supports hosted and local models.<br>
+  🏷 `data-analysis` `ai-agents` `python` `reproducible`<br>
+  🧱 python<br>
+  🗓 2026-10-19
 - **[claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
   Claude Code plugin that files any source into a linked Obsidian knowledge base of plain Markdown notes.<br>
   🏷 `obsidian` `second-brain` `pkm` `claude-skills`<br>
@@ -10,6 +15,11 @@ _Search, summarization and knowledge-base tooling._
 - **[Consensus](https://consensus.app/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
   AI academic search engine for finding, organizing and analyzing peer-reviewed research.<br>
   🏷 `academic-search` `research` `papers` `ai-search`<br>
+  🗓 2026-10-18
+- **[MiroFish](https://mirofish.ai/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  Open-source swarm-intelligence engine that runs multi-agent simulations to predict outcomes.<br>
+  🏷 `prediction` `multi-agent` `simulation` `forecasting`<br>
+  🧱 python<br>
   🗓 2026-10-18
 - **[Obsidian](https://obsidian.md/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
   Note-taking app that stores linked notes as local Markdown files, with plugins, graph view and canvas.<br>

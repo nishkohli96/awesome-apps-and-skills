@@ -36,6 +36,10 @@ _UI kits, design tools and frontend source-code apps._
   🏷 `frontend` `design` `agent-skills` `anti-slop`<br>
   🧱 node<br>
   🗓 2026-10-18
+- **[threejs-skills](https://github.com/cloudai-x/threejs-skills)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  Three.js skill files that give Claude Code API details and patterns for building 3D elements and interactive experiences.<br>
+  🏷 `threejs` `3d` `webgl` `claude-skills`<br>
+  🗓 2026-10-19
 - **[Transitions.dev](https://transitions.dev/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
   Library of production-ready UI transitions to copy and paste, or use with your coding agent through a skill.<br>
   🏷 `ui-motion` `transitions` `animation` `claude-skills`<br>

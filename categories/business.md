@@ -17,6 +17,11 @@ _Customer support, data, analytics and operations tools for running a business._
   🏷 `website-builder` `small-business` `crm` `ai`<br>
   💰 freemium<br>
   🗓 2026-10-18
+- **[founder-skill](https://github.com/Jakeschincariol/founder-skill)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  Eleven free Claude skills that test a business idea before launch, covering board review, marketing, finances and pricing.<br>
+  🏷 `startup` `business-plan` `unit-economics` `claude-skills`<br>
+  🧱 python<br>
+  🗓 2026-10-18
 - **[PostHog](https://posthog.com/)** ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square)<br>
   Open-source product analytics platform with session replay, feature flags, experiments and error tracking.<br>
   🏷 `analytics` `session-replay` `feature-flags` `open-source`<br>
