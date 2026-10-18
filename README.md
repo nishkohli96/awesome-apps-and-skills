@@ -32,6 +32,21 @@ Each entry has a colored type badge:
 
 Run this prompt in Claude Code from the repo root (or paste it into any coding agent), replacing `<URL>` with the link. Use the copy button on the block.
 
+## Categories
+
+- [💻 Coding](categories/coding.md) – Skills, MCP servers and apps for writing, reviewing and shipping code.
+- [✍️ Writing & Editing](categories/writing-and-editing.md) – Tools and apps for drafting, editing and publishing text.
+- [📄 Documents & Files](categories/documents-and-files.md) – Create and edit docx, pptx, xlsx, and PDF files.
+- [🎬 Media](categories/media.md) – Tools for downloading, converting and editing video, audio and images.
+- [📣 Marketing & SEO](categories/marketing-and-seo.md) – Tools and skills for SEO audits, content strategy and growth.
+- [💼 Business](categories/business.md) – Customer support, data, analytics and operations tools for running a business.
+- [🔎 Research & Knowledge](categories/research-and-knowledge.md) – Search, summarization and knowledge-base tooling.
+- [🎨 Design & Frontend](categories/design-and-frontend.md) – UI kits, design tools and frontend source-code apps.
+- [⚙️ Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.
+- [📈 Career & Productivity](categories/career-and-productivity.md) – Resume, job search and personal productivity resources.
+- [🤖 Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins.
+- [🎓 Learning](categories/learning.md) – Guides, newsletters and channels worth following.
+
 ```
 Add this resource to the list: <URL>
 
@@ -51,21 +66,6 @@ Add this resource to the list: <URL>
 5. WRITE it into the chosen categories/*.md, under the best-fitting "##" subsection (read the existing subsection headings first). If none fits, create a new subsection with a short plain title. Keep entries alphabetical by name inside each subsection. If the file says "_No entries yet._", replace that line with a first subsection containing the entry.
 6. REPORT: the chosen type, category and subsection with a one-line reason, the final entry, and anything you could not verify. Do not commit.
 ```
-
-## Categories
-
-- [💻 Coding](categories/coding.md) – Skills, MCP servers and apps for writing, reviewing and shipping code.
-- [✍️ Writing & Editing](categories/writing-and-editing.md) – Tools and apps for drafting, editing and publishing text.
-- [📄 Documents & Files](categories/documents-and-files.md) – Create and edit docx, pptx, xlsx, and PDF files.
-- [🎬 Media](categories/media.md) – Tools for downloading, converting and editing video, audio and images.
-- [📣 Marketing & SEO](categories/marketing-and-seo.md) – Tools and skills for SEO audits, content strategy and growth.
-- [💼 Business](categories/business.md) – Customer support, data, analytics and operations tools for running a business.
-- [🔎 Research & Knowledge](categories/research-and-knowledge.md) – Search, summarization and knowledge-base tooling.
-- [🎨 Design & Frontend](categories/design-and-frontend.md) – UI kits, design tools and frontend source-code apps.
-- [⚙️ Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.
-- [📈 Career & Productivity](categories/career-and-productivity.md) – Resume, job search and personal productivity resources.
-- [🤖 Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins.
-- [🎓 Learning](categories/learning.md) – Guides, newsletters and channels worth following.
 
 ## Contributing
 
