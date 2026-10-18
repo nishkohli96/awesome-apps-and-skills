@@ -2,29 +2,19 @@
 
 _Skills, MCP servers and apps for writing, reviewing and shipping code._
 
-- **[caveman](https://github.com/juliusbrussee/caveman)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+- **[caveman](https://github.com/juliusbrussee/caveman)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square) ![go](https://img.shields.io/badge/go-00add8?style=flat-square)<br>
   Skill and proxy for coding agents that makes them reply in terse caveman-style language to save tokens.<br>
-  🏷 `token-saving` `claude-skills` `prompt-engineering`<br>
-  🧱 other<br>
-  🗓 2026-10-18
-- **[ponytail](https://github.com/dietrichgebert/ponytail)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  🏷 `token-saving` `claude-skills` `prompt-engineering`
+- **[ponytail](https://github.com/dietrichgebert/ponytail)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square) ![node](https://img.shields.io/badge/node-339933?style=flat-square)<br>
   Agent skill that makes AI coding agents write the least code: reuse, stdlib and YAGNI first.<br>
-  🏷 `agent-skills` `yagni` `prompt-engineering`<br>
-  🧱 node<br>
-  🗓 2026-10-18
-- **[REA](https://github.com/morluto/rea)** ![mcp-server](https://img.shields.io/badge/mcp--server-0969da?style=flat-square)<br>
+  🏷 `agent-skills` `yagni` `prompt-engineering`
+- **[REA](https://github.com/morluto/rea)** ![mcp-server](https://img.shields.io/badge/mcp--server-0969da?style=flat-square) ![node](https://img.shields.io/badge/node-339933?style=flat-square)<br>
   MCP server that lets AI agents reverse engineer apps, from app behavior down to native binaries.<br>
-  🏷 `reverse-engineering` `binary-analysis` `agents` `mcp`<br>
-  🧱 node<br>
-  🗓 2026-10-18
-- **[replica-skill](https://github.com/Jakeschincariol/replica-skill)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  🏷 `reverse-engineering` `binary-analysis` `agents` `mcp`
+- **[replica-skill](https://github.com/Jakeschincariol/replica-skill)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square) ![python](https://img.shields.io/badge/python-3776ab?style=flat-square)<br>
   Eleven free Claude skills that reverse-engineer, rebuild, test and launch a clone of any app.<br>
-  🏷 `claude-skills` `app-clone` `reverse-engineering`<br>
-  🧱 python<br>
-  🗓 2026-10-18
-- **[Strix](https://www.strix.ai/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  🏷 `claude-skills` `app-clone` `reverse-engineering`
+- **[Strix](https://www.strix.ai/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square) ![python](https://img.shields.io/badge/python-3776ab?style=flat-square)<br>
   Open-source AI penetration testing tool that finds and fixes vulnerabilities in your apps and APIs. Runs locally with Docker.<br>
   🏷 `security` `pentesting` `ai-agents` `vulnerability-scanning`<br>
-  🧱 python<br>
-  💰 freemium<br>
-  🗓 2026-10-18
+  💰 freemium

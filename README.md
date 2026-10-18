@@ -2,13 +2,19 @@
   <img src="assets/logo.svg" alt="Awesome Apps and Skills logo" width="96" height="96" />
 </p>
 
-<h1 align="center">Awesome Apps and Skills</h1>
+<h1 align="center">Awesome Apps &amp; Skills</h1>
 
 <p align="center">
-  Curated Claude skills, MCP servers, open-source apps, repos and websites, grouped by what you want to do.
+  <b>The tools you haven't heard of yet, but will use this week.</b>
 </p>
 
 <p align="center">
+  Hand-picked apps, AI skills, MCP servers, plugins and web tools, sorted by what you want to get done.<br>
+  Built for developers, designers, founders and anyone who lives in a terminal or a browser.
+</p>
+
+<p align="center">
+  <b>⭐ Star this repo to keep it close</b> ·
   <a href="CONTRIBUTING.md">Contribute</a> ·
   <a href="https://github.com/nishkohli96/awesome-apps-and-skills/issues/new?template=suggest-resource.yml">Suggest a resource</a>
 </p>
@@ -33,14 +39,14 @@ Add this resource to the list: <URL>
 2. CLASSIFY.
    - type, one of: website | web-tool | app | library | skill | mcp-server | plugin | starter | guide | newsletter | video-channel
    - category: read the title and description line of every categories/*.md and pick the single file that matches what the resource is USED FOR, not what it is built with.
-3. FILL the entry using the exact format in CONTRIBUTING.md (colored type badge from the badge table there, then description, then one line per metadata item):
+3. FILL the entry using the exact format in CONTRIBUTING.md (colored type badge from the badge table there, plus a language badge for code repos, then description, then one line per metadata item):
    - name: the official product/repo name.
    - description: one line, under 160 chars, says what it does, no marketing words.
    - tags: 2-4 lowercase keywords.
-   - stack (only for code repos): any of react | nextjs | node | python | other.
+   - language badge (only for code repos), placed right after the type badge: node | python | react | nextjs | rust | go | c | other (CONTRIBUTING.md has the badge table).
    - pricing (only for websites/tools): free | freemium | paid, taken from the pricing page.
-   - demoUrl (only if a live demo is linked), added: today's date (YYYY-MM-DD).
-   - Omit optional fields you cannot verify. Put each metadata item on its own line (end each line but the last with <br>), in this order: 🏷 tags, 🧱 stack, 💰 pricing, 🔗 [demo](url), 🗓 added.
+   - demoUrl (only if a live demo is linked).
+   - Omit optional fields you cannot verify. Put each metadata item on its own line (end each line but the last with <br>), in this order: 🏷 tags, 💰 pricing, 🔗 [demo](url).
 4. QUALITY BAR (CONTRIBUTING.md): repos need a license and a commit in the last 12 months; apps/starters need a way to run locally. If it fails, tell me why and do not add it.
 5. WRITE it into the chosen categories/*.md, keeping entries alphabetical by name. If the file says "_No entries yet._", replace that line with the entry.
 6. REPORT: the chosen type and category with a one-line reason, the final entry, and anything you could not verify. Do not commit.

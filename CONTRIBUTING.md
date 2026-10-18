@@ -5,24 +5,20 @@ The easiest way: open Claude Code at the repo root and run the **"Add a resource
 To add one by hand, pick the file in `categories/` that matches **what the resource is used for**, and add an entry (alphabetical by name):
 
 ```md
-- **[Example](https://github.com/owner/example)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+- **[Example](https://github.com/owner/example)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square) ![node](https://img.shields.io/badge/node-339933?style=flat-square)<br>
   One line, under 160 chars, no marketing fluff.<br>
   🏷 `typescript` `testing`<br>
-  🧱 node<br>
   💰 free<br>
-  🔗 [demo](https://...)<br>
-  🗓 2026-10-18
+  🔗 [demo](https://...)
 ```
 
 ## Metadata lines
 
-One item per line, in this order: 🏷 tags, 🧱 stack, 💰 pricing, 🔗 demo, 🗓 added. Only tags and added are required.
+One item per line, in this order: 🏷 tags, 💰 pricing, 🔗 demo. Only tags are required.
 
 - 🏷 tags: 2-4 lowercase keywords.
-- 🧱 stack: react | nextjs | node | python | other (code repos).
 - 💰 pricing: free | freemium | paid (websites/tools).
 - 🔗 demo: link to a live demo, if one exists.
-- 🗓 added: today's date, YYYY-MM-DD.
 
 ## Type badges
 
@@ -41,6 +37,21 @@ Copy the badge for the entry's type, never change its color.
 | `guide` | 9a6700 | `![guide](https://img.shields.io/badge/guide-9a6700?style=flat-square)` |
 | `newsletter` | cf222e | `![newsletter](https://img.shields.io/badge/newsletter-cf222e?style=flat-square)` |
 | `video-channel` | 6e7781 | `![video-channel](https://img.shields.io/badge/video--channel-6e7781?style=flat-square)` |
+
+## Language badges
+
+For code repos, add one language badge right after the type badge. Use the repo's main language: `node`, `python`, `react`, `nextjs`, `rust`, `go` or `c`, or `other` for anything else. Skip it for websites and tools.
+
+| Language | Hex | Badge markdown |
+|---|---|---|
+| `node` | 339933 | `![node](https://img.shields.io/badge/node-339933?style=flat-square)` |
+| `python` | 3776ab | `![python](https://img.shields.io/badge/python-3776ab?style=flat-square)` |
+| `react` | 61dafb | `![react](https://img.shields.io/badge/react-61dafb?style=flat-square)` |
+| `nextjs` | 000000 | `![nextjs](https://img.shields.io/badge/nextjs-000000?style=flat-square)` |
+| `rust` | b7410e | `![rust](https://img.shields.io/badge/rust-b7410e?style=flat-square)` |
+| `go` | 00add8 | `![go](https://img.shields.io/badge/go-00add8?style=flat-square)` |
+| `c` | 555555 | `![c](https://img.shields.io/badge/c-555555?style=flat-square)` |
+| `other` | 6e7781 | `![other](https://img.shields.io/badge/other-6e7781?style=flat-square)` |
 
 ## Quality bar
 
