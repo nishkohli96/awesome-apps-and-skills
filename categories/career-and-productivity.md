@@ -14,6 +14,10 @@ _Resume, job search and personal productivity resources._
   Open-source job search engine indexing tech jobs from company career boards, with a CLI, MCP server and Chrome extension.<br>
   🏷 `jobs` `job-search` `cli` `mcp`<br>
   💰 free
+- **[LinkedIn Optimization Playbook](https://adititabiyamishra.notion.site/LinkedIn-Optimization-Playbook-275914b15de88073807edea84dead6fe)** <img align="absmiddle" alt="guide" src="https://img.shields.io/badge/guide-9a6700?style=flat-square"><br>
+  Step-by-step Notion playbook for optimizing a LinkedIn profile for recruiters, with prompts, free tools and examples.<br>
+  🏷 `linkedin` `job-search` `profile` `recruiters`<br>
+  💰 free
 
 ## Productivity
 
