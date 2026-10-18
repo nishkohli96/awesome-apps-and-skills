@@ -73,3 +73,6 @@ _Tools for downloading, converting and editing video, audio and images._
   Online downloader for videos, reels and photos from YouTube, Instagram, Facebook and X. No login needed.<br>
   🏷 `downloader` `video` `social-media`<br>
   💰 free
+- **[Seal](https://github.com/JunkFood02/Seal)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source Android app for downloading video and audio, built on yt-dlp.<br>
+  🏷 `downloader` `android` `yt-dlp` `video`
