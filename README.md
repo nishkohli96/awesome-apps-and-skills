@@ -41,7 +41,7 @@ Each entry has a colored type badge:
 - [⚙️ Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.
 - [📈 Career & Productivity](categories/career-and-productivity.md) – Resume, job search and personal productivity resources.
 - [🤖 Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins.
-- [🎓 Learning](categories/learning.md) – Guides, newsletters and channels worth following.
+- [🎓 Learning](categories/learning.md) – Guides, books, newsletters and channels worth following.
 
 ## Add a resource with AI
 
