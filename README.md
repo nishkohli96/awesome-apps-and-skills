@@ -39,8 +39,8 @@ Add this resource to the list: <URL>
    - tags: 2-4 lowercase keywords.
    - stack (only for code repos): any of react | nextjs | node | python | other.
    - pricing (only for websites/tools): free | freemium | paid, taken from the pricing page.
-   - demoUrl (only if a live demo is linked), license (repos: SPDX id from the repo), added: today's date (YYYY-MM-DD).
-   - Omit optional fields you cannot verify. Put each metadata item on its own line (end each line but the last with <br>), in this order: 🏷 tags, 🧱 stack, 💰 pricing, 📜 license, 🔗 [demo](url), 🗓 added.
+   - demoUrl (only if a live demo is linked), added: today's date (YYYY-MM-DD).
+   - Omit optional fields you cannot verify. Put each metadata item on its own line (end each line but the last with <br>), in this order: 🏷 tags, 🧱 stack, 💰 pricing, 🔗 [demo](url), 🗓 added.
 4. QUALITY BAR (CONTRIBUTING.md): repos need a license and a commit in the last 12 months; apps/starters need a way to run locally. If it fails, tell me why and do not add it.
 5. WRITE it into the chosen categories/*.md, keeping entries alphabetical by name. If the file says "_No entries yet._", replace that line with the entry.
 6. REPORT: the chosen type and category with a one-line reason, the final entry, and anything you could not verify. Do not commit.

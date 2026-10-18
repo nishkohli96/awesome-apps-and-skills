@@ -16,5 +16,4 @@ _Create and edit docx, pptx, xlsx, and PDF files._
   Open-source word processor written in Rust, a clean-room take on Microsoft Word.<br>
   🏷 `word-processor` `documents` `rust`<br>
   🧱 other<br>
-  📜 Apache-2.0<br>
   🗓 2026-10-18

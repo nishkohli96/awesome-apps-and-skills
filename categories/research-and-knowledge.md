@@ -6,7 +6,6 @@ _Search, summarization and knowledge-base tooling._
   Claude Code plugin that files any source into a linked Obsidian knowledge base of plain Markdown notes.<br>
   🏷 `obsidian` `second-brain` `pkm` `claude-skills`<br>
   🧱 python<br>
-  📜 MIT<br>
   🗓 2026-10-18
 - **[Obsidian](https://obsidian.md/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
   Note-taking app that stores linked notes as local Markdown files, with plugins, graph view and canvas.<br>
@@ -18,5 +17,4 @@ _Search, summarization and knowledge-base tooling._
   🏷 `research` `ai-notes` `self-hosted` `notebooklm-alternative`<br>
   🧱 node<br>
   💰 free<br>
-  📜 MIT<br>
   🗓 2026-10-18

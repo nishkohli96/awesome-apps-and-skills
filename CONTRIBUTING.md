@@ -10,19 +10,17 @@ To add one by hand, pick the file in `categories/` that matches **what the resou
   🏷 `typescript` `testing`<br>
   🧱 node<br>
   💰 free<br>
-  📜 MIT<br>
   🔗 [demo](https://...)<br>
   🗓 2026-10-18
 ```
 
 ## Metadata lines
 
-One item per line, in this order: 🏷 tags, 🧱 stack, 💰 pricing, 📜 license, 🔗 demo, 🗓 added. Only tags and added are required.
+One item per line, in this order: 🏷 tags, 🧱 stack, 💰 pricing, 🔗 demo, 🗓 added. Only tags and added are required.
 
 - 🏷 tags: 2-4 lowercase keywords.
 - 🧱 stack: react | nextjs | node | python | other (code repos).
 - 💰 pricing: free | freemium | paid (websites/tools).
-- 📜 license: SPDX id (repos).
 - 🔗 demo: link to a live demo, if one exists.
 - 🗓 added: today's date, YYYY-MM-DD.
 
