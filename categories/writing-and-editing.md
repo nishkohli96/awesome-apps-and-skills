@@ -16,6 +16,10 @@ _Tools and apps for drafting, editing and publishing text._
 
 ## Dictation
 
+- **[Handy](https://handy.computer/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Free open-source speech-to-text app that types what you say into any text field and works offline.<br>
+  🏷 `speech-to-text` `dictation` `offline` `open-source`<br>
+  💰 free
 - **[OpenWhispr](https://openwhispr.com/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source dictation app with local or cloud speech-to-text for dictation and meeting notes on desktop and iOS.<br>
   🏷 `dictation` `speech-to-text` `meeting-notes` `privacy`<br>
