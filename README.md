@@ -52,6 +52,8 @@ Add this resource to the list: <URL>
 - [✍️ Writing & Editing](categories/writing-and-editing.md) – Tools and apps for drafting, editing and publishing text.
 - [📄 Documents & Files](categories/documents-and-files.md) – Create and edit docx, pptx, xlsx, and PDF files.
 - [🎬 Media](categories/media.md) – Tools for downloading, converting and editing video, audio and images.
+- [📣 Marketing & SEO](categories/marketing-and-seo.md) – Tools and skills for SEO audits, content strategy and growth.
+- [💼 Business](categories/business.md) – Customer support, data, analytics and operations tools for running a business.
 - [🔎 Research & Knowledge](categories/research-and-knowledge.md) – Search, summarization and knowledge-base tooling.
 - [🎨 Design & Frontend](categories/design-and-frontend.md) – UI kits, design tools and frontend source-code apps.
 - [⚙️ Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.

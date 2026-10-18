@@ -2,4 +2,21 @@
 
 _Search, summarization and knowledge-base tooling._
 
-_No entries yet._
+- **[claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)** ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square)<br>
+  Claude Code plugin that files any source into a linked Obsidian knowledge base of plain Markdown notes.<br>
+  🏷 `obsidian` `second-brain` `pkm` `claude-skills`<br>
+  🧱 python<br>
+  📜 MIT<br>
+  🗓 2026-10-18
+- **[Obsidian](https://obsidian.md/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  Note-taking app that stores linked notes as local Markdown files, with plugins, graph view and canvas.<br>
+  🏷 `note-taking` `markdown` `pkm` `knowledge-base`<br>
+  💰 free<br>
+  🗓 2026-10-18
+- **[Open Notebook](https://www.open-notebook.ai/)** ![app](https://img.shields.io/badge/app-1f883d?style=flat-square)<br>
+  Open-source, self-hosted AI research notebook, a private alternative to NotebookLM. Works with 20+ AI providers.<br>
+  🏷 `research` `ai-notes` `self-hosted` `notebooklm-alternative`<br>
+  🧱 node<br>
+  💰 free<br>
+  📜 MIT<br>
+  🗓 2026-10-18
