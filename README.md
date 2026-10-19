@@ -30,19 +30,19 @@ Each entry has a colored type badge:
 
 ## Categories
 
-- [💻 Coding](categories/coding.md) – Skills, MCP servers and apps for writing, reviewing and shipping code.
-- [✍️ Writing & Editing](categories/writing-and-editing.md) – Tools and apps for drafting, editing and publishing text.
-- [📄 Documents & Files](categories/documents-and-files.md) – Create, edit, store and share documents, slides, PDFs and files.
-- [🎬 Media](categories/media.md) – Tools for creating, editing, downloading and playing video, audio, images and 3D.
-- [📣 Marketing & SEO](categories/marketing-and-seo.md) – Tools and skills for SEO audits, content strategy and growth.
-- [💼 Business](categories/business.md) – Customer support, data, analytics, email delivery and operations tools for running a business.
-- [🔎 Research & Knowledge](categories/research-and-knowledge.md) – Research, data analysis, prediction and knowledge-base tooling.
-- [🎨 Design & Frontend](categories/design-and-frontend.md) – Design inspiration, design and prototyping tools, motion, and frontend skills.
-- [⚙️ Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.
-- [📈 Career & Productivity](categories/career-and-productivity.md) – Resume, job search and personal productivity resources.
-- [🤖 Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins, plus agent memory, local model runtimes, LLM gateways and APIs, and web data tools for agents.
-- [🔒 Security & Privacy](categories/security-and-privacy.md) – Password managers, privacy tools and security testing.
-- [🎓 Learning](categories/learning.md) – Guides, books, courses, learning tools, newsletters and channels worth following.
+- 💻 [Coding](categories/coding.md) – Skills, MCP servers and apps for writing, reviewing and shipping code.
+- ✍️ [Writing & Editing](categories/writing-and-editing.md) – Tools and apps for drafting, editing and publishing text.
+- 📄 [Documents & Files](categories/documents-and-files.md) – Create, edit, store and share documents, slides, PDFs and files.
+- 🎬 [Media](categories/media.md) – Tools for creating, editing, downloading and playing video, audio, images and 3D.
+- 📣 [Marketing & SEO](categories/marketing-and-seo.md) – Tools and skills for SEO audits, content strategy and growth.
+- 💼 [Business](categories/business.md) – Customer support, data, analytics, email delivery and operations tools for running a business.
+- 🔎 [Research & Knowledge](categories/research-and-knowledge.md) – Research, data analysis, prediction and knowledge-base tooling.
+- 🎨 [Design & Frontend](categories/design-and-frontend.md) – Design inspiration, design and prototyping tools, motion, and frontend skills.
+- ⚙️ [Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.
+- 📈 [Career & Productivity](categories/career-and-productivity.md) – Resume, job search and personal productivity resources.
+- 🤖 [Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins, plus agent memory, local model runtimes, LLM gateways and APIs, and web data tools for agents.
+- 🔒 [Security & Privacy](categories/security-and-privacy.md) – Password managers, privacy tools and security testing.
+- 🎓 [Learning](categories/learning.md) – Guides, books, courses, learning tools, newsletters and channels worth following.
 
 ## Add a resource with AI
 

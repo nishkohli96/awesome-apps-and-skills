@@ -62,13 +62,16 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 
 - **[Hailuo AI](https://hailuoai.video/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Create AI videos and images from text or photos, with video, image and audio tools for creators. Built on MiniMax models.<br>
-  🏷 `ai-video` `ai-image` `text-to-video` `minimax`
+  🏷 `ai-video` `ai-image` `text-to-video` `minimax`<br>
+  💰 freemium
 - **[Hedra](https://www.hedra.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Visual AI platform with its own generation models, a creator studio and an API for running them in production.<br>
-  🏷 `ai-video` `ai-image` `generative-ai` `api`
+  🏷 `ai-video` `ai-image` `generative-ai` `api`<br>
+  💰 freemium
 - **[Open Generative AI](https://muapi.ai/open-generative-ai)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Browser studio for generating images and video with 200+ AI models such as Flux, Kling and Veo.<br>
-  🏷 `image-generation` `video-generation` `ai-studio`
+  🏷 `image-generation` `video-generation` `ai-studio`<br>
+  💰 freemium
 
 ## Audio & Music
 
