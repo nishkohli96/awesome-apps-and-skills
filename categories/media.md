@@ -50,12 +50,25 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[LightCraft](https://github.com/storytold/lightcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source non-destructive photo and RAW editor written in Rust that runs on your machine.<br>
   🏷 `photo-editing` `raw` `photography` `rust`
-- **[Open Generative AI](https://muapi.ai/open-generative-ai)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
-  Browser studio for generating images and video with 200+ AI models such as Flux, Kling and Veo.<br>
-  🏷 `image-generation` `video-generation` `ai-studio`
 - **[PhotoCraft](https://github.com/storytold/photocraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source photo editor written in Rust, a clean-room take on Photoshop with layers, masks and PSD support.<br>
   🏷 `photo-editing` `image-editor` `rust` `psd`
+- **[Photoroom](https://www.photoroom.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  AI photo editor for product pictures that removes backgrounds, generates scenes and makes marketplace-ready images.<br>
+  🏷 `photo-editing` `background-remover` `product-photos` `ai`<br>
+  💰 freemium
+
+## AI Image & Video Generation
+
+- **[Hailuo AI](https://hailuoai.video/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Create AI videos and images from text or photos, with video, image and audio tools for creators. Built on MiniMax models.<br>
+  🏷 `ai-video` `ai-image` `text-to-video` `minimax`
+- **[Hedra](https://www.hedra.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Visual AI platform with its own generation models, a creator studio and an API for running them in production.<br>
+  🏷 `ai-video` `ai-image` `generative-ai` `api`
+- **[Open Generative AI](https://muapi.ai/open-generative-ai)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Browser studio for generating images and video with 200+ AI models such as Flux, Kling and Veo.<br>
+  🏷 `image-generation` `video-generation` `ai-studio`
 
 ## Audio & Music
 

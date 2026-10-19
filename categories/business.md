@@ -1,6 +1,6 @@
 # 💼 Business
 
-_Customer support, data, analytics and operations tools for running a business._
+_Customer support, data, analytics, email delivery and operations tools for running a business._
 
 ## Customer Support
 
@@ -18,6 +18,13 @@ _Customer support, data, analytics and operations tools for running a business._
 - **[PostHog](https://posthog.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Open-source product analytics platform with session replay, feature flags, experiments and error tracking.<br>
   🏷 `analytics` `session-replay` `feature-flags` `open-source`<br>
+  💰 freemium
+
+## Email & Messaging
+
+- **[Emitlo](https://emitlo.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Transactional email API and SMTP relay with domain authentication, webhooks and analytics. Currently in early access.<br>
+  🏷 `email-api` `smtp` `transactional-email` `developer-tools`<br>
   💰 freemium
 
 ## Starting & Running a Business

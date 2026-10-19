@@ -35,7 +35,7 @@ Each entry has a colored type badge:
 - [📄 Documents & Files](categories/documents-and-files.md) – Create, edit, store and share documents, slides, PDFs and files.
 - [🎬 Media](categories/media.md) – Tools for creating, editing, downloading and playing video, audio, images and 3D.
 - [📣 Marketing & SEO](categories/marketing-and-seo.md) – Tools and skills for SEO audits, content strategy and growth.
-- [💼 Business](categories/business.md) – Customer support, data, analytics and operations tools for running a business.
+- [💼 Business](categories/business.md) – Customer support, data, analytics, email delivery and operations tools for running a business.
 - [🔎 Research & Knowledge](categories/research-and-knowledge.md) – Research, data analysis, prediction and knowledge-base tooling.
 - [🎨 Design & Frontend](categories/design-and-frontend.md) – Design inspiration, design and prototyping tools, motion, and frontend skills.
 - [⚙️ Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.

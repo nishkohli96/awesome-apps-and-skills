@@ -15,10 +15,17 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 
 ## Design & Prototyping Tools
 
+- **[diagram-design](https://github.com/cathrynlavery/diagram-design)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Agent skill that draws diagrams as a single HTML and SVG file in your brand, with dozens of diagram types.<br>
+  🏷 `diagrams` `svg` `agent-skills` `data-visualization`
 - **[Excalidraw](https://excalidraw.com)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Collaborative whiteboard for hand-drawn style diagrams.<br>
   🏷 `diagrams` `whiteboard`<br>
   💰 free
+- **[Lovart](https://www.lovart.ai/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  AI design agent that turns a conversation into logos, posters, packaging, social content and video ads.<br>
+  🏷 `ai-design` `branding` `graphic-design` `ai-agent`<br>
+  💰 freemium
 - **[Open Design](https://open-design.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source, local-first design workspace where you and your coding agents build prototypes, sites, slides and dashboards.<br>
   🏷 `ai-design` `prototyping` `open-source` `local-first`<br>
