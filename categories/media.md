@@ -79,6 +79,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[Udio](https://www.udio.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   AI music generator for creating, discovering and sharing songs in seconds.<br>
   🏷 `ai-music` `music-generation` `audio`
+- **[VoiceStudio](https://voicestudio.sh/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Free open-source desktop app for voice cloning, voice design, video dubbing and transcription that runs on your own machine.<br>
+  🏷 `voice-cloning` `dubbing` `text-to-speech` `local-first`<br>
+  💰 freemium
 
 ## Downloaders
 

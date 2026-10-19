@@ -27,3 +27,6 @@ _Research, data analysis, prediction and knowledge-base tooling._
 - **[MiroFish](https://mirofish.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source swarm-intelligence engine that runs multi-agent simulations to predict outcomes.<br>
   🏷 `prediction` `multi-agent` `simulation` `forecasting`
+- **[Vibe-Trading](https://github.com/HKUDS/Vibe-Trading)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source AI trading research agent for analysing markets and backtesting strategies. A research tool, not financial advice.<br>
+  🏷 `trading` `backtesting` `market-research` `ai-agents`

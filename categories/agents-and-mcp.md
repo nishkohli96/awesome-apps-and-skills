@@ -1,6 +1,6 @@
 # 🤖 Agents & MCP
 
-_MCP servers, agent frameworks and plugins, plus agent memory, LLM gateways and APIs, and web data tools for agents._
+_MCP servers, agent frameworks and plugins, plus agent memory, local model runtimes, LLM gateways and APIs, and web data tools for agents._
 
 ## Agents & Templates
 
@@ -10,6 +10,9 @@ _MCP servers, agent frameworks and plugins, plus agent memory, LLM gateways and 
 - **[OpenClaw](https://openclaw.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source AI assistant that runs on your machine and works from WhatsApp, Telegram or any chat app.<br>
   🏷 `ai-assistant` `agent` `self-hosted` `chat`
+- **[Paperclip](https://github.com/paperclipai/paperclip)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source app that orchestrates a team of AI agents, with goals, budgets and a dashboard to track work and costs.<br>
+  🏷 `agent-orchestration` `ai-agents` `self-hosted` `dashboard`
 
 ## Memory & Context
 
@@ -19,6 +22,13 @@ _MCP servers, agent frameworks and plugins, plus agent memory, LLM gateways and 
 - **[Headroom](https://github.com/headroomlabs-ai/headroom)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   Compresses tool outputs, logs, files and RAG chunks before they reach the LLM. Works as a library, proxy or MCP server.<br>
   🏷 `context-compression` `token-optimization` `proxy` `mcp`
+
+## Local Models
+
+- **[Magnitude](https://magnitude.dev/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source inference engine that tunes itself to your hardware to run open models locally on Mac, Windows and Linux.<br>
+  🏷 `inference` `local-llm` `open-models` `self-hosted`<br>
+  💰 free
 
 ## Model Gateways & APIs
 

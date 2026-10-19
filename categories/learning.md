@@ -1,6 +1,6 @@
 # 🎓 Learning
 
-_Guides, books, newsletters and channels worth following._
+_Guides, books, courses, learning tools, newsletters and channels worth following._
 
 ## Books & Courses
 
@@ -11,3 +11,10 @@ _Guides, books, newsletters and channels worth following._
   Free course that takes you from beginner to building AI agents, with hands-on units, assignments and a certificate.<br>
   🏷 `ai-agents` `course` `huggingface` `learning`<br>
   💰 free
+
+## Learning Tools
+
+- **[OpenMAIC](https://github.com/THU-MAIC/OpenMAIC)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source multi-agent interactive classroom that turns a topic into a guided, interactive AI learning session.<br>
+  🏷 `ai-classroom` `education` `multi-agent` `self-hosted`<br>
+  🔗 [demo](https://open.maic.chat/)
