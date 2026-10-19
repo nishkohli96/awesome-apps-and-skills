@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Hand-picked apps, AI skills, MCP servers, plugins web tools and learning resources, sorted by what you want to get done.<br>
+  Hand-picked apps, AI skills, MCP servers, plugins, web tools and learning resources, sorted by what you want to get done.<br>
   Built for developers, designers, founders and anyone who lives in a terminal or a browser.
 </p>
 
