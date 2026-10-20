@@ -58,3 +58,9 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
   🏷 `web-scraping` `ai-agents` `api` `crawler`<br>
   💰 freemium
+
+- **[PlaceCall](https://github.com/voygr-tech/placecall)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Lets an AI agent phone US businesses to book, ask questions or get quotes, and returns the call outcome, transcript and recording.<br>
+  🏷 `mcp` `phone-calls` `voice-agents` `ai-agents`<br>
+  💰 paid<br>
+  🔗 [mcp](https://api.voygr.tech/mcp)
