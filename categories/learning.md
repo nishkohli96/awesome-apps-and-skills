@@ -18,3 +18,8 @@ _Guides, books, courses, learning tools, newsletters and channels worth followin
   Open-source multi-agent interactive classroom that turns a topic into a guided, interactive AI learning session.<br>
   🏷 `ai-classroom` `education` `multi-agent` `self-hosted`<br>
   🔗 [demo](https://open.maic.chat/)
+
+- **[StudyArena](https://studyarena.com)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Compare three anonymous AI answers to a study question, vote, then reveal the models. Free account required.<br>
+  🏷 `education` `ai` `learning`<br>
+  💰 freemium
