@@ -29,3 +29,7 @@ _Resume, job search and personal productivity resources._
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
   💰 freemium
+- **[Orkas](https://github.com/Orkas-AI/Orkas)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Local-first desktop workspace where AI specialists turn project goals and files into reports, slides and code; model usage may cost extra.<br>
+  🏷 `ai-agents` `productivity` `local-first`<br>
+  💰 freemium
