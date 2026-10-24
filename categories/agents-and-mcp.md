@@ -1,6 +1,6 @@
 # 🤖 Agents & MCP
 
-_MCP servers, agent frameworks and plugins, plus agent memory, local model runtimes, LLM gateways and APIs, and web data tools for agents._
+_MCP servers, agent frameworks and plugins, plus agent memory, local model runtimes, LLM gateways and APIs, web data tools, and publishing and hosting tools for agents._
 
 ## Agents & Templates
 
@@ -53,6 +53,12 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   🏷 `mcp` `data-centers` `energy` `site-selection`<br>
   💰 freemium<br>
   🔗 [mcp](https://dchub.cloud/mcp)
+
+- **[deed.page](https://deed.page/)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Static hosting for AI agents: publish HTML to a live `<slug>.deed.page` URL with one HTTP PUT or a remote MCP call.<br>
+  🏷 `mcp` `hosting` `static-sites` `ai-agents`<br>
+  💰 freemium<br>
+  🔗 [mcp](https://deed.page/mcp)
 
 - **[Firecrawl](https://www.firecrawl.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
