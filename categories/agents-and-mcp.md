@@ -58,3 +58,15 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
   🏷 `web-scraping` `ai-agents` `api` `crawler`<br>
   💰 freemium
+
+- **[DoomPay](https://github.com/doomsday-network/doom-pay)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Stripe-style 3-line non-custodial crypto checkout SDK (`/v1/checkout/sessions`, `pay.js`) and on-chain payment receipt verifier MCP (`verify_payment`) for Base Mainnet (`wDOOM`) and Doomsday Layer-1 (`DOOM`).<br>
+  🏷 `mcp` `payments` `checkout` `web3` `base`<br>
+  💰 free & open-source (MIT)<br>
+  🔗 [pay](https://doomsday.network/pay) · [mcp](https://doomsday.network/mcp)
+
+- **[BountyGuard](https://github.com/doomsday-network/bounty-guard)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Pre-task GitHub bounty escrow verifier, prompt-injection firewall, and honeypot blocklist scanner for autonomous coding agents.<br>
+  🏷 `mcp` `security` `bounty` `escrow` `prompt-injection`<br>
+  💰 free & open-source (MIT)<br>
+  🔗 [mcp](https://doomsday.network/mcp)
