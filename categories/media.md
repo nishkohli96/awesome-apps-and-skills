@@ -65,6 +65,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 ## AI Image & Video Generation
 
 - **[GrokVideo Studio](https://grokvideogenerator.dev)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+- **[Alors On Danse Video Maker](https://alorsondansevideo.com)** — Independent AI: two photos → 13s studio dance video (Paid; not affiliated with Stromae/TikTok). `Paid`
+- **[Bad Times AI](https://badtimesai.dev)** — Independent AI dance effect: one photo → 14–15s portrait dance video (Paid from $7.99). `Paid`
+- **[I Found You in the Crowd AI](https://ifoundyouinthecrowdai.com)** — Independent AI scene effect: two photos → balcony/spotlight meeting video (Paid from $7.99). `Paid`
   Independent text/image-to-video via the Grok Imagine API (not affiliated with xAI or X); free trial credits.<br>
   🏷 `ai-video` `text-to-video` `image-to-video`<br>
   💰 freemium
