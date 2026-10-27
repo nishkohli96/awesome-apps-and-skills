@@ -22,6 +22,10 @@ _Resume, job search and personal productivity resources._
   Step-by-step Notion playbook for optimizing a LinkedIn profile for recruiters, with prompts, free tools and examples.<br>
   🏷 `linkedin` `job-search` `profile` `recruiters`<br>
   💰 free
+- **[NeverApply](https://neverapply.co/features/mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Hosted MCP server that lets Claude, Cursor and other MCP clients search jobs, tailor resumes and apply to jobs you approve.<br>
+  🏷 `job-search` `mcp` `resume` `auto-apply`<br>
+  💰 freemium
 
 ## Productivity
 
