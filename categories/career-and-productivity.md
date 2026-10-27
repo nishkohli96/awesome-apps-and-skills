@@ -25,6 +25,9 @@ _Resume, job search and personal productivity resources._
   Open-source scheduling tool with booking links, calendar sync, reminders and video calls. Can be self-hosted.<br>
   🏷 `scheduling` `calendar` `booking` `open-source`<br>
   💰 freemium
+- **[CopyQ](https://github.com/hluk/CopyQ)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source clipboard manager for Windows, macOS and Linux, with history, editing and scripting.<br>
+  🏷 `clipboard` `clipboard-manager` `productivity` `scripting`
 - **[Granola](https://www.granola.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>

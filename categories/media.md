@@ -11,6 +11,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[FilmCraft](https://github.com/storytold/filmcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source nonlinear video editor written in Rust, a clean-room take on Premiere Pro.<br>
   🏷 `video-editing` `nonlinear-editor` `rust`
+- **[LosslessCut](https://losslesscut.app/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source app for cutting, trimming and merging video and audio without re-encoding, on Mac, Windows and Linux.<br>
+  🏷 `video-cutter` `lossless` `ffmpeg` `video-editing`
 - **[OBS Studio](https://obsproject.com/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Free and open-source desktop app for video recording and live streaming to Twitch, YouTube and more.<br>
   🏷 `streaming` `screen-recording` `video`<br>
@@ -25,12 +28,18 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 
 ## Motion Graphics & Animation
 
+- **[anidoodle](https://github.com/alexgreensh/anidoodle)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Agent skill that makes illustrations, animations and short films as code in 32 hand-drawn styles, identical on every render.<br>
+  🏷 `animation` `illustration` `generative-art` `claude-skills`
 - **[claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude skill that teaches Claude to create and edit motion graphics videos with Remotion from a plain-English prompt.<br>
   🏷 `motion-graphics` `remotion` `video-editing` `claude-skills`
 - **[EffectCraft](https://github.com/storytold/effectcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source motion graphics and compositing app written in Rust, a clean-room take on After Effects.<br>
   🏷 `motion-graphics` `compositing` `rust` `video`
+- **[HyperFrames](https://www.hyperframes.dev/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
+  Open-source framework that renders HTML into MP4 video for AI agents, plus a desktop Studio editor.<br>
+  🏷 `html-to-video` `video-rendering` `agent-skills` `motion-graphics`
 - **[Remotion](https://www.remotion.dev/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"> <img align="absmiddle" alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"><br>
   Framework for making videos and motion graphics with React code. Some companies need a paid license.<br>
   🏷 `video` `react` `motion-graphics` `programmatic-video`<br>

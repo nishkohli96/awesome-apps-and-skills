@@ -17,6 +17,9 @@ _Create, edit, store and share documents, slides, PDFs and files._
   Online converter that turns a PDF into a Markdown file, keeping headings, tables and lists.<br>
   🏷 `pdf` `markdown` `file-conversion` `online-tool`<br>
   💰 freemium
+- **[LocalSend](https://localsend.org/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Free open-source app that shares files between nearby devices over your local network, with no internet needed.<br>
+  🏷 `file-sharing` `airdrop-alternative` `cross-platform` `offline`
 - **[MarkItDown](https://github.com/microsoft/markitdown)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   Python tool that converts PDFs, Office documents and other files to Markdown for use with LLMs.<br>
   🏷 `markdown` `file-conversion` `llm` `python`

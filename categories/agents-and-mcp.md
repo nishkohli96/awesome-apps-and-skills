@@ -4,6 +4,9 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 
 ## Agents & Templates
 
+- **[agency-agents](https://github.com/msitarzewski/agency-agents)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Collection of specialist AI agent definitions, from engineering to marketing, that you install into coding agents like Claude Code and Cursor.<br>
+  🏷 `ai-agents` `agent-roster` `prompts` `claude-code`
 - **[awesome-llm-apps](https://github.com/shubhamsaboo/awesome-llm-apps)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-7d5ba6?style=flat-square"><br>
   Collection of 100+ open-source AI agents, agent skills and RAG apps you can clone and run.<br>
   🏷 `ai-agents` `rag` `llm-apps` `templates`
@@ -48,6 +51,9 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 
 ## Agent Tools & Data
 
+- **[camofox-browser](https://github.com/jo-inc/camofox-browser)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Headless browser server for AI agents, built on Camoufox with fingerprint spoofing as a Puppeteer and Playwright replacement.<br>
+  🏷 `headless-browser` `browser-automation` `ai-agents` `scraping`
 - **[Firecrawl](https://www.firecrawl.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
   🏷 `web-scraping` `ai-agents` `api` `crawler`<br>

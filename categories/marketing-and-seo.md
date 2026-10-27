@@ -25,6 +25,12 @@ _Tools and skills for SEO audits, content strategy and growth._
   AI platform that automates go-to-market workflows for sales and marketing teams, with agents, tables and brand voice.<br>
   🏷 `gtm` `workflow-automation` `ai-copywriting` `sales`<br>
   💰 paid
+- **[google-maps-scraper-kit](https://github.com/Mahanaicoach/google-maps-scraper-kit)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source Google Maps scraper that exports business contact details to CSV. Runs locally in Docker or through a coding agent.<br>
+  🏷 `lead-generation` `google-maps` `scraper` `docker`
+- **[instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Thirteen free Claude skills that help run an Instagram account, covering Reels hooks, captions, profile review and content planning.<br>
+  🏷 `instagram` `social-media` `content` `claude-skills`
 - **[linkedin-skills](https://github.com/sergebulaev/linkedin-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Twelve Claude Code and Codex skills that draft LinkedIn posts, comments and replies in your voice for your approval.<br>
   🏷 `linkedin` `social-media` `content` `claude-skills`
@@ -32,3 +38,6 @@ _Tools and skills for SEO audits, content strategy and growth._
   Social media management tool for scheduling posts, managing multiple accounts, collaborating and tracking performance.<br>
   🏷 `social-media` `scheduling` `analytics` `content`<br>
   💰 freemium
+- **[youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Eleven free Claude skills that help run a YouTube channel, covering scripts, titles and thumbnails, edit lists and retention analysis.<br>
+  🏷 `youtube` `video-content` `social-media` `claude-skills`
