@@ -32,3 +32,6 @@ _Resume, job search and personal productivity resources._
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
   💰 freemium
+- **[Reminder Desk](https://github.com/nishkohli96/reminder-desk)** <img align="absmiddle" alt="plugin" src="https://img.shields.io/badge/plugin-bf3989?style=flat-square"><br>
+  Claude plugin and skill for daily to-do reminders that send push notifications until you tick each task off.<br>
+  🏷 `reminders` `todo` `push-notifications` `claude-plugin`
