@@ -62,6 +62,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[PhotoCraft](https://github.com/storytold/photocraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source photo editor written in Rust, a clean-room take on Photoshop with layers, masks and PSD support.<br>
   🏷 `photo-editing` `image-editor` `rust` `psd`
+- **[TeslaWraps](https://teslawraps.design)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Free browser Tesla Paint Shop wrap editor with model templates and PNG export; no account required for core editing.<br>
+  🏷 `design` `mockup` `tesla` `image-editor`<br>
+  💰 freemium
 - **[Photoroom](https://www.photoroom.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   AI photo editor for product pictures that removes backgrounds, generates scenes and makes marketplace-ready images.<br>
   🏷 `photo-editing` `background-remover` `product-photos` `ai`<br>
@@ -69,6 +73,20 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 
 ## AI Image & Video Generation
 
+- **[GrokVideo Studio](https://grokvideogenerator.dev)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+- **[Alors On Danse Video Maker](https://alorsondansevideo.com)** — Independent AI: two photos → 13s studio dance video (Paid; not affiliated with Stromae/TikTok). `Paid`
+- **[Bad Times AI](https://badtimesai.dev)** — Independent AI dance effect: one photo → 14–15s portrait dance video (Paid from $7.99). `Paid`
+- **[I Found You in the Crowd AI](https://ifoundyouinthecrowdai.com)** — Independent AI scene effect: two photos → balcony/spotlight meeting video (Paid from $7.99). `Paid`
+- **[KDA Firestarter AI Dance](https://kdafirestarterai.dev)** — Independent unofficial AI: one photo → 13s 480p 21:9 solo dance video (Paid from $7.99). Not affiliated with Riot Games or K/DA. `Paid`
+- **[A2O LITE NEON AI Dance](https://a2oliteai.org)** — Independent AI: two photos → 15s 480p 16:9 duo neon dance with reference soundtrack (Paid from $7.99). Unofficial. `Paid`
+- **[dime dime baby ai](https://dimedimebabyai.dev)** — Independent AI: one photo → ~5s 480p 9:16 AI dance (Quince Classic or Party Groove) (Paid from $7.99). `Paid`
+  Independent text/image-to-video via the Grok Imagine API (not affiliated with xAI or X); free trial credits.<br>
+  🏷 `ai-video` `text-to-video` `image-to-video`<br>
+  💰 freemium
+- **[PromptImage](https://promptimage.cloud)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Free AI image & video studio with a prompt library; freemium signup credits, no card required.<br>
+  🏷 `ai-image` `ai-video` `prompt-library` `image-generation`<br>
+  💰 freemium
 - **[Hailuo AI](https://hailuoai.video/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Create AI videos and images from text or photos, with video, image and audio tools for creators. Built on MiniMax models.<br>
   🏷 `ai-video` `ai-image` `text-to-video` `minimax`<br>
