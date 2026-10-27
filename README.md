@@ -22,6 +22,7 @@
 <p align="center">
   <img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
   <img alt="License: CC0" src="https://img.shields.io/badge/License-CC0--1.0-lightgrey.svg" />
+  <a href="https://m8ven.ai/mcp/nishkohli96-awesome-apps-and-skills-tyfrn0?s=readme"><img alt="M8ven Score" src="https://m8ven.ai/badge/mcp/nishkohli96-awesome-apps-and-skills-tyfrn0" /></a>
 </p>
 
 Each entry has a colored type badge:
