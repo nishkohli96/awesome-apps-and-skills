@@ -4,6 +4,10 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 
 ## Design Inspiration
 
+- **[APPLORE](https://applore.app/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  Library of 18,000+ App Store and Google Play icons with past versions archived, plus AI app icon and screenshot tools.<br>
+  🏷 `app-icons` `design-inspiration` `mobile-design`<br>
+  💰 freemium
 - **[Deck.gallery](https://www.deck.gallery/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   Curated gallery of well-designed presentation decks, slides, keynotes and brand guidelines.<br>
   🏷 `presentations` `slides` `design-inspiration`<br>
