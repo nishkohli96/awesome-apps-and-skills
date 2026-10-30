@@ -43,3 +43,7 @@ _Resume, job search and personal productivity resources._
 - **[Reminder Desk](https://github.com/nishkohli96/reminder-desk)** <img align="absmiddle" alt="plugin" src="https://img.shields.io/badge/plugin-bf3989?style=flat-square"><br>
   Claude plugin and skill for daily to-do reminders that send push notifications until you tick each task off.<br>
   🏷 `reminders` `todo` `push-notifications` `claude-plugin`
+- **[Ripple](https://ripplefocus.github.io/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Free Android and iOS 16+ focus app that blocks Shorts and Reels while keeping chat, with parent unlock and uninstall lock.<br>
+  🏷 `focus` `screen-time` `android` `ios`<br>
+  💰 free
