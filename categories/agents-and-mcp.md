@@ -54,6 +54,12 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 - **[camofox-browser](https://github.com/jo-inc/camofox-browser)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Headless browser server for AI agents, built on Camoufox with fingerprint spoofing as a Puppeteer and Playwright replacement.<br>
   🏷 `headless-browser` `browser-automation` `ai-agents` `scraping`
+- **[CurlShot](https://curlshot.com/)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Screenshot API with a remote MCP server: renders a URL as PNG, JPEG, WebP, PDF or a scrolling video for agents.<br>
+  🏷 `mcp` `screenshots` `api` `web-capture`<br>
+  💰 freemium<br>
+  🔗 [mcp](https://curlshot.com/api/mcp)
+
 - **[DC Hub](https://github.com/azmartone67/dchub-mcp-server)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Live data layer for data-center site selection; DCPI scores grid power across 300+ markets daily (94 MCP tools).<br>
   🏷 `mcp` `data-centers` `energy` `site-selection`<br>
