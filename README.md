@@ -31,7 +31,7 @@ Each entry has a colored type badge:
 
 ## Categories
 
-- 💻 [Coding](categories/coding.md) – Skills, MCP servers and apps for writing, reviewing and shipping code.
+- 💻 [Coding](categories/coding.md) – Skills, MCP servers and apps for writing, reviewing, testing and shipping code.
 - ✍️ [Writing & Editing](categories/writing-and-editing.md) – Tools and apps for drafting, editing and publishing text.
 - 📄 [Documents & Files](categories/documents-and-files.md) – Create, edit, store and share documents, slides, PDFs and files.
 - 🎬 [Media](categories/media.md) – Tools for creating, editing, downloading and playing video, audio, images and 3D.
