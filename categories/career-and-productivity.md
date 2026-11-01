@@ -25,6 +25,10 @@ _Resume, job search and personal productivity resources._
   Step-by-step Notion playbook for optimizing a LinkedIn profile for recruiters, with prompts, free tools and examples.<br>
   🏷 `linkedin` `job-search` `profile` `recruiters`<br>
   💰 free
+- **[NeverApply](https://neverapply.co/features/mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Hosted MCP server that lets Claude, Cursor and other MCP clients search jobs, tailor resumes and apply to jobs you approve.<br>
+  🏷 `job-search` `mcp` `resume` `auto-apply`<br>
+  💰 freemium
 
 ## Productivity
 
@@ -39,6 +43,14 @@ _Resume, job search and personal productivity resources._
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
   💰 freemium
+- **[Mind Elixir](https://app.mind-elixir.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Mind mapping web app for turning ideas into interactive maps, with outline mode, tags, local storage and MCP support.<br>
+  🏷 `mind-map` `productivity` `mcp`<br>
+  💰 freemium
+- **[LayoutKeeper](https://github.com/tumingke0/LayoutKeeper)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Native macOS menu bar app that restores windows to their assigned monitor and Space on reconnect, with per-port arrangements and DDC brightness sync.<br>
+  🏷 `macos` `window-manager` `multi-monitor` `open-source`<br>
+  💰 free
 - **[Orkas](https://github.com/Orkas-AI/Orkas)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Local-first desktop workspace where AI specialists turn project goals and files into reports, slides and code; model usage may cost extra.<br>
   🏷 `ai-agents` `productivity` `local-first`<br>
@@ -46,3 +58,7 @@ _Resume, job search and personal productivity resources._
 - **[Reminder Desk](https://github.com/nishkohli96/reminder-desk)** <img align="absmiddle" alt="plugin" src="https://img.shields.io/badge/plugin-bf3989?style=flat-square"><br>
   Claude plugin and skill for daily to-do reminders that send push notifications until you tick each task off.<br>
   🏷 `reminders` `todo` `push-notifications` `claude-plugin`
+- **[Ripple](https://ripplefocus.github.io/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Free Android and iOS 16+ focus app that blocks Shorts and Reels while keeping chat, with parent unlock and uninstall lock.<br>
+  🏷 `focus` `screen-time` `android` `ios`<br>
+  💰 free
