@@ -89,17 +89,29 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 
 ## AI Image & Video Generation
 
-- **[A2O LITE NEON AI Dance](https://a2oliteai.org)** — Independent AI: two photos → 15s 480p 16:9 duo neon dance with reference soundtrack (Paid from $7.99). Unofficial. `Paid`
-- **[Alors On Danse Video Maker](https://alorsondansevideo.com)** — Independent AI: two photos → 13s studio dance video (Paid; not affiliated with Stromae/TikTok). `Paid`
-- **[Bad Times AI](https://badtimesai.dev)** — Independent AI dance effect: one photo → 14–15s portrait dance video (Paid from $7.99). `Paid`
-- **[dime dime baby ai](https://dimedimebabyai.dev)** — Independent AI: one photo → ~5s 480p 9:16 AI dance (Quince Classic or Party Groove) (Paid from $7.99). `Paid`
-  Independent text/image-to-video via the Grok Imagine API (not affiliated with xAI or X); free trial credits.<br>
-  🏷 `ai-video` `text-to-video` `image-to-video`<br>
-  💰 freemium
+- **[A2O LITE NEON AI Dance](https://a2oliteai.org)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  AI dance effect that turns two photos into a 15s 480p 16:9 duo neon dance video with a reference soundtrack. Independent and unofficial; paid from $7.99.<br>
+  🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
+  💰 paid
+- **[Alors On Danse Video Maker](https://alorsondansevideo.com)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  AI effect that turns two photos into a 13s studio dance video. Independent; not affiliated with Stromae or TikTok.<br>
+  🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
+  💰 paid
+- **[Bad Times AI](https://badtimesai.dev)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  AI dance effect that turns one photo into a 14 to 15s portrait dance video. Independent; paid from $7.99.<br>
+  🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
+  💰 paid
+- **[dime dime baby ai](https://dimedimebabyai.dev)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  AI dance effect that turns one photo into a ~5s 480p 9:16 dance video, in Quince Classic or Party Groove styles. Independent; paid from $7.99.<br>
+  🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
+  💰 paid
 - **[Duix Avatar](https://github.com/duixcom/Duix-Avatar)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Offline Windows app that clones your appearance and voice into an AI avatar, then drives it with text or audio to produce lip-synced talking videos.<br>
   🏷 `digital-human` `avatar` `voice-cloning` `lip-sync` `offline`
 - **[GrokVideo Studio](https://grokvideogenerator.dev)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Independent text/image-to-video via the Grok Imagine API (not affiliated with xAI or X); free trial credits.<br>
+  🏷 `ai-video` `text-to-video` `image-to-video`<br>
+  💰 freemium
 - **[Hailuo AI](https://hailuoai.video/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Create AI videos and images from text or photos, with video, image and audio tools for creators. Built on MiniMax models.<br>
   🏷 `ai-video` `ai-image` `text-to-video` `minimax`<br>
@@ -108,8 +120,14 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Visual AI platform with its own generation models, a creator studio and an API for running them in production.<br>
   🏷 `ai-video` `ai-image` `generative-ai` `api`<br>
   💰 freemium
-- **[I Found You in the Crowd AI](https://ifoundyouinthecrowdai.com)** — Independent AI scene effect: two photos → balcony/spotlight meeting video (Paid from $7.99). `Paid`
-- **[KDA Firestarter AI Dance](https://kdafirestarterai.dev)** — Independent unofficial AI: one photo → 13s 480p 21:9 solo dance video (Paid from $7.99). Not affiliated with Riot Games or K/DA. `Paid`
+- **[I Found You in the Crowd AI](https://ifoundyouinthecrowdai.com)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  AI scene effect that turns two photos into a balcony and spotlight meeting video. Independent; paid from $7.99.<br>
+  🏷 `ai-video` `photo-to-video` `effects`<br>
+  💰 paid
+- **[KDA Firestarter AI Dance](https://kdafirestarterai.dev)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  AI dance effect that turns one photo into a 13s 480p 21:9 solo dance video. Independent and unofficial; not affiliated with Riot Games or K/DA; paid from $7.99.<br>
+  🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
+  💰 paid
 - **[Open Generative AI](https://muapi.ai/open-generative-ai)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Browser studio for generating images and video with 200+ AI models such as Flux, Kling and Veo.<br>
   🏷 `image-generation` `video-generation` `ai-studio`<br>
