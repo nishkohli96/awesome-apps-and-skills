@@ -1,0 +1,97 @@
+'use client';
+
+import { useCallback, useState } from 'react';
+import Link from 'next/link';
+import { ICON, REPO_URL } from '@/lib/constants';
+import { useFavourites } from '@/lib/favourites';
+import { MobileMenu } from './MobileMenu';
+import { SearchCommand } from './search/SearchCommand';
+import { MobileSearch } from './search/MobileSearch';
+import { ThemeToggle } from './ThemeToggle';
+import { Icon } from './ui/Icon';
+
+const navLink
+  = 'inline-flex h-9 items-center gap-1.5 rounded-[8px] px-3 text-[14px] leading-none font-medium text-ink no-underline hover:bg-surface-2';
+
+export function Appbar() {
+  const { slugs } = useFavourites();
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const openMobileSearch = useCallback(() => setSearchOpen(true), []);
+
+  return (
+    <header className="sticky top-0 z-20 border-b border-border bg-[color-mix(in_oklab,var(--bg)_88%,transparent)] backdrop-blur-[8px]">
+      <div className="mx-auto flex h-16 max-w-[1280px] items-center gap-5 px-[clamp(16px,3vw,32px)]">
+        <Link
+          href="/"
+          className="mr-auto flex shrink-0 items-center gap-2.5 text-ink no-underline max-[760px]:gap-2"
+        >
+          <span
+            aria-hidden="true"
+            className="grid size-7 place-items-center rounded-[8px] bg-accent font-serif text-[22px] leading-none text-[#1a1814] italic"
+          >
+            &amp;
+          </span>
+          <span className="text-[15px] font-semibold tracking-[-0.01em]">
+            Awesome Apps
+            <span className="max-[760px]:hidden">
+              {' '}
+              <span className="text-ink-3">&amp;</span>
+              {' '}
+              Skills
+            </span>
+          </span>
+        </Link>
+
+        <SearchCommand variant="appbar" shortcuts onShortcutFallback={openMobileSearch} />
+
+        <nav aria-label="Primary" className="flex shrink-0 items-center gap-0.5 max-[760px]:hidden">
+          <Link href="/#new" className={navLink}>
+            New
+          </Link>
+          <Link href="/favourites" aria-label={`Favourites, ${slugs.length} saved`} className={navLink}>
+            <Icon d={ICON.heart} />
+            <span className="font-mono text-[12px]">
+              {slugs.length}
+            </span>
+          </Link>
+          <Link href="/submit" className={navLink}>
+            Submit
+          </Link>
+          <a
+            href={REPO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-2 inline-flex h-[34px] items-center gap-1.5 rounded-[8px] border border-border px-2.5 text-[13px] leading-none font-medium text-ink no-underline hover:bg-surface-2"
+          >
+            <Icon d={ICON.star} size={15} />
+            Star
+            <span className="sr-only">on GitHub (opens in new tab)</span>
+          </a>
+          <ThemeToggle />
+        </nav>
+
+        <div className="hidden items-center max-[760px]:flex">
+          <button
+            type="button"
+            aria-label="Search"
+            onClick={openMobileSearch}
+            className="grid size-11 place-items-center rounded-[8px] border-0 bg-transparent text-ink"
+          >
+            <Icon d={ICON.search} size={20} />
+          </button>
+          <button
+            type="button"
+            aria-label="Menu"
+            onClick={() => setMenuOpen(true)}
+            className="grid size-11 place-items-center rounded-[8px] border-0 bg-transparent text-ink"
+          >
+            <Icon d={ICON.menu} size={20} />
+          </button>
+        </div>
+      </div>
+      <MobileSearch open={searchOpen} onOpenChange={setSearchOpen} />
+      <MobileMenu open={menuOpen} onOpenChange={setMenuOpen} />
+    </header>
+  );
+}
