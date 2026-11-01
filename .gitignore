@@ -4,3 +4,4 @@ graft
 .claude
 
 node_modules
+tsconfig.tsbuildinfo
