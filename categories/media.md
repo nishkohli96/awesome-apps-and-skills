@@ -34,12 +34,19 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude skill that teaches Claude to create and edit motion graphics videos with Remotion from a plain-English prompt.<br>
   🏷 `motion-graphics` `remotion` `video-editing` `claude-skills`
+- **[claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Claude Code skill that adds effects to your video from a single command, with face tracking and behind-your-head layers.<br>
+  🏷 `video-effects` `video-editing` `face-tracking` `claude-skills`
 - **[EffectCraft](https://github.com/storytold/effectcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source motion graphics and compositing app written in Rust, a clean-room take on After Effects.<br>
   🏷 `motion-graphics` `compositing` `rust` `video`
 - **[HyperFrames](https://www.hyperframes.dev/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   Open-source framework that renders HTML into MP4 video for AI agents, plus a desktop Studio editor.<br>
   🏷 `html-to-video` `video-rendering` `agent-skills` `motion-graphics`
+- **[Prompt Motion](https://prompt-motion.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  Gallery of motion videos made with Claude, with the prompts and skills behind each one, plus customizable templates.<br>
+  🏷 `motion-design` `prompts` `video` `gallery`<br>
+  💰 free
 - **[Remotion](https://www.remotion.dev/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"> <img align="absmiddle" alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"><br>
   Framework for making videos and motion graphics with React code. Some companies need a paid license.<br>
   🏷 `video` `react` `motion-graphics` `programmatic-video`<br>
@@ -81,6 +88,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Browser studio for generating images and video with 200+ AI models such as Flux, Kling and Veo.<br>
   🏷 `image-generation` `video-generation` `ai-studio`<br>
   💰 freemium
+- **[OpenMontage](https://openmontage.video/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source agentic video production system that turns a coding agent into a studio. A Windows desktop app is in private alpha.<br>
+  🏷 `ai-video` `video-production` `ai-agents` `open-source`
 
 ## Audio & Music
 

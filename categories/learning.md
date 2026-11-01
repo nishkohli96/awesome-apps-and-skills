@@ -4,6 +4,11 @@ _Guides, books, courses, learning tools, newsletters and channels worth followin
 
 ## Books & Courses
 
+- **[AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch)** <img align="absmiddle" alt="guide" src="https://img.shields.io/badge/guide-9a6700?style=flat-square"><br>
+  Free, open-source course of 542 lessons across 20 phases, where you build model internals, retrieval pipelines and agent runtimes in Python, TypeScript, Rust and Julia.<br>
+  🏷 `ai-engineering` `course` `llm` `ai-agents` `learning`<br>
+  💰 free<br>
+  🔗 [website](https://aiengineeringfromscratch.com)
 - **[Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)** <img align="absmiddle" alt="guide" src="https://img.shields.io/badge/guide-9a6700?style=flat-square"><br>
   Official code for the O'Reilly book, with notebooks for every example on how LLMs work and how to use them.<br>
   🏷 `llm` `book` `notebooks` `learning`
