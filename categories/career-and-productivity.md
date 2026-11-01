@@ -10,6 +10,9 @@ _Resume, job search and personal productivity resources._
 - **[career-ops](https://github.com/career-ops-hq/career-ops)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Open-source AI job search agent that scores jobs against your CV and tailors resumes, cover letters and interview prep.<br>
   🏷 `job-search` `resume` `ats` `claude-skills`
+- **[Dossier](https://github.com/AienTech/dossier)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Self-hosted job search app that writes a tailored resume and cover letter for each posting from your profile and tracks every application. Works with local or hosted AI models.<br>
+  🏷 `job-search` `resume` `cover-letter` `self-hosted` `ollama`
 - **[freehire](https://freehire.me/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Open-source job search engine indexing tech jobs from company career boards, with a CLI, MCP server and Chrome extension.<br>
   🏷 `jobs` `job-search` `cli` `mcp`<br>
