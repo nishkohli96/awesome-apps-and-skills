@@ -7,6 +7,10 @@ _Create, edit, store and share documents, slides, PDFs and files._
 - **[Codex Slides](https://github.com/nexu-io/codex-slides)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source AI slide studio inside Codex that researches, designs and exports decks as PPTX or PDF. Needs no extra API keys.<br>
   🏷 `slides` `presentations` `pptx` `ai-agents`
+- **[Presenton](https://presenton.ai/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  AI presentation maker that turns prompts and documents into editable PPTX or PDF decks. Use the cloud app, self-host the open-source version or automate it through the API.<br>
+  🏷 `slides` `presentations` `pptx` `open-source` `api`<br>
+  💰 freemium
 - **[WordCraft](https://github.com/storytold/wordcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source word processor written in Rust, a clean-room take on Microsoft Word.<br>
   🏷 `word-processor` `documents` `rust`

@@ -43,6 +43,10 @@ _Resume, job search and personal productivity resources._
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
   💰 freemium
+- **[Meetily](https://meetily.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Privacy-first AI meeting notes with local transcription and no meeting bot. Summaries run on a local model or your own API key, and the core is open source.<br>
+  🏷 `meeting-notes` `transcription` `privacy` `open-source` `offline`<br>
+  💰 freemium
 - **[Mind Elixir](https://app.mind-elixir.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Mind mapping web app for turning ideas into interactive maps, with outline mode, tags, local storage and MCP support.<br>
   🏷 `mind-map` `productivity` `mcp`<br>

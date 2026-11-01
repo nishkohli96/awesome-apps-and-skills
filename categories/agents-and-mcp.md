@@ -7,12 +7,18 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 - **[agency-agents](https://github.com/msitarzewski/agency-agents)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Collection of specialist AI agent definitions, from engineering to marketing, that you install into coding agents like Claude Code and Cursor.<br>
   🏷 `ai-agents` `agent-roster` `prompts` `claude-code`
+- **[AgenticSeek](https://github.com/Fosowl/agenticSeek)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Fully local, private alternative to Manus AI: an autonomous agent that browses the web, writes and runs code and plans multi-step tasks on your own hardware with local models.<br>
+  🏷 `ai-agents` `local-llm` `web-browsing` `self-hosted` `privacy`
 - **[awesome-llm-apps](https://github.com/shubhamsaboo/awesome-llm-apps)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-7d5ba6?style=flat-square"><br>
   Collection of 100+ open-source AI agents, agent skills and RAG apps you can clone and run.<br>
   🏷 `ai-agents` `rag` `llm-apps` `templates`
 - **[OpenClaw](https://openclaw.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source AI assistant that runs on your machine and works from WhatsApp, Telegram or any chat app.<br>
   🏷 `ai-assistant` `agent` `self-hosted` `chat`
+- **[OpenCode](https://opencode.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source coding agent for the terminal, desktop and IDEs that works with models from many providers.<br>
+  🏷 `coding-agent` `terminal` `open-source` `cli`
 - **[Paperclip](https://github.com/paperclipai/paperclip)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source app that orchestrates a team of AI agents, with goals, budgets and a dashboard to track work and costs.<br>
   🏷 `agent-orchestration` `ai-agents` `self-hosted` `dashboard`

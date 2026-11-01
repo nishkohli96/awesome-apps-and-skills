@@ -51,6 +51,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Framework for making videos and motion graphics with React code. Some companies need a paid license.<br>
   🏷 `video` `react` `motion-graphics` `programmatic-video`<br>
   💰 freemium
+- **[Story Animator](https://github.com/deenukhan/story-animator)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Claude Code skill that turns a one-line idea into a narrated 2D animated story video, with every frame drawn in code using Remotion and the voice from ElevenLabs.<br>
+  🏷 `animation` `storytelling` `remotion` `elevenlabs` `claude-skills`
 - **[Wiggle](https://github.com/talknerdytome-labs/wiggle-claude-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude Code skill that turns static logos into animated Lottie, GIF and MP4 files with preset motion patterns.<br>
   🏷 `logo-animation` `lottie` `animation` `claude-skills`
@@ -94,6 +97,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Free AI image & video studio with a prompt library; freemium signup credits, no card required.<br>
   🏷 `ai-image` `ai-video` `prompt-library` `image-generation`<br>
   💰 freemium
+- **[Duix Avatar](https://github.com/duixcom/Duix-Avatar)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Offline Windows app that clones your appearance and voice into an AI avatar, then drives it with text or audio to produce lip-synced talking videos.<br>
+  🏷 `digital-human` `avatar` `voice-cloning` `lip-sync` `offline`
 - **[Hailuo AI](https://hailuoai.video/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Create AI videos and images from text or photos, with video, image and audio tools for creators. Built on MiniMax models.<br>
   🏷 `ai-video` `ai-image` `text-to-video` `minimax`<br>
