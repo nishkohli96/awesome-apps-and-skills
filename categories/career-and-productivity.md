@@ -43,6 +43,10 @@ _Resume, job search and personal productivity resources._
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
   💰 freemium
+- **[LayoutKeeper](https://github.com/tumingke0/LayoutKeeper)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Native macOS menu bar app that restores windows to their assigned monitor and Space on reconnect, with per-port arrangements and DDC brightness sync.<br>
+  🏷 `macos` `window-manager` `multi-monitor` `open-source`<br>
+  💰 free
 - **[Meetily](https://meetily.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Privacy-first AI meeting notes with local transcription and no meeting bot. Summaries run on a local model or your own API key, and the core is open source.<br>
   🏷 `meeting-notes` `transcription` `privacy` `open-source` `offline`<br>
@@ -51,10 +55,6 @@ _Resume, job search and personal productivity resources._
   Mind mapping web app for turning ideas into interactive maps, with outline mode, tags, local storage and MCP support.<br>
   🏷 `mind-map` `productivity` `mcp`<br>
   💰 freemium
-- **[LayoutKeeper](https://github.com/tumingke0/LayoutKeeper)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
-  Native macOS menu bar app that restores windows to their assigned monitor and Space on reconnect, with per-port arrangements and DDC brightness sync.<br>
-  🏷 `macos` `window-manager` `multi-monitor` `open-source`<br>
-  💰 free
 - **[Orkas](https://github.com/Orkas-AI/Orkas)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Local-first desktop workspace where AI specialists turn project goals and files into reports, slides and code; model usage may cost extra.<br>
   🏷 `ai-agents` `productivity` `local-first`<br>

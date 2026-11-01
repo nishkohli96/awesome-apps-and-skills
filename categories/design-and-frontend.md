@@ -48,6 +48,12 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 - **[animos](https://animos.app/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Browser tool with 25 animation templates for showcasing designs, exporting MP4 or WebM.<br>
   🏷 `animation` `motion-templates` `design-showcase`
+- **[gsap-skills](https://github.com/greensock/gsap-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Official GSAP skills that teach coding agents correct GreenSock usage: core API, timelines, ScrollTrigger, plugins, React and other frameworks, and performance.<br>
+  🏷 `gsap` `animation` `scrolltrigger` `claude-skills`
+- **[Rive Agent Skills](https://github.com/rive-app/skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Official Rive skill that tells coding agents when Rive fits and points them to the runtime docs and CLI for building interactive animations. Installs as a plugin for Claude Code, Codex, Gemini CLI and more.<br>
+  🏷 `rive` `interactive-animation` `claude-skills` `ui-motion`
 - **[Transitions.dev](https://transitions.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Library of production-ready UI transitions to copy and paste, or use with your coding agent through a skill.<br>
   🏷 `ui-motion` `transitions` `animation` `claude-skills`<br>

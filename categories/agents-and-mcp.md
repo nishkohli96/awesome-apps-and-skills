@@ -65,24 +65,20 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   🏷 `mcp` `screenshots` `api` `web-capture`<br>
   💰 freemium<br>
   🔗 [mcp](https://curlshot.com/api/mcp)
-
 - **[DC Hub](https://github.com/azmartone67/dchub-mcp-server)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Live data layer for data-center site selection; DCPI scores grid power across 300+ markets daily (94 MCP tools).<br>
   🏷 `mcp` `data-centers` `energy` `site-selection`<br>
   💰 freemium<br>
   🔗 [mcp](https://dchub.cloud/mcp)
-
 - **[deed.page](https://deed.page/)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Static hosting for AI agents: publish HTML to a live `<slug>.deed.page` URL with one HTTP PUT or a remote MCP call.<br>
   🏷 `mcp` `hosting` `static-sites` `ai-agents`<br>
   💰 freemium<br>
   🔗 [mcp](https://deed.page/mcp)
-
 - **[Firecrawl](https://www.firecrawl.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
   🏷 `web-scraping` `ai-agents` `api` `crawler`<br>
   💰 freemium
-
 - **[PlaceCall](https://github.com/voygr-tech/placecall)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Lets an AI agent phone US businesses to book, ask questions or get quotes, and returns the call outcome, transcript and recording.<br>
   🏷 `mcp` `phone-calls` `voice-agents` `ai-agents`<br>

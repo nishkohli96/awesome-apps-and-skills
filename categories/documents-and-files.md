@@ -17,6 +17,10 @@ _Create, edit, store and share documents, slides, PDFs and files._
 
 ## Files & PDF
 
+- **[delphitools](https://delphi.tools/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Collection of small utilities for images, PDFs, audio, video, colour, text and dev work. No logins or data collection, everything runs locally in your browser.<br>
+  🏷 `utilities` `pdf` `image-tools` `privacy` `open-source`<br>
+  💰 free
 - **[iLovePDF PDF to Markdown](https://www.ilovepdf.com/pdf-to-markdown)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Online converter that turns a PDF into a Markdown file, keeping headings, tables and lists.<br>
   🏷 `pdf` `markdown` `file-conversion` `online-tool`<br>
