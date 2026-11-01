@@ -1,6 +1,6 @@
 # 💻 Coding
 
-_Skills, MCP servers and apps for writing, reviewing and shipping code._
+_Skills, MCP servers and apps for writing, reviewing, testing and shipping code._
 
 ## Agent Skills
 
@@ -27,3 +27,9 @@ _Skills, MCP servers and apps for writing, reviewing and shipping code._
 - **[REA](https://github.com/morluto/rea)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   MCP server that lets AI agents reverse engineer apps, from app behavior down to native binaries.<br>
   🏷 `reverse-engineering` `binary-analysis` `agents` `mcp`
+
+## Testing & QA
+
+- **[agent-qa](https://github.com/vostride/agent-qa)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Tests web and mobile apps via CLI/MCP, with persistent memidex memory, validated self-improvement, and reviewable run evidence.<br>
+  🏷 `testing` `mcp` `memory` `self-improvement`
