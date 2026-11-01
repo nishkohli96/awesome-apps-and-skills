@@ -7,12 +7,18 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 - **[agency-agents](https://github.com/msitarzewski/agency-agents)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Collection of specialist AI agent definitions, from engineering to marketing, that you install into coding agents like Claude Code and Cursor.<br>
   🏷 `ai-agents` `agent-roster` `prompts` `claude-code`
+- **[AgenticSeek](https://github.com/Fosowl/agenticSeek)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Fully local, private alternative to Manus AI: an autonomous agent that browses the web, writes and runs code and plans multi-step tasks on your own hardware with local models.<br>
+  🏷 `ai-agents` `local-llm` `web-browsing` `self-hosted` `privacy`
 - **[awesome-llm-apps](https://github.com/shubhamsaboo/awesome-llm-apps)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-7d5ba6?style=flat-square"><br>
   Collection of 100+ open-source AI agents, agent skills and RAG apps you can clone and run.<br>
   🏷 `ai-agents` `rag` `llm-apps` `templates`
 - **[OpenClaw](https://openclaw.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source AI assistant that runs on your machine and works from WhatsApp, Telegram or any chat app.<br>
   🏷 `ai-assistant` `agent` `self-hosted` `chat`
+- **[OpenCode](https://opencode.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source coding agent for the terminal, desktop and IDEs that works with models from many providers.<br>
+  🏷 `coding-agent` `terminal` `open-source` `cli`
 - **[Paperclip](https://github.com/paperclipai/paperclip)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source app that orchestrates a team of AI agents, with goals, budgets and a dashboard to track work and costs.<br>
   🏷 `agent-orchestration` `ai-agents` `self-hosted` `dashboard`
@@ -59,24 +65,20 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   🏷 `mcp` `screenshots` `api` `web-capture`<br>
   💰 freemium<br>
   🔗 [mcp](https://curlshot.com/api/mcp)
-
 - **[DC Hub](https://github.com/azmartone67/dchub-mcp-server)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Live data layer for data-center site selection; DCPI scores grid power across 300+ markets daily (94 MCP tools).<br>
   🏷 `mcp` `data-centers` `energy` `site-selection`<br>
   💰 freemium<br>
   🔗 [mcp](https://dchub.cloud/mcp)
-
 - **[deed.page](https://deed.page/)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Static hosting for AI agents: publish HTML to a live `<slug>.deed.page` URL with one HTTP PUT or a remote MCP call.<br>
   🏷 `mcp` `hosting` `static-sites` `ai-agents`<br>
   💰 freemium<br>
   🔗 [mcp](https://deed.page/mcp)
-
 - **[Firecrawl](https://www.firecrawl.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
   🏷 `web-scraping` `ai-agents` `api` `crawler`<br>
   💰 freemium
-
 - **[PlaceCall](https://github.com/voygr-tech/placecall)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Lets an AI agent phone US businesses to book, ask questions or get quotes, and returns the call outcome, transcript and recording.<br>
   🏷 `mcp` `phone-calls` `voice-agents` `ai-agents`<br>

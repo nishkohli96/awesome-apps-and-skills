@@ -16,7 +16,6 @@ _Skills, MCP servers and apps for writing, reviewing, testing and shipping code.
 - **[replica-skill](https://github.com/Jakeschincariol/replica-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Eleven free Claude skills that reverse-engineer, rebuild, test and launch a clone of any app.<br>
   🏷 `claude-skills` `app-clone` `reverse-engineering`
-
 - **[Solaris Dev Shop](https://github.com/Shaisolaris/solaris-dev-shop)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   61 portable specialist skills with searchable discovery and an explainable deterministic task router.<br>
   🏷 `agent-skills` `discovery` `task-router`<br>

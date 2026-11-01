@@ -14,6 +14,13 @@ _Tools and apps for drafting, editing and publishing text._
   Agent skill that removes 20+ patterns of AI slop from writing while keeping your own voice.<br>
   🏷 `ai-writing` `editing` `claude-skills`
 
+## Grammar & Proofreading
+
+- **[Harper](https://writewithharper.com/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Free, open-source grammar checker that runs on your device, so your text stays private. Written in Rust, fast and works offline.<br>
+  🏷 `grammar` `proofreading` `privacy` `offline` `open-source`<br>
+  💰 free
+
 ## Dictation
 
 - **[Handy](https://handy.computer/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>

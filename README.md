@@ -14,9 +14,12 @@
 </p>
 
 <p align="center">
-  <b>⭐ Star this repo to keep it close</b> ·
+  <b>⭐ Star this repo to keep it close</b>
+</p>
+<p align="center">
   <a href="CONTRIBUTING.md">Contribute</a> ·
-  <a href="https://github.com/nishkohli96/awesome-apps-and-skills/issues/new?template=suggest-resource.yml">Suggest a resource</a>
+  <a href="https://github.com/nishkohli96/awesome-apps-and-skills/compare">Add a resource (open a PR)</a> ·
+  <a href="https://github.com/sponsors/nishkohli96">❤️ Sponsor</a>
 </p>
 
 <p align="center">
@@ -72,7 +75,7 @@ Add this resource to the list: <URL>
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Add an entry to the matching file in [`categories/`](categories/), or run the AI prompt above.
+See [CONTRIBUTING.md](CONTRIBUTING.md). To add a tool, open a pull request (please don't open an issue): add an entry to the matching file in [`categories/`](categories/), or run the AI prompt above.
 
 ## License
 

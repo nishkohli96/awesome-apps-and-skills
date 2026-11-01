@@ -10,6 +10,9 @@ _Resume, job search and personal productivity resources._
 - **[career-ops](https://github.com/career-ops-hq/career-ops)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Open-source AI job search agent that scores jobs against your CV and tailors resumes, cover letters and interview prep.<br>
   🏷 `job-search` `resume` `ats` `claude-skills`
+- **[Dossier](https://github.com/AienTech/dossier)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Self-hosted job search app that writes a tailored resume and cover letter for each posting from your profile and tracks every application. Works with local or hosted AI models.<br>
+  🏷 `job-search` `resume` `cover-letter` `self-hosted` `ollama`
 - **[freehire](https://freehire.me/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Open-source job search engine indexing tech jobs from company career boards, with a CLI, MCP server and Chrome extension.<br>
   🏷 `jobs` `job-search` `cli` `mcp`<br>
@@ -40,14 +43,18 @@ _Resume, job search and personal productivity resources._
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
   💰 freemium
-- **[Mind Elixir](https://app.mind-elixir.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
-  Mind mapping web app for turning ideas into interactive maps, with outline mode, tags, local storage and MCP support.<br>
-  🏷 `mind-map` `productivity` `mcp`<br>
-  💰 freemium
 - **[LayoutKeeper](https://github.com/tumingke0/LayoutKeeper)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Native macOS menu bar app that restores windows to their assigned monitor and Space on reconnect, with per-port arrangements and DDC brightness sync.<br>
   🏷 `macos` `window-manager` `multi-monitor` `open-source`<br>
   💰 free
+- **[Meetily](https://meetily.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Privacy-first AI meeting notes with local transcription and no meeting bot. Summaries run on a local model or your own API key, and the core is open source.<br>
+  🏷 `meeting-notes` `transcription` `privacy` `open-source` `offline`<br>
+  💰 freemium
+- **[Mind Elixir](https://app.mind-elixir.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Mind mapping web app for turning ideas into interactive maps, with outline mode, tags, local storage and MCP support.<br>
+  🏷 `mind-map` `productivity` `mcp`<br>
+  💰 freemium
 - **[Orkas](https://github.com/Orkas-AI/Orkas)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Local-first desktop workspace where AI specialists turn project goals and files into reports, slides and code; model usage may cost extra.<br>
   🏷 `ai-agents` `productivity` `local-first`<br>
