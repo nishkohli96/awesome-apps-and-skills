@@ -146,6 +146,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Free open-source desktop music player without ads or tracking, with search, playlists and streaming.<br>
   🏷 `music-player` `streaming` `desktop`<br>
   💰 free
+- **[Roam Radio](https://roamradios.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  Free web directory and player for live radio stations worldwide, browsable by country, genre, language or on a globe map.<br>
+  🏷 `radio` `streaming` `music`<br>
+  💰 free
 - **[Udio](https://www.udio.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   AI music generator for creating, discovering and sharing songs in seconds.<br>
   🏷 `ai-music` `music-generation` `audio`
