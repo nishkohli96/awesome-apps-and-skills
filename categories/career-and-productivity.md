@@ -55,6 +55,10 @@ _Resume, job search and personal productivity resources._
   Mind mapping web app for turning ideas into interactive maps, with outline mode, tags, local storage and MCP support.<br>
   🏷 `mind-map` `productivity` `mcp`<br>
   💰 freemium
+- **[minulo](https://minulo.app/en/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  iPhone app that hides Instagram Reels, YouTube Shorts and TikTok For You while DMs, the following feed and search keep working.<br>
+  🏷 `focus` `screen-time` `ios`<br>
+  💰 freemium
 - **[Orkas](https://github.com/Orkas-AI/Orkas)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Local-first desktop workspace where AI specialists turn project goals and files into reports, slides and code; model usage may cost extra.<br>
   🏷 `ai-agents` `productivity` `local-first`<br>
