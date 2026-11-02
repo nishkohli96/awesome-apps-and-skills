@@ -2,48 +2,62 @@ import 'server-only';
 import { execFileSync } from 'node:child_process';
 import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
+import { resolveGithubHandle } from './authors';
 import { parseCategoryFile } from './parse';
 import type { Category, Tool, ToolType } from './types';
 
 const REPO_ROOT = path.resolve(process.cwd(), '..');
 const CATEGORIES_DIR = path.join(REPO_ROOT, 'categories');
 const NEW_WINDOW_DAYS = 14;
-const HISTORY_DAYS = 30;
 
 interface Data {
   tools: Tool[];
   categories: Category[];
 }
 
+interface Addition {
+  date: string;
+  name: string;
+  email: string;
+}
+
 /**
- * Reads `git log` once to learn when each entry first appeared. An entry that
- * is removed and re-added in the same commit was only moved (alphabetical
- * sorting), so it does not count as new. Returns an empty map without git.
+ * Reads `git log` once to learn when, and by whom, each entry first appeared.
+ * An entry that is removed and re-added in the same commit was only moved
+ * (alphabetical sorting), so that commit does not count as its addition.
+ * Returns an empty map without git, or in a shallow clone, where the oldest
+ * commit would wrongly look like it added everything.
  */
-function readAddedDates(): Map<string, string> {
-  const added = new Map<string, string>();
+function readAdditions(): Map<string, Addition> {
+  const added = new Map<string, Addition>();
+  const git = (args: string[]) =>
+    execFileSync('git', args, {
+      cwd: REPO_ROOT,
+      encoding: 'utf8',
+      maxBuffer: 64 * 1024 * 1024,
+      stdio: ['ignore', 'pipe', 'ignore'],
+    });
   try {
-    const log = execFileSync(
-      'git',
-      [
-        'log',
-        `--since=${HISTORY_DAYS} days ago`,
-        '--format=@@%aI',
-        '-p',
-        '--unified=0',
-        '--',
-        'categories',
-      ],
-      { cwd: REPO_ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] },
-    );
+    if (git(['rev-parse', '--is-shallow-repository']).trim() === 'true') {
+      return added;
+    }
+    const log = git([
+      'log',
+      '--reverse',
+      '--format=@@%aI%x1f%aN%x1f%aE',
+      '-p',
+      '--unified=0',
+      '--',
+      'categories',
+    ]);
     const entry = /^([+-])- \*\*\[(.+?)\]\(/;
-    let date = '';
+    let who: Addition = { date: '', name: '', email: '' };
     let plus = new Set<string>();
     let minus = new Set<string>();
     const commit = () => {
       for (const name of plus) {
         if (!minus.has(name) && !added.has(name)) {
-          added.set(name, date);
+          added.set(name, who);
         }
       }
       plus = new Set();
@@ -52,7 +66,8 @@ function readAddedDates(): Map<string, string> {
     for (const line of log.split('\n')) {
       if (line.startsWith('@@20')) {
         commit();
-        date = line.slice(2);
+        const [date, name, email] = line.slice(2).split('\x1f');
+        who = { date, name, email };
         continue;
       }
       const match = entry.exec(line);
@@ -62,13 +77,13 @@ function readAddedDates(): Map<string, string> {
     }
     commit();
   } catch {
-    // Not a git checkout (or git missing): nothing is flagged as new.
+    // Not a git checkout (or git missing): no dates or authors.
   }
   return added;
 }
 
 function load(): Data {
-  const addedDates = readAddedDates();
+  const additions = readAdditions();
   const now = Date.now();
   const tools: Tool[] = [];
   const categories: Category[] = [];
@@ -78,9 +93,15 @@ function load(): Data {
     const parsed = parseCategoryFile(file.replace(/\.md$/, ''), source);
     categories.push({ ...parsed.category, toolCount: parsed.tools.length });
     for (const tool of parsed.tools) {
-      const addedAt = addedDates.get(tool.name) ?? null;
+      const added = additions.get(tool.name);
+      const addedAt = added?.date ?? null;
       const ageDays = addedAt ? (now - Date.parse(addedAt)) / 86_400_000 : Infinity;
-      tools.push({ ...tool, addedAt, isNew: ageDays < NEW_WINDOW_DAYS });
+      tools.push({
+        ...tool,
+        addedAt,
+        addedBy: added ? { name: added.name, login: resolveGithubHandle(added.email) } : null,
+        isNew: ageDays < NEW_WINDOW_DAYS,
+      });
     }
   }
 

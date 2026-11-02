@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { Providers } from '@/components/Providers';
 import { SITE_NAME } from '@/lib/constants';
 import { getCategories, getTools } from '@/lib/data';
+import { SITE_URL } from '@/lib/site';
 import './globals.css';
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
@@ -18,6 +19,8 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  icons: { icon: '/logo.svg' },
   title: { template: `%s | ${SITE_NAME}`, default: `${SITE_NAME}: a human-curated index of AI tools` },
   description:
     'Claude skills, MCP servers, apps and web tools, picked by a person and linked straight to the source.',

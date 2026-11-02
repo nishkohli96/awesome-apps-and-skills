@@ -167,6 +167,29 @@ export function ToolCard({
           <Icon d={ICON.out} />
           <span className="sr-only">(opens in new tab)</span>
         </a>
+        {tool.addedBy && !sponsored && (
+          <span className="ml-auto inline-flex min-w-0 items-center gap-1.5 pl-2 text-[13px] text-ink-3">
+            Added by
+            {tool.addedBy.login
+              ? (
+                <a
+                  href={`https://github.com/${tool.addedBy.login}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${tool.addedBy.login} on GitHub (opens in new tab)`}
+                  className="truncate font-medium text-ink-2 underline underline-offset-[3px]"
+                >
+                  @
+                  {tool.addedBy.login}
+                </a>
+              )
+              : (
+                <span className="truncate font-medium text-ink-2">
+                  {tool.addedBy.name}
+                </span>
+              )}
+          </span>
+        )}
       </footer>
     </article>
   );

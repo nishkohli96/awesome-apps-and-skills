@@ -1,7 +1,7 @@
 import { PRICINGS, TOOL_TYPES } from './types';
 import type { Category, Pricing, Tool, ToolType } from './types';
 
-export type ParsedTool = Omit<Tool, 'addedAt' | 'isNew'>;
+export type ParsedTool = Omit<Tool, 'addedAt' | 'addedBy' | 'isNew'>;
 export type ParsedCategory = Omit<Category, 'toolCount'>;
 
 const ENTRY_START = /^- \*\*\[(.+?)\]\((.+?)\)\*\*(.*)$/;

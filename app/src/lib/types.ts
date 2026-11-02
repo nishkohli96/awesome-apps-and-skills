@@ -14,6 +14,13 @@ export type ToolType = (typeof TOOL_TYPES)[number];
 export const PRICINGS = ['free', 'freemium', 'paid'] as const;
 export type Pricing = (typeof PRICINGS)[number];
 
+export interface Author {
+  /** Git author name. */
+  name: string;
+  /** GitHub handle, when it could be worked out from the commit email. */
+  login: string | null;
+}
+
 export interface Tool {
   slug: string;
   name: string;
@@ -27,6 +34,8 @@ export interface Tool {
   pricing: Pricing | null;
   /** ISO date the tool was added, when git history knows it. */
   addedAt: string | null;
+  /** Who first committed the entry, when git history knows it. */
+  addedBy: Author | null;
   isNew: boolean;
 }
 

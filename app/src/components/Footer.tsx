@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { REPO_URL } from '@/lib/constants';
 import type { Category } from '@/lib/types';
+import { Logo } from './ui/Logo';
 
 const link = 'text-[14px] text-ink-2 no-underline hover:text-ink';
 
@@ -10,12 +11,7 @@ export function Footer({ categories }: { categories: Category[] }) {
       <div className="mx-auto flex max-w-[1200px] flex-wrap gap-x-16 gap-y-10 px-[clamp(16px,3vw,24px)] pt-12 pb-10">
         <div className="flex flex-[1_1_260px] flex-col gap-3">
           <span className="flex items-center gap-2.5">
-            <span
-              aria-hidden="true"
-              className="grid size-7 place-items-center rounded-[8px] bg-accent font-serif text-[22px] leading-none text-[#1a1814] italic"
-            >
-              &amp;
-            </span>
+            <Logo />
             <span className="text-[15px] font-semibold">Awesome Apps &amp; Skills</span>
           </span>
           <p className="m-0 max-w-[300px] text-[14px] leading-[1.55] text-ink-2">

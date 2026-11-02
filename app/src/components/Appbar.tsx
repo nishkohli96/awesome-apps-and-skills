@@ -8,6 +8,7 @@ import { MobileMenu } from './MobileMenu';
 import { SearchCommand } from './search/SearchCommand';
 import { MobileSearch } from './search/MobileSearch';
 import { ThemeToggle } from './ThemeToggle';
+import { Logo } from './ui/Logo';
 import { Icon } from './ui/Icon';
 
 const navLink
@@ -26,12 +27,7 @@ export function Appbar() {
           href="/"
           className="mr-auto flex shrink-0 items-center gap-2.5 text-ink no-underline max-[760px]:gap-2"
         >
-          <span
-            aria-hidden="true"
-            className="grid size-7 place-items-center rounded-[8px] bg-accent font-serif text-[22px] leading-none text-[#1a1814] italic"
-          >
-            &amp;
-          </span>
+          <Logo />
           <span className="text-[15px] font-semibold tracking-[-0.01em]">
             Awesome Apps
             <span className="max-[760px]:hidden">
