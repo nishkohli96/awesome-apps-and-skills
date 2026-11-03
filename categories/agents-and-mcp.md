@@ -80,7 +80,7 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   🏷 `web-scraping` `ai-agents` `api` `crawler`<br>
   💰 freemium
 - **[Gov Tenders MCP](https://github.com/GeminiGeorge22/gov-tenders-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
-  Local MCP server for public tenders, grants and awards (SAM.gov, Grants.gov, USAspending, UK, EU TED) plus Legistar council agendas.<br>
+  Local stdio MCP server that forwards calls to a hosted Apify endpoint (needs your own `APIFY_TOKEN`), for public tenders, grants and awards (SAM.gov, Grants.gov, USAspending, UK, EU TED) plus Legistar council agendas.<br>
   🏷 `mcp` `government` `tenders` `data`
 - **[PlaceCall](https://github.com/voygr-tech/placecall)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Lets an AI agent phone US businesses to book, ask questions or get quotes, and returns the call outcome, transcript and recording.<br>
