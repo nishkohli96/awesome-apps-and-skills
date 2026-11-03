@@ -11,7 +11,7 @@ import { ToolCard } from './ToolCard';
 
 const label = 'font-mono text-[12px] leading-none font-medium text-ink-3';
 const select
-  = 'h-8 rounded-[8px] border border-border-strong bg-surface px-2 text-[14px] leading-none text-ink';
+  = 'filter-select h-[30px] rounded-[6px] border border-border-strong bg-surface pl-2.5 font-mono text-[12px] leading-none font-medium text-ink';
 
 export function SearchResults() {
   const router = useRouter();

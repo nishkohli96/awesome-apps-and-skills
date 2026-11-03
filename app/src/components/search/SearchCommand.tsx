@@ -20,6 +20,7 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
   const listId = `${id}-list`;
   const optionId = (index: number) => `${id}-option-${index}`;
   const inputRef = useRef<HTMLInputElement>(null);
+  const fieldRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
 
   const close = () => {
@@ -41,7 +42,13 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
       }
       event.preventDefault();
       const input = inputRef.current;
-      if (input && input.offsetParent !== null) {
+      // While the hero field is on screen the appbar one is hidden, so focus the visible one.
+      const heroInput = document.documentElement.dataset.heroSearch === 'visible'
+        ? document.querySelector<HTMLInputElement>('[data-hero-search]')
+        : null;
+      if (heroInput) {
+        heroInput.focus();
+      } else if (input && input.offsetParent !== null) {
         input.focus();
         setOpen(true);
       } else {
@@ -51,6 +58,23 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [shortcuts, onShortcutFallback]);
+
+  // The home page shows one search field at a time: the appbar's appears once the hero's scrolls away.
+  useEffect(() => {
+    const field = fieldRef.current;
+    if (variant !== SearchVariant.Hero || !field) {
+      return;
+    }
+    const root = document.documentElement;
+    const observer = new IntersectionObserver(([entry]) => {
+      root.dataset.heroSearch = entry.isIntersecting ? 'visible' : 'hidden';
+    });
+    observer.observe(field);
+    return () => {
+      observer.disconnect();
+      delete root.dataset.heroSearch;
+    };
+  }, [variant]);
 
   const onBlur = (event: FocusEvent<HTMLDivElement>) => {
     if (!event.currentTarget.contains(event.relatedTarget)) {
@@ -63,11 +87,16 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
 
   return (
     <div
+      ref={fieldRef}
       onBlur={onBlur}
-      className={`relative min-w-0 ${hero ? 'w-full max-w-[640px]' : 'max-w-[440px] flex-1 max-[760px]:hidden'}`}
+      className={`relative min-w-0 ${
+        hero
+          ? 'w-full max-w-[640px]'
+          : 'max-w-[440px] flex-1 max-[760px]:hidden [html[data-hero-search=visible]_&]:invisible'
+      }`}
     >
       <label
-        className={`relative z-30 flex items-center border border-border-strong bg-surface text-ink-3 focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/35 ${
+        className={`relative ${hero ? '' : 'z-30'} flex items-center border border-border-strong bg-surface text-ink-3 focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/35 ${
           hero
             ? 'h-[60px] gap-3 rounded-[12px] pr-2.5 pl-[18px] shadow-[0_1px_0_var(--border)]'
             : 'h-10 gap-2.5 rounded-[8px] pr-2 pl-3'
@@ -76,6 +105,7 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
         <Icon d={ICON.search} size={hero ? 22 : 17} />
         <input
           ref={inputRef}
+          data-hero-search={hero ? '' : undefined}
           type="search"
           role="combobox"
           aria-label={hero ? 'Search the directory' : 'Search'}
@@ -110,7 +140,7 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
         <div
           className={
             hero
-              ? 'absolute inset-x-0 top-[calc(100%+8px)] z-30'
+              ? 'absolute inset-x-0 top-[calc(100%+8px)] z-10'
               // The sticky header has a backdrop-filter, so `fixed` is measured from the header box:
               // `top-full` is the line under it. A wide, centred palette with a scrim, not a
               // dropdown squeezed to the input's width.

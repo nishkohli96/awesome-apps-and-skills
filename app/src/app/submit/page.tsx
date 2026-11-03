@@ -13,19 +13,10 @@ export default function SubmitPage() {
       className="mx-auto flex max-w-[860px] flex-col gap-5 px-[clamp(16px,3vw,24px)] pt-12 pb-24"
     >
       <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">Suggest a tool</h1>
-      <p className="m-0 max-w-[460px] text-[15px] leading-[1.55] text-ink-2">
-        Submissions go through GitHub so every addition is public and reviewable. Pick whichever is
-        easier.
+      <p className="m-0 text-[15px] leading-[1.55] text-ink-2">
+        Submissions go through a GitHub pull request, so every addition is public and reviewable.
       </p>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(min(260px,100%),1fr))] gap-3">
-        <a href={`${REPO_URL}/issues/new`} target="_blank" rel="noopener noreferrer" className={option}>
-          <span className="font-mono text-[12px] leading-none font-medium text-ink-3">EASIEST</span>
-          <span className="text-[17px] font-semibold">Open an issue</span>
-          <span className="text-[14px] leading-[1.5] text-ink-2">
-            Fill a short template: name, link, one line on why.
-          </span>
-          <span className="text-[14px] font-medium text-accent-ink">New issue ↗</span>
-        </a>
         <a
           href={`${REPO_URL}/blob/main/CONTRIBUTING.md`}
           target="_blank"

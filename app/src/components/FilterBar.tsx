@@ -14,7 +14,7 @@ const chip
 const chipOn = 'border-btn bg-btn text-btn-text';
 const chipOff = 'border-border bg-surface text-ink-2 hover:border-border-strong hover:text-ink';
 const select
-  = 'h-8 rounded-[8px] border border-border-strong bg-surface px-2 text-[14px] leading-none text-ink';
+  = 'filter-select h-[30px] rounded-[6px] border border-border-strong bg-surface pl-2.5 font-mono text-[12px] leading-none font-medium text-ink';
 
 interface FilterBarProps {
   state: FilterState;

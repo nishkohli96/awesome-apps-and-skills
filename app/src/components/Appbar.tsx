@@ -22,7 +22,7 @@ export function Appbar() {
   const openMobileSearch = useCallback(() => setSearchOpen(true), []);
 
   return (
-    <header className="sticky top-0 z-20 border-b border-border bg-[color-mix(in_oklab,var(--bg)_88%,transparent)] backdrop-blur-[8px]">
+    <header className="sticky top-0 z-20 border-b border-border bg-bg backdrop-blur-[8px]">
       <div className="mx-auto flex h-16 max-w-[1280px] items-center gap-5 px-[clamp(16px,3vw,32px)]">
         <Link
           href="/"

@@ -59,11 +59,12 @@ export function Listing({
   );
   const isEmpty = filtering && matched.length === 0;
 
-  const sections = groups.map((group, index) => {
+  // With filters on, a group with no hits is left out of both the list and the side nav.
+  const sections = groups.flatMap((group, index) => {
     const own = (t: Tool) => (groupBy === GroupBy.Subcategory ? t.subcategory : t.category) === group.key;
     const all = tools.filter(own).length;
     const hits = matched.filter(own);
-    return { ...group, id: `group-${index}`, all, hits, collapsed: filtering && hits.length === 0 };
+    return filtering && hits.length === 0 ? [] : [{ ...group, id: `group-${index}`, all, hits }];
   });
 
   const query = filtersToQuery(state, defaultSort).toString();
@@ -117,9 +118,7 @@ export function Listing({
             <a
               key={section.id}
               href={`#${section.id}`}
-              className={`flex justify-between gap-2 rounded-[8px] px-2.5 py-2 text-[14px] no-underline hover:bg-surface-2 ${
-                section.collapsed ? 'text-ink-3' : 'font-medium text-ink'
-              }`}
+              className="flex justify-between gap-2 rounded-[8px] px-2.5 py-2 text-[14px] font-medium text-ink no-underline hover:bg-surface-2"
             >
               <span>
                 {section.emoji && (
@@ -147,7 +146,7 @@ export function Listing({
                 window.location.hash = event.target.value;
               }
             }}
-            className="h-11 rounded-[8px] border border-border-strong bg-surface px-2.5 text-[15px] leading-none text-ink"
+            className="filter-select h-11 rounded-[8px] border border-border-strong bg-surface px-2.5 text-[15px] leading-none text-ink"
           >
             <option value="" disabled>
               Choose…
@@ -225,24 +224,17 @@ export function Listing({
                       : plural(section.all, 'tool', 'tools')}
                   </span>
                 </div>
-                {section.collapsed && (
-                  <p className="mx-0 mt-[-6px] mb-0 text-[14px] text-ink-3">
-                    No matches here with the current filters.
-                  </p>
-                )}
-                {section.hits.length > 0 && (
-                  <div className="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] items-start gap-5">
-                    {section.hits.map(tool => (
-                      <ToolCard
-                        key={tool.slug}
-                        tool={tool}
-                        activeTags={state.tags}
-                        onTagToggle={toggleTag}
-                        showSubcategory={groupBy === GroupBy.Category}
-                      />
-                    ))}
-                  </div>
-                )}
+                <div className="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] items-start gap-5">
+                  {section.hits.map(tool => (
+                    <ToolCard
+                      key={tool.slug}
+                      tool={tool}
+                      activeTags={state.tags}
+                      onTagToggle={toggleTag}
+                      showSubcategory={groupBy === GroupBy.Category}
+                    />
+                  ))}
+                </div>
               </section>
             ))}
 

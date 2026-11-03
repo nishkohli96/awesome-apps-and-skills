@@ -26,6 +26,8 @@ export default function HomePage() {
   const categories = getCategories();
   const typeCounts = countTypes(tools);
   const newest = newestFirst(tools);
+  const byToolCount = [...categories].sort((a, b) => b.toolCount - a.toolCount);
+  const typesByCount = [...TYPE_STRIP].sort((a, b) => (typeCounts.get(b) ?? 0) - (typeCounts.get(a) ?? 0));
   const subcategoryCount = categories.reduce((sum, c) => sum + c.subcategories.length, 0);
 
   return (
@@ -75,7 +77,7 @@ export default function HomePage() {
           <h2 id="justadded" className={`${eyebrow} m-0 mb-2`}>
             Just added
           </h2>
-          {newest.slice(0, 3).map(tool => (
+          {newest.slice(0, 4).map(tool => (
             <a
               key={tool.slug}
               href={tool.url}
@@ -112,7 +114,7 @@ export default function HomePage() {
           </span>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(min(272px,100%),1fr))] gap-4">
-          {categories.map(category => (
+          {byToolCount.map(category => (
             <CategoryCard key={category.slug} category={category} />
           ))}
         </div>
@@ -123,7 +125,7 @@ export default function HomePage() {
           Browse by type
         </h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(min(168px,100%),1fr))] overflow-hidden rounded-[12px] border border-border bg-surface">
-          {TYPE_STRIP.map(type => (
+          {typesByCount.map(type => (
             <Link
               key={type}
               href={`/type/${type}`}
