@@ -84,3 +84,6 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   🏷 `mcp` `phone-calls` `voice-agents` `ai-agents`<br>
   💰 paid<br>
   🔗 [mcp](https://api.voygr.tech/mcp)
+- **[Sports Odds MCP](https://github.com/GeminiGeorge22/sports-odds-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Local MCP server for live odds from Kambi sportsbooks (BetRivers, Unibet, Paf and more) with each book's price and the best price per outcome.<br>
+  🏷 `mcp` `sports` `odds` `data`
