@@ -58,7 +58,7 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 ## Agent Tools & Data
 
 - **[ATS Jobs MCP](https://github.com/GeminiGeorge22/ats-jobs-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
-  Local MCP server for new job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters job boards.<br>
+  Local stdio MCP server that forwards calls to a hosted Apify endpoint (needs your own `APIFY_TOKEN`), for new job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters job boards.<br>
   🏷 `mcp` `jobs` `recruiting` `data`
 - **[camofox-browser](https://github.com/jo-inc/camofox-browser)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Headless browser server for AI agents, built on Camoufox with fingerprint spoofing as a Puppeteer and Playwright replacement.<br>
