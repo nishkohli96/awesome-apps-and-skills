@@ -76,7 +76,7 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   💰 freemium<br>
   🔗 [mcp](https://deed.page/mcp)
 - **[Etsy Sales MCP](https://github.com/GeminiGeorge22/etsy-sales-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
-  Local MCP server for Etsy search results by keyword, marketplace and category, plus daily sales counts and growth for any Etsy shop.<br>
+  Local stdio MCP server that forwards calls to a hosted Apify endpoint (needs your own `APIFY_TOKEN`), for Etsy search results by keyword, marketplace and category, plus daily sales counts and growth for any Etsy shop.<br>
   🏷 `mcp` `etsy` `ecommerce` `data`
 - **[Firecrawl](https://www.firecrawl.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
