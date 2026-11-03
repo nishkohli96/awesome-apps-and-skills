@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Listing } from '@/components/Listing';
 import { PageHeader } from '@/components/PageHeader';
 import { countTags, getCategories, getTools } from '@/lib/data';
+import { GroupBy } from '@/types';
 
 type Props = { params: Promise<{ tag: string }> };
 
@@ -52,7 +53,7 @@ export default async function TagPage({ params }: Props) {
         <Listing
           basePath={`/tag/${encodeURIComponent(tag)}`}
           tools={tools}
-          groupBy="category"
+          groupBy={GroupBy.Category}
           groups={categories.map(c => ({ key: c.slug, label: c.name, emoji: c.emoji }))}
           lockedTag={tag}
         />

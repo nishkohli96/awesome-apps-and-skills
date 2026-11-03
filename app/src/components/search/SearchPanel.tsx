@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 import Link from 'next/link';
 import { useData } from '@/lib/data-context';
 import { TypeBadge } from '@/components/ui/TypeBadge';
+import { SearchPanelState } from '@/types';
 import { openTool, type SearchState } from './useSearchState';
 
 const POPULAR_TAGS = 10;
@@ -44,7 +45,7 @@ export function SearchPanel({ search, listId, optionId, onDone, mobile = false }
           : 'flex flex-col overflow-hidden rounded-[12px] border border-border bg-surface shadow-pop'
       }
     >
-      {state === 'empty' && (
+      {state === SearchPanelState.Empty && (
         <div className="flex flex-col gap-3 px-[18px] pt-[18px] pb-5">
           <span className={mono}>POPULAR TAGS</span>
           <div className="flex flex-wrap gap-1.5">
@@ -79,7 +80,7 @@ export function SearchPanel({ search, listId, optionId, onDone, mobile = false }
         </div>
       )}
 
-      {state === 'results' && (
+      {state === SearchPanelState.Results && (
         <>
           {rows.length > 0 && (
             <ul
@@ -150,7 +151,7 @@ export function SearchPanel({ search, listId, optionId, onDone, mobile = false }
         </>
       )}
 
-      {state === 'none' && (
+      {state === SearchPanelState.None && (
         <div className="flex flex-col items-start gap-3 px-6 py-7">
           <span className="font-serif text-[30px] leading-[1.1]">
             Nothing for “
@@ -173,7 +174,7 @@ export function SearchPanel({ search, listId, optionId, onDone, mobile = false }
 
       {mobile
         ? (
-          state === 'results'
+          state === SearchPanelState.Results
           && rows.length > 0 && (
             <button
               type="button"
@@ -187,7 +188,7 @@ export function SearchPanel({ search, listId, optionId, onDone, mobile = false }
         : (
           <div className="flex items-center justify-between gap-3 border-t border-border bg-surface-2 px-3.5 py-2.5 font-mono text-[12px] leading-none text-ink-3">
             <span>↑↓ move · ↵ open · esc close</span>
-            {state === 'results' && rows.length > 0 && (
+            {state === SearchPanelState.Results && rows.length > 0 && (
               <button
                 type="button"
                 id={optionId(rows.length)}

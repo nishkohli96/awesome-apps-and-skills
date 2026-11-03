@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, type KeyboardEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useToolSearch } from '@/lib/data-context';
 import type { Tool } from '@/lib/types';
+import { SearchPanelState } from '@/types';
 
 const MAX_ROWS = 8;
 const DEBOUNCE_MS = 150;
@@ -30,8 +31,11 @@ export function useSearchState(onDone: () => void) {
   const rows = results.slice(0, MAX_ROWS);
   const total = results.length;
   const pending = trimmed !== debounced.trim();
-  const state: 'empty' | 'results' | 'none'
-    = !trimmed ? 'empty' : rows.length > 0 ? 'results' : pending ? 'results' : 'none';
+  const state = !trimmed
+    ? SearchPanelState.Empty
+    : rows.length > 0 || pending
+      ? SearchPanelState.Results
+      : SearchPanelState.None;
 
   const setQuery = (value: string) => {
     setQueryRaw(value);

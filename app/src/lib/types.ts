@@ -1,18 +1,4 @@
-export const TOOL_TYPES = [
-  'app',
-  'web-tool',
-  'skill',
-  'website',
-  'mcp-server',
-  'library',
-  'guide',
-  'starter',
-  'plugin',
-] as const;
-export type ToolType = (typeof TOOL_TYPES)[number];
-
-export const PRICINGS = ['free', 'freemium', 'paid'] as const;
-export type Pricing = (typeof PRICINGS)[number];
+import type { PriceFilter, Pricing, SortKey, ToolType } from '@/types';
 
 export interface Author {
   /** Git author name. */
@@ -48,11 +34,9 @@ export interface Category {
   toolCount: number;
 }
 
-export type SortKey = 'az' | 'new' | 'match';
-
 export interface FilterState {
   tags: string[];
   types: ToolType[];
-  price: Pricing | 'any';
+  price: Pricing | PriceFilter;
   sort: SortKey;
 }

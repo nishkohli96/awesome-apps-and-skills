@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { Listing } from '@/components/Listing';
 import { PageHeader } from '@/components/PageHeader';
 import { getCategories, getCategory, getToolsInCategory } from '@/lib/data';
+import { GroupBy } from '@/types';
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -97,7 +98,7 @@ export default async function CategoryPage({ params }: Props) {
         <Listing
           basePath={`/${category.slug}`}
           tools={tools}
-          groupBy="subcategory"
+          groupBy={GroupBy.Subcategory}
           groups={category.subcategories.map(name => ({ key: name, label: name }))}
           footer={sparse || undefined}
         />

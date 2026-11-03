@@ -84,3 +84,7 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   🏷 `mcp` `phone-calls` `voice-agents` `ai-agents`<br>
   💰 paid<br>
   🔗 [mcp](https://api.voygr.tech/mcp)
+- **[Scrapling](https://github.com/D4Vinci/Scrapling)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
+  Python web scraping framework for everything from a single request to a full crawl, with stealth fetching and a built-in MCP server.<br>
+  🏷 `web-scraping` `crawler` `mcp` `python`<br>
+  💰 free

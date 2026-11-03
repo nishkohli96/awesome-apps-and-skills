@@ -2,7 +2,8 @@
 
 import { useMemo, useSyncExternalStore } from 'react';
 import { filtersToQuery, parseFilters } from '@/lib/filters';
-import type { FilterState, SortKey } from '@/lib/types';
+import type { FilterState } from '@/lib/types';
+import { PriceFilter, type SortKey } from '@/types';
 
 const CHANGE_EVENT = 'url-filters:change';
 
@@ -39,6 +40,6 @@ export function useUrlFilters(defaultSort: SortKey) {
     window.dispatchEvent(new Event(CHANGE_EVENT));
   };
 
-  const clear = () => update({ tags: [], types: [], price: 'any' });
+  const clear = () => update({ tags: [], types: [], price: PriceFilter.Any });
   return { state, update, clear, defaultSort };
 }

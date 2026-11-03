@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useData, useToolSearch } from '@/lib/data-context';
 import { filtersToQuery, matchesFilters, parseFilters, sortTools, toggle } from '@/lib/filters';
-import { TOOL_TYPES, type FilterState, type SortKey, type Tool } from '@/lib/types';
+import type { FilterState, Tool } from '@/lib/types';
+import { PRICINGS, PriceFilter, SortKey, TOOL_TYPES } from '@/types';
 import { ToolCard } from './ToolCard';
 
 const label = 'font-mono text-[12px] leading-none font-medium text-ink-3';
@@ -20,7 +21,7 @@ export function SearchResults() {
   const search = useToolSearch();
 
   const q = (params.get('q') ?? '').trim();
-  const defaultSort: SortKey = q ? 'match' : 'new';
+  const defaultSort: SortKey = q ? SortKey.Match : SortKey.Newest;
   const state = useMemo(() => parseFilters(params, defaultSort), [params, defaultSort]);
 
   const results = useMemo(
@@ -118,10 +119,12 @@ export function SearchResults() {
             onChange={e => update({ price: e.target.value as FilterState['price'] })}
             className={select}
           >
-            <option value="any">Any</option>
-            <option value="free">Free</option>
-            <option value="freemium">Freemium</option>
-            <option value="paid">Paid</option>
+            <option value={PriceFilter.Any}>Any</option>
+            {PRICINGS.map(price => (
+              <option key={price} value={price}>
+                {price[0].toUpperCase() + price.slice(1)}
+              </option>
+            ))}
           </select>
         </label>
         <label className={`ml-auto flex items-center gap-2 ${label}`}>
@@ -131,9 +134,9 @@ export function SearchResults() {
             onChange={e => update({ sort: e.target.value as SortKey })}
             className={select}
           >
-            {q && <option value="match">Best match</option>}
-            <option value="az">A–Z</option>
-            <option value="new">Newest</option>
+            {q && <option value={SortKey.Match}>Best match</option>}
+            <option value={SortKey.AZ}>A–Z</option>
+            <option value={SortKey.Newest}>Newest</option>
           </select>
         </label>
       </div>

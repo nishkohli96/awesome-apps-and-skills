@@ -43,6 +43,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[HyperFrames](https://www.hyperframes.dev/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   Open-source framework that renders HTML into MP4 video for AI agents, plus a desktop Studio editor.<br>
   🏷 `html-to-video` `video-rendering` `agent-skills` `motion-graphics`
+- **[lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Claude Code toolbox of 66 film styles, each a style prompt that makes short films entirely in code, with no video model.<br>
+  🏷 `claude-code` `ai-video` `animation` `creative-coding`<br>
+  💰 free
 - **[Prompt Motion](https://prompt-motion.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   Gallery of motion videos made with Claude, with the prompts and skills behind each one, plus customizable templates.<br>
   🏷 `motion-design` `prompts` `video` `gallery`<br>

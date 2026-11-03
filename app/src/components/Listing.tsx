@@ -3,7 +3,8 @@
 import { useMemo, type ReactNode } from 'react';
 import Link from 'next/link';
 import { filtersToQuery, isFiltering, matchesFilters, sortTools, toggle } from '@/lib/filters';
-import { TOOL_TYPES, type Tool } from '@/lib/types';
+import type { Tool } from '@/lib/types';
+import { GroupBy, SortKey, TOOL_TYPES } from '@/types';
 import { FilterBar } from './FilterBar';
 import { ToolCard } from './ToolCard';
 import { useUrlFilters } from './useUrlFilters';
@@ -19,7 +20,7 @@ interface ListingProps {
   basePath: string;
   /** Everything in scope, already limited by the page (category, tag or type). */
   tools: Tool[];
-  groupBy: 'subcategory' | 'category';
+  groupBy: GroupBy;
   groups: ListingGroup[];
   /** A tag the page itself is about; left out of the tag bar. */
   lockedTag?: string;
@@ -40,7 +41,7 @@ export function Listing({
   lockedType,
   footer,
 }: ListingProps) {
-  const { state, update, clear, defaultSort } = useUrlFilters('az');
+  const { state, update, clear, defaultSort } = useUrlFilters(SortKey.AZ);
 
   const tags = useMemo(() => {
     const counts = new Map<string, number>();
@@ -59,7 +60,7 @@ export function Listing({
   const isEmpty = filtering && matched.length === 0;
 
   const sections = groups.map((group, index) => {
-    const own = (t: Tool) => (groupBy === 'subcategory' ? t.subcategory : t.category) === group.key;
+    const own = (t: Tool) => (groupBy === GroupBy.Subcategory ? t.subcategory : t.category) === group.key;
     const all = tools.filter(own).length;
     const hits = matched.filter(own);
     return { ...group, id: `group-${index}`, all, hits, collapsed: filtering && hits.length === 0 };
@@ -77,8 +78,8 @@ export function Listing({
         tags={tags}
         types={types}
         sortOptions={[
-          { value: 'az', label: 'A–Z' },
-          { value: 'new', label: 'Newest' },
+          { value: SortKey.AZ, label: 'A–Z' },
+          { value: SortKey.Newest, label: 'Newest' },
         ]}
       />
 
@@ -106,7 +107,7 @@ export function Listing({
 
       <div id="results" className="flex flex-wrap items-start gap-10">
         <nav
-          aria-label={groupBy === 'subcategory' ? 'Subcategories' : 'Categories'}
+          aria-label={groupBy === GroupBy.Subcategory ? 'Subcategories' : 'Categories'}
           className="sticky top-24 flex max-w-[220px] flex-[1_1_200px] flex-col gap-0.5 self-start max-[760px]:hidden"
         >
           <span className="px-2.5 pb-2.5 font-mono text-[12px] leading-none font-medium text-ink-3">
@@ -138,7 +139,7 @@ export function Listing({
         <label className="hidden flex-[1_1_100%] flex-col gap-1.5 text-[13px] text-ink-2 max-[760px]:flex">
           Jump to
           {' '}
-          {groupBy === 'subcategory' ? 'subcategory' : 'category'}
+          {groupBy === GroupBy.Subcategory ? 'subcategory' : 'category'}
           <select
             defaultValue=""
             onChange={event => {
@@ -237,7 +238,7 @@ export function Listing({
                         tool={tool}
                         activeTags={state.tags}
                         onTagToggle={toggleTag}
-                        showSubcategory={groupBy === 'category'}
+                        showSubcategory={groupBy === GroupBy.Category}
                       />
                     ))}
                   </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import { SearchVariant } from '@/types';
 import { useCallback, useState } from 'react';
 import Link from 'next/link';
 import { ICON, REPO_URL } from '@/lib/constants';
@@ -39,7 +40,7 @@ export function Appbar() {
           </span>
         </Link>
 
-        <SearchCommand variant="appbar" shortcuts onShortcutFallback={openMobileSearch} />
+        <SearchCommand variant={SearchVariant.Appbar} shortcuts onShortcutFallback={openMobileSearch} />
 
         <nav aria-label="Primary" className="flex shrink-0 items-center gap-0.5 max-[760px]:hidden">
           <Link href="/#new" className={navLink}>

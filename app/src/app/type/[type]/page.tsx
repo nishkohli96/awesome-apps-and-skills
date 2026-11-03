@@ -5,13 +5,13 @@ import { Listing } from '@/components/Listing';
 import { PageHeader } from '@/components/PageHeader';
 import { TYPE_META } from '@/lib/constants';
 import { getCategories, getTools } from '@/lib/data';
-import { TOOL_TYPES, type ToolType } from '@/lib/types';
+import { GroupBy, TOOL_TYPES, type ToolType } from '@/types';
 
 type Props = { params: Promise<{ type: string }> };
 
 export const dynamicParams = false;
 
-const isType = (value: string): value is ToolType => (TOOL_TYPES as readonly string[]).includes(value);
+const isType = (value: string): value is ToolType => (TOOL_TYPES as string[]).includes(value);
 
 export function generateStaticParams() {
   const present = new Set(getTools().map(tool => tool.type));
@@ -54,7 +54,7 @@ export default async function TypePage({ params }: Props) {
         <Listing
           basePath={`/type/${type}`}
           tools={tools}
-          groupBy="category"
+          groupBy={GroupBy.Category}
           groups={categories.map(c => ({ key: c.slug, label: c.name, emoji: c.emoji }))}
           lockedType={type}
         />

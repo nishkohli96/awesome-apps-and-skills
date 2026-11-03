@@ -3,26 +3,27 @@
 import { useSyncExternalStore } from 'react';
 import { useTheme } from 'next-themes';
 import { ICON } from '@/lib/constants';
+import { Theme, ThemeToggleVariant } from '@/types';
 import { Icon } from './ui/Icon';
 
 const OPTIONS = [
-  { value: 'light', label: 'Light', icon: ICON.sun },
-  { value: 'dark', label: 'Dark', icon: ICON.moon },
-  { value: 'system', label: 'System', icon: ICON.monitor },
+  { value: Theme.Light, label: 'Light', icon: ICON.sun },
+  { value: Theme.Dark, label: 'Dark', icon: ICON.moon },
+  { value: Theme.System, label: 'System', icon: ICON.monitor },
 ] as const;
 
 const subscribeNothing = () => () => {};
 
 interface ThemeToggleProps {
   /** `icons` for the appbar, `labels` for the mobile menu. */
-  variant?: 'icons' | 'labels';
+  variant?: ThemeToggleVariant;
 }
 
-export function ThemeToggle({ variant = 'icons' }: ThemeToggleProps) {
+export function ThemeToggle({ variant = ThemeToggleVariant.Icons }: ThemeToggleProps) {
   const { theme, setTheme } = useTheme();
   // next-themes only knows the stored choice after hydration.
   const mounted = useSyncExternalStore(subscribeNothing, () => true, () => false);
-  const labels = variant === 'labels';
+  const labels = variant === ThemeToggleVariant.Labels;
 
   return (
     <div

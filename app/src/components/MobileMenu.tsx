@@ -1,5 +1,6 @@
 'use client';
 
+import { ThemeToggleVariant } from '@/types';
 import Link from 'next/link';
 import { Dialog, DialogClose, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { ICON, REPO_URL } from '@/lib/constants';
@@ -58,7 +59,7 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
 
         <div className="flex items-center justify-between border-y border-border px-5 py-4">
           <span className="text-[15px] text-ink-2">Theme</span>
-          <ThemeToggle variant="labels" />
+          <ThemeToggle variant={ThemeToggleVariant.Labels} />
         </div>
 
         <div className="flex flex-col gap-1.5 p-5">

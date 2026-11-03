@@ -1,5 +1,5 @@
 import { TYPE_META } from '@/lib/constants';
-import type { ToolType } from '@/lib/types';
+import type { ToolType } from '@/types';
 import { Icon } from './Icon';
 
 interface TypeBadgeProps {

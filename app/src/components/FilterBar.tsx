@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { TYPE_META } from '@/lib/constants';
 import { toggle } from '@/lib/filters';
-import type { FilterState, Pricing, SortKey, ToolType } from '@/lib/types';
+import type { FilterState } from '@/lib/types';
+import { PRICINGS, PriceFilter, type Pricing, type SortKey, type ToolType } from '@/types';
 import { Icon } from './ui/Icon';
 
 const VISIBLE_TAGS = 8;
@@ -108,13 +109,15 @@ export function FilterBar({ state, onChange, tags, types, sortOptions }: FilterB
           PRICING
           <select
             value={state.price}
-            onChange={e => onChange({ price: e.target.value as Pricing | 'any' })}
+            onChange={e => onChange({ price: e.target.value as Pricing | PriceFilter })}
             className={select}
           >
-            <option value="any">Any</option>
-            <option value="free">Free</option>
-            <option value="freemium">Freemium</option>
-            <option value="paid">Paid</option>
+            <option value={PriceFilter.Any}>Any</option>
+            {PRICINGS.map(price => (
+              <option key={price} value={price}>
+                {price[0].toUpperCase() + price.slice(1)}
+              </option>
+            ))}
           </select>
         </label>
         <label className={`ml-auto flex items-center gap-2 ${label}`}>

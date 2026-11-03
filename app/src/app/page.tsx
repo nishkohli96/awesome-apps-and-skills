@@ -5,6 +5,7 @@ import { SearchCommand } from '@/components/search/SearchCommand';
 import { ToolCard } from '@/components/ToolCard';
 import { TypeBadge } from '@/components/ui/TypeBadge';
 import { TYPE_META, TYPE_STRIP } from '@/lib/constants';
+import { SearchVariant } from '@/types';
 import { countTypes, getCategories, getTools, newestFirst } from '@/lib/data';
 
 const QUICK_PICKS = [
@@ -32,7 +33,7 @@ export default function HomePage() {
       id="main"
       className="mx-auto flex max-w-[1200px] flex-col gap-[clamp(72px,9vw,120px)] px-[clamp(16px,3vw,24px)]"
     >
-      <section className="flex flex-wrap items-end gap-12 pt-[clamp(48px,8vw,104px)]">
+      <section className="flex flex-wrap items-start gap-12 pt-[clamp(48px,8vw,104px)]">
         <div className="flex min-w-0 flex-[999_1_560px] flex-col gap-7">
           <span className={eyebrow}>A human-curated index of AI tools</span>
           <h1 className="m-0 font-serif text-[clamp(44px,7vw,84px)] leading-[0.98] font-normal tracking-[-0.02em] text-balance">
@@ -44,7 +45,7 @@ export default function HomePage() {
             Claude skills, MCP servers, apps and web tools, picked by a person and linked straight
             to the source. No sign-up, no detail pages, no fluff.
           </p>
-          <SearchCommand variant="hero" />
+          <SearchCommand variant={SearchVariant.Hero} />
           <div className="flex flex-wrap items-center gap-2">
             <span className="mr-1 text-[14px] text-ink-3">Try</span>
             {QUICK_PICKS.map(pick => (
@@ -69,7 +70,7 @@ export default function HomePage() {
 
         <aside
           aria-labelledby="justadded"
-          className="flex min-w-0 flex-[1_1_280px] flex-col border-t-2 border-ink pt-4"
+          className="flex min-w-0 flex-[1_1_280px] flex-col border-t-2 border-ink pt-4 min-[920px]:mt-10"
         >
           <h2 id="justadded" className={`${eyebrow} m-0 mb-2`}>
             Just added

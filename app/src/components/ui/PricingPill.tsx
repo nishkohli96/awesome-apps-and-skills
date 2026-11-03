@@ -1,4 +1,4 @@
-import type { Pricing } from '@/lib/types';
+import type { Pricing } from '@/types';
 
 export function PricingPill({ pricing }: { pricing: Pricing }) {
   return (

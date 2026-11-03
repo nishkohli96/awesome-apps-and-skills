@@ -1,5 +1,5 @@
-import { PRICINGS, TOOL_TYPES } from './types';
-import type { Category, Pricing, Tool, ToolType } from './types';
+import { PRICINGS, TOOL_TYPES, type Pricing, type ToolType } from '@/types';
+import type { Category, Tool } from './types';
 
 export type ParsedTool = Omit<Tool, 'addedAt' | 'addedBy' | 'isNew'>;
 export type ParsedCategory = Omit<Category, 'toolCount'>;
@@ -15,11 +15,11 @@ export function slugify(value: string): string {
 }
 
 function isToolType(value: string): value is ToolType {
-  return (TOOL_TYPES as readonly string[]).includes(value);
+  return (TOOL_TYPES as string[]).includes(value);
 }
 
 function isPricing(value: string): value is Pricing {
-  return (PRICINGS as readonly string[]).includes(value);
+  return (PRICINGS as string[]).includes(value);
 }
 
 function plainText(value: string): string {
