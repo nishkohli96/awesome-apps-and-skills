@@ -80,7 +80,7 @@ export default function HomePage() {
 
         <aside
           aria-labelledby="picks"
-          className="flex min-w-0 flex-[1_1_280px] flex-col max-[919px]:border-t-2 max-[919px]:border-ink max-[919px]:pt-4 min-[920px]:mt-10"
+          className="flex min-w-0 flex-[1_1_280px] flex-col max-[919px]:border-t-1 max-[919px]:border-ink max-[919px]:pt-4 min-[920px]:mt-10"
         >
           <h2 id="picks" className={`${eyebrow} m-0 mb-2`}>
             Editor’s picks

@@ -7,22 +7,31 @@ const link = 'text-[14px] text-ink-2 no-underline hover:text-ink';
 
 export function Footer({ categories }: { categories: Category[] }) {
   return (
-    <footer className="mt-[clamp(72px,9vw,120px)] border-t border-border">
-      <div className="mx-auto flex max-w-[1200px] flex-wrap gap-x-16 gap-y-10 px-[clamp(24px,3vw,32px)] pt-12 pb-10">
-        <div className="flex flex-[1_1_260px] flex-col gap-3">
-          <span className="flex items-center gap-2.5">
-            <Logo />
-            <span className="text-[15px] font-semibold">
+    <footer className="mt-[clamp(48px,9vw,120px)] border-t border-border">
+      <div className="mx-auto flex max-w-[1200px] flex-wrap gap-x-16 gap-y-10 px-[clamp(24px,3vw,32px)] pt-12 pb-10 max-[760px]:gap-y-7 max-[760px]:pt-8 max-[760px]:pb-8">
+        <div className="flex flex-[1_1_260px] items-center gap-3 self-start">
+          <Logo size={60} />
+          <div className="flex flex-col gap-1">
+            <span className="text-[16px] font-semibold">
               Awesome Apps &amp; Skills
             </span>
-          </span>
-          <p className="m-0 max-w-[300px] text-[14px] leading-[1.55] text-ink-2">
-            Curated by hand. Every link goes to the tool itself.
-          </p>
+            <p className="m-0 text-[14px] leading-[1.55] text-ink-2">
+              Curated by
+              {' '}
+              <a
+                href="https://nishkohli96.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-accent-ink"
+              >
+                Nishant Kohli
+              </a>
+            </p>
+          </div>
         </div>
         <nav
           aria-label="Categories"
-          className="grid flex-[2_1_420px] grid-cols-[repeat(auto-fit,minmax(160px,1fr))] content-start gap-x-6 gap-y-2.5"
+          className="grid flex-[2_1_420px] grid-cols-[repeat(auto-fit,minmax(160px,1fr))] content-start gap-x-6 gap-y-2.5 max-[760px]:gap-y-2"
         >
           {categories.map(category => (
             <Link

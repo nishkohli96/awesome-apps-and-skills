@@ -58,7 +58,7 @@ export function FilterBar({
             role="group"
             aria-label="Filter by tag"
             className={`flex min-w-0 flex-1 gap-1.5 ${
-              showAll ? 'flex-wrap' : 'flex-nowrap overflow-x-auto pb-0.5'
+              showAll ? 'flex-wrap' : 'flex-nowrap overflow-x-auto pb-2'
             }`}
           >
             {bar.map(tag => {

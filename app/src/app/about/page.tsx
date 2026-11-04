@@ -26,7 +26,11 @@ export default function AboutPage() {
         <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
           Curated by
           {' '}
-          <a href="https://nishkohli96.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://nishkohli96.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Nishant Kohli
           </a>
           , who aims to curate the list of the best tools as they appear.
