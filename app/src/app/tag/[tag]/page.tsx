@@ -38,7 +38,7 @@ export default async function TagPage({ params }: Props) {
   return (
     <main
       id="main"
-      className="mx-auto flex max-w-[1200px] flex-col gap-8 px-[clamp(16px,3vw,24px)] pb-24"
+      className="mx-auto flex max-w-[1200px] flex-col gap-8 px-[clamp(24px,3vw,32px)] pb-24"
     >
       <PageHeader
         crumbs={[{ label: 'Home', href: '/' }, { label: `#${tag}` }]}

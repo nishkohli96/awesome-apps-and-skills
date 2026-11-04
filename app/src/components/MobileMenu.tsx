@@ -29,7 +29,7 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
         showCloseButton={false}
         className="inset-0 flex h-dvh w-screen max-w-none translate-x-0 translate-y-0 flex-col gap-0 overflow-y-auto rounded-none bg-bg p-0 ring-0 sm:max-w-none"
       >
-        <header className="flex h-14 shrink-0 items-center border-b border-border pr-1.5 pl-4">
+        <header className="flex h-14 shrink-0 items-center border-b border-border pr-1.5 pl-6">
           <DialogTitle className="m-0 mr-auto text-[15px] font-semibold">
             Menu
           </DialogTitle>
@@ -41,7 +41,7 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           </DialogClose>
         </header>
 
-        <nav aria-label="Mobile" className="flex flex-col px-2 pt-2 pb-4">
+        <nav aria-label="Mobile" className="flex flex-col px-3 pt-2 pb-4">
           <Link href="/#new" onClick={close} className={row}>
             New this week
           </Link>
@@ -59,12 +59,12 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           </a>
         </nav>
 
-        <div className="flex items-center justify-between border-y border-border px-5 py-4">
+        <div className="flex items-center justify-between border-y border-border px-6 py-4">
           <span className="text-[15px] text-ink-2">Theme</span>
           <ThemeToggle variant={ThemeToggleVariant.Labels} />
         </div>
 
-        <div className="flex flex-col gap-1.5 p-5">
+        <div className="flex flex-col gap-1.5 p-6">
           <span className="pb-1.5 font-mono text-[12px] leading-none font-medium text-ink-3">
             CATEGORIES
           </span>

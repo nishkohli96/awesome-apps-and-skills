@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <main
       id="main"
-      className="mx-auto flex max-w-[1000px] flex-wrap gap-8 px-[clamp(16px,3vw,24px)] pt-12 pb-24"
+      className="mx-auto flex max-w-[1000px] flex-wrap gap-8 px-[clamp(24px,3vw,32px)] pt-12 pb-24"
     >
       <div className="flex flex-[2_1_300px] flex-col gap-4">
         <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">

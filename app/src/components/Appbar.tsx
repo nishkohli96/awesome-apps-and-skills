@@ -23,7 +23,7 @@ export function Appbar() {
 
   return (
     <header className="sticky top-0 z-20 border-b border-border bg-bg backdrop-blur-[8px]">
-      <div className="mx-auto flex h-16 max-w-[1280px] items-center gap-5 px-[clamp(16px,3vw,32px)]">
+      <div className="mx-auto flex h-16 max-w-[1280px] items-center gap-5 px-[clamp(24px,3vw,32px)]">
         <Link
           href="/"
           className="mr-auto flex shrink-0 items-center gap-2.5 text-ink no-underline max-[760px]:gap-2"

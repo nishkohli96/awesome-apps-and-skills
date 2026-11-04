@@ -8,7 +8,7 @@ export default function SearchPage() {
   return (
     <main
       id="main"
-      className="mx-auto max-w-[1200px] px-[clamp(16px,3vw,24px)] pt-10 pb-24"
+      className="mx-auto max-w-[1200px] px-[clamp(24px,3vw,32px)] pt-10 pb-24"
     >
       <Suspense fallback={null}>
         <SearchResults />

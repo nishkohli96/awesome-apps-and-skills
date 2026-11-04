@@ -8,7 +8,7 @@ const link = 'text-[14px] text-ink-2 no-underline hover:text-ink';
 export function Footer({ categories }: { categories: Category[] }) {
   return (
     <footer className="mt-[clamp(72px,9vw,120px)] border-t border-border">
-      <div className="mx-auto flex max-w-[1200px] flex-wrap gap-x-16 gap-y-10 px-[clamp(16px,3vw,24px)] pt-12 pb-10">
+      <div className="mx-auto flex max-w-[1200px] flex-wrap gap-x-16 gap-y-10 px-[clamp(24px,3vw,32px)] pt-12 pb-10">
         <div className="flex flex-[1_1_260px] flex-col gap-3">
           <span className="flex items-center gap-2.5">
             <Logo />

@@ -3,7 +3,8 @@ import type { Category } from '@/lib/types';
 
 export function CategoryCard({ category }: { category: Category }) {
   const subs = category.subcategories;
-  const preview = subs.slice(0, 2).join(' · ') + (subs.length > 2 ? ` · +${subs.length - 2}` : '');
+  const preview = subs.slice(0, 2).join(' · ');
+  const extra = subs.length - 2;
   return (
     <Link
       href={`/${category.slug}`}
@@ -32,6 +33,13 @@ export function CategoryCard({ category }: { category: Category }) {
       </span>
       <span className="mt-auto border-t border-border pt-3 font-mono text-[12px] leading-[1.5] text-ink-3">
         {preview}
+        {extra > 0 && (
+          <span className="font-medium text-accent-ink">
+            {' '}
+            +
+            {extra}
+          </span>
+        )}
       </span>
     </Link>
   );

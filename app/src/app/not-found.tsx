@@ -2,7 +2,7 @@ import { NotFoundSearch } from '@/components/NotFoundSearch';
 
 export default function NotFound() {
   return (
-    <main id="main" className="mx-auto flex max-w-[1000px] flex-col gap-[18px] px-[clamp(16px,3vw,24px)] py-24">
+    <main id="main" className="mx-auto flex max-w-[1000px] flex-col gap-[18px] px-[clamp(24px,3vw,32px)] py-24">
       <span className="font-serif text-[120px] leading-[0.85] text-accent">
         404
       </span>

@@ -10,7 +10,7 @@ export default function SubmitPage() {
   return (
     <main
       id="main"
-      className="mx-auto flex max-w-[860px] flex-col gap-5 px-[clamp(16px,3vw,24px)] pt-12 pb-24"
+      className="mx-auto flex max-w-[860px] flex-col gap-5 px-[clamp(24px,3vw,32px)] pt-12 pb-24"
     >
       <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">
         Suggest a tool

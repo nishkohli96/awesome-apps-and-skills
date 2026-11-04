@@ -38,7 +38,7 @@ export default function HomePage() {
   return (
     <main
       id="main"
-      className="mx-auto flex max-w-[1200px] flex-col gap-[clamp(72px,9vw,120px)] px-[clamp(16px,3vw,24px)]"
+      className="mx-auto flex max-w-[1200px] flex-col gap-[clamp(72px,9vw,120px)] px-[clamp(24px,3vw,32px)]"
     >
       <section className="flex flex-wrap items-start gap-12 pt-[clamp(48px,8vw,104px)]">
         <div className="flex min-w-0 flex-[999_1_560px] flex-col gap-7">
@@ -68,12 +68,7 @@ export default function HomePage() {
             ))}
           </div>
           <p className="m-0 font-mono text-[13px] leading-[1.4] font-medium text-ink-3">
-            {tools.length}
-            {' '}
-            tools ·
-            {categories.length}
-            {' '}
-            categories · updated this week
+            {`${tools.length} tools · ${categories.length} categories`}
           </p>
         </div>
 
@@ -168,7 +163,7 @@ export default function HomePage() {
           ))}
           <Link
             href="/search?sort=new"
-            className="flex min-h-[220px] flex-col justify-between rounded-[12px] border border-dashed border-border-strong p-6 text-ink no-underline"
+            className="flex flex-col gap-6 rounded-[12px] border border-dashed border-border-strong p-6 text-ink no-underline"
           >
             <span className="font-serif text-[30px] leading-[1.1]">
               Everything added in the last 30 days
