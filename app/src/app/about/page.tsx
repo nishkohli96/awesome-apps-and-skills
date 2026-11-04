@@ -30,7 +30,9 @@ export default function AboutPage() {
         <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
           Curated by Nishant Kohli, who adds new tools as they appear.
         </p>
-        <p className="m-0 text-[13px] text-ink-3">Not affiliated with Anthropic.</p>
+        <p className="m-0 text-[13px] text-ink-3">
+          Not affiliated with Anthropic.
+        </p>
       </div>
       <dl className="m-0 flex flex-[1_1_180px] flex-col border-t-2 border-ink">
         {stats.map(([name, value]) => (

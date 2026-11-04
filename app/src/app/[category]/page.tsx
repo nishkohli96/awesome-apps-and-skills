@@ -38,7 +38,9 @@ export default async function CategoryPage({ params }: Props) {
   const sparse = tools.length <= SPARSE_AT && (
     <section className="flex flex-wrap items-stretch gap-6">
       <div className="flex flex-[1_1_320px] flex-col gap-3 rounded-[16px] border border-dashed border-border-strong p-7">
-        <span className="font-serif text-[32px] leading-[1.1]">A young shelf.</span>
+        <span className="font-serif text-[32px] leading-[1.1]">
+          A young shelf.
+        </span>
         <p className="m-0 text-[15px] leading-[1.55] text-ink-2">
           We only list what we would use ourselves, so this one is still filling up. Know a tool
           that belongs here?
