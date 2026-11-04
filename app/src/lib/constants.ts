@@ -71,3 +71,11 @@ export const TYPE_STRIP: ToolType[] = [
   ToolType.Library,
   ToolType.Guide,
 ];
+
+/** Slugs of the hand-picked tools shown in the home page's "Editor's picks". */
+export const EDITORS_PICKS = [
+  'firecrawl',
+  'claude-seo',
+  'photocraft',
+  'career-ops',
+];

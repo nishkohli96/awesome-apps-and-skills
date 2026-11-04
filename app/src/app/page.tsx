@@ -4,7 +4,7 @@ import { CategoryCard } from '@/components/CategoryCard';
 import { SearchCommand } from '@/components/search/SearchCommand';
 import { ToolCard } from '@/components/ToolCard';
 import { TypeBadge } from '@/components/ui/TypeBadge';
-import { TYPE_META, TYPE_STRIP } from '@/lib/constants';
+import { EDITORS_PICKS, TYPE_META, TYPE_STRIP } from '@/lib/constants';
 import { SearchVariant } from '@/types';
 import {
   countTypes,
@@ -31,6 +31,8 @@ export default function HomePage() {
   const categories = getCategories();
   const typeCounts = countTypes(tools);
   const newest = newestFirst(tools);
+  const picks = EDITORS_PICKS.flatMap(slug => tools.find(tool => tool.slug === slug) ?? []);
+
   const byToolCount = [...categories].sort((a, b) => b.toolCount - a.toolCount);
   const typesByCount = [...TYPE_STRIP].sort((a, b) => (typeCounts.get(b) ?? 0) - (typeCounts.get(a) ?? 0));
   const subcategoryCount = categories.reduce((sum, c) => sum + c.subcategories.length, 0);
@@ -77,13 +79,13 @@ export default function HomePage() {
         </div>
 
         <aside
-          aria-labelledby="justadded"
-          className="flex min-w-0 flex-[1_1_280px] flex-col border-t-2 border-ink pt-4 min-[920px]:mt-10 max-[760px]:hidden"
+          aria-labelledby="picks"
+          className="flex min-w-0 flex-[1_1_280px] flex-col max-[919px]:border-t-2 max-[919px]:border-ink max-[919px]:pt-4 min-[920px]:mt-10"
         >
-          <h2 id="justadded" className={`${eyebrow} m-0 mb-2`}>
-            Just added
+          <h2 id="picks" className={`${eyebrow} m-0 mb-2`}>
+            Editor’s picks
           </h2>
-          {newest.slice(0, 4).map(tool => (
+          {picks.map(tool => (
             <a
               key={tool.slug}
               href={tool.url}
