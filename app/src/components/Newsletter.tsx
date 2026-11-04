@@ -28,7 +28,7 @@ export function Newsletter() {
         </p>
       </div>
       <form onSubmit={onSubmit} className="flex flex-[1_1_360px] flex-col gap-2.5">
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-3">
           <label htmlFor="nl-email" className="sr-only">
             Email address
           </label>
@@ -42,7 +42,7 @@ export function Newsletter() {
           />
           <button
             type="submit"
-            className="h-12 rounded-[8px] border-0 bg-btn px-5 text-[15px] leading-none font-semibold text-btn-text"
+            className="h-12 rounded-[8px] border-0 bg-btn px-5 text-[15px] max-[760px]:h-10 max-[760px]:px-4 max-[760px]:text-[14px] leading-none font-semibold text-btn-text"
           >
             Subscribe
           </button>

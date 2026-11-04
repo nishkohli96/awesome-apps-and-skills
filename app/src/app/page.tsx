@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { CategoryCard } from '@/components/CategoryCard';
-import { Newsletter } from '@/components/Newsletter';
+// import { Newsletter } from '@/components/Newsletter';
 import { SearchCommand } from '@/components/search/SearchCommand';
 import { ToolCard } from '@/components/ToolCard';
 import { TypeBadge } from '@/components/ui/TypeBadge';
@@ -51,8 +51,8 @@ export default function HomePage() {
             <em className="text-accent-ink">but will use this week.</em>
           </h1>
           <p className="m-0 max-w-[560px] text-[18px] leading-[1.55] text-pretty text-ink-2">
-            Claude skills, MCP servers, apps and web tools, picked by a person and linked straight
-            to the source. No sign-up, no detail pages, no fluff.
+            Claude skills, MCP servers, apps and web tools, picked by a techie and linked straight
+            to the source.
           </p>
           <SearchCommand variant={SearchVariant.Hero} />
           <div className="flex flex-wrap items-center gap-2">
@@ -74,7 +74,7 @@ export default function HomePage() {
 
         <aside
           aria-labelledby="justadded"
-          className="flex min-w-0 flex-[1_1_280px] flex-col border-t-2 border-ink pt-4 min-[920px]:mt-10"
+          className="flex min-w-0 flex-[1_1_280px] flex-col border-t-2 border-ink pt-4 min-[920px]:mt-10 max-[760px]:hidden"
         >
           <h2 id="justadded" className={`${eyebrow} m-0 mb-2`}>
             Just added
@@ -159,7 +159,11 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(min(320px,100%),1fr))] items-start gap-5">
           {newest.slice(0, 5).map(tool => (
-            <ToolCard key={tool.slug} tool={tool} />
+            <ToolCard
+              key={tool.slug}
+              tool={tool}
+              hideNewBadge
+            />
           ))}
           <Link
             href="/search?sort=new"
@@ -175,7 +179,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Newsletter />
+      {/* <Newsletter /> */}
     </main>
   );
 }

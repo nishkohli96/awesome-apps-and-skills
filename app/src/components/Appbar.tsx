@@ -30,13 +30,7 @@ export function Appbar() {
         >
           <Logo />
           <span className="text-[15px] font-semibold tracking-[-0.01em]">
-            Awesome Apps
-            <span className="max-[760px]:hidden">
-              {' '}
-              <span className="text-ink-3">&amp;</span>
-              {' '}
-              Skills
-            </span>
+            Awesome Apps &amp; Skills
           </span>
         </Link>
 
@@ -92,7 +86,7 @@ export function Appbar() {
             type="button"
             aria-label="Menu"
             onClick={() => setMenuOpen(true)}
-            className="grid size-11 place-items-center rounded-[8px] border-0 bg-transparent text-ink"
+            className="-mr-[15px] grid size-11 place-items-center rounded-[8px] border-0 bg-transparent text-ink"
           >
             <Icon d={ICON.menu} size={20} />
           </button>

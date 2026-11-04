@@ -21,6 +21,7 @@ interface ToolCardProps {
   onTagToggle?: (tag: string) => void;
   /** Shows the subcategory label (lists that are not grouped by subcategory). */
   showSubcategory?: boolean;
+  hideNewBadge?: boolean;
   sponsored?: boolean;
 }
 
@@ -29,6 +30,7 @@ export function ToolCard({
   activeTags = [],
   onTagToggle,
   showSubcategory = true,
+  hideNewBadge = false,
   sponsored = false,
 }: ToolCardProps) {
   const [expanded, setExpanded] = useState(false);
@@ -75,7 +77,7 @@ export function ToolCard({
             {tool.name}
           </a>
         </h3>
-        {tool.isNew && (
+        {tool.isNew && !hideNewBadge && (
           <span className="inline-flex h-[22px] items-center gap-[5px] rounded-full bg-accent-soft px-2 font-mono text-[11px] leading-none font-semibold text-accent-ink">
             <span className="size-1.5 rounded-full bg-accent" />
             New
