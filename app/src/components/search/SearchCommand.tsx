@@ -141,14 +141,16 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
           className={
             hero
               ? 'absolute inset-x-0 top-[calc(100%+8px)] z-10'
-              // The sticky header has a backdrop-filter, so `fixed` is measured from the header box:
-              // `top-full` is the line under it. A wide, centred palette with a scrim, not a
-              // dropdown squeezed to the input's width.
               : 'fixed top-[calc(100%+12px)] left-1/2 z-30 w-[min(680px,calc(100vw-32px))] -translate-x-1/2'
           }
           onMouseDown={e => e.preventDefault()}
         >
-          <SearchPanel search={search} listId={listId} optionId={optionId} onDone={close} />
+          <SearchPanel
+            search={search}
+            listId={listId}
+            optionId={optionId}
+            onDone={close}
+          />
         </div>
       )}
       {showPanel && !hero && (

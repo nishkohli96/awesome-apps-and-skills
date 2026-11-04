@@ -4,7 +4,6 @@ import { slugify } from '@/lib/parse';
 import { useMemo, type ReactNode } from 'react';
 import Link from 'next/link';
 import {
-  filtersToQuery,
   isFiltering,
   matchesFilters,
   sortTools,
@@ -40,7 +39,6 @@ interface ListingProps {
 const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 
 export function Listing({
-  basePath,
   tools,
   groupBy,
   groups,
@@ -48,7 +46,7 @@ export function Listing({
   lockedType,
   footer,
 }: ListingProps) {
-  const { state, update, clear, defaultSort } = useUrlFilters(SortKey.AZ);
+  const { state, update, clear } = useUrlFilters(SortKey.AZ);
 
   const tags = useMemo(() => {
     const counts = new Map<string, number>();

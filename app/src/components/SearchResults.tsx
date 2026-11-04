@@ -80,13 +80,13 @@ export function SearchResults() {
         <span role="status" className="font-mono text-[14px] leading-none font-medium text-ink-2">
           {results.length}
           {' '}
-          {results.length === 1 ? 'tool' : 'tools'}
+          {results.length === 1 ? 'Tool' : 'Tools'}
           {' '}
-          ·
+          |
           {' '}
           {groups.length}
           {' '}
-          {groups.length === 1 ? 'category' : 'categories'}
+          {groups.length === 1 ? 'Category' : 'Categories'}
         </span>
       </div>
 
