@@ -127,7 +127,7 @@ export function ToolCard({
             type="button"
             aria-expanded={tagsOpen}
             onClick={() => setTagsOpen(v => !v)}
-            className="h-[26px] rounded-[6px] border border-dashed border-border-strong bg-transparent px-2 font-mono text-[12px] leading-none font-medium text-ink-2"
+            className="inline-flex h-[26px] items-center rounded-[6px] border border-accent-ink/60 bg-transparent px-2 font-mono text-[12px] leading-none font-medium text-accent-ink"
           >
             {tagsOpen ? 'less' : `+${extraTags}`}
           </button>

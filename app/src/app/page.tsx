@@ -50,11 +50,15 @@ export default function HomePage() {
             {' '}
             <em className="text-accent-ink">but will use this week.</em>
           </h1>
-          <p className="m-0 max-w-[560px] text-[18px] leading-[1.55] text-pretty text-ink-2">
+          <p className="m-0 text-[18px] leading-[1.55] text-pretty text-ink-2">
             Claude skills, MCP servers, apps and web tools, picked by a techie and linked straight
             to the source.
           </p>
           <SearchCommand variant={SearchVariant.Hero} />
+          <p className="m-0 -mt-3 text-[15px] leading-[1.55] text-pretty text-ink-2">
+            Whether you&apos;re a developer, designer, creator or an entrepreneur, I&apos;d bet
+            at least one tool in here will make you 10x more productive.
+          </p>
           <div className="flex flex-wrap items-center gap-2">
             <span className="mr-1 text-[14px] text-ink-3">Try</span>
             {QUICK_PICKS.map(pick => (
@@ -116,7 +120,10 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(min(272px,100%),1fr))] gap-4">
           {byToolCount.map(category => (
-            <CategoryCard key={category.slug} category={category} />
+            <CategoryCard
+              key={category.slug}
+              category={category}
+            />
           ))}
         </div>
       </section>
