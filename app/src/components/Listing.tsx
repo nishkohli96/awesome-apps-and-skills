@@ -1,5 +1,6 @@
 'use client';
 
+import { slugify } from '@/lib/parse';
 import { useMemo, type ReactNode } from 'react';
 import Link from 'next/link';
 import {
@@ -66,11 +67,11 @@ export function Listing({
   const isEmpty = filtering && matched.length === 0;
 
   // With filters on, a group with no hits is left out of both the list and the side nav.
-  const sections = groups.flatMap((group, index) => {
+  const sections = groups.flatMap(group => {
     const own = (t: Tool) => (groupBy === GroupBy.Subcategory ? t.subcategory : t.category) === group.key;
     const all = tools.filter(own).length;
     const hits = matched.filter(own);
-    return filtering && hits.length === 0 ? [] : [{ ...group, id: `group-${index}`, all, hits }];
+    return filtering && hits.length === 0 ? [] : [{ ...group, id: slugify(group.label), all, hits }];
   });
 
   const toggleTag = (tag: string) => update({ tags: toggle(state.tags, tag) });

@@ -174,8 +174,8 @@ export function SearchPanel({
             ” yet.
           </span>
           <p className="m-0 text-[14px] leading-[1.55] text-ink-2">
-            Check the spelling, try a broader word like “video” or “seo”, or suggest the tool you
-            had in mind.
+            Check the spelling, try a broader word like “video” or “seo”, or suggest a tool you
+            have in mind.
           </p>
           <Link
             href="/suggest-tool"
