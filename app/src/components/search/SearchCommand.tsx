@@ -1,5 +1,6 @@
 'use client';
 
+import { Command } from 'lucide-react';
 import { useEffect, useId, useRef, useState, type FocusEvent } from 'react';
 import { ICON, SEARCH_PLACEHOLDER } from '@/lib/constants';
 import { Icon } from '@/components/ui/Icon';
@@ -7,9 +8,12 @@ import { SearchPanelState, SearchVariant } from '@/types';
 import { SearchPanel } from './SearchPanel';
 import { useSearchState } from './useSearchState';
 
+/** Height of the sticky appbar; a hero field scrolled under it counts as off screen. */
+const APPBAR_HEIGHT = 64;
+
 interface SearchCommandProps {
   variant: SearchVariant;
-  /** Listens for `/` and ⌘K / Ctrl+K and focuses this field. */
+  /** Listens for ⌘K / Ctrl+K and focuses the visible search field. */
   shortcuts?: boolean;
   /** Called by the shortcuts when this field is hidden (phone layout). */
   onShortcutFallback?: () => void;
@@ -34,18 +38,16 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
       return;
     }
     const onKey = (event: globalThis.KeyboardEvent) => {
-      const target = event.target instanceof Element ? event.target : null;
-      const typing = target?.closest('input, textarea, select, [contenteditable="true"]');
-      const cmdK = (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k';
-      if (!cmdK && !(event.key === '/' && !typing)) {
+      if (!((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k')) {
         return;
       }
       event.preventDefault();
       const input = inputRef.current;
       // While the hero field is on screen the appbar one is hidden, so focus the visible one.
-      const heroInput = document.documentElement.dataset.heroSearch === 'visible'
-        ? document.querySelector<HTMLInputElement>('[data-hero-search]')
-        : null;
+      // Measured now rather than read from the observer's flag, which lags a frame behind scrolling.
+      const hero = document.querySelector<HTMLInputElement>('[data-hero-search-input]');
+      const box = hero?.getBoundingClientRect();
+      const heroInput = box && box.bottom > APPBAR_HEIGHT && box.top < window.innerHeight ? hero : null;
       if (heroInput) {
         heroInput.focus();
       } else if (input && input.offsetParent !== null) {
@@ -105,7 +107,7 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
         <Icon d={ICON.search} size={hero ? 22 : 17} />
         <input
           ref={inputRef}
-          data-hero-search={hero ? '' : undefined}
+          data-hero-search-input={hero ? '' : undefined}
           type="search"
           role="combobox"
           aria-label={hero ? 'Search the directory' : 'Search'}
@@ -127,13 +129,18 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
           }`}
         />
         <kbd
-          className={`grid place-items-center border border-border bg-surface-2 font-mono leading-none font-medium text-ink-2 max-[760px]:hidden ${
+          className={`inline-flex items-center justify-center gap-[3px] border border-border bg-surface-2 font-mono leading-none font-medium text-ink-2 max-[760px]:hidden ${
             hero
               ? 'h-[26px] min-w-[26px] rounded-[6px] px-[7px] text-[12px]'
               : 'h-[22px] rounded-[5px] px-1.5 text-[11px]'
           }`}
         >
-          {hero ? '/' : '⌘K'}
+          <Command
+            size={hero ? 13 : 12}
+            strokeWidth={2}
+            aria-hidden="true"
+          />
+          K
         </kbd>
       </label>
       {showPanel && (
