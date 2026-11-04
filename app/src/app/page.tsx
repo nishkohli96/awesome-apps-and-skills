@@ -72,7 +72,7 @@ export default function HomePage() {
             ))}
           </div>
           <p className="m-0 font-mono text-[13px] leading-[1.4] font-medium text-ink-3">
-            {`${tools.length} tools · ${categories.length} categories`}
+            {`${tools.length} tools | ${categories.length} categories`}
           </p>
         </div>
 

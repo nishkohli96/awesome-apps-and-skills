@@ -116,7 +116,10 @@ export function SearchResults() {
           PRICING
           <select
             value={state.price}
-            onChange={e => update({ price: e.target.value as FilterState['price'] })}
+            onChange={e => {
+              update({ price: e.target.value as FilterState['price'] });
+              e.target.blur();
+            }}
             className={select}
           >
             <option value={PriceFilter.Any}>Any</option>
@@ -131,7 +134,10 @@ export function SearchResults() {
           SORT
           <select
             value={state.sort}
-            onChange={e => update({ sort: e.target.value as SortKey })}
+            onChange={e => {
+              update({ sort: e.target.value as SortKey });
+              e.target.blur();
+            }}
             className={select}
           >
             {q && <option value={SortKey.Match}>Best match</option>}

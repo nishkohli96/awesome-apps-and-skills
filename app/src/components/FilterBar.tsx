@@ -121,7 +121,10 @@ export function FilterBar({
           PRICING
           <select
             value={state.price}
-            onChange={e => onChange({ price: e.target.value as Pricing | PriceFilter })}
+            onChange={e => {
+              onChange({ price: e.target.value as Pricing | PriceFilter });
+              e.target.blur();
+            }}
             className={select}
           >
             <option value={PriceFilter.Any}>Any</option>
@@ -136,7 +139,10 @@ export function FilterBar({
           SORT
           <select
             value={state.sort}
-            onChange={e => onChange({ sort: e.target.value as SortKey })}
+            onChange={e => {
+              onChange({ sort: e.target.value as SortKey });
+              e.target.blur();
+            }}
             className={select}
           >
             {sortOptions.map(option => (

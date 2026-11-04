@@ -73,8 +73,6 @@ export function Listing({
     return filtering && hits.length === 0 ? [] : [{ ...group, id: `group-${index}`, all, hits }];
   });
 
-  const query = filtersToQuery(state, defaultSort).toString();
-  const urlLabel = query ? `${basePath}?${query}` : basePath;
   const toggleTag = (tag: string) => update({ tags: toggle(state.tags, tag) });
 
   return (
@@ -101,20 +99,13 @@ export function Listing({
             : plural(tools.length, 'tool', 'tools')}
         </strong>
         {filtering && (
-          <>
-            <code
-              className="rounded-[6px] bg-surface-2 px-2 py-1 font-mono text-[12px] leading-none text-ink-3"
-            >
-              {urlLabel}
-            </code>
-            <button
-              type="button"
-              onClick={clear}
-              className="h-8 rounded-[8px] border border-border-strong bg-surface px-3 text-[13px] leading-none font-medium text-ink"
-            >
-              Clear filters
-            </button>
-          </>
+          <button
+            type="button"
+            onClick={clear}
+            className="h-8 rounded-[8px] border border-border-strong bg-surface px-3 text-[13px] leading-none font-medium text-ink"
+          >
+            Clear filters
+          </button>
         )}
       </div>
 

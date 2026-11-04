@@ -91,7 +91,7 @@ export default async function CategoryPage({ params }: Props) {
         crumbs={[{ label: 'Home', href: '/' }, { label: category.name }]}
         mark={category.emoji}
         title={category.name}
-        meta={`${category.toolCount} ${category.toolCount === 1 ? 'tool' : 'tools'} · ${category.subcategories.length} ${
+        meta={`${category.toolCount} ${category.toolCount === 1 ? 'tool' : 'tools'} | ${category.subcategories.length} ${
           category.subcategories.length === 1 ? 'subcategory' : 'subcategories'
         }`}
         description={category.description}
