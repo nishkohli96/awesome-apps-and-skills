@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...types,
     ...tags,
     {
-      url: url('/submit'),
+      url: url('/suggest-tool'),
       lastModified: latest(tools),
       changeFrequency: 'yearly',
       priority: 0.3

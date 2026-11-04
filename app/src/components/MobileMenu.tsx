@@ -51,7 +51,7 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               {slugs.length}
             </span>
           </Link>
-          <Link href="/submit" onClick={close} className={row}>
+          <Link href="/suggest-tool" onClick={close} className={row}>
             Submit a tool
           </Link>
           <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className={row}>

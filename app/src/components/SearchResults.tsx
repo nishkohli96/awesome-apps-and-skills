@@ -153,7 +153,7 @@ export function SearchResults() {
             had in mind.
           </p>
           <Link
-            href="/submit"
+            href="/suggest-tool"
             className="inline-flex h-10 items-center rounded-[8px] bg-btn px-4 text-[14px] leading-none font-semibold !text-btn-text no-underline"
           >
             Submit a tool

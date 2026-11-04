@@ -178,7 +178,7 @@ export function SearchPanel({
             had in mind.
           </p>
           <Link
-            href="/submit"
+            href="/suggest-tool"
             onClick={onDone}
             className="mt-1 inline-flex h-[38px] items-center rounded-[8px] bg-btn px-3.5 text-[14px] leading-none font-semibold !text-btn-text no-underline"
           >

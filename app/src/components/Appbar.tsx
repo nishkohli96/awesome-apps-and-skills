@@ -57,8 +57,8 @@ export function Appbar() {
               {slugs.length}
             </span>
           </Link>
-          <Link href="/submit" className={navLink}>
-            Submit
+          <Link href="/suggest-tool" className={navLink}>
+            Contribute
           </Link>
           <a
             href={REPO_URL}

@@ -4,7 +4,7 @@ import { countTags, getCategories, getTools } from '@/lib/data';
 
 export const metadata: Metadata = { title: 'About' };
 
-const rowClass = 'flex justify-between border-b border-border py-3.5';
+const rowClass = 'flex justify-between py-3.5 max-[760px]:border-b max-[760px]:border-border';
 
 export default function AboutPage() {
   const tools = getTools();
@@ -28,13 +28,15 @@ export default function AboutPage() {
           site. No affiliate links, no paid placement inside the list.
         </p>
         <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
-          Curated by Nishant Kohli, who adds new tools as they appear.
-        </p>
-        <p className="m-0 text-[13px] text-ink-3">
-          Not affiliated with Anthropic.
+          Curated by
+          {' '}
+          <a href="https://nishkohli96.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Nishant Kohli
+          </a>
+          , who adds new tools as they appear.
         </p>
       </div>
-      <dl className="m-0 flex flex-[1_1_180px] flex-col border-t-2 border-ink">
+      <dl className="m-0 flex flex-[1_1_180px] flex-col max-[760px]:border-t max-[760px]:border-ink">
         {stats.map(([name, value]) => (
           <div key={name} className={rowClass}>
             <dt className="text-ink-2">

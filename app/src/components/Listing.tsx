@@ -213,7 +213,7 @@ export function Listing({
                   Clear filters
                 </button>
                 <Link
-                  href="/submit"
+                  href="/suggest-tool"
                   className="inline-flex h-10 items-center rounded-[8px] border border-border-strong px-4 text-[14px] leading-none font-medium text-ink no-underline"
                 >
                   Submit a tool

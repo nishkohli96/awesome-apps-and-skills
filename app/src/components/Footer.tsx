@@ -41,7 +41,7 @@ export function Footer({ categories }: { categories: Category[] }) {
           <Link href="/about" className={link}>
             About
           </Link>
-          <Link href="/submit" className={link}>
+          <Link href="/suggest-tool" className={link}>
             Submit a tool
           </Link>
           <a

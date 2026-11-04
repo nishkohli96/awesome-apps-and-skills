@@ -46,7 +46,7 @@ export default async function CategoryPage({ params }: Props) {
           that belongs here?
         </p>
         <Link
-          href="/submit"
+          href="/suggest-tool"
           className="mt-1 inline-flex h-10 items-center self-start rounded-[8px] bg-btn px-4 text-[14px] leading-none font-semibold !text-btn-text no-underline"
         >
           Submit a tool

@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import { REPO_URL } from '@/lib/constants';
 
-export const metadata: Metadata = { title: 'Submit a tool' };
+export const metadata: Metadata = { title: 'Suggest a tool' };
 
 const option
   = 'flex flex-col gap-2 rounded-[12px] border border-border bg-surface p-5 text-ink no-underline lift';
 
-export default function SubmitPage() {
+export default function SuggestToolPage() {
   return (
     <main
       id="main"
