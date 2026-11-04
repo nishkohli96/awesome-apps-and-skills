@@ -48,12 +48,12 @@ export default function HomePage() {
             A human-curated index of AI tools
           </span>
           <h1 className="m-0 font-serif text-[clamp(44px,7vw,84px)] leading-[0.98] font-normal tracking-[-0.02em] text-balance">
-            The tools you haven’t heard of yet,
+            Skip the endless searching.
             {' '}
-            <em className="text-accent-ink">but will use this week.</em>
+            <em className="text-accent-ink">Find the tool that fits.</em>
           </h1>
           <p className="m-0 text-[18px] leading-[1.55] text-pretty text-ink-2">
-            Claude skills, MCP servers, apps and web tools, picked by a techie and linked straight
+            Claude skills, MCP servers, apps and web tools, hand-picked by a techie and linked straight
             to the source.
           </p>
           <SearchCommand variant={SearchVariant.Hero} />
@@ -83,7 +83,7 @@ export default function HomePage() {
           className="flex min-w-0 flex-[1_1_280px] flex-col max-[919px]:border-t-1 max-[919px]:border-ink max-[919px]:pt-4 min-[920px]:mt-10"
         >
           <h2 id="picks" className={`${eyebrow} m-0 mb-2`}>
-            Editor’s picks
+            Editor&apos;s picks
           </h2>
           {picks.map(tool => (
             <a

@@ -2,7 +2,13 @@ import { ToolType } from '@/types';
 
 export const SITE_NAME = 'Awesome Apps & Skills';
 export const REPO_URL = 'https://github.com/nishkohli96/awesome-apps-and-skills';
-export const SEARCH_PLACEHOLDER = 'Search 150+ tools, skills and apps';
+const PLACEHOLDER_STEP = 50;
+
+/** "Search 150+ tools…", rounded down to the nearest 50 so it rolls over to 200+ by itself. */
+export function searchPlaceholder(toolCount: number): string {
+  const rounded = Math.floor(toolCount / PLACEHOLDER_STEP) * PLACEHOLDER_STEP;
+  return `Search ${rounded}+ tools, skills and apps`;
+}
 
 /** SVG path data (24x24 stroke icons) taken from the approved design. */
 export const ICON = {

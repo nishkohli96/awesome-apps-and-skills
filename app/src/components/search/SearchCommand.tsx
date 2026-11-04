@@ -2,7 +2,8 @@
 
 import { Command } from 'lucide-react';
 import { useEffect, useId, useRef, useState, type FocusEvent } from 'react';
-import { ICON, SEARCH_PLACEHOLDER } from '@/lib/constants';
+import { ICON, searchPlaceholder } from '@/lib/constants';
+import { useData } from '@/lib/data-context';
 import { Icon } from '@/components/ui/Icon';
 import { SearchPanelState, SearchVariant } from '@/types';
 import { SearchPanel } from './SearchPanel';
@@ -23,6 +24,7 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
   const id = useId();
   const listId = `${id}-list`;
   const optionId = (index: number) => `${id}-option-${index}`;
+  const { tools } = useData();
   const inputRef = useRef<HTMLInputElement>(null);
   const fieldRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
@@ -116,7 +118,7 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
           aria-autocomplete="list"
           aria-activedescendant={showPanel && search.rows.length > 0 ? optionId(search.active) : undefined}
           autoComplete="off"
-          placeholder={SEARCH_PLACEHOLDER}
+          placeholder={searchPlaceholder(tools.length)}
           value={search.query}
           onFocus={() => setOpen(true)}
           onChange={event => {

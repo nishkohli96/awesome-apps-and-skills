@@ -2,13 +2,15 @@
 
 import { useId } from 'react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
-import { ICON, SEARCH_PLACEHOLDER } from '@/lib/constants';
+import { ICON, searchPlaceholder } from '@/lib/constants';
+import { useData } from '@/lib/data-context';
 import { Icon } from '@/components/ui/Icon';
 import { SearchPanel } from './SearchPanel';
 import { useSearchState } from './useSearchState';
 
 function Body({ onClose }: { onClose: () => void }) {
   const id = useId();
+  const { tools } = useData();
   const search = useSearchState(onClose);
   return (
     <>
@@ -24,7 +26,7 @@ function Body({ onClose }: { onClose: () => void }) {
             aria-activedescendant={search.rows.length > 0 ? `${id}-option-${search.active}` : undefined}
             autoComplete="off"
             autoFocus
-            placeholder={SEARCH_PLACEHOLDER}
+            placeholder={searchPlaceholder(tools.length)}
             value={search.query}
             onChange={event => search.setQuery(event.target.value)}
             onKeyDown={search.onKeyDown}
