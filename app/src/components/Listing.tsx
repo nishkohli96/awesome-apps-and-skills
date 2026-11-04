@@ -89,58 +89,59 @@ export function Listing({
       />
 
       <div
-        role="status"
-        aria-live="polite"
-        className="flex min-h-8 flex-wrap items-center gap-3"
-      >
-        <strong className="text-[15px]">
-          {filtering
-            ? `${matched.length} ${matched.length === 1 ? 'tool matches' : 'tools match'}`
-            : plural(tools.length, 'Tool', 'Tools')}
-        </strong>
-        {filtering && (
-          <button
-            type="button"
-            onClick={clear}
-            className="h-8 rounded-[8px] border border-border-strong bg-surface px-3 text-[13px] leading-none font-medium text-ink"
-          >
-            Clear filters
-          </button>
-        )}
-      </div>
-
-      <div
         id="results"
         className="flex flex-wrap items-start gap-10"
       >
-        <nav
-          aria-label={groupBy === GroupBy.Subcategory ? 'Subcategories' : 'Categories'}
-          className="sticky top-24 flex max-w-[220px] flex-[1_1_200px] flex-col gap-0.5 self-start max-[760px]:hidden"
-        >
-          <span className="px-2.5 pb-2.5 font-mono text-[12px] leading-none font-medium text-ink-3">
-            ON THIS PAGE
-          </span>
-          {(isEmpty ? [] : sections).map(section => (
-            <a
-              key={section.id}
-              href={`#${section.id}`}
-              className="flex justify-between gap-2 rounded-[8px] px-2.5 py-2 text-[14px] font-medium text-ink no-underline hover:bg-surface-2"
-            >
-              <span>
-                {section.emoji && (
-                  <span aria-hidden="true">
-                    {section.emoji}
-                    {' '}
-                  </span>
-                )}
-                {section.label}
-              </span>
-              <span className="font-mono text-[12px] leading-none font-medium text-ink-3">
-                {filtering ? section.hits.length : section.all}
-              </span>
-            </a>
-          ))}
-        </nav>
+        <div className="sticky top-24 flex max-w-[220px] flex-[1_1_200px] flex-col gap-6 self-start max-[760px]:static max-[760px]:max-w-none max-[760px]:basis-full">
+          <div
+            role="status"
+            aria-live="polite"
+            className="flex min-h-8 flex-wrap items-center gap-3 px-2.5"
+          >
+            <strong className="text-[15px]">
+              {filtering
+                ? `${matched.length} ${matched.length === 1 ? 'tool matches' : 'tools match'}`
+                : plural(tools.length, 'Tool', 'Tools')}
+            </strong>
+            {filtering && (
+              <button
+                type="button"
+                onClick={clear}
+                className="h-8 rounded-[8px] border border-border-strong bg-surface px-3 text-[13px] leading-none font-medium text-ink"
+              >
+                Clear filters
+              </button>
+            )}
+          </div>
+          <nav
+            aria-label={groupBy === GroupBy.Subcategory ? 'Subcategories' : 'Categories'}
+            className="flex flex-col gap-0.5 max-[760px]:hidden"
+          >
+            <span className="px-2.5 pb-2.5 font-mono text-[12px] leading-none font-medium text-ink-3">
+              ON THIS PAGE
+            </span>
+            {(isEmpty ? [] : sections).map(section => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className="flex justify-between gap-2 rounded-[8px] px-2.5 py-2 text-[14px] font-medium text-ink no-underline hover:bg-surface-2"
+              >
+                <span>
+                  {section.emoji && (
+                    <span aria-hidden="true">
+                      {section.emoji}
+                      {' '}
+                    </span>
+                  )}
+                  {section.label}
+                </span>
+                <span className="font-mono text-[12px] leading-none font-medium text-ink-3">
+                  {filtering ? section.hits.length : section.all}
+                </span>
+              </a>
+            ))}
+          </nav>
+        </div>
         <label className="hidden flex-[1_1_100%] flex-col gap-1.5 text-[13px] text-ink-2 max-[760px]:flex">
           Jump to
           {' '}
@@ -236,7 +237,7 @@ export function Listing({
                       : plural(section.all, 'tool', 'tools')}
                   </span>
                 </div>
-                <div className="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] items-start gap-5">
+                <div className="grid grid-cols-[repeat(auto-fill,minmax(min(300px,100%),1fr))] items-start gap-5">
                   {section.hits.map(tool => (
                     <ToolCard
                       key={tool.slug}
