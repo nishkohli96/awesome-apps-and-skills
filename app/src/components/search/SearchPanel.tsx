@@ -21,9 +21,24 @@ interface SearchPanelProps {
 
 const mono = 'font-mono text-[12px] leading-none font-medium text-ink-3';
 
-export function SearchPanel({ search, listId, optionId, onDone, mobile = false }: SearchPanelProps) {
+export function SearchPanel({
+  search,
+  listId,
+  optionId,
+  onDone,
+  mobile = false
+}: SearchPanelProps) {
   const { tools, categories } = useData();
-  const { rows, total, trimmed, pending, state, active, setActive, goToResults } = search;
+  const {
+    rows,
+    total,
+    trimmed,
+    pending,
+    state,
+    active,
+    setActive,
+    goToResults
+  } = search;
 
   const popularTags = useMemo(() => {
     const counts = new Map<string, number>();

@@ -30,7 +30,9 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
         className="inset-0 flex h-dvh w-screen max-w-none translate-x-0 translate-y-0 flex-col gap-0 overflow-y-auto rounded-none bg-bg p-0 ring-0 sm:max-w-none"
       >
         <header className="flex h-14 shrink-0 items-center border-b border-border pr-1.5 pl-4">
-          <DialogTitle className="m-0 mr-auto text-[15px] font-semibold">Menu</DialogTitle>
+          <DialogTitle className="m-0 mr-auto text-[15px] font-semibold">
+            Menu
+          </DialogTitle>
           <DialogClose
             aria-label="Close menu"
             className="grid size-11 place-items-center border-0 bg-transparent text-ink"

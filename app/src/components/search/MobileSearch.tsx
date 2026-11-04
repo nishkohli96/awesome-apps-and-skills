@@ -28,7 +28,7 @@ function Body({ onClose }: { onClose: () => void }) {
             value={search.query}
             onChange={event => search.setQuery(event.target.value)}
             onKeyDown={search.onKeyDown}
-            className="min-w-0 flex-1 border-0 bg-transparent text-[16px] leading-none text-ink outline-none focus-visible:!outline-none"
+            className="min-w-0 flex-1 border-0 bg-transparent text-[16px] leading-none text-ink outline-none focus-visible:outline-none!"
           />
         </label>
         <button

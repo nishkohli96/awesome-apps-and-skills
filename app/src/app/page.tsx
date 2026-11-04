@@ -6,7 +6,12 @@ import { ToolCard } from '@/components/ToolCard';
 import { TypeBadge } from '@/components/ui/TypeBadge';
 import { TYPE_META, TYPE_STRIP } from '@/lib/constants';
 import { SearchVariant } from '@/types';
-import { countTypes, getCategories, getTools, newestFirst } from '@/lib/data';
+import {
+  countTypes,
+  getCategories,
+  getTools,
+  newestFirst
+} from '@/lib/data';
 
 const QUICK_PICKS = [
   { label: 'Claude skills', href: '/type/skill' },
@@ -37,7 +42,9 @@ export default function HomePage() {
     >
       <section className="flex flex-wrap items-start gap-12 pt-[clamp(48px,8vw,104px)]">
         <div className="flex min-w-0 flex-[999_1_560px] flex-col gap-7">
-          <span className={eyebrow}>A human-curated index of AI tools</span>
+          <span className={eyebrow}>
+            A human-curated index of AI tools
+          </span>
           <h1 className="m-0 font-serif text-[clamp(44px,7vw,84px)] leading-[0.98] font-normal tracking-[-0.02em] text-balance">
             The tools you haven’t heard of yet,
             {' '}
@@ -99,7 +106,11 @@ export default function HomePage() {
         </aside>
       </section>
 
-      <section id="categories" aria-labelledby="cats" className="flex scroll-mt-24 flex-col gap-7">
+      <section
+        id="categories"
+        aria-labelledby="cats"
+        className="flex scroll-mt-24 flex-col gap-7"
+      >
         <div className={sectionHead}>
           <h2 id="cats" className={h2}>
             Browse by category
@@ -143,7 +154,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="new" aria-labelledby="newh" className="flex scroll-mt-24 flex-col gap-7">
+      <section
+        id="new"
+        aria-labelledby="newh"
+        className="flex scroll-mt-24 flex-col gap-7"
+      >
         <div className={sectionHead}>
           <h2 id="newh" className={h2}>
             New this week

@@ -177,10 +177,14 @@ export function SearchResults() {
                 {category.name}
               </h2>
               <Link
-                href={exactTag ? `/${category.slug}?tags=${encodeURIComponent(q.toLowerCase())}` : `/${category.slug}`}
+                href={exactTag
+                  ? `/${category.slug}?tags=${encodeURIComponent(q.toLowerCase())}`
+                  : `/${category.slug}`}
                 className="text-[14px] font-medium"
               >
-                {exactTag ? `Open ${category.name} filtered by “${q}” →` : `Open ${category.name} →`}
+                {exactTag
+                  ? `Open ${category.name} filtered by “${q}” →`
+                  : `Open ${category.name} →`}
               </Link>
             </div>
             <div className="grid grid-cols-[repeat(auto-fill,minmax(min(300px,100%),1fr))] items-start gap-5">

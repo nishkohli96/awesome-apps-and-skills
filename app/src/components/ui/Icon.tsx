@@ -6,7 +6,13 @@ interface IconProps {
   className?: string;
 }
 
-export function Icon({ d, size = 16, strokeWidth = 1.75, filled = false, className }: IconProps) {
+export function Icon({
+  d,
+  size = 16,
+  strokeWidth = 1.75,
+  filled = false,
+  className
+}: IconProps) {
   return (
     <svg
       width={size}

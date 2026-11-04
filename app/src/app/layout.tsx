@@ -21,9 +21,12 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: { icon: '/logo.svg' },
-  title: { template: `%s | ${SITE_NAME}`, default: `${SITE_NAME}: a human-curated index of AI tools` },
+  title: {
+    template: `%s | ${SITE_NAME}`,
+    default: `${SITE_NAME}: a human-curated index of AI tools`
+  },
   description:
-    'Claude skills, MCP servers, apps and web tools, picked by a person and linked straight to the source.',
+    'Claude skills, MCP servers, apps and web tools, picked by a techie and linked straight to the source.',
 };
 
 export const viewport: Viewport = {

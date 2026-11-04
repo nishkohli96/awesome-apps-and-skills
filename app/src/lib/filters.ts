@@ -1,4 +1,11 @@
-import { PRICINGS, PriceFilter, SortKey, TOOL_TYPES, type Pricing, type ToolType } from '@/types';
+import {
+  PRICINGS,
+  PriceFilter,
+  SortKey,
+  TOOL_TYPES,
+  type Pricing,
+  type ToolType
+} from '@/types';
 import type { FilterState, Tool } from './types';
 
 type Params = Pick<URLSearchParams, 'get'>;
@@ -62,5 +69,8 @@ export function sortTools(tools: Tool[], sort: SortKey): Tool[] {
 }
 
 export function toggle<T>(items: T[], item: T): T[] {
-  return items.includes(item) ? items.filter(x => x !== item) : [...items, item];
+  return (items.includes(item)
+    ? items.filter(x => x !== item)
+    : [...items, item]
+  );
 }

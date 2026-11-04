@@ -12,31 +12,44 @@ export function Footer({ categories }: { categories: Category[] }) {
         <div className="flex flex-[1_1_260px] flex-col gap-3">
           <span className="flex items-center gap-2.5">
             <Logo />
-            <span className="text-[15px] font-semibold">Awesome Apps &amp; Skills</span>
+            <span className="text-[15px] font-semibold">
+              Awesome Apps &amp; Skills
+            </span>
           </span>
           <p className="m-0 max-w-[300px] text-[14px] leading-[1.55] text-ink-2">
             Curated by hand. Every link goes to the tool itself.
           </p>
-          <p className="m-0 text-[13px] text-ink-3">Not affiliated with Anthropic.</p>
         </div>
         <nav
           aria-label="Categories"
           className="grid flex-[2_1_420px] grid-cols-[repeat(auto-fit,minmax(160px,1fr))] content-start gap-x-6 gap-y-2.5"
         >
           {categories.map(category => (
-            <Link key={category.slug} href={`/${category.slug}`} className={link}>
+            <Link
+              key={category.slug}
+              href={`/${category.slug}`}
+              className={link}
+            >
               {category.name}
             </Link>
           ))}
         </nav>
-        <nav aria-label="Site" className="flex flex-[1_1_140px] flex-col gap-2.5">
+        <nav
+          aria-label="Site"
+          className="flex flex-[1_1_140px] flex-col gap-2.5"
+        >
           <Link href="/about" className={link}>
             About
           </Link>
           <Link href="/submit" className={link}>
             Submit a tool
           </Link>
-          <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className={link}>
+          <a
+            href={REPO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={link}
+          >
             GitHub
           </a>
         </nav>

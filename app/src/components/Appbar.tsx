@@ -40,13 +40,24 @@ export function Appbar() {
           </span>
         </Link>
 
-        <SearchCommand variant={SearchVariant.Appbar} shortcuts onShortcutFallback={openMobileSearch} />
+        <SearchCommand
+          variant={SearchVariant.Appbar}
+          shortcuts
+          onShortcutFallback={openMobileSearch}
+        />
 
-        <nav aria-label="Primary" className="flex shrink-0 items-center gap-0.5 max-[760px]:hidden">
+        <nav
+          aria-label="Primary"
+          className="flex shrink-0 items-center gap-0.5 max-[760px]:hidden"
+        >
           <Link href="/#new" className={navLink}>
             New
           </Link>
-          <Link href="/favourites" aria-label={`Favourites, ${slugs.length} saved`} className={navLink}>
+          <Link
+            href="/favourites"
+            aria-label={`Favourites, ${slugs.length} saved`}
+            className={navLink}
+          >
             <Icon d={ICON.heart} />
             <span className="font-mono text-[12px]">
               {slugs.length}

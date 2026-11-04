@@ -13,7 +13,7 @@ export function TypeBadge({ type, box }: TypeBadgeProps) {
   if (box) {
     return (
       <span
-        className={`tb tb-${type} shrink-0 justify-center !p-0`}
+        className={`tb tb-${type} shrink-0 justify-center p-0!`}
         style={{ width: box, height: box, borderRadius: box >= 32 ? 8 : 6 }}
         aria-hidden="true"
       >

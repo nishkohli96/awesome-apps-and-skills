@@ -35,11 +35,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   return [
-    { url: url('/'), lastModified: latest(tools), changeFrequency: 'daily', priority: 1 },
+    {
+      url: url('/'),
+      lastModified: latest(tools),
+      changeFrequency: 'daily',
+      priority: 1
+    },
     ...categories,
     ...types,
     ...tags,
-    { url: url('/submit'), changeFrequency: 'yearly', priority: 0.3 },
-    { url: url('/about'), changeFrequency: 'yearly', priority: 0.3 },
+    {
+      url: url('/submit'),
+      lastModified: latest(tools),
+      changeFrequency: 'yearly',
+      priority: 0.3
+    },
+    {
+      url: url('/about'),
+      lastModified: latest(tools),
+      changeFrequency: 'yearly',
+      priority: 0.3
+    }
   ];
 }

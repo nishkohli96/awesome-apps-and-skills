@@ -13,7 +13,12 @@ interface ProvidersProps {
 
 export function Providers({ tools, categories, children }: ProvidersProps) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
       <DataProvider tools={tools} categories={categories}>
         {children}
       </DataProvider>

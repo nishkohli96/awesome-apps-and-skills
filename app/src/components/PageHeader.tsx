@@ -14,13 +14,19 @@ interface PageHeaderProps {
 export function PageHeader({ crumbs, mark, title, meta, description }: PageHeaderProps) {
   return (
     <section className="flex flex-col gap-4 pt-10">
-      <nav aria-label="Breadcrumb" className="flex gap-2 text-[14px] text-ink-3">
+      <nav
+        aria-label="Breadcrumb"
+        className="flex gap-2 text-[14px] text-ink-3"
+      >
         {crumbs.map((crumb, index) => (
           <span key={crumb.label} className="flex gap-2">
             {index > 0 && <span aria-hidden="true">/</span>}
             {crumb.href
               ? (
-                <Link href={crumb.href} className="text-ink-2 no-underline hover:text-ink">
+                <Link
+                  href={crumb.href}
+                  className="text-ink-2 no-underline hover:text-ink"
+                >
                   {crumb.label}
                 </Link>
               )

@@ -9,11 +9,11 @@ import type { Category, Tool } from './types';
 
 const REPO_ROOT = path.resolve(process.cwd(), '..');
 const CATEGORIES_DIR = path.join(REPO_ROOT, 'categories');
-const NEW_WINDOW_DAYS = 14;
+const NEW_WINDOW_DAYS = 7;
 
 interface Data {
-  tools: Tool[];
   categories: Category[];
+  tools: Tool[];
 }
 
 interface Addition {
@@ -92,7 +92,11 @@ function load(): Data {
   for (const file of readdirSync(CATEGORIES_DIR).filter(f => f.endsWith('.md'))) {
     const source = readFileSync(path.join(CATEGORIES_DIR, file), 'utf8');
     const parsed = parseCategoryFile(file.replace(/\.md$/, ''), source);
-    categories.push({ ...parsed.category, toolCount: parsed.tools.length });
+    categories.push({
+      ...parsed.category,
+      toolCount: parsed.tools.length
+    });
+
     for (const tool of parsed.tools) {
       const added = additions.get(tool.name);
       const addedAt = added?.date ?? null;
@@ -100,7 +104,9 @@ function load(): Data {
       tools.push({
         ...tool,
         addedAt,
-        addedBy: added ? { name: added.name, login: resolveGithubHandle(added.email) } : null,
+        addedBy: added
+          ? { name: added.name, login: resolveGithubHandle(added.email) }
+          : null,
         isNew: ageDays < NEW_WINDOW_DAYS,
       });
     }
@@ -117,9 +123,12 @@ function data(): Data {
 }
 
 export const getTools = (): Tool[] => data().tools;
+
 export const getCategories = (): Category[] => data().categories;
+
 export const getCategory = (slug: string): Category | undefined =>
   data().categories.find(category => category.slug === slug);
+
 export const getToolsInCategory = (slug: string): Tool[] =>
   data().tools.filter(tool => tool.category === slug);
 

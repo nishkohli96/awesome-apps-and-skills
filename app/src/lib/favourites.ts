@@ -20,7 +20,9 @@ function readSnapshot(): readonly string[] {
     raw = next;
     try {
       const parsed: unknown = next ? JSON.parse(next) : [];
-      snapshot = Array.isArray(parsed) ? parsed.filter((x): x is string => typeof x === 'string') : NONE;
+      snapshot = Array.isArray(parsed)
+        ? parsed.filter((x): x is string => typeof x === 'string')
+        : NONE;
     } catch {
       snapshot = NONE;
     }

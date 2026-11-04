@@ -47,7 +47,10 @@ export function Newsletter() {
             Subscribe
           </button>
         </div>
-        <p role="status" className="m-0 text-[13px] text-ink-3">
+        <p
+          role="status"
+          className="m-0 text-[13px] text-ink-3"
+        >
           {submitted
             ? 'The newsletter is not live yet, so nothing was saved. Check back soon.'
             : 'Your email is used only to send the digest. Unsubscribe in one click.'}

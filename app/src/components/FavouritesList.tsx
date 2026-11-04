@@ -20,9 +20,15 @@ export function FavouritesList() {
           aria-hidden="true"
           className="grid size-14 place-items-center rounded-[14px] border border-dashed border-border-strong text-accent-ink"
         >
-          <Icon d={ICON.heart} size={26} strokeWidth={1.5} />
+          <Icon
+            d={ICON.heart}
+            size={26}
+            strokeWidth={1.5}
+          />
         </span>
-        <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">Nothing saved yet.</h1>
+        <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">
+          Nothing saved yet.
+        </h1>
         <p className="m-0 max-w-[420px] text-[15px] leading-[1.55] text-ink-2">
           Tap the heart on any card to keep it here. Favourites stay in this browser; no account
           needed.
@@ -52,7 +58,9 @@ export function FavouritesList() {
   return (
     <section className="flex flex-col gap-8">
       <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-border pb-4">
-        <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">Your favourites</h1>
+        <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">
+          Your favourites
+        </h1>
         <span className="font-mono text-[14px] leading-none font-medium text-ink-2">
           {saved.length}
           {' '}

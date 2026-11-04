@@ -4,7 +4,13 @@ import { useState } from 'react';
 import { TYPE_META } from '@/lib/constants';
 import { toggle } from '@/lib/filters';
 import type { FilterState } from '@/lib/types';
-import { PRICINGS, PriceFilter, type Pricing, type SortKey, type ToolType } from '@/types';
+import {
+  PRICINGS,
+  PriceFilter,
+  type Pricing,
+  type SortKey,
+  type ToolType
+} from '@/types';
 import { Icon } from './ui/Icon';
 
 const VISIBLE_TAGS = 8;
@@ -26,7 +32,13 @@ interface FilterBarProps {
   sortOptions: { value: SortKey; label: string }[];
 }
 
-export function FilterBar({ state, onChange, tags, types, sortOptions }: FilterBarProps) {
+export function FilterBar({
+  state,
+  onChange,
+  tags,
+  types,
+  sortOptions
+}: FilterBarProps) {
   const [showAll, setShowAll] = useState(false);
 
   const counts = new Map(tags);

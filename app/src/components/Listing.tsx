@@ -2,7 +2,13 @@
 
 import { useMemo, type ReactNode } from 'react';
 import Link from 'next/link';
-import { filtersToQuery, isFiltering, matchesFilters, sortTools, toggle } from '@/lib/filters';
+import {
+  filtersToQuery,
+  isFiltering,
+  matchesFilters,
+  sortTools,
+  toggle
+} from '@/lib/filters';
 import type { Tool } from '@/lib/types';
 import { GroupBy, SortKey, TOOL_TYPES } from '@/types';
 import { FilterBar } from './FilterBar';
@@ -84,7 +90,11 @@ export function Listing({
         ]}
       />
 
-      <div role="status" aria-live="polite" className="flex min-h-8 flex-wrap items-center gap-3">
+      <div
+        role="status"
+        aria-live="polite"
+        className="flex min-h-8 flex-wrap items-center gap-3"
+      >
         <strong className="text-[15px]">
           {filtering
             ? `${matched.length} ${matched.length === 1 ? 'tool matches' : 'tools match'}`
@@ -92,7 +102,9 @@ export function Listing({
         </strong>
         {filtering && (
           <>
-            <code className="rounded-[6px] bg-surface-2 px-2 py-1 font-mono text-[12px] leading-none text-ink-3">
+            <code
+              className="rounded-[6px] bg-surface-2 px-2 py-1 font-mono text-[12px] leading-none text-ink-3"
+            >
               {urlLabel}
             </code>
             <button
@@ -106,7 +118,10 @@ export function Listing({
         )}
       </div>
 
-      <div id="results" className="flex flex-wrap items-start gap-10">
+      <div
+        id="results"
+        className="flex flex-wrap items-start gap-10"
+      >
         <nav
           aria-label={groupBy === GroupBy.Subcategory ? 'Subcategories' : 'Categories'}
           className="sticky top-24 flex max-w-[220px] flex-[1_1_200px] flex-col gap-0.5 self-start max-[760px]:hidden"
@@ -165,7 +180,9 @@ export function Listing({
               aria-label="No results"
               className="flex flex-col items-start gap-3.5 rounded-[16px] border border-dashed border-border-strong px-[clamp(20px,4vw,48px)] py-12"
             >
-              <span className="font-serif text-[40px] leading-[1.05]">Nothing matches all of those.</span>
+              <span className="font-serif text-[40px] leading-[1.05]">
+                Nothing matches all of those.
+              </span>
               <p className="m-0 max-w-[520px] text-[15px] leading-[1.55] text-ink-2">
                 Tags combine with AND. Remove one to widen the list, or tell us about a tool that
                 should be here.
@@ -207,7 +224,11 @@ export function Listing({
 
           {!isEmpty
             && sections.map(section => (
-              <section key={section.id} id={section.id} className="flex scroll-mt-24 flex-col gap-4">
+              <section
+                key={section.id}
+                id={section.id}
+                className="flex scroll-mt-24 flex-col gap-4"
+              >
                 <div className="flex items-baseline justify-between gap-3 border-b border-border pb-3">
                   <h2 className="m-0 text-[22px] font-semibold tracking-[-0.015em]">
                     {section.emoji && (

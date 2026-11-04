@@ -26,7 +26,10 @@ export function TagChip({ tag, onToggle, pressed: isPressed = false }: TagChipPr
     );
   }
   return (
-    <Link href={`/tag/${encodeURIComponent(tag)}`} className={`${base} ${idle} no-underline`}>
+    <Link
+      href={`/tag/${encodeURIComponent(tag)}`}
+      className={`${base} ${idle} no-underline`}
+    >
       {tag}
     </Link>
   );
