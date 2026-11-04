@@ -38,7 +38,6 @@ export function ToolCard({
   const { has, toggle } = useFavourites();
   const saved = has(tool.slug);
 
-  const initial = tool.name.replace(/[^A-Za-z]/g, '').charAt(0) || '?';
   const isLong = tool.description.length > LONG_DESCRIPTION;
   const extraTags = tool.tags.length - VISIBLE_TAGS;
   const shownTags = tagsOpen ? tool.tags : tool.tags.slice(0, VISIBLE_TAGS);
@@ -61,12 +60,6 @@ export function ToolCard({
       )}
 
       <div className="flex items-center gap-3">
-        <span
-          aria-hidden="true"
-          className="grid size-8 shrink-0 place-items-center rounded-[8px] border border-border bg-surface-2 text-[14px] leading-none font-semibold text-ink-2"
-        >
-          {initial}
-        </span>
         <h3 className="m-0 min-w-0 flex-1 text-[17px] leading-[1.3] font-semibold tracking-[-0.01em]">
           <a
             href={tool.url}

@@ -96,7 +96,7 @@ export function Listing({
         <strong className="text-[15px]">
           {filtering
             ? `${matched.length} ${matched.length === 1 ? 'tool matches' : 'tools match'}`
-            : plural(tools.length, 'tool', 'tools')}
+            : plural(tools.length, 'Tool', 'Tools')}
         </strong>
         {filtering && (
           <button

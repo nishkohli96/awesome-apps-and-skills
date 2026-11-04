@@ -45,8 +45,8 @@ export default async function TypePage({ params }: Props) {
         crumbs={[{ label: 'Home', href: '/' }, { label }]}
         mark="◆"
         title={label}
-        meta={`${tools.length} ${tools.length === 1 ? 'tool' : 'tools'} | ${categories.length} ${
-          categories.length === 1 ? 'category' : 'categories'
+        meta={`${tools.length} ${tools.length === 1 ? 'Tool' : 'Tools'} | ${categories.length} ${
+          categories.length === 1 ? 'Category' : 'Categories'
         }`}
         description={`Everything of type “${type}”, grouped by category.`}
       />

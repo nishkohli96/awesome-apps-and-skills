@@ -44,8 +44,8 @@ export default async function TagPage({ params }: Props) {
         crumbs={[{ label: 'Home', href: '/' }, { label: `#${tag}` }]}
         mark="#"
         title={tag}
-        meta={`${tools.length} ${tools.length === 1 ? 'tool' : 'tools'} | ${categories.length} ${
-          categories.length === 1 ? 'category' : 'categories'
+        meta={`${tools.length} ${tools.length === 1 ? 'Tool' : 'Tools'} | ${categories.length} ${
+          categories.length === 1 ? 'Category' : 'Categories'
         }`}
         description={`Every tool tagged “${tag}”, grouped by category.`}
       />
