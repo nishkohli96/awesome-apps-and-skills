@@ -173,7 +173,7 @@ export function Listing({
               className="flex flex-col items-start gap-3.5 rounded-[16px] border border-dashed border-border-strong px-[clamp(20px,4vw,48px)] py-12"
             >
               <span className="font-serif text-[40px] leading-[1.05]">
-                Nothing matches all of those.
+                No tools match these filters.
               </span>
               <p className="m-0 max-w-[520px] text-[15px] leading-[1.55] text-ink-2">
                 Tags combine with AND. Remove one to widen the list, or tell us about a tool that
@@ -189,7 +189,9 @@ export function Listing({
                   >
                     Remove
                     {' '}
-                    {tag}
+                    <span className="text-accent-ink">
+                      {tag}
+                    </span>
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
                       <path d="M6 6l12 12 M18 6L6 18" />
                     </svg>
@@ -233,8 +235,8 @@ export function Listing({
                   </h2>
                   <span className="font-mono text-[13px] leading-none font-medium text-ink-3">
                     {filtering
-                      ? plural(section.hits.length, 'match', 'matches')
-                      : plural(section.all, 'tool', 'tools')}
+                      ? plural(section.hits.length, 'Match', 'Matches')
+                      : plural(section.all, 'Tool', 'Tools')}
                   </span>
                 </div>
                 <div className="grid grid-cols-[repeat(auto-fill,minmax(min(300px,100%),1fr))] items-start gap-5">

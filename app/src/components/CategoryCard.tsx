@@ -20,7 +20,7 @@ export function CategoryCard({ category }: { category: Category }) {
         <span className="pt-1 font-mono text-[13px] leading-none font-medium text-ink-2">
           {category.toolCount}
           {' '}
-          {category.toolCount === 1 ? 'tool' : 'tools'}
+          {category.toolCount === 1 ? 'Tool' : 'Tools'}
         </span>
       </span>
       <span className="flex flex-col gap-1.5">

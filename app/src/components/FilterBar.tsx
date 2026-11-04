@@ -93,31 +93,33 @@ export function FilterBar({
       )}
 
       <div
-        className={`flex flex-wrap items-center gap-x-5 gap-y-3 ${
+        className={`flex flex-wrap items-start gap-x-5 gap-y-3 ${
           tags.length > 0 ? 'border-t border-border pt-3.5' : ''
         }`}
       >
         {types.length > 1 && (
-          <div role="group" aria-label="Filter by type" className="flex flex-wrap items-center gap-1.5">
-            <span className={`${label} mr-1.5`}>TYPE</span>
-            {types.map(type => {
-              const on = state.types.includes(type);
-              return (
-                <button
-                  key={type}
-                  type="button"
-                  aria-pressed={on}
-                  onClick={() => onChange({ types: toggle(state.types, type) })}
-                  className={`${chip} ${on ? chipOn : chipOff}`}
-                >
-                  <Icon d={TYPE_META[type].icon} size={12} strokeWidth={2} />
-                  {type}
-                </button>
-              );
-            })}
+          <div role="group" aria-label="Filter by type" className="flex min-w-0 flex-[1_1_240px] items-start gap-3">
+            <span className={`${label} flex h-[30px] shrink-0 items-center`}>TYPE</span>
+            <div className="flex min-w-0 flex-wrap gap-1.5">
+              {types.map(type => {
+                const on = state.types.includes(type);
+                return (
+                  <button
+                    key={type}
+                    type="button"
+                    aria-pressed={on}
+                    onClick={() => onChange({ types: toggle(state.types, type) })}
+                    className={`${chip} ${on ? chipOn : chipOff}`}
+                  >
+                    <Icon d={TYPE_META[type].icon} size={12} strokeWidth={2} />
+                    {type}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         )}
-        <label className={`flex items-center gap-2 ${label}`}>
+        <label className={`flex shrink-0 items-center gap-2 ${label}`}>
           PRICING
           <select
             value={state.price}
@@ -135,7 +137,7 @@ export function FilterBar({
             ))}
           </select>
         </label>
-        <label className={`ml-auto flex items-center gap-2 ${label}`}>
+        <label className={`ml-auto flex shrink-0 items-center gap-2 ${label}`}>
           SORT
           <select
             value={state.sort}

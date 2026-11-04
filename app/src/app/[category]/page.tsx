@@ -74,7 +74,7 @@ export default async function CategoryPage({ params }: Props) {
             <span className="font-mono text-[13px] leading-none text-ink-3">
               {other.toolCount}
               {' '}
-              tools
+              {other.toolCount === 1 ? 'Tool' : 'Tools'}
             </span>
           </Link>
         ))}
@@ -91,8 +91,8 @@ export default async function CategoryPage({ params }: Props) {
         crumbs={[{ label: 'Home', href: '/' }, { label: category.name }]}
         mark={category.emoji}
         title={category.name}
-        meta={`${category.toolCount} ${category.toolCount === 1 ? 'tool' : 'tools'} | ${category.subcategories.length} ${
-          category.subcategories.length === 1 ? 'subcategory' : 'subcategories'
+        meta={`${category.toolCount} ${category.toolCount === 1 ? 'Tool' : 'Tools'} | ${category.subcategories.length} ${
+          category.subcategories.length === 1 ? 'Subcategory' : 'Subcategories'
         }`}
         description={category.description}
       />
