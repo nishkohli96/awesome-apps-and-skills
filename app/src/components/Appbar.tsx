@@ -44,9 +44,6 @@ export function Appbar() {
           aria-label="Primary"
           className="flex shrink-0 items-center gap-0.5 max-[760px]:hidden"
         >
-          <Link href="/#new" className={navLink}>
-            New
-          </Link>
           <Link
             href="/favourites"
             aria-label={`Favourites, ${slugs.length} saved`}

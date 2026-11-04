@@ -24,16 +24,16 @@ export default function AboutPage() {
           A reading list, for tools.
         </h1>
         <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
-          Every entry is added by hand, described in plain words and linked straight to its own
-          site. No affiliate links, no paid placement inside the list.
-        </p>
-        <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
           Curated by
           {' '}
           <a href="https://nishkohli96.vercel.app/" target="_blank" rel="noopener noreferrer">
             Nishant Kohli
           </a>
-          , who adds new tools as they appear.
+          , who aims to curate the list of the best tools as they appear.
+        </p>
+        <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
+          Every tool here has been reviewed and hand-picked by the author, so you can trust it&apos;s
+          worth your time and does exactly what you&apos;re looking for.
         </p>
       </div>
       <dl className="m-0 flex flex-[1_1_180px] flex-col max-[760px]:border-t max-[760px]:border-ink">

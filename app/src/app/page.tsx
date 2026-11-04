@@ -160,7 +160,7 @@ export default function HomePage() {
       >
         <div className={sectionHead}>
           <h2 id="newh" className={h2}>
-            New this week
+            Recently Added
           </h2>
           <Link href="/search?sort=new" className="text-[14px] font-medium">
             All new tools →

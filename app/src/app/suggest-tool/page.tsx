@@ -44,7 +44,7 @@ export default function SuggestToolPage() {
           What gets in
         </span>
         <span className="text-[14px] leading-[1.55] text-ink-2">
-          Working today, a real website, and useful to people building with AI.
+          Any app, website, Claude skill, MCP server or library, as long as it is genuinely useful: a free alternative to a paid tool, a way to save hours on routine work, or something that helps people create, learn, automate or get more done.
         </span>
       </div>
     </main>
