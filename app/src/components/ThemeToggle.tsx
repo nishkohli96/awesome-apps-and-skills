@@ -12,7 +12,8 @@ const OPTIONS = [
   { value: Theme.System, label: 'System', icon: ICON.monitor },
 ] as const;
 
-const subscribeNothing = () => () => {};
+const noop = () => undefined;
+const subscribeNothing = () => noop;
 
 interface ThemeToggleProps {
   /** `icons` for the appbar, `labels` for the mobile menu. */

@@ -116,12 +116,7 @@ export default function HomePage() {
             Browse by category
           </h2>
           <span className="font-mono text-[13px] leading-none font-medium text-ink-3">
-            {categories.length}
-            {' '}
-            categories ·
-            {subcategoryCount}
-            {' '}
-            subcategories
+            {`${categories.length} categories | ${subcategoryCount} subcategories`}
           </span>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(min(272px,100%),1fr))] gap-4">

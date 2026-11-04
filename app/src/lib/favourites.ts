@@ -10,7 +10,7 @@ let snapshot: readonly string[] = NONE;
 const listeners = new Set<() => void>();
 
 function readSnapshot(): readonly string[] {
-  let next: string | null = null;
+  let next: string | null;
   try {
     next = window.localStorage.getItem(KEY);
   } catch {

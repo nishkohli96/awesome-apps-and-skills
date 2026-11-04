@@ -69,11 +69,11 @@ function readAdditions(): Map<string, Addition> {
         commit();
         const [date, name, email] = line.slice(2).split('\x1f');
         who = { date, name, email };
-        continue;
-      }
-      const match = entry.exec(line);
-      if (match) {
-        (match[1] === '+' ? plus : minus).add(match[2]);
+      } else {
+        const match = entry.exec(line);
+        if (match) {
+          (match[1] === '+' ? plus : minus).add(match[2]);
+        }
       }
     }
     commit();

@@ -31,11 +31,13 @@ export function useSearchState(onDone: () => void) {
   const rows = results.slice(0, MAX_ROWS);
   const total = results.length;
   const pending = trimmed !== debounced.trim();
-  const state = !trimmed
-    ? SearchPanelState.Empty
-    : rows.length > 0 || pending
-      ? SearchPanelState.Results
-      : SearchPanelState.None;
+  const hasResults = rows.length > 0 || pending;
+  let state = SearchPanelState.None;
+  if (!trimmed) {
+    state = SearchPanelState.Empty;
+  } else if (hasResults) {
+    state = SearchPanelState.Results;
+  }
 
   const setQuery = (value: string) => {
     setQueryRaw(value);
