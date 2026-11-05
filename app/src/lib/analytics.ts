@@ -1,10 +1,16 @@
 import mixpanel from 'mixpanel-browser';
-import type { Tool } from './types';
-import type { AnalyticsEvent, ToolClickSource } from '@/types';
+import { ENV_VARIABLES } from '@/constants';
+import type { FilterState, Tool } from './types';
+import {
+  AnalyticsEvent,
+  FilterAction,
+  FilterType,
+  type ToolClickSource
+} from '@/types';
 
 type EventData = Record<string, string | number>;
 
-const TOKEN = process.env.NEXT_PUBLIC_MIXPANEL_TOKEN?.trim();
+const TOKEN = ENV_VARIABLES.mixpanelToken;
 let ready = false;
 
 /**
@@ -25,7 +31,11 @@ export function initAnalytics(): void {
   if (site && window.location.hostname !== new URL(site).hostname) {
     return;
   }
-  mixpanel.init(TOKEN, { track_pageview: false, persistence: 'localStorage' });
+  mixpanel.init(TOKEN, {
+    track_pageview: false,
+    persistence: 'localStorage',
+    api_host: ENV_VARIABLES.mixpanelApiHost
+  });
   ready = true;
 }
 
@@ -43,4 +53,41 @@ export function toolClickData(tool: Tool, source: ToolClickSource): EventData {
     type: tool.type,
     source
   };
+}
+
+/**
+ * Sends one "Filter Change" per filter that differs between the old state and the requested change,
+ * with the page it happened on, e.g. {filter: 'tag', value: 'seo', action: 'added', page: '/media'}.
+ */
+export function trackFilterChange(prev: FilterState, next: Partial<FilterState>): void {
+  const page = window.location.pathname;
+
+  const send = (
+    filter: FilterType,
+    value: string,
+    action: FilterAction
+  ) =>
+    track(AnalyticsEvent.FilterChange, { filter, value, action, page });
+
+  const diff = (
+    filter: FilterType,
+    before: string[],
+    after: string[]
+  ) => {
+    after.filter(value => !before.includes(value)).forEach(value => send(filter, value, FilterAction.Added));
+    before.filter(value => !after.includes(value)).forEach(value => send(filter, value, FilterAction.Removed));
+  };
+
+  if (next.tags) {
+    diff(FilterType.Tag, prev.tags, next.tags);
+  }
+  if (next.types) {
+    diff(FilterType.Type, prev.types, next.types);
+  }
+  if (next.price !== undefined && next.price !== prev.price) {
+    send(FilterType.Pricing, next.price, FilterAction.Set);
+  }
+  if (next.sort !== undefined && next.sort !== prev.sort) {
+    send(FilterType.Sort, next.sort, FilterAction.Set);
+  }
 }

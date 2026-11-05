@@ -3,7 +3,7 @@
 import { useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { track } from '@/lib/analytics';
+import { track, trackFilterChange } from '@/lib/analytics';
 import { useData, useToolSearch } from '@/lib/data-context';
 import { filtersToQuery, matchesFilters, parseFilters, sortTools, toggle } from '@/lib/filters';
 import type { FilterState, Tool } from '@/lib/types';
@@ -46,6 +46,7 @@ export function SearchResults() {
   }, [q]);
 
   const update = (next: Partial<FilterState>) => {
+    trackFilterChange(state, next);
     const query = filtersToQuery({ ...state, ...next }, defaultSort);
     if (q) {
       query.set('q', q);

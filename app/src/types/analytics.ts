@@ -6,6 +6,7 @@ export enum AnalyticsEvent {
   TagClick = 'Tag Click',
   Search = 'Search',
   ProfileClick = 'Profile Click',
+  FilterChange = 'Filter Change',
 }
 
 /** Where on the site a tool link was clicked. */
@@ -19,4 +20,17 @@ export enum ProfileLocation {
   Footer = 'footer',
   About = 'about',
   ToolCard = 'tool-card',
+}
+
+export enum FilterType {
+  Tag = 'tag',
+  Type = 'type',
+  Pricing = 'pricing',
+  Sort = 'sort',
+}
+
+export enum FilterAction {
+  Added = 'added',
+  Removed = 'removed',
+  Set = 'set',
 }

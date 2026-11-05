@@ -2,6 +2,7 @@
 
 import { useMemo, useSyncExternalStore } from 'react';
 import { filtersToQuery, parseFilters } from '@/lib/filters';
+import { trackFilterChange } from '@/lib/analytics';
 import type { FilterState } from '@/lib/types';
 import { PriceFilter, type SortKey } from '@/types';
 
@@ -34,6 +35,7 @@ export function useUrlFilters(defaultSort: SortKey) {
   );
 
   const update = (next: Partial<FilterState>) => {
+    trackFilterChange(state, next);
     const query = filtersToQuery({ ...state, ...next }, defaultSort).toString();
     const url = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
     window.history.replaceState(window.history.state, '', url);
