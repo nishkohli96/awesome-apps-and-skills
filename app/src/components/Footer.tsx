@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CURATOR_URL, REPO_URL } from '@/lib/constants';
+import { CURATOR_URL, REPO_URL } from '@/constants';
 import type { Category } from '@/lib/types';
 import { ProfileLocation } from '@/types';
 import { Logo } from './ui/Logo';

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { countTags, getCategories, getTools } from '@/lib/data';
-import { SITE_URL } from '@/lib/site';
+import { SITE_URL } from '@/constants';
 import type { Tool } from '@/lib/types';
 
 /** Newest add date among the tools, so a page's lastmod only moves when its content does. */

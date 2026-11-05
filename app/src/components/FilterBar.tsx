@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { TYPE_META } from '@/lib/constants';
+import { TYPE_META } from '@/constants';
 import { toggle } from '@/lib/filters';
 import type { FilterState } from '@/lib/types';
 import {

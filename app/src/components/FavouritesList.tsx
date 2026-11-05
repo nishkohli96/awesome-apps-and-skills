@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ICON } from '@/lib/constants';
+import { ICON } from '@/constants';
 import { useData } from '@/lib/data-context';
 import { useFavourites } from '@/lib/favourites';
 import { Icon } from './ui/Icon';

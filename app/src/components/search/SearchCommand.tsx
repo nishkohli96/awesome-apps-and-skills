@@ -2,7 +2,7 @@
 
 import { Command } from 'lucide-react';
 import { useEffect, useId, useRef, useState, type FocusEvent } from 'react';
-import { ICON, searchPlaceholder } from '@/lib/constants';
+import { ICON, searchPlaceholder } from '@/constants';
 import { useData } from '@/lib/data-context';
 import { Icon } from '@/components/ui/Icon';
 import { SearchPanelState, SearchVariant } from '@/types';

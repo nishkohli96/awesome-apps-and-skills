@@ -3,7 +3,7 @@
 import { ThemeToggleVariant } from '@/types';
 import Link from 'next/link';
 import { Dialog, DialogClose, DialogContent, DialogTitle } from '@/components/ui/dialog';
-import { ICON, REPO_URL } from '@/lib/constants';
+import { ICON, REPO_URL } from '@/constants';
 import { useData } from '@/lib/data-context';
 import { useFavourites } from '@/lib/favourites';
 import { Icon } from './ui/Icon';

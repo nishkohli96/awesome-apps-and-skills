@@ -2,7 +2,7 @@
 
 import { useId } from 'react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
-import { ICON, searchPlaceholder } from '@/lib/constants';
+import { ICON, searchPlaceholder } from '@/constants';
 import { useData } from '@/lib/data-context';
 import { Icon } from '@/components/ui/Icon';
 import { SearchPanel } from './SearchPanel';

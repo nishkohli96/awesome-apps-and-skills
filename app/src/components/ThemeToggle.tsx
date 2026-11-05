@@ -2,7 +2,7 @@
 
 import { useSyncExternalStore } from 'react';
 import { useTheme } from 'next-themes';
-import { ICON } from '@/lib/constants';
+import { ICON } from '@/constants';
 import { Theme, ThemeToggleVariant } from '@/types';
 import { Icon } from './ui/Icon';
 

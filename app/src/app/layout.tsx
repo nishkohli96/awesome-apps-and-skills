@@ -5,9 +5,8 @@ import { Analytics } from '@/components/Analytics';
 import { Appbar } from '@/components/Appbar';
 import { Footer } from '@/components/Footer';
 import { Providers } from '@/components/Providers';
-import { SITE_NAME } from '@/lib/constants';
+import { SITE_NAME, SITE_URL } from '@/constants';
 import { getCategories, getTools } from '@/lib/data';
-import { SITE_URL } from '@/lib/site';
 import './globals.css';
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });

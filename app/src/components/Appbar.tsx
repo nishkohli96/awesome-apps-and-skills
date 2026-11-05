@@ -3,7 +3,7 @@
 import { SearchVariant } from '@/types';
 import { useCallback, useState } from 'react';
 import Link from 'next/link';
-import { ICON, REPO_URL } from '@/lib/constants';
+import { ICON, REPO_URL } from '@/constants';
 import { useFavourites } from '@/lib/favourites';
 import { MobileMenu } from './MobileMenu';
 import { SearchCommand } from './search/SearchCommand';

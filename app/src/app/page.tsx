@@ -4,7 +4,7 @@ import { CategoryCard } from '@/components/CategoryCard';
 import { SearchCommand } from '@/components/search/SearchCommand';
 import { ToolCard } from '@/components/ToolCard';
 import { TypeBadge } from '@/components/ui/TypeBadge';
-import { EDITORS_PICKS, TYPE_META, TYPE_STRIP } from '@/lib/constants';
+import { EDITORS_PICKS, TYPE_META, TYPE_STRIP } from '@/constants';
 import { SearchVariant } from '@/types';
 import {
   countTypes,

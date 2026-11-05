@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { REPO_URL } from '@/lib/constants';
+import { REPO_URL } from '@/constants';
 
 export const metadata: Metadata = { title: 'Suggest a tool' };
 

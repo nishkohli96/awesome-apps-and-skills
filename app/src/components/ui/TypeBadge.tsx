@@ -1,4 +1,4 @@
-import { TYPE_META } from '@/lib/constants';
+import { TYPE_META } from '@/constants';
 import type { ToolType } from '@/types';
 import { Icon } from './Icon';
 

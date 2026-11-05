@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Listing } from '@/components/Listing';
 import { PageHeader } from '@/components/PageHeader';
-import { TYPE_META } from '@/lib/constants';
+import { TYPE_META } from '@/constants';
 import { getCategories, getTools } from '@/lib/data';
 import { GroupBy, TOOL_TYPES, type ToolType } from '@/types';
 

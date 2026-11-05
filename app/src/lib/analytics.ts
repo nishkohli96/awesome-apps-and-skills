@@ -27,7 +27,7 @@ export function initAnalytics(): void {
   if (!TOKEN || ready || typeof window === 'undefined') {
     return;
   }
-  const site = process.env.NEXT_PUBLIC_SITE_URL;
+  const site = ENV_VARIABLES.siteUrl;
   if (site && window.location.hostname !== new URL(site).hostname) {
     return;
   }

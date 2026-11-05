@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { ProfileLink } from '@/components/ui/ProfileLink';
-import { CURATOR_URL, REPO_URL } from '@/lib/constants';
+import { CURATOR_URL, REPO_URL } from '@/constants';
 import { ProfileLocation } from '@/types';
 import { countTags, getCategories, getTools } from '@/lib/data';
 

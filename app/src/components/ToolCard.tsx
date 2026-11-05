@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { toolClickData, track } from '@/lib/analytics';
 import { useFavourites } from '@/lib/favourites';
-import { ICON } from '@/lib/constants';
+import { ICON } from '@/constants';
 import type { Tool } from '@/lib/types';
 import { AnalyticsEvent, ProfileLocation, ToolClickSource } from '@/types';
 import { Icon } from './ui/Icon';

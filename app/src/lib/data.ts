@@ -2,6 +2,7 @@ import 'server-only';
 import { execFileSync } from 'node:child_process';
 import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
+import { NEW_WINDOW_DAYS } from '@/constants';
 import { resolveGithubHandle } from './authors';
 import { parseCategoryFile } from './parse';
 import type { ToolType } from '@/types';
@@ -9,7 +10,6 @@ import type { Category, Tool } from './types';
 
 const REPO_ROOT = path.resolve(process.cwd(), '..');
 const CATEGORIES_DIR = path.join(REPO_ROOT, 'categories');
-const NEW_WINDOW_DAYS = 7;
 
 interface Data {
   categories: Category[];

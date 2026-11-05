@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Fuse from 'fuse.js';
-import { ICON } from '@/lib/constants';
+import { ICON } from '@/constants';
 import { useData } from '@/lib/data-context';
 import { Icon } from './ui/Icon';
 
