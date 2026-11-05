@@ -43,6 +43,11 @@ _Resume, job search and personal productivity resources._
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
   💰 freemium
+- **[Jvlang AI Codex Usage Tracker](https://jvlangai.com/codex-reset)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Codex quota countdown with manual /status calibration, usage-versus-time progress and calendar export. Chinese UI.<br>
+  🏷 `codex` `quota` `productivity`<br>
+  💰 free<br>
+  🔗 [demo](https://jvlangai.com/codex-reset)
 - **[LayoutKeeper](https://github.com/tumingke0/LayoutKeeper)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Native macOS menu bar app that restores windows to their assigned monitor and Space on reconnect, with per-port arrangements and DDC brightness sync.<br>
   🏷 `macos` `window-manager` `multi-monitor` `open-source`<br>
