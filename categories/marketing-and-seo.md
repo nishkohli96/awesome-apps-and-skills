@@ -35,7 +35,7 @@ _Tools and skills for SEO audits, content strategy and growth._
   Twelve Claude Code and Codex skills that draft LinkedIn posts, comments and replies in your voice for your approval.<br>
   🏷 `linkedin` `social-media` `content` `claude-skills`
 - **[OpenSparta](https://opensparta.com/en)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
-  Telegram marketing workspace for teams and agencies to manage connected accounts and proxies, discover relevant conversations, and coordinate campaign workflows.<br>
+  Telegram marketing workspace for teams to manage connected accounts and proxies, discover conversations, and coordinate campaign workflows.<br>
   🏷 `telegram` `marketing` `community-discovery`<br>
   💰 freemium
 - **[Publer](https://publer.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
