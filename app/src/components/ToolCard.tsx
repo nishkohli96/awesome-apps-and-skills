@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { toolClickData, track } from '@/lib/analytics';
 import { useFavourites } from '@/lib/favourites';
 import { ICON } from '@/lib/constants';
 import type { Tool } from '@/lib/types';
+import { AnalyticsEvent, ProfileLocation, ToolClickSource } from '@/types';
 import { Icon } from './ui/Icon';
 import { PricingPill } from './ui/PricingPill';
 import { TagChip } from './ui/TagChip';
@@ -40,6 +42,7 @@ export function ToolCard({
 
   const isLong = tool.description.length > LONG_DESCRIPTION;
   const extraTags = tool.tags.length - VISIBLE_TAGS;
+  const trackClick = () => track(AnalyticsEvent.ToolClick, toolClickData(tool, ToolClickSource.Card));
   const shownTags = tagsOpen ? tool.tags : tool.tags.slice(0, VISIBLE_TAGS);
 
   return (
@@ -66,6 +69,7 @@ export function ToolCard({
             target="_blank"
             rel="noopener noreferrer"
             className="text-ink no-underline"
+            onClick={trackClick}
           >
             {tool.name}
           </a>
@@ -156,6 +160,7 @@ export function ToolCard({
           href={tool.url}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackClick}
           className="inline-flex h-[34px] items-center gap-1.5 rounded-[8px] pr-1 pl-2.5 text-[14px] leading-none font-medium text-ink no-underline"
         >
           Visit
@@ -171,6 +176,10 @@ export function ToolCard({
                   href={`https://github.com/${tool.addedBy.login}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => track(AnalyticsEvent.ProfileClick, {
+                    location: ProfileLocation.ToolCard,
+                    profile: tool.addedBy?.login ?? '',
+                  })}
                   aria-label={`${tool.addedBy.login} on GitHub (opens in new tab)`}
                   className="truncate font-medium text-ink-2 underline underline-offset-[3px]"
                 >

@@ -1,4 +1,8 @@
+'use client';
+
 import Link from 'next/link';
+import { track } from '@/lib/analytics';
+import { AnalyticsEvent } from '@/types';
 
 const base
   = 'inline-flex h-[26px] items-center rounded-[6px] border px-2 font-mono text-[12px] leading-none font-medium';
@@ -28,6 +32,7 @@ export function TagChip({ tag, onToggle, pressed: isPressed = false }: TagChipPr
   return (
     <Link
       href={`/tag/${encodeURIComponent(tag)}`}
+      onClick={() => track(AnalyticsEvent.TagClick, { tag })}
       className={`${base} ${idle} no-underline`}
     >
       {tag}

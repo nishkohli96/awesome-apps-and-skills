@@ -1,15 +1,17 @@
 'use client';
 
+import { track, toolClickData } from '@/lib/analytics';
 import { useEffect, useMemo, useState, type KeyboardEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useToolSearch } from '@/lib/data-context';
 import type { Tool } from '@/lib/types';
-import { SearchPanelState } from '@/types';
+import { AnalyticsEvent, SearchPanelState, ToolClickSource } from '@/types';
 
 const MAX_ROWS = 8;
 const DEBOUNCE_MS = 150;
 
 export function openTool(tool: Tool) {
+  track(AnalyticsEvent.ToolClick, toolClickData(tool, ToolClickSource.SearchPanel));
   window.open(tool.url, '_blank', 'noopener,noreferrer');
 }
 

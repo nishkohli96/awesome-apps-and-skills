@@ -85,3 +85,6 @@ export const EDITORS_PICKS = [
   'photocraft',
   'career-ops',
 ];
+
+/** The curator's own site, linked from the footer and the About page. */
+export const CURATOR_URL = 'https://nishkohli96.vercel.app/';

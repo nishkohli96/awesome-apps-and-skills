@@ -1,7 +1,9 @@
 import Link from 'next/link';
-import { REPO_URL } from '@/lib/constants';
+import { CURATOR_URL, REPO_URL } from '@/lib/constants';
 import type { Category } from '@/lib/types';
+import { ProfileLocation } from '@/types';
 import { Logo } from './ui/Logo';
+import { ProfileLink } from './ui/ProfileLink';
 
 const link = 'text-[14px] text-ink-2 no-underline hover:text-ink';
 
@@ -18,14 +20,14 @@ export function Footer({ categories }: { categories: Category[] }) {
             <p className="m-0 text-[14px] leading-[1.55] text-ink-2">
               Curated by
               {' '}
-              <a
-                href="https://nishkohli96.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <ProfileLink
+                href={CURATOR_URL}
+                location={ProfileLocation.Footer}
+                profile="curator"
                 className="font-medium text-accent-ink"
               >
                 Nishant Kohli
-              </a>
+              </ProfileLink>
             </p>
           </div>
         </div>

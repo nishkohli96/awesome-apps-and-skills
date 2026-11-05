@@ -1,5 +1,9 @@
+'use client';
+
 import Link from 'next/link';
+import { track } from '@/lib/analytics';
 import type { Category } from '@/lib/types';
+import { AnalyticsEvent } from '@/types';
 
 export function CategoryCard({ category }: { category: Category }) {
   const subs = category.subcategories;
@@ -8,6 +12,7 @@ export function CategoryCard({ category }: { category: Category }) {
   return (
     <Link
       href={`/${category.slug}`}
+      onClick={() => track(AnalyticsEvent.CategoryClick, { category: category.name })}
       className="lift flex min-w-0 flex-col gap-3 rounded-[12px] border border-border bg-surface p-5 text-ink no-underline"
     >
       <span className="flex items-start justify-between gap-3">

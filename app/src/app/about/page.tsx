@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
-import { REPO_URL } from '@/lib/constants';
+import { ProfileLink } from '@/components/ui/ProfileLink';
+import { CURATOR_URL, REPO_URL } from '@/lib/constants';
+import { ProfileLocation } from '@/types';
 import { countTags, getCategories, getTools } from '@/lib/data';
 
 export const metadata: Metadata = { title: 'About' };
@@ -26,13 +28,13 @@ export default function AboutPage() {
         <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
           Curated by
           {' '}
-          <a
-            href="https://nishkohli96.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <ProfileLink
+            href={CURATOR_URL}
+            location={ProfileLocation.About}
+            profile="curator"
           >
             Nishant Kohli
-          </a>
+          </ProfileLink>
           , who aims to curate the list of the best tools as they appear.
         </p>
         <p className="m-0 text-[16px] leading-[1.6] text-ink-2">

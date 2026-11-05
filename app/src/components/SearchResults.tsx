@@ -1,12 +1,19 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { track } from '@/lib/analytics';
 import { useData, useToolSearch } from '@/lib/data-context';
 import { filtersToQuery, matchesFilters, parseFilters, sortTools, toggle } from '@/lib/filters';
 import type { FilterState, Tool } from '@/lib/types';
-import { PRICINGS, PriceFilter, SortKey, TOOL_TYPES } from '@/types';
+import {
+  AnalyticsEvent,
+  PRICINGS,
+  PriceFilter,
+  SortKey,
+  TOOL_TYPES
+} from '@/types';
 import { ToolCard } from './ToolCard';
 
 const label = 'font-mono text-[12px] leading-none font-medium text-ink-3';
@@ -28,6 +35,15 @@ export function SearchResults() {
     () => sortTools(search(q).filter(tool => matchesFilters(tool, state)), state.sort),
     [search, q, state],
   );
+
+  // One event per committed search term (Enter or "all results"), not per keystroke or filter change.
+  const resultCount = useMemo(() => search(q).length, [search, q]);
+  useEffect(() => {
+    if (q) {
+      track(AnalyticsEvent.Search, { query: q.toLowerCase(), results: resultCount });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- only a new term counts as a new search
+  }, [q]);
 
   const update = (next: Partial<FilterState>) => {
     const query = filtersToQuery({ ...state, ...next }, defaultSort);

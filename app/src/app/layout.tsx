@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { Geist, Geist_Mono, Instrument_Serif } from 'next/font/google';
+import { Analytics } from '@/components/Analytics';
 import { Appbar } from '@/components/Appbar';
 import { Footer } from '@/components/Footer';
 import { Providers } from '@/components/Providers';
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
           <Appbar />
           {children}
           <Footer categories={getCategories()} />
+          <Analytics />
         </Providers>
       </body>
     </html>
