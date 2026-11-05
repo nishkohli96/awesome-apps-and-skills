@@ -32,3 +32,11 @@ _Skills, MCP servers and apps for writing, reviewing, testing and shipping code.
 - **[agent-qa](https://github.com/vostride/agent-qa)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Tests web and mobile apps via CLI/MCP, with persistent memidex memory, validated self-improvement, and reviewable run evidence.<br>
   🏷 `testing` `mcp` `memory` `self-improvement`
+
+## Coding Usage Planning
+
+- **[Jvlang AI Codex Usage Tracker](https://jvlangai.com/codex-reset)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Codex quota countdown with manual /status calibration, usage-versus-time progress and calendar export. Chinese UI.<br>
+  🏷 `codex` `quota` `productivity`<br>
+  💰 free<br>
+  🔗 [demo](https://jvlangai.com/codex-reset)
