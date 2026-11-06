@@ -1,2 +1,3 @@
 minimumReleaseAgeExclude:
   - '@nish1896/eslint-flat-config@4.0.0'
+  - lucide-react@1.70.0
