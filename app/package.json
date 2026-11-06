@@ -43,6 +43,7 @@
     "lint-staged": "^17.6.0",
     "postcss": "^8.5.32",
     "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   },
@@ -54,6 +55,6 @@
       "eslint --fix"
     ]
   },
-  "packageManager": "pnpm@12.16.1",
+  "packageManager": "pnpm@12.18.0",
   "license": "MIT"
 }
