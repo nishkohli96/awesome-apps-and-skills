@@ -43,7 +43,7 @@ export function NotFoundSearch() {
       <form
         action="/search"
         role="search"
-        className="border-border-strong bg-surface text-ink-3 focus-within:border-accent focus-within:ring-accent/35 flex h-12 max-w-[460px] items-center gap-2.5 rounded-[10px] border px-3.5 focus-within:ring-2"
+        className="border-border-strong bg-surface text-ink-3 focus-within:border-accent focus-within:ring-accent/35 flex h-12 w-full max-w-[460px] items-center gap-2.5 rounded-[10px] border px-3.5 focus-within:ring-2"
       >
         <Icon d={ICON.search} size={18} />
         <input

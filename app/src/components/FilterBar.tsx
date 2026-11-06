@@ -52,7 +52,7 @@ export function FilterBar({
   return (
     <section
       aria-label="Filters"
-      className="border-border bg-surface flex flex-col gap-3.5 rounded-[12px] border p-4"
+      className="border-border bg-surface flex flex-col gap-3.5 rounded-[12px] border p-4 max-[400px]:p-3"
     >
       {tags.length > 0 && (
         <div className="flex min-w-0 items-center gap-3">
