@@ -24,7 +24,7 @@ function Body({ onClose }: { onClose: () => void }) {
             aria-expanded
             aria-controls={`${id}-list`}
             aria-activedescendant={
-              search.rows.length > 0
+              search.rows.length > 0 && search.active >= 0
                 ? `${id}-option-${search.active}`
                 : undefined
             }

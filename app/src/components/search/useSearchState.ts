@@ -24,7 +24,8 @@ export function useSearchState(onDone: () => void) {
   const search = useToolSearch();
   const [query, setQueryRaw] = useState('');
   const [debounced, setDebounced] = useState('');
-  const [active, setActive] = useState(0);
+  // -1 = nothing highlighted: Enter searches the typed text until an arrow key picks a row.
+  const [active, setActive] = useState(-1);
 
   useEffect(() => {
     const timer = window.setTimeout(() => setDebounced(query), DEBOUNCE_MS);
@@ -49,7 +50,7 @@ export function useSearchState(onDone: () => void) {
 
   const setQuery = (value: string) => {
     setQueryRaw(value);
-    setActive(0);
+    setActive(-1);
   };
 
   const goToResults = () => {
@@ -64,14 +65,14 @@ export function useSearchState(onDone: () => void) {
       setActive(i => Math.min(i + 1, last));
     } else if (event.key === 'ArrowUp' && rows.length > 0) {
       event.preventDefault();
-      setActive(i => Math.max(i - 1, 0));
+      setActive(i => Math.max(i - 1, -1));
     } else if (event.key === 'Enter') {
       event.preventDefault();
       /**
        * While the debounce is pending, `rows` still belong
        * to the previous query.
        */
-      if (!pending && rows.length > 0 && active < rows.length) {
+      if (!pending && active >= 0 && active < rows.length) {
         openTool(rows[active]);
         onDone();
       } else if (trimmed) {
@@ -85,7 +86,7 @@ export function useSearchState(onDone: () => void) {
   const reset = () => {
     setQueryRaw('');
     setDebounced('');
-    setActive(0);
+    setActive(-1);
   };
 
   return {

@@ -137,7 +137,7 @@ export function SearchCommand({
           aria-controls={listId}
           aria-autocomplete="list"
           aria-activedescendant={
-            showPanel && search.rows.length > 0
+            showPanel && search.rows.length > 0 && search.active >= 0
               ? optionId(search.active)
               : undefined
           }
