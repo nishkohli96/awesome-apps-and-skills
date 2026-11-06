@@ -152,6 +152,8 @@ export function Listing({
             onChange={event => {
               if (event.target.value) {
                 window.location.hash = event.target.value;
+                // Back to the placeholder, so the same section can be picked again.
+                event.target.value = '';
               }
             }}
             className="filter-select border-border-strong bg-surface text-ink h-11 rounded-[8px] border px-2.5 text-[15px] leading-none"

@@ -22,6 +22,42 @@ interface Addition {
   email: string;
 }
 
+const git = (args: string[]) =>
+  execFileSync('git', args, {
+    cwd: REPO_ROOT,
+    encoding: 'utf8',
+    maxBuffer: 64 * 1024 * 1024,
+    stdio: ['ignore', 'pipe', 'ignore'],
+  });
+
+/** Last commit date (UTC ISO) per category file name, e.g. `media` -> date. */
+function readFileDates(): Map<string, string> {
+  const dates = new Map<string, string>();
+  try {
+    let date = '';
+    // Newest commit first, so the first date seen for a file is its latest.
+    for (const line of git([
+      'log',
+      '--format=@@%cI',
+      '--name-only',
+      '--',
+      'categories',
+    ]).split('\n')) {
+      if (line.startsWith('@@')) {
+        date = new Date(line.slice(2)).toISOString();
+      } else if (line.endsWith('.md')) {
+        const file = path.basename(line, '.md');
+        if (!dates.has(file)) {
+          dates.set(file, date);
+        }
+      }
+    }
+  } catch {
+    // Not a git checkout (or git missing): no dates.
+  }
+  return dates;
+}
+
 /**
  * Reads `git log` once to learn when, and by whom, each entry first appeared.
  * An entry that is removed and re-added in the same commit was only moved
@@ -31,13 +67,6 @@ interface Addition {
  */
 function readAdditions(): Map<string, Addition> {
   const added = new Map<string, Addition>();
-  const git = (args: string[]) =>
-    execFileSync('git', args, {
-      cwd: REPO_ROOT,
-      encoding: 'utf8',
-      maxBuffer: 64 * 1024 * 1024,
-      stdio: ['ignore', 'pipe', 'ignore'],
-    });
   try {
     if (git(['rev-parse', '--is-shallow-repository']).trim() === 'true') {
       return added;
@@ -68,7 +97,8 @@ function readAdditions(): Map<string, Addition> {
       if (line.startsWith('@@20')) {
         commit();
         const [date, name, email] = line.slice(2).split('\x1f');
-        who = { date, name, email };
+        // Normalised to UTC so plain string comparison orders by instant.
+        who = { date: new Date(date).toISOString(), name, email };
       } else {
         const match = entry.exec(line);
         if (match) {
@@ -85,6 +115,7 @@ function readAdditions(): Map<string, Addition> {
 
 function load(): Data {
   const additions = readAdditions();
+  const fileDates = readFileDates();
   const now = Date.now();
   const tools: Tool[] = [];
   const categories: Category[] = [];
@@ -93,10 +124,12 @@ function load(): Data {
     f.endsWith('.md')
   )) {
     const source = readFileSync(path.join(CATEGORIES_DIR, file), 'utf8');
-    const parsed = parseCategoryFile(file.replace(/\.md$/, ''), source);
+    const fileName = file.replace(/\.md$/, '');
+    const parsed = parseCategoryFile(fileName, source);
     categories.push({
       ...parsed.category,
       toolCount: parsed.tools.length,
+      updatedAt: fileDates.get(fileName) ?? null,
     });
 
     for (const tool of parsed.tools) {

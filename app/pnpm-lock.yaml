@@ -261,6 +261,9 @@ importers:
       lint-staged:
         specifier: ^17.6.0
         version: 17.6.0
+      npm-check-updates:
+        specifier: ^23.1.1
+        version: 23.1.1
       postcss:
         specifier: ^8.5.32
         version: 8.5.32
@@ -2402,6 +2405,11 @@ packages:
   node-releases@2.0.63:
     resolution: {integrity: sha512-6li2QanLsAXpIH2R6j77MzRyvOyrvdTqlKtO4CgBdHGNvN99ZZfyxszHc5o5+IZBWD5u6Hzwg83JoGXmqZNG9Q==}
     engines: {node: '>=18'}
+
+  npm-check-updates@23.1.1:
+    resolution: {integrity: sha512-UzYDvvsQRkmXR59g9SqsQxygYp7AhFpfEcOOGOJaB/P7pF/XlaqIYLK3UjUGfMHH1+aS2nZvJRaIsk2nk0z5ag==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0, npm: '>=10.0.0'}
+    hasBin: true
 
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
@@ -5311,6 +5319,8 @@ snapshots:
       semver: 6.3.1
 
   node-releases@2.0.63: {}
+
+  npm-check-updates@23.1.1: {}
 
   npm-run-path@4.0.1:
     dependencies:

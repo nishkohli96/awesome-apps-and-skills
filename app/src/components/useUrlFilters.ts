@@ -7,6 +7,7 @@ import type { FilterState } from '@/lib/types';
 import { PriceFilter, type SortKey } from '@/types';
 
 const CHANGE_EVENT = 'url-filters:change';
+const FILTER_PARAMS = ['tags', 'type', 'price', 'sort'];
 
 function subscribe(listener: () => void): () => void {
   window.addEventListener('popstate', listener);
@@ -36,7 +37,13 @@ export function useUrlFilters(defaultSort: SortKey) {
 
   const update = (next: Partial<FilterState>) => {
     trackFilterChange(state, next);
-    const query = filtersToQuery({ ...state, ...next }, defaultSort).toString();
+    // Keep parameters that are not filters (utm_*, etc.); only ours are rewritten.
+    const params = new URLSearchParams(window.location.search);
+    FILTER_PARAMS.forEach(key => params.delete(key));
+    filtersToQuery({ ...state, ...next }, defaultSort).forEach((value, key) =>
+      params.set(key, value)
+    );
+    const query = params.toString();
     const url = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
     window.history.replaceState(window.history.state, '', url);
     window.dispatchEvent(new Event(CHANGE_EVENT));

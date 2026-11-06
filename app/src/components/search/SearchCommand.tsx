@@ -82,9 +82,13 @@ export function SearchCommand({
       return;
     }
     const root = document.documentElement;
-    const observer = new IntersectionObserver(([entry]) => {
-      root.dataset.heroSearch = entry.isIntersecting ? 'visible' : 'hidden';
-    });
+    // The top margin treats the strip under the sticky appbar as off screen.
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        root.dataset.heroSearch = entry.isIntersecting ? 'visible' : 'hidden';
+      },
+      { rootMargin: `-${APPBAR_HEIGHT}px 0px 0px 0px` }
+    );
     observer.observe(field);
     return () => {
       observer.disconnect();

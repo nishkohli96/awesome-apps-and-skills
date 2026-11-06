@@ -2,7 +2,7 @@ import { PRICINGS, TOOL_TYPES, type Pricing, type ToolType } from '@/types';
 import type { Category, Tool } from './types';
 
 export type ParsedTool = Omit<Tool, 'addedAt' | 'addedBy' | 'isNew'>;
-export type ParsedCategory = Omit<Category, 'toolCount'>;
+export type ParsedCategory = Omit<Category, 'toolCount' | 'updatedAt'>;
 
 const ENTRY_START = /^- \*\*\[(.+?)\]\((.+?)\)\*\*(.*)$/;
 
@@ -53,7 +53,9 @@ function parseEntry(
   let pricing: Pricing | null = null;
   for (const line of block.slice(1)) {
     const text = line.trim();
-    if (text.startsWith('🏷')) {
+    if (text.startsWith('🔗')) {
+      // Demo link: documented metadata, not part of the description.
+    } else if (text.startsWith('🏷')) {
       tags = [...text.matchAll(/`([^`]+)`/g)].map(match => match[1]);
     } else if (text.startsWith('💰')) {
       const value = text.replace('💰', '').trim();

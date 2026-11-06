@@ -32,6 +32,8 @@ export interface Category {
   description: string;
   subcategories: string[];
   toolCount: number;
+  /** Last commit that touched the category file (UTC ISO), null without git. */
+  updatedAt: string | null;
 }
 
 export interface FilterState {

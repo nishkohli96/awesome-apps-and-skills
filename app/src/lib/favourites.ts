@@ -57,12 +57,21 @@ function write(slugs: string[]) {
 export function useFavourites() {
   const slugs = useSyncExternalStore(subscribe, readSnapshot, () => NONE);
   const toggle = useCallback((slug: string) => {
-    const current = readSnapshot();
-    write(
-      current.includes(slug)
-        ? current.filter(s => s !== slug)
-        : [...current, slug]
-    );
+    const apply = () => {
+      const current = readSnapshot();
+      write(
+        current.includes(slug)
+          ? current.filter(s => s !== slug)
+          : [...current, slug]
+      );
+    };
+    // The Web Locks API serialises read-modify-write across tabs; without it
+    // (old browsers) fall back to the unguarded write.
+    if (typeof navigator !== 'undefined' && navigator.locks) {
+      void navigator.locks.request(KEY, apply);
+    } else {
+      apply();
+    }
   }, []);
   return { slugs, toggle, has: (slug: string) => slugs.includes(slug) };
 }

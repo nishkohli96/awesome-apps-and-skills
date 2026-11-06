@@ -12,9 +12,13 @@ import { Icon } from './ui/Icon';
 export function NotFoundSearch() {
   const pathname = usePathname();
   const { tools, categories } = useData();
-  const guess = decodeURIComponent(
-    pathname.split('/').filter(Boolean).pop() ?? ''
-  );
+  const last = pathname.split('/').filter(Boolean).pop() ?? '';
+  let guess = last;
+  try {
+    guess = decodeURIComponent(last);
+  } catch {
+    // Malformed %-encoding in the URL: use the raw text.
+  }
 
   const suggestion = useMemo(() => {
     if (!guess) {
