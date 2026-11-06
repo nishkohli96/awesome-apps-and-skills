@@ -4,6 +4,7 @@ import nextTs from 'eslint-config-next/typescript';
 import jsConfig from '@nish1896/eslint-flat-config/js';
 import nextConfig from '@nish1896/eslint-flat-config/next';
 import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
+import prettierConfig from 'eslint-config-prettier/flat';
 
 const eslintConfig = defineConfig([
   ...nextVitals,
@@ -11,6 +12,8 @@ const eslintConfig = defineConfig([
   ...jsConfig,
   ...nextConfig,
   ...nextTsConfig,
+  // Must stay last: turns off every formatting rule (incl. @stylistic) so Prettier owns layout.
+  prettierConfig,
   globalIgnores([
     ".next/**",
     "out/**",

@@ -12,7 +12,9 @@
     "prod": "pnpm build && pnpm start",
     "lint": "eslint --fix",
     "lint:check": "eslint",
-    "prepare": "husky || true",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "cd .. && husky app/.husky || true",
     "check-updates": "ncu --format group -u",
     "install-updates": "pnpm check-updates && pnpm install"
   },
@@ -39,6 +41,7 @@
     "@types/react-dom": "^19.3.0",
     "eslint": "^10.14.0",
     "eslint-config-next": "16.4.5",
+    "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "postcss": "^8.5.32",
@@ -51,7 +54,8 @@
     "*.{json,html,css,sass,scss}": [
       "prettier --write --ignore-unknown"
     ],
-    "*.{js,jsx,ts,tsx}": [
+    "*.{js,jsx,mjs,ts,tsx}": [
+      "prettier --write",
       "eslint --fix"
     ]
   },
