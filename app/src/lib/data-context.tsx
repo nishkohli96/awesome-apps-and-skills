@@ -48,7 +48,7 @@ export function useToolSearch(): (query: string) => Tool[] {
       ],
       threshold: 0.3,
       ignoreLocation: true,
-      minMatchCharLength: 2,
+      minMatchCharLength: 1,
     });
   }, [tools, categories]);
 

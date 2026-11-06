@@ -31,6 +31,8 @@
   --t-guide: #8a5a00;
   --t-starter: #7d4fb6;
   --t-plugin: #b3306f;
+  --t-newsletter: #cf222e;
+  --t-video-channel: #6e7781;
   color-scheme: light;
 }
 
@@ -60,6 +62,8 @@
   --t-guide: #e3b341;
   --t-starter: #cda8f3;
   --t-plugin: #f592c3;
+  --t-newsletter: #ff7b72;
+  --t-video-channel: #9ba3ad;
   color-scheme: dark;
 }
 
@@ -164,6 +168,12 @@
 }
 .tb-plugin {
   --c: var(--t-plugin);
+}
+.tb-newsletter {
+  --c: var(--t-newsletter);
+}
+.tb-video-channel {
+  --c: var(--t-video-channel);
 }
 
 /* Cards and category tiles lift on hover. */

@@ -67,7 +67,11 @@ export function useSearchState(onDone: () => void) {
       setActive(i => Math.max(i - 1, 0));
     } else if (event.key === 'Enter') {
       event.preventDefault();
-      if (rows.length > 0 && active < rows.length) {
+      /**
+       * While the debounce is pending, `rows` still belong
+       * to the previous query.
+       */
+      if (!pending && rows.length > 0 && active < rows.length) {
         openTool(rows[active]);
         onDone();
       } else if (trimmed) {

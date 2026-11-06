@@ -8,5 +8,7 @@ export enum ToolType {
   Guide = 'guide',
   Starter = 'starter',
   Plugin = 'plugin',
+  Newsletter = 'newsletter',
+  VideoChannel = 'video-channel',
 }
 export const TOOL_TYPES = Object.values(ToolType);

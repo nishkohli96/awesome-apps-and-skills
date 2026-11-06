@@ -199,7 +199,11 @@ export function SearchResults() {
         if (!category) {
           return null;
         }
-        const exactTag = allTags.has(q.toLowerCase());
+        // Only link with the tag filter if this category has tools carrying it,
+        // otherwise the category page would open empty.
+        const tag = q.toLowerCase();
+        const exactTag =
+          allTags.has(tag) && groupTools.some(tool => tool.tags.includes(tag));
         return (
           <section key={category.slug} className="flex flex-col gap-5">
             <div className="border-border flex items-baseline justify-between border-b pb-3">
@@ -210,7 +214,7 @@ export function SearchResults() {
               <Link
                 href={
                   exactTag
-                    ? `/${category.slug}?tags=${encodeURIComponent(q.toLowerCase())}`
+                    ? `/${category.slug}?tags=${encodeURIComponent(tag)}`
                     : `/${category.slug}`
                 }
                 className="text-[14px] font-medium"

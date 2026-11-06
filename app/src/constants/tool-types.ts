@@ -43,14 +43,12 @@ export const TYPE_META: Record<ToolType, TypeMeta> = {
     label: 'Plugins',
     icon: 'M4 8h4a2 2 0 1 1 4 0h4v4a2 2 0 1 1 0 4v4H4z',
   },
+  [ToolType.Newsletter]: {
+    label: 'Newsletters',
+    icon: 'M3 6h18v12H3z M3 7l9 6 9-6',
+  },
+  [ToolType.VideoChannel]: {
+    label: 'Video channels',
+    icon: 'M3 6h14v12H3z M17 10l4-2v8l-4-2',
+  },
 };
-
-/** Order of the "Browse by type" strip on the home page. */
-export const TYPE_STRIP: ToolType[] = [
-  ToolType.Skill,
-  ToolType.McpServer,
-  ToolType.App,
-  ToolType.WebTool,
-  ToolType.Library,
-  ToolType.Guide,
-];

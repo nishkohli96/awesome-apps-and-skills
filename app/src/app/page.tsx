@@ -4,8 +4,8 @@ import { CategoryCard } from '@/components/CategoryCard';
 import { SearchCommand } from '@/components/search/SearchCommand';
 import { ToolCard } from '@/components/ToolCard';
 import { TypeBadge } from '@/components/ui/TypeBadge';
-import { EDITORS_PICKS, TYPE_META, TYPE_STRIP } from '@/constants';
-import { SearchVariant } from '@/types';
+import { EDITORS_PICKS, TYPE_META } from '@/constants';
+import { SearchVariant, TOOL_TYPES } from '@/types';
 import { countTypes, getCategories, getTools, newestFirst } from '@/lib/data';
 
 const QUICK_PICKS = [
@@ -32,7 +32,8 @@ export default function HomePage() {
   );
 
   const byToolCount = [...categories].sort((a, b) => b.toolCount - a.toolCount);
-  const typesByCount = [...TYPE_STRIP].sort(
+  // Every type that has tools, biggest first, so a new type shows up on its own.
+  const typesByCount = TOOL_TYPES.filter(type => typeCounts.has(type)).sort(
     (a, b) => (typeCounts.get(b) ?? 0) - (typeCounts.get(a) ?? 0)
   );
   const subcategoryCount = categories.reduce(
@@ -162,7 +163,7 @@ export default function HomePage() {
             Recently Added
           </h2>
           <Link href="/search?sort=new" className="text-[14px] font-medium">
-            All new tools →
+            All tools, newest first →
           </Link>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(min(320px,100%),1fr))] items-start gap-5">
@@ -174,7 +175,7 @@ export default function HomePage() {
             className="border-border-strong text-ink flex flex-col gap-6 rounded-[12px] border border-dashed p-6 no-underline"
           >
             <span className="font-serif text-[30px] leading-[1.1]">
-              Everything added in the last 30 days
+              Everything in the list, newest first
             </span>
             <span className="text-accent-ink text-[14px] font-medium">
               See all new →
