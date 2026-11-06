@@ -1,7 +1,8 @@
 import { ENV_VARIABLES } from './environment';
 
 export const SITE_NAME = 'Awesome Apps & Skills';
-export const REPO_URL = 'https://github.com/nishkohli96/awesome-apps-and-skills';
+export const REPO_URL =
+  'https://github.com/nishkohli96/awesome-apps-and-skills';
 
 /** The curator's own site, linked from the footer and the About page. */
 export const CURATOR_URL = 'https://nishkohli96.vercel.app/';

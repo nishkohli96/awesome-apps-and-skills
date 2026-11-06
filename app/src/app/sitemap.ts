@@ -5,7 +5,9 @@ import type { Tool } from '@/lib/types';
 
 /** Newest add date among the tools, so a page's lastmod only moves when its content does. */
 function latest(tools: Tool[]): Date | undefined {
-  const dates = tools.map(tool => tool.addedAt).filter((d): d is string => d !== null);
+  const dates = tools
+    .map(tool => tool.addedAt)
+    .filter((d): d is string => d !== null);
   return dates.length > 0 ? new Date(dates.sort().at(-1) as string) : undefined;
 }
 
@@ -39,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: url('/'),
       lastModified: latest(tools),
       changeFrequency: 'daily',
-      priority: 1
+      priority: 1,
     },
     ...categories,
     ...types,
@@ -48,13 +50,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: url('/suggest-tool'),
       lastModified: latest(tools),
       changeFrequency: 'yearly',
-      priority: 0.3
+      priority: 0.3,
     },
     {
       url: url('/about'),
       lastModified: latest(tools),
       changeFrequency: 'yearly',
-      priority: 0.3
-    }
+      priority: 0.3,
+    },
   ];
 }

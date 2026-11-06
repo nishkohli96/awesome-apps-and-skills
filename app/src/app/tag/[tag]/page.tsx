@@ -34,7 +34,9 @@ export default async function TagPage({ params }: Props) {
     notFound();
   }
 
-  const categories = getCategories().filter(c => tools.some(t => t.category === c.slug));
+  const categories = getCategories().filter(c =>
+    tools.some(t => t.category === c.slug)
+  );
   return (
     <main
       id="main"
@@ -54,7 +56,11 @@ export default async function TagPage({ params }: Props) {
           basePath={`/tag/${encodeURIComponent(tag)}`}
           tools={tools}
           groupBy={GroupBy.Category}
-          groups={categories.map(c => ({ key: c.slug, label: c.name, emoji: c.emoji }))}
+          groups={categories.map(c => ({
+            key: c.slug,
+            label: c.name,
+            emoji: c.emoji,
+          }))}
           lockedTag={tag}
         />
       </Suspense>

@@ -9,7 +9,7 @@ const link = 'text-[14px] text-ink-2 no-underline hover:text-ink';
 
 export function Footer({ categories }: { categories: Category[] }) {
   return (
-    <footer className="mt-[clamp(48px,9vw,120px)] border-t border-border">
+    <footer className="border-border mt-[clamp(48px,9vw,120px)] border-t">
       <div className="mx-auto flex max-w-[1200px] flex-wrap gap-x-16 gap-y-10 px-[clamp(24px,3vw,32px)] pt-12 pb-10 max-[760px]:gap-y-7 max-[760px]:pt-8 max-[760px]:pb-8">
         <div className="flex flex-[1_1_260px] items-center gap-3 self-start">
           <Logo size={60} />
@@ -17,14 +17,13 @@ export function Footer({ categories }: { categories: Category[] }) {
             <span className="text-[16px] font-semibold">
               Awesome Apps &amp; Skills
             </span>
-            <p className="m-0 text-[14px] leading-[1.55] text-ink-2">
-              Curated by
-              {' '}
+            <p className="text-ink-2 m-0 text-[14px] leading-[1.55]">
+              Curated by{' '}
               <ProfileLink
                 href={CURATOR_URL}
                 location={ProfileLocation.Footer}
                 profile="curator"
-                className="font-medium text-accent-ink"
+                className="text-accent-ink font-medium"
               >
                 Nishant Kohli
               </ProfileLink>

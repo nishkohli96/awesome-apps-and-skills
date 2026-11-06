@@ -18,8 +18,10 @@
   --accent-soft: #f8e7df;
   --btn: #1a1814;
   --btn-text: #fbfaf7;
-  --shadow: 0 1px 2px rgba(26, 24, 20, 0.04), 0 10px 28px -10px rgba(26, 24, 20, 0.16);
-  --shadow-pop: 0 1px 2px rgba(26, 24, 20, 0.04), 0 18px 40px -12px rgba(26, 24, 20, 0.22);
+  --shadow:
+    0 1px 2px rgba(26, 24, 20, 0.04), 0 10px 28px -10px rgba(26, 24, 20, 0.16);
+  --shadow-pop:
+    0 1px 2px rgba(26, 24, 20, 0.04), 0 18px 40px -12px rgba(26, 24, 20, 0.22);
   --t-app: #1a7f37;
   --t-web-tool: #4f46e5;
   --t-skill: #b0502c;
@@ -47,7 +49,8 @@
   --btn: #f3f0e9;
   --btn-text: #131210;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -10px rgba(0, 0, 0, 0.65);
-  --shadow-pop: 0 1px 2px rgba(0, 0, 0, 0.3), 0 18px 40px -12px rgba(0, 0, 0, 0.7);
+  --shadow-pop:
+    0 1px 2px rgba(0, 0, 0, 0.3), 0 18px 40px -12px rgba(0, 0, 0, 0.7);
   --t-app: #56c271;
   --t-web-tool: #a9a4ff;
   --t-skill: #f0a383;
@@ -126,21 +129,42 @@
   height: 22px;
   padding: 0 8px;
   border-radius: 6px;
-  font: 500 12px/1 var(--font-geist-mono), ui-monospace, monospace;
+  font:
+    500 12px/1 var(--font-geist-mono),
+    ui-monospace,
+    monospace;
   color: var(--c);
   background: color-mix(in oklab, var(--c) 9%, var(--surface));
   border: 1px solid color-mix(in oklab, var(--c) 28%, transparent);
   white-space: nowrap;
 }
-.tb-app { --c: var(--t-app); }
-.tb-web-tool { --c: var(--t-web-tool); }
-.tb-skill { --c: var(--t-skill); }
-.tb-website { --c: var(--t-website); }
-.tb-mcp-server { --c: var(--t-mcp-server); }
-.tb-library { --c: var(--t-library); }
-.tb-guide { --c: var(--t-guide); }
-.tb-starter { --c: var(--t-starter); }
-.tb-plugin { --c: var(--t-plugin); }
+.tb-app {
+  --c: var(--t-app);
+}
+.tb-web-tool {
+  --c: var(--t-web-tool);
+}
+.tb-skill {
+  --c: var(--t-skill);
+}
+.tb-website {
+  --c: var(--t-website);
+}
+.tb-mcp-server {
+  --c: var(--t-mcp-server);
+}
+.tb-library {
+  --c: var(--t-library);
+}
+.tb-guide {
+  --c: var(--t-guide);
+}
+.tb-starter {
+  --c: var(--t-starter);
+}
+.tb-plugin {
+  --c: var(--t-plugin);
+}
 
 /* Cards and category tiles lift on hover. */
 .lift {

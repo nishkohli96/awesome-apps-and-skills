@@ -12,7 +12,9 @@ import { Icon } from './ui/Icon';
 export function NotFoundSearch() {
   const pathname = usePathname();
   const { tools, categories } = useData();
-  const guess = decodeURIComponent(pathname.split('/').filter(Boolean).pop() ?? '');
+  const guess = decodeURIComponent(
+    pathname.split('/').filter(Boolean).pop() ?? ''
+  );
 
   const suggestion = useMemo(() => {
     if (!guess) {
@@ -23,9 +25,13 @@ export function NotFoundSearch() {
     if (hit) {
       return { href: `/tag/${encodeURIComponent(hit)}`, label: `#${hit}` };
     }
-    const category = new Fuse(categories, { keys: ['name', 'slug'], threshold: 0.4 }).search(guess)[0]
-      ?.item;
-    return category ? { href: `/${category.slug}`, label: category.name } : null;
+    const category = new Fuse(categories, {
+      keys: ['name', 'slug'],
+      threshold: 0.4,
+    }).search(guess)[0]?.item;
+    return category
+      ? { href: `/${category.slug}`, label: category.name }
+      : null;
   }, [guess, tools, categories]);
 
   return (
@@ -33,7 +39,7 @@ export function NotFoundSearch() {
       <form
         action="/search"
         role="search"
-        className="flex h-12 max-w-[460px] items-center gap-2.5 rounded-[10px] border border-border-strong bg-surface px-3.5 text-ink-3 focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/35"
+        className="border-border-strong bg-surface text-ink-3 focus-within:border-accent focus-within:ring-accent/35 flex h-12 max-w-[460px] items-center gap-2.5 rounded-[10px] border px-3.5 focus-within:ring-2"
       >
         <Icon d={ICON.search} size={18} />
         <input
@@ -41,19 +47,17 @@ export function NotFoundSearch() {
           name="q"
           defaultValue={guess}
           aria-label="Search"
-          className="min-w-0 flex-1 border-0 bg-transparent text-[16px] leading-none text-ink outline-none focus-visible:!outline-none"
+          className="text-ink min-w-0 flex-1 border-0 bg-transparent text-[16px] leading-none outline-none focus-visible:!outline-none"
         />
       </form>
-      <p className="m-0 text-[14px] text-ink-2">
+      <p className="text-ink-2 m-0 text-[14px]">
         {suggestion && (
           <>
-            Did you mean
-            {' '}
+            Did you mean{' '}
             <Link href={suggestion.href} className="font-medium">
               {suggestion.label}
             </Link>
-            ? Or
-            {' '}
+            ? Or{' '}
           </>
         )}
         {suggestion ? '' : 'Or '}

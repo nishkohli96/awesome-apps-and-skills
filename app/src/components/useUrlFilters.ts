@@ -31,7 +31,7 @@ export function useUrlFilters(defaultSort: SortKey) {
   const search = useSyncExternalStore(subscribe, getSearch, getServerSearch);
   const state = useMemo(
     () => parseFilters(new URLSearchParams(search), defaultSort),
-    [search, defaultSort],
+    [search, defaultSort]
   );
 
   const update = (next: Partial<FilterState>) => {

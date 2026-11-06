@@ -17,11 +17,7 @@ export function DataProvider({
   children,
 }: DataValue & { children: ReactNode }) {
   const value = useMemo(() => ({ tools, categories }), [tools, categories]);
-  return (
-    <DataContext value={value}>
-      {children}
-    </DataContext>
-  );
+  return <DataContext value={value}>{children}</DataContext>;
 }
 
 export function useData(): DataValue {
@@ -61,6 +57,6 @@ export function useToolSearch(): (query: string) => Tool[] {
       const q = query.trim();
       return q ? fuse.search(q).map(hit => hit.item.tool) : tools;
     },
-    [fuse, tools],
+    [fuse, tools]
   );
 }

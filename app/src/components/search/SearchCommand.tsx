@@ -20,7 +20,11 @@ interface SearchCommandProps {
   onShortcutFallback?: () => void;
 }
 
-export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }: SearchCommandProps) {
+export function SearchCommand({
+  variant,
+  shortcuts = false,
+  onShortcutFallback,
+}: SearchCommandProps) {
   const id = useId();
   const listId = `${id}-list`;
   const optionId = (index: number) => `${id}-option-${index}`;
@@ -40,16 +44,24 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
       return;
     }
     const onKey = (event: globalThis.KeyboardEvent) => {
-      if (!((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k')) {
+      if (!(
+        (event.metaKey || event.ctrlKey) &&
+        event.key.toLowerCase() === 'k'
+      )) {
         return;
       }
       event.preventDefault();
       const input = inputRef.current;
       // While the hero field is on screen the appbar one is hidden, so focus the visible one.
       // Measured now rather than read from the observer's flag, which lags a frame behind scrolling.
-      const hero = document.querySelector<HTMLInputElement>('[data-hero-search-input]');
+      const hero = document.querySelector<HTMLInputElement>(
+        '[data-hero-search-input]'
+      );
       const box = hero?.getBoundingClientRect();
-      const heroInput = box && box.bottom > APPBAR_HEIGHT && box.top < window.innerHeight ? hero : null;
+      const heroInput =
+        box && box.bottom > APPBAR_HEIGHT && box.top < window.innerHeight
+          ? hero
+          : null;
       if (heroInput) {
         heroInput.focus();
       } else if (input && input.offsetParent !== null) {
@@ -87,7 +99,11 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
   };
 
   const hero = variant === SearchVariant.Hero;
-  const showPanel = open && (search.state !== SearchPanelState.Results || search.rows.length > 0 || search.pending);
+  const showPanel =
+    open &&
+    (search.state !== SearchPanelState.Results ||
+      search.rows.length > 0 ||
+      search.pending);
 
   return (
     <div
@@ -100,7 +116,7 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
       }`}
     >
       <label
-        className={`relative ${hero ? '' : 'z-30'} flex items-center border border-border-strong bg-surface text-ink-3 focus-within:border-accent focus-within:ring-2 focus-within:ring-accent/35 ${
+        className={`relative ${hero ? '' : 'z-30'} border-border-strong bg-surface text-ink-3 focus-within:border-accent focus-within:ring-accent/35 flex items-center border focus-within:ring-2 ${
           hero
             ? 'h-[60px] gap-3 rounded-[12px] pr-2.5 pl-[18px] shadow-[0_1px_0_var(--border)]'
             : 'h-10 gap-2.5 rounded-[8px] pr-2 pl-3'
@@ -116,7 +132,11 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
           aria-expanded={showPanel}
           aria-controls={listId}
           aria-autocomplete="list"
-          aria-activedescendant={showPanel && search.rows.length > 0 ? optionId(search.active) : undefined}
+          aria-activedescendant={
+            showPanel && search.rows.length > 0
+              ? optionId(search.active)
+              : undefined
+          }
           autoComplete="off"
           placeholder={searchPlaceholder(tools.length)}
           value={search.query}
@@ -126,23 +146,18 @@ export function SearchCommand({ variant, shortcuts = false, onShortcutFallback }
             setOpen(true);
           }}
           onKeyDown={search.onKeyDown}
-          className={`min-w-0 flex-1 border-0 bg-transparent leading-none text-ink outline-none focus-visible:!outline-none ${
+          className={`text-ink min-w-0 flex-1 border-0 bg-transparent leading-none outline-none focus-visible:!outline-none ${
             hero ? 'text-[18px]' : 'text-[14px]'
           }`}
         />
         <kbd
-          className={`inline-flex items-center justify-center gap-[3px] border border-border bg-surface-2 font-mono leading-none font-medium text-ink-2 max-[760px]:hidden ${
+          className={`border-border bg-surface-2 text-ink-2 inline-flex items-center justify-center gap-[3px] border font-mono leading-none font-medium max-[760px]:hidden ${
             hero
               ? 'h-[26px] min-w-[26px] rounded-[6px] px-[7px] text-[12px]'
               : 'h-[22px] rounded-[5px] px-1.5 text-[11px]'
           }`}
         >
-          <Command
-            size={hero ? 13 : 12}
-            strokeWidth={2}
-            aria-hidden="true"
-          />
-          K
+          <Command size={hero ? 13 : 12} strokeWidth={2} aria-hidden="true" />K
         </kbd>
       </label>
       {showPanel && (

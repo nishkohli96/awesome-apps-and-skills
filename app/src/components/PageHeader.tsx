@@ -11,30 +11,34 @@ interface PageHeaderProps {
 }
 
 /** Header shared by category, tag and type pages. */
-export function PageHeader({ crumbs, mark, title, meta, description }: PageHeaderProps) {
+export function PageHeader({
+  crumbs,
+  mark,
+  title,
+  meta,
+  description,
+}: PageHeaderProps) {
   return (
     <section className="flex flex-col gap-4 pt-10">
       <nav
         aria-label="Breadcrumb"
-        className="flex gap-2 text-[14px] text-ink-3"
+        className="text-ink-3 flex gap-2 text-[14px]"
       >
         {crumbs.map((crumb, index) => (
           <span key={crumb.label} className="flex gap-2">
             {index > 0 && <span aria-hidden="true">/</span>}
-            {crumb.href
-              ? (
-                <Link
-                  href={crumb.href}
-                  className="text-ink-2 no-underline hover:text-ink"
-                >
-                  {crumb.label}
-                </Link>
-              )
-              : (
-                <span aria-current="page" className="text-ink">
-                  {crumb.label}
-                </span>
-              )}
+            {crumb.href ? (
+              <Link
+                href={crumb.href}
+                className="text-ink-2 hover:text-ink no-underline"
+              >
+                {crumb.label}
+              </Link>
+            ) : (
+              <span aria-current="page" className="text-ink">
+                {crumb.label}
+              </span>
+            )}
           </span>
         ))}
       </nav>
@@ -42,7 +46,7 @@ export function PageHeader({ crumbs, mark, title, meta, description }: PageHeade
         <div className="flex items-center gap-4">
           <span
             aria-hidden="true"
-            className="grid size-14 place-items-center rounded-[14px] border border-border bg-surface-2 text-[28px]"
+            className="border-border bg-surface-2 grid size-14 place-items-center rounded-[14px] border text-[28px]"
           >
             {mark}
           </span>
@@ -50,11 +54,11 @@ export function PageHeader({ crumbs, mark, title, meta, description }: PageHeade
             {title}
           </h1>
         </div>
-        <span className="font-mono text-[14px] leading-none font-medium text-ink-2">
+        <span className="text-ink-2 font-mono text-[14px] leading-none font-medium">
           {meta}
         </span>
       </div>
-      <p className="m-0 max-w-[640px] text-[17px] leading-[1.55] text-ink-2">
+      <p className="text-ink-2 m-0 max-w-[640px] text-[17px] leading-[1.55]">
         {description}
       </p>
     </section>

@@ -14,8 +14,8 @@ function Body({ onClose }: { onClose: () => void }) {
   const search = useSearchState(onClose);
   return (
     <>
-      <div className="flex h-16 shrink-0 items-center gap-2 border-b border-border pr-2 pl-3">
-        <label className="flex h-11 flex-1 items-center gap-2 rounded-[10px] border border-accent bg-surface px-3 text-ink-3">
+      <div className="border-border flex h-16 shrink-0 items-center gap-2 border-b pr-2 pl-3">
+        <label className="border-accent bg-surface text-ink-3 flex h-11 flex-1 items-center gap-2 rounded-[10px] border px-3">
           <Icon d={ICON.search} size={18} />
           <input
             type="search"
@@ -23,20 +23,24 @@ function Body({ onClose }: { onClose: () => void }) {
             aria-label="Search"
             aria-expanded
             aria-controls={`${id}-list`}
-            aria-activedescendant={search.rows.length > 0 ? `${id}-option-${search.active}` : undefined}
+            aria-activedescendant={
+              search.rows.length > 0
+                ? `${id}-option-${search.active}`
+                : undefined
+            }
             autoComplete="off"
             autoFocus
             placeholder={searchPlaceholder(tools.length)}
             value={search.query}
             onChange={event => search.setQuery(event.target.value)}
             onKeyDown={search.onKeyDown}
-            className="min-w-0 flex-1 border-0 bg-transparent text-[16px] leading-none text-ink outline-none focus-visible:outline-none!"
+            className="text-ink min-w-0 flex-1 border-0 bg-transparent text-[16px] leading-none outline-none focus-visible:outline-none!"
           />
         </label>
         <button
           type="button"
           onClick={onClose}
-          className="h-11 border-0 bg-transparent px-2.5 text-[15px] leading-none font-medium text-ink"
+          className="text-ink h-11 border-0 bg-transparent px-2.5 text-[15px] leading-none font-medium"
         >
           Cancel
         </button>
@@ -63,7 +67,7 @@ export function MobileSearch({ open, onOpenChange }: MobileSearchProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
         showCloseButton={false}
-        className="inset-0 flex h-dvh w-screen max-w-none translate-x-0 translate-y-0 flex-col gap-0 rounded-none bg-bg p-0 ring-0 sm:max-w-none"
+        className="bg-bg inset-0 flex h-dvh w-screen max-w-none translate-x-0 translate-y-0 flex-col gap-0 rounded-none p-0 ring-0 sm:max-w-none"
       >
         <DialogTitle className="sr-only">Search</DialogTitle>
         <Body onClose={() => onOpenChange(false)} />

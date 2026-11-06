@@ -6,7 +6,8 @@ import { countTags, getCategories, getTools } from '@/lib/data';
 
 export const metadata: Metadata = { title: 'About' };
 
-const rowClass = 'flex justify-between py-3.5 max-[760px]:border-b max-[760px]:border-border';
+const rowClass =
+  'flex justify-between py-3.5 max-[760px]:border-b max-[760px]:border-border';
 
 export default function AboutPage() {
   const tools = getTools();
@@ -25,9 +26,8 @@ export default function AboutPage() {
         <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">
           A reading list, for tools.
         </h1>
-        <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
-          Curated by
-          {' '}
+        <p className="text-ink-2 m-0 text-[16px] leading-[1.6]">
+          Curated by{' '}
           <ProfileLink
             href={CURATOR_URL}
             location={ProfileLocation.About}
@@ -37,17 +37,16 @@ export default function AboutPage() {
           </ProfileLink>
           , who aims to curate the list of the best tools as they appear.
         </p>
-        <p className="m-0 text-[16px] leading-[1.6] text-ink-2">
-          Every tool here has been reviewed and hand-picked by the author, so you can trust it&apos;s
-          worth your time and does exactly what you&apos;re looking for.
+        <p className="text-ink-2 m-0 text-[16px] leading-[1.6]">
+          Every tool here has been reviewed and hand-picked by the author, so
+          you can trust it&apos;s worth your time and does exactly what
+          you&apos;re looking for.
         </p>
       </div>
-      <dl className="m-0 flex flex-[1_1_180px] flex-col max-[760px]:border-t max-[760px]:border-ink">
+      <dl className="max-[760px]:border-ink m-0 flex flex-[1_1_180px] flex-col max-[760px]:border-t">
         {stats.map(([name, value]) => (
           <div key={name} className={rowClass}>
-            <dt className="text-ink-2">
-              {name}
-            </dt>
+            <dt className="text-ink-2">{name}</dt>
             <dd className="m-0 font-mono text-[15px] leading-tight font-medium">
               {value}
             </dd>
@@ -56,7 +55,12 @@ export default function AboutPage() {
         <div className="flex justify-between py-3.5">
           <dt className="text-ink-2">Source</dt>
           <dd className="m-0">
-            <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="font-medium">
+            <a
+              href={REPO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium"
+            >
               GitHub ↗
             </a>
           </dd>

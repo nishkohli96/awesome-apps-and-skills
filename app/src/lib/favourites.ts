@@ -58,7 +58,11 @@ export function useFavourites() {
   const slugs = useSyncExternalStore(subscribe, readSnapshot, () => NONE);
   const toggle = useCallback((slug: string) => {
     const current = readSnapshot();
-    write(current.includes(slug) ? current.filter(s => s !== slug) : [...current, slug]);
+    write(
+      current.includes(slug)
+        ? current.filter(s => s !== slug)
+        : [...current, slug]
+    );
   }, []);
   return { slugs, toggle, has: (slug: string) => slugs.includes(slug) };
 }

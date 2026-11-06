@@ -89,18 +89,22 @@ function load(): Data {
   const tools: Tool[] = [];
   const categories: Category[] = [];
 
-  for (const file of readdirSync(CATEGORIES_DIR).filter(f => f.endsWith('.md'))) {
+  for (const file of readdirSync(CATEGORIES_DIR).filter(f =>
+    f.endsWith('.md')
+  )) {
     const source = readFileSync(path.join(CATEGORIES_DIR, file), 'utf8');
     const parsed = parseCategoryFile(file.replace(/\.md$/, ''), source);
     categories.push({
       ...parsed.category,
-      toolCount: parsed.tools.length
+      toolCount: parsed.tools.length,
     });
 
     for (const tool of parsed.tools) {
       const added = additions.get(tool.name);
       const addedAt = added?.date ?? null;
-      const ageDays = addedAt ? (now - Date.parse(addedAt)) / 86_400_000 : Infinity;
+      const ageDays = addedAt
+        ? (now - Date.parse(addedAt)) / 86_400_000
+        : Infinity;
       tools.push({
         ...tool,
         addedAt,
@@ -112,7 +116,9 @@ function load(): Data {
     }
   }
 
-  categories.sort((a, b) => b.toolCount - a.toolCount || a.name.localeCompare(b.name));
+  categories.sort(
+    (a, b) => b.toolCount - a.toolCount || a.name.localeCompare(b.name)
+  );
   return { tools, categories };
 }
 
@@ -153,5 +159,7 @@ export function countTypes(tools: Tool[]): Map<ToolType, number> {
 
 /** Newest first; tools git does not know about keep their file order after. */
 export function newestFirst(tools: Tool[]): Tool[] {
-  return [...tools].sort((a, b) => (b.addedAt ?? '').localeCompare(a.addedAt ?? ''));
+  return [...tools].sort((a, b) =>
+    (b.addedAt ?? '').localeCompare(a.addedAt ?? '')
+  );
 }

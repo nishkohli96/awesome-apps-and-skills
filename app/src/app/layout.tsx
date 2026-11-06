@@ -10,7 +10,10 @@ import { getCategories, getTools } from '@/lib/data';
 import './globals.css';
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
-const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] });
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+});
 const instrumentSerif = Instrument_Serif({
   variable: '--font-instrument-serif',
   subsets: ['latin'],
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
   icons: { icon: '/logo.svg' },
   title: {
     template: `%s | ${SITE_NAME}`,
-    default: `${SITE_NAME}: a human-curated index of AI tools`
+    default: `${SITE_NAME}: a human-curated index of AI tools`,
   },
   description:
     'Claude skills, MCP servers, apps and web tools, picked by a techie and linked straight to the source.',
@@ -36,7 +39,9 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -45,7 +50,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <Providers tools={getTools()} categories={getCategories()}>
           <a
             href="#main"
-            className="absolute top-[-48px] left-4 z-50 rounded-[8px] bg-btn px-3.5 py-2.5 !text-btn-text focus:top-3"
+            className="bg-btn text-btn-text! absolute top-[-48px] left-4 z-50 rounded-[8px] px-3.5 py-2.5 focus:top-3"
           >
             Skip to content
           </a>

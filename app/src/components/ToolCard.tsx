@@ -42,21 +42,22 @@ export function ToolCard({
 
   const isLong = tool.description.length > LONG_DESCRIPTION;
   const extraTags = tool.tags.length - VISIBLE_TAGS;
-  const trackClick = () => track(AnalyticsEvent.ToolClick, toolClickData(tool, ToolClickSource.Card));
+  const trackClick = () =>
+    track(AnalyticsEvent.ToolClick, toolClickData(tool, ToolClickSource.Card));
   const shownTags = tagsOpen ? tool.tags : tool.tags.slice(0, VISIBLE_TAGS);
 
   return (
     <article
-      className={`lift flex min-w-0 flex-col gap-[14px] rounded-[12px] border border-border p-5 ${
+      className={`lift border-border flex min-w-0 flex-col gap-[14px] rounded-[12px] border p-5 ${
         sponsored ? 'bg-surface-2' : 'bg-surface'
       }`}
     >
       {sponsored && (
         <div className="-mt-1 -mb-0.5 flex items-center justify-between">
-          <span className="inline-flex h-[22px] items-center rounded-[6px] border border-dashed border-border-strong px-2 font-mono text-[11px] leading-none font-medium text-ink-2">
+          <span className="border-border-strong text-ink-2 inline-flex h-[22px] items-center rounded-[6px] border border-dashed px-2 font-mono text-[11px] leading-none font-medium">
             Sponsored
           </span>
-          <Link href="/about" className="text-[12px] text-ink-3">
+          <Link href="/about" className="text-ink-3 text-[12px]">
             About sponsors
           </Link>
         </div>
@@ -75,8 +76,8 @@ export function ToolCard({
           </a>
         </h3>
         {tool.isNew && !hideNewBadge && (
-          <span className="inline-flex h-[22px] items-center gap-[5px] rounded-full bg-accent-soft px-2 font-mono text-[11px] leading-none font-semibold text-accent-ink">
-            <span className="size-1.5 rounded-full bg-accent" />
+          <span className="bg-accent-soft text-accent-ink inline-flex h-[22px] items-center gap-[5px] rounded-full px-2 font-mono text-[11px] leading-none font-semibold">
+            <span className="bg-accent size-1.5 rounded-full" />
             New
           </span>
         )}
@@ -86,7 +87,7 @@ export function ToolCard({
         <TypeBadge type={tool.type} />
         {tool.pricing && <PricingPill pricing={tool.pricing} />}
         {showSubcategory && (
-          <span className="ml-auto font-mono text-[12px] leading-none text-ink-3">
+          <span className="text-ink-3 ml-auto font-mono text-[12px] leading-none">
             {tool.subcategory}
           </span>
         )}
@@ -94,7 +95,7 @@ export function ToolCard({
 
       <div className="flex flex-col items-start gap-1">
         <p
-          className={`m-0 text-[14.5px] leading-[1.55] text-ink-2 ${expanded ? '' : 'line-clamp-3'}`}
+          className={`text-ink-2 m-0 text-[14.5px] leading-[1.55] ${expanded ? '' : 'line-clamp-3'}`}
         >
           {tool.description}
         </p>
@@ -103,7 +104,7 @@ export function ToolCard({
             type="button"
             aria-expanded={expanded}
             onClick={() => setExpanded(v => !v)}
-            className="border-0 bg-transparent p-0 text-[13px] leading-[1.4] font-medium text-accent-ink"
+            className="text-accent-ink border-0 bg-transparent p-0 text-[13px] leading-[1.4] font-medium"
           >
             {expanded ? 'Show less' : 'Show more'}
           </button>
@@ -124,74 +125,71 @@ export function ToolCard({
             type="button"
             aria-expanded={tagsOpen}
             onClick={() => setTagsOpen(v => !v)}
-            className="inline-flex h-[26px] items-center rounded-[6px] border border-accent-ink/60 bg-transparent px-2 font-mono text-[12px] leading-none font-medium text-accent-ink"
+            className="border-accent-ink/60 text-accent-ink inline-flex h-[26px] items-center rounded-[6px] border bg-transparent px-2 font-mono text-[12px] leading-none font-medium"
           >
             {tagsOpen ? 'less' : `+${extraTags}`}
           </button>
         )}
       </div>
 
-      <footer className="flex items-center justify-between border-t border-border pt-3">
-        {saved
-          ? (
-            <button
-              type="button"
-              aria-pressed="true"
-              aria-label={`Remove ${tool.name} from favourites`}
-              onClick={() => toggle(tool.slug)}
-              className="-ml-2 inline-flex h-[34px] items-center gap-1.5 rounded-[8px] border-0 bg-accent-soft pr-2.5 pl-2 text-[13px] leading-none font-medium text-accent-ink"
-            >
-              <Icon d={ICON.heart} size={17} filled />
-              Saved
-            </button>
-          )
-          : (
-            <button
-              type="button"
-              aria-pressed="false"
-              aria-label={`Add ${tool.name} to favourites`}
-              onClick={() => toggle(tool.slug)}
-              className="-ml-2 grid size-[34px] place-items-center rounded-[8px] border-0 bg-transparent text-ink-2 hover:text-ink"
-            >
-              <Icon d={ICON.heart} size={18} />
-            </button>
-          )}
+      <footer className="border-border flex items-center justify-between border-t pt-3">
+        {saved ? (
+          <button
+            type="button"
+            aria-pressed="true"
+            aria-label={`Remove ${tool.name} from favourites`}
+            onClick={() => toggle(tool.slug)}
+            className="bg-accent-soft text-accent-ink -ml-2 inline-flex h-[34px] items-center gap-1.5 rounded-[8px] border-0 pr-2.5 pl-2 text-[13px] leading-none font-medium"
+          >
+            <Icon d={ICON.heart} size={17} filled />
+            Saved
+          </button>
+        ) : (
+          <button
+            type="button"
+            aria-pressed="false"
+            aria-label={`Add ${tool.name} to favourites`}
+            onClick={() => toggle(tool.slug)}
+            className="text-ink-2 hover:text-ink -ml-2 grid size-[34px] place-items-center rounded-[8px] border-0 bg-transparent"
+          >
+            <Icon d={ICON.heart} size={18} />
+          </button>
+        )}
         <a
           href={tool.url}
           target="_blank"
           rel="noopener noreferrer"
           onClick={trackClick}
-          className="inline-flex h-[34px] items-center gap-1.5 rounded-[8px] pr-1 pl-2.5 text-[14px] leading-none font-medium text-ink no-underline"
+          className="text-ink inline-flex h-[34px] items-center gap-1.5 rounded-[8px] pr-1 pl-2.5 text-[14px] leading-none font-medium no-underline"
         >
           Visit
           <Icon d={ICON.out} />
           <span className="sr-only">(opens in new tab)</span>
         </a>
         {tool.addedBy && !sponsored && (
-          <span className="ml-auto inline-flex min-w-0 items-center gap-1.5 pl-2 text-[13px] text-ink-3">
+          <span className="text-ink-3 ml-auto inline-flex min-w-0 items-center gap-1.5 pl-2 text-[13px]">
             Added by
-            {tool.addedBy.login
-              ? (
-                <a
-                  href={`https://github.com/${tool.addedBy.login}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => track(AnalyticsEvent.ProfileClick, {
+            {tool.addedBy.login ? (
+              <a
+                href={`https://github.com/${tool.addedBy.login}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  track(AnalyticsEvent.ProfileClick, {
                     location: ProfileLocation.ToolCard,
                     profile: tool.addedBy?.login ?? '',
-                  })}
-                  aria-label={`${tool.addedBy.login} on GitHub (opens in new tab)`}
-                  className="truncate font-medium text-ink-2 underline underline-offset-[3px]"
-                >
-                  @
-                  {tool.addedBy.login}
-                </a>
-              )
-              : (
-                <span className="truncate font-medium text-ink-2">
-                  {tool.addedBy.name}
-                </span>
-              )}
+                  })
+                }
+                aria-label={`${tool.addedBy.login} on GitHub (opens in new tab)`}
+                className="text-ink-2 truncate font-medium underline underline-offset-[3px]"
+              >
+                @{tool.addedBy.login}
+              </a>
+            ) : (
+              <span className="text-ink-2 truncate font-medium">
+                {tool.addedBy.name}
+              </span>
+            )}
           </span>
         )}
       </footer>

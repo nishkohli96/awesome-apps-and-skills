@@ -11,7 +11,7 @@ export function Icon({
   size = 16,
   strokeWidth = 1.75,
   filled = false,
-  className
+  className,
 }: IconProps) {
   return (
     <svg

@@ -11,7 +11,10 @@ const MAX_ROWS = 8;
 const DEBOUNCE_MS = 150;
 
 export function openTool(tool: Tool) {
-  track(AnalyticsEvent.ToolClick, toolClickData(tool, ToolClickSource.SearchPanel));
+  track(
+    AnalyticsEvent.ToolClick,
+    toolClickData(tool, ToolClickSource.SearchPanel)
+  );
   window.open(tool.url, '_blank', 'noopener,noreferrer');
 }
 
@@ -29,7 +32,10 @@ export function useSearchState(onDone: () => void) {
   }, [query]);
 
   const trimmed = query.trim();
-  const results = useMemo(() => (debounced.trim() ? search(debounced) : []), [debounced, search]);
+  const results = useMemo(
+    () => (debounced.trim() ? search(debounced) : []),
+    [debounced, search]
+  );
   const rows = results.slice(0, MAX_ROWS);
   const total = results.length;
   const pending = trimmed !== debounced.trim();

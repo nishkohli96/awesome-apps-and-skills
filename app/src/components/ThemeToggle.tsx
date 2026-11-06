@@ -20,17 +20,23 @@ interface ThemeToggleProps {
   variant?: ThemeToggleVariant;
 }
 
-export function ThemeToggle({ variant = ThemeToggleVariant.Icons }: ThemeToggleProps) {
+export function ThemeToggle({
+  variant = ThemeToggleVariant.Icons,
+}: ThemeToggleProps) {
   const { theme, setTheme } = useTheme();
   // next-themes only knows the stored choice after hydration.
-  const mounted = useSyncExternalStore(subscribeNothing, () => true, () => false);
+  const mounted = useSyncExternalStore(
+    subscribeNothing,
+    () => true,
+    () => false
+  );
   const labels = variant === ThemeToggleVariant.Labels;
 
   return (
     <div
       role="radiogroup"
       aria-label="Theme"
-      className={`inline-flex gap-0.5 border border-border bg-surface-2 ${
+      className={`border-border bg-surface-2 inline-flex gap-0.5 border ${
         labels ? 'rounded-[10px] p-[3px]' : 'rounded-[9px] p-0.5'
       }`}
     >
@@ -44,8 +50,10 @@ export function ThemeToggle({ variant = ThemeToggleVariant.Icons }: ThemeToggleP
             aria-checked={on}
             aria-label={labels ? undefined : `${option.label} theme`}
             onClick={() => setTheme(option.value)}
-            className={`border text-ink-2 ${
-              on ? 'border-border bg-surface !text-ink' : 'border-transparent bg-transparent'
+            className={`text-ink-2 border ${
+              on
+                ? 'border-border bg-surface !text-ink'
+                : 'border-transparent bg-transparent'
             } ${
               labels
                 ? 'h-[38px] rounded-[7px] px-3 text-[14px] leading-none font-medium'

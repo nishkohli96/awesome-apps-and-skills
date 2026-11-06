@@ -5,7 +5,7 @@ import {
   AnalyticsEvent,
   FilterAction,
   FilterType,
-  type ToolClickSource
+  type ToolClickSource,
 } from '@/types';
 
 type EventData = Record<string, string | number>;
@@ -34,7 +34,7 @@ export function initAnalytics(): void {
   mixpanel.init(TOKEN, {
     track_pageview: false,
     persistence: 'localStorage',
-    api_host: ENV_VARIABLES.mixpanelApiHost
+    api_host: ENV_VARIABLES.mixpanelApiHost,
   });
   ready = true;
 }
@@ -51,7 +51,7 @@ export function toolClickData(tool: Tool, source: ToolClickSource): EventData {
     tool: tool.name,
     category: tool.category,
     type: tool.type,
-    source
+    source,
   };
 }
 
@@ -59,23 +59,22 @@ export function toolClickData(tool: Tool, source: ToolClickSource): EventData {
  * Sends one "Filter Change" per filter that differs between the old state and the requested change,
  * with the page it happened on, e.g. {filter: 'tag', value: 'seo', action: 'added', page: '/media'}.
  */
-export function trackFilterChange(prev: FilterState, next: Partial<FilterState>): void {
+export function trackFilterChange(
+  prev: FilterState,
+  next: Partial<FilterState>
+): void {
   const page = window.location.pathname;
 
-  const send = (
-    filter: FilterType,
-    value: string,
-    action: FilterAction
-  ) =>
+  const send = (filter: FilterType, value: string, action: FilterAction) =>
     track(AnalyticsEvent.FilterChange, { filter, value, action, page });
 
-  const diff = (
-    filter: FilterType,
-    before: string[],
-    after: string[]
-  ) => {
-    after.filter(value => !before.includes(value)).forEach(value => send(filter, value, FilterAction.Added));
-    before.filter(value => !after.includes(value)).forEach(value => send(filter, value, FilterAction.Removed));
+  const diff = (filter: FilterType, before: string[], after: string[]) => {
+    after
+      .filter(value => !before.includes(value))
+      .forEach(value => send(filter, value, FilterAction.Added));
+    before
+      .filter(value => !after.includes(value))
+      .forEach(value => send(filter, value, FilterAction.Removed));
   };
 
   if (next.tags) {

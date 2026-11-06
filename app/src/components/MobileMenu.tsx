@@ -2,7 +2,12 @@
 
 import { ThemeToggleVariant } from '@/types';
 import Link from 'next/link';
-import { Dialog, DialogClose, DialogContent, DialogTitle } from '@/components/ui/dialog';
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogTitle,
+} from '@/components/ui/dialog';
 import { ICON, REPO_URL } from '@/constants';
 import { useData } from '@/lib/data-context';
 import { useFavourites } from '@/lib/favourites';
@@ -10,8 +15,8 @@ import { Icon } from './ui/Icon';
 import { ThemeToggle } from './ThemeToggle';
 
 const FEATURED_CATEGORIES = 4;
-const row
-  = 'flex h-[52px] items-center justify-between px-3 text-[17px] font-medium text-ink no-underline';
+const row =
+  'flex h-[52px] items-center justify-between px-3 text-[17px] font-medium text-ink no-underline';
 
 interface MobileMenuProps {
   open: boolean;
@@ -27,15 +32,15 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
         showCloseButton={false}
-        className="inset-0 flex h-dvh w-screen max-w-none translate-x-0 translate-y-0 flex-col gap-0 overflow-y-auto rounded-none bg-bg p-0 ring-0 sm:max-w-none"
+        className="bg-bg inset-0 flex h-dvh w-screen max-w-none translate-x-0 translate-y-0 flex-col gap-0 overflow-y-auto rounded-none p-0 ring-0 sm:max-w-none"
       >
-        <header className="flex h-14 shrink-0 items-center border-b border-border pr-1.5 pl-6">
+        <header className="border-border flex h-14 shrink-0 items-center border-b pr-1.5 pl-6">
           <DialogTitle className="m-0 mr-auto text-[15px] font-semibold">
             Menu
           </DialogTitle>
           <DialogClose
             aria-label="Close menu"
-            className="grid size-11 place-items-center border-0 bg-transparent text-ink"
+            className="text-ink grid size-11 place-items-center border-0 bg-transparent"
           >
             <Icon d={ICON.close} size={20} />
           </DialogClose>
@@ -47,25 +52,30 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           </Link>
           <Link href="/favourites" onClick={close} className={row}>
             Favourites
-            <span className="font-mono text-[13px] leading-none text-ink-3">
+            <span className="text-ink-3 font-mono text-[13px] leading-none">
               {slugs.length}
             </span>
           </Link>
           <Link href="/suggest-tool" onClick={close} className={row}>
             Submit a tool
           </Link>
-          <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className={row}>
+          <a
+            href={REPO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={row}
+          >
             Star on GitHub
           </a>
         </nav>
 
-        <div className="flex items-center justify-between border-y border-border px-6 py-4">
-          <span className="text-[15px] text-ink-2">Theme</span>
+        <div className="border-border flex items-center justify-between border-y px-6 py-4">
+          <span className="text-ink-2 text-[15px]">Theme</span>
           <ThemeToggle variant={ThemeToggleVariant.Labels} />
         </div>
 
         <div className="flex flex-col gap-1.5 p-6">
-          <span className="pb-1.5 font-mono text-[12px] leading-none font-medium text-ink-3">
+          <span className="text-ink-3 pb-1.5 font-mono text-[12px] leading-none font-medium">
             CATEGORIES
           </span>
           {categories.slice(0, FEATURED_CATEGORIES).map(category => (
@@ -73,10 +83,10 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               key={category.slug}
               href={`/${category.slug}`}
               onClick={close}
-              className="flex h-11 items-center justify-between text-[15px] text-ink no-underline"
+              className="text-ink flex h-11 items-center justify-between text-[15px] no-underline"
             >
               {category.name}
-              <span className="font-mono text-[12px] leading-none text-ink-3">
+              <span className="text-ink-3 font-mono text-[12px] leading-none">
                 {category.toolCount}
               </span>
             </Link>
@@ -86,11 +96,7 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
             onClick={close}
             className="flex h-11 items-center text-[15px] font-medium no-underline"
           >
-            All
-            {' '}
-            {categories.length}
-            {' '}
-            categories →
+            All {categories.length} categories →
           </Link>
         </div>
       </DialogContent>

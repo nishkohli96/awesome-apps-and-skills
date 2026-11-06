@@ -5,20 +5,26 @@ import Link from 'next/link';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { track, trackFilterChange } from '@/lib/analytics';
 import { useData, useToolSearch } from '@/lib/data-context';
-import { filtersToQuery, matchesFilters, parseFilters, sortTools, toggle } from '@/lib/filters';
+import {
+  filtersToQuery,
+  matchesFilters,
+  parseFilters,
+  sortTools,
+  toggle,
+} from '@/lib/filters';
 import type { FilterState, Tool } from '@/lib/types';
 import {
   AnalyticsEvent,
   PRICINGS,
   PriceFilter,
   SortKey,
-  TOOL_TYPES
+  TOOL_TYPES,
 } from '@/types';
 import { ToolCard } from './ToolCard';
 
 const label = 'font-mono text-[12px] leading-none font-medium text-ink-3';
-const select
-  = 'filter-select h-[30px] rounded-[6px] border border-border-strong bg-surface pl-2.5 font-mono text-[12px] leading-none font-medium text-ink';
+const select =
+  'filter-select h-[30px] rounded-[6px] border border-border-strong bg-surface pl-2.5 font-mono text-[12px] leading-none font-medium text-ink';
 
 export function SearchResults() {
   const router = useRouter();
@@ -29,18 +35,28 @@ export function SearchResults() {
 
   const q = (params.get('q') ?? '').trim();
   const defaultSort: SortKey = q ? SortKey.Match : SortKey.Newest;
-  const state = useMemo(() => parseFilters(params, defaultSort), [params, defaultSort]);
+  const state = useMemo(
+    () => parseFilters(params, defaultSort),
+    [params, defaultSort]
+  );
 
   const results = useMemo(
-    () => sortTools(search(q).filter(tool => matchesFilters(tool, state)), state.sort),
-    [search, q, state],
+    () =>
+      sortTools(
+        search(q).filter(tool => matchesFilters(tool, state)),
+        state.sort
+      ),
+    [search, q, state]
   );
 
   // One event per committed search term (Enter or "all results"), not per keystroke or filter change.
   const resultCount = useMemo(() => search(q).length, [search, q]);
   useEffect(() => {
     if (q) {
-      track(AnalyticsEvent.Search, { query: q.toLowerCase(), results: resultCount });
+      track(AnalyticsEvent.Search, {
+        query: q.toLowerCase(),
+        results: resultCount,
+      });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- only a new term counts as a new search
   }, [q]);
@@ -71,44 +87,41 @@ export function SearchResults() {
     }));
   }, [results, categories]);
 
-  const typesInScope = TOOL_TYPES.filter(type => tools.some(t => t.type === type));
+  const typesInScope = TOOL_TYPES.filter(type =>
+    tools.some(t => t.type === type)
+  );
   const allTags = useMemo(() => new Set(tools.flatMap(t => t.tags)), [tools]);
 
   return (
     <div className="flex flex-col gap-6 rounded-[16px]">
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <h1 className="m-0 text-[40px] leading-[1.1] font-semibold tracking-[-0.03em]">
-          {q
-            ? (
-              <>
-                Results for
-                {' '}
-                <span className="font-serif text-[46px] leading-none font-normal tracking-normal italic">
-                  “
-                  {q}
-                  ”
-                </span>
-              </>
-            )
-            : (
-              'All tools'
-            )}
+          {q ? (
+            <>
+              Results for{' '}
+              <span className="font-serif text-[46px] leading-none font-normal tracking-normal italic">
+                “{q}”
+              </span>
+            </>
+          ) : (
+            'All tools'
+          )}
         </h1>
-        <span role="status" className="font-mono text-[14px] leading-none font-medium text-ink-2">
-          {results.length}
-          {' '}
-          {results.length === 1 ? 'Tool' : 'Tools'}
-          {' '}
-          |
-          {' '}
-          {groups.length}
-          {' '}
-          {groups.length === 1 ? 'Category' : 'Categories'}
+        <span
+          role="status"
+          className="text-ink-2 font-mono text-[14px] leading-none font-medium"
+        >
+          {results.length} {results.length === 1 ? 'Tool' : 'Tools'} |{' '}
+          {groups.length} {groups.length === 1 ? 'Category' : 'Categories'}
         </span>
       </div>
 
-      <div className="flex flex-wrap items-center gap-x-5 gap-y-2 rounded-[12px] border border-border bg-surface px-4 py-3.5">
-        <div role="group" aria-label="Filter by type" className="flex flex-wrap items-center gap-1.5">
+      <div className="border-border bg-surface flex flex-wrap items-center gap-x-5 gap-y-2 rounded-[12px] border px-4 py-3.5">
+        <div
+          role="group"
+          aria-label="Filter by type"
+          className="flex flex-wrap items-center gap-1.5"
+        >
           <span className={`${label} mr-1.5`}>TYPE</span>
           {typesInScope.map(type => {
             const on = state.types.includes(type);
@@ -165,19 +178,17 @@ export function SearchResults() {
       </div>
 
       {results.length === 0 && (
-        <section className="flex flex-col items-start gap-3.5 rounded-[16px] border border-dashed border-border-strong px-[clamp(20px,4vw,48px)] py-12">
+        <section className="border-border-strong flex flex-col items-start gap-3.5 rounded-[16px] border border-dashed px-[clamp(20px,4vw,48px)] py-12">
           <span className="font-serif text-[40px] leading-[1.05]">
-            Nothing for “
-            {q}
-            ” yet.
+            Nothing for “{q}” yet.
           </span>
-          <p className="m-0 max-w-[520px] text-[15px] leading-[1.55] text-ink-2">
-            Check the spelling, try a broader word like “video” or “seo”, or suggest a tool you
-            have in mind.
+          <p className="text-ink-2 m-0 max-w-[520px] text-[15px] leading-[1.55]">
+            Check the spelling, try a broader word like “video” or “seo”, or
+            suggest a tool you have in mind.
           </p>
           <Link
             href="/suggest-tool"
-            className="inline-flex h-10 items-center rounded-[8px] bg-btn px-4 text-[14px] leading-none font-semibold !text-btn-text no-underline"
+            className="bg-btn !text-btn-text inline-flex h-10 items-center rounded-[8px] px-4 text-[14px] leading-none font-semibold no-underline"
           >
             Submit a tool
           </Link>
@@ -191,18 +202,17 @@ export function SearchResults() {
         const exactTag = allTags.has(q.toLowerCase());
         return (
           <section key={category.slug} className="flex flex-col gap-5">
-            <div className="flex items-baseline justify-between border-b border-border pb-3">
+            <div className="border-border flex items-baseline justify-between border-b pb-3">
               <h2 className="m-0 text-[22px] font-semibold">
-                <span aria-hidden="true">
-                  {category.emoji}
-                  {' '}
-                </span>
+                <span aria-hidden="true">{category.emoji} </span>
                 {category.name}
               </h2>
               <Link
-                href={exactTag
-                  ? `/${category.slug}?tags=${encodeURIComponent(q.toLowerCase())}`
-                  : `/${category.slug}`}
+                href={
+                  exactTag
+                    ? `/${category.slug}?tags=${encodeURIComponent(q.toLowerCase())}`
+                    : `/${category.slug}`
+                }
                 className="text-[14px] font-medium"
               >
                 {exactTag

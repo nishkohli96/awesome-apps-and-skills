@@ -15,7 +15,13 @@ interface ProfileLinkProps {
 }
 
 /** External link to a person's profile that counts clicks. Usable from server components. */
-export function ProfileLink({ href, location, profile, className, children }: ProfileLinkProps) {
+export function ProfileLink({
+  href,
+  location,
+  profile,
+  className,
+  children,
+}: ProfileLinkProps) {
   return (
     <a
       href={href}

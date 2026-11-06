@@ -17,7 +17,11 @@ export function TypeBadge({ type, box }: TypeBadgeProps) {
         style={{ width: box, height: box, borderRadius: box >= 32 ? 8 : 6 }}
         aria-hidden="true"
       >
-        <Icon d={icon} size={box >= 32 ? 15 : 14} strokeWidth={box >= 32 ? 1.75 : 2} />
+        <Icon
+          d={icon}
+          size={box >= 32 ? 15 : 14}
+          strokeWidth={box >= 32 ? 1.75 : 2}
+        />
       </span>
     );
   }

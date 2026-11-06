@@ -18,36 +18,30 @@ export function FavouritesList() {
       <section className="flex flex-col gap-4 py-12">
         <span
           aria-hidden="true"
-          className="grid size-14 place-items-center rounded-[14px] border border-dashed border-border-strong text-accent-ink"
+          className="border-border-strong text-accent-ink grid size-14 place-items-center rounded-[14px] border border-dashed"
         >
-          <Icon
-            d={ICON.heart}
-            size={26}
-            strokeWidth={1.5}
-          />
+          <Icon d={ICON.heart} size={26} strokeWidth={1.5} />
         </span>
         <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">
           Nothing saved yet.
         </h1>
-        <p className="m-0 max-w-[420px] text-[15px] leading-[1.55] text-ink-2">
-          Tap the heart on any card to keep it here. Favourites stay in this browser; no account
-          needed.
+        <p className="text-ink-2 m-0 max-w-[420px] text-[15px] leading-[1.55]">
+          Tap the heart on any card to keep it here. Favourites stay in this
+          browser; no account needed.
         </p>
         <div className="flex flex-wrap gap-2 pt-2">
           <Link
             href="/#new"
-            className="inline-flex h-10 items-center rounded-[8px] bg-btn px-4 text-[14px] leading-none font-semibold !text-btn-text no-underline"
+            className="bg-btn !text-btn-text inline-flex h-10 items-center rounded-[8px] px-4 text-[14px] leading-none font-semibold no-underline"
           >
             See what’s new
           </Link>
           {media && (
             <Link
               href={`/${media.slug}`}
-              className="inline-flex h-10 items-center rounded-[8px] border border-border-strong px-4 text-[14px] leading-none font-medium text-ink no-underline"
+              className="border-border-strong text-ink inline-flex h-10 items-center rounded-[8px] border px-4 text-[14px] leading-none font-medium no-underline"
             >
-              Browse
-              {' '}
-              {media.name}
+              Browse {media.name}
             </Link>
           )}
         </div>
@@ -57,14 +51,12 @@ export function FavouritesList() {
 
   return (
     <section className="flex flex-col gap-8">
-      <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-border pb-4">
+      <div className="border-border flex flex-wrap items-baseline justify-between gap-3 border-b pb-4">
         <h1 className="m-0 font-serif text-[44px] leading-[1.02] font-normal">
           Your favourites
         </h1>
-        <span className="font-mono text-[14px] leading-none font-medium text-ink-2">
-          {saved.length}
-          {' '}
-          saved · stored in this browser
+        <span className="text-ink-2 font-mono text-[14px] leading-none font-medium">
+          {saved.length} saved · stored in this browser
         </span>
       </div>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(min(300px,100%),1fr))] items-start gap-5">

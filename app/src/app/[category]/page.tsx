@@ -21,7 +21,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategory((await params).category);
-  return category ? { title: category.name, description: category.description } : {};
+  return category
+    ? { title: category.name, description: category.description }
+    : {};
 }
 
 export default async function CategoryPage({ params }: Props) {
@@ -37,44 +39,39 @@ export default async function CategoryPage({ params }: Props) {
 
   const sparse = tools.length <= SPARSE_AT && (
     <section className="flex flex-wrap items-stretch gap-6">
-      <div className="flex flex-[1_1_320px] flex-col gap-3 rounded-[16px] border border-dashed border-border-strong p-7">
+      <div className="border-border-strong flex flex-[1_1_320px] flex-col gap-3 rounded-[16px] border border-dashed p-7">
         <span className="font-serif text-[32px] leading-[1.1]">
           A young shelf.
         </span>
-        <p className="m-0 text-[15px] leading-[1.55] text-ink-2">
-          We only list what we would use ourselves, so this one is still filling up. Know a tool
-          that belongs here?
+        <p className="text-ink-2 m-0 text-[15px] leading-[1.55]">
+          We only list what we would use ourselves, so this one is still filling
+          up. Know a tool that belongs here?
         </p>
         <Link
           href="/suggest-tool"
-          className="mt-1 inline-flex h-10 items-center self-start rounded-[8px] bg-btn px-4 text-[14px] leading-none font-semibold !text-btn-text no-underline"
+          className="bg-btn !text-btn-text mt-1 inline-flex h-10 items-center self-start rounded-[8px] px-4 text-[14px] leading-none font-semibold no-underline"
         >
           Submit a tool
         </Link>
       </div>
-      <div className="flex flex-[1_1_320px] flex-col gap-1 rounded-[16px] border border-border bg-surface px-6 py-5">
-        <span className="py-2 font-mono text-[12px] leading-none font-medium text-ink-3">
+      <div className="border-border bg-surface flex flex-[1_1_320px] flex-col gap-1 rounded-[16px] border px-6 py-5">
+        <span className="text-ink-3 py-2 font-mono text-[12px] leading-none font-medium">
           NEARBY SHELVES
         </span>
         {nearby.map((other, index) => (
           <Link
             key={other.slug}
             href={`/${other.slug}`}
-            className={`flex justify-between py-3 font-medium text-ink no-underline ${
-              index < nearby.length - 1 ? 'border-b border-border' : ''
+            className={`text-ink flex justify-between py-3 font-medium no-underline ${
+              index < nearby.length - 1 ? 'border-border border-b' : ''
             }`}
           >
             <span>
-              <span aria-hidden="true">
-                {other.emoji}
-                {' '}
-              </span>
+              <span aria-hidden="true">{other.emoji} </span>
               {other.name}
             </span>
-            <span className="font-mono text-[13px] leading-none text-ink-3">
-              {other.toolCount}
-              {' '}
-              {other.toolCount === 1 ? 'Tool' : 'Tools'}
+            <span className="text-ink-3 font-mono text-[13px] leading-none">
+              {other.toolCount} {other.toolCount === 1 ? 'Tool' : 'Tools'}
             </span>
           </Link>
         ))}
@@ -101,7 +98,10 @@ export default async function CategoryPage({ params }: Props) {
           basePath={`/${category.slug}`}
           tools={tools}
           groupBy={GroupBy.Subcategory}
-          groups={category.subcategories.map(name => ({ key: name, label: name }))}
+          groups={category.subcategories.map(name => ({
+            key: name,
+            label: name,
+          }))}
           footer={sparse || undefined}
         />
       </Suspense>

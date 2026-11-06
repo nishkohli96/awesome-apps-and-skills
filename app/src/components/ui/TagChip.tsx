@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { track } from '@/lib/analytics';
 import { AnalyticsEvent } from '@/types';
 
-const base
-  = 'inline-flex h-[26px] items-center rounded-[6px] border px-2 font-mono text-[12px] leading-none font-medium';
-const idle = 'border-border bg-surface text-ink-2 hover:border-border-strong hover:text-ink';
+const base =
+  'inline-flex h-[26px] items-center rounded-[6px] border px-2 font-mono text-[12px] leading-none font-medium';
+const idle =
+  'border-border bg-surface text-ink-2 hover:border-border-strong hover:text-ink';
 const pressed = 'border-accent bg-accent-soft text-accent-ink';
 
 interface TagChipProps {
@@ -16,7 +17,11 @@ interface TagChipProps {
   pressed?: boolean;
 }
 
-export function TagChip({ tag, onToggle, pressed: isPressed = false }: TagChipProps) {
+export function TagChip({
+  tag,
+  onToggle,
+  pressed: isPressed = false,
+}: TagChipProps) {
   if (onToggle) {
     return (
       <button

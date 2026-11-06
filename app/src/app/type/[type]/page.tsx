@@ -11,7 +11,8 @@ type Props = { params: Promise<{ type: string }> };
 
 export const dynamicParams = false;
 
-const isType = (value: string): value is ToolType => (TOOL_TYPES as string[]).includes(value);
+const isType = (value: string): value is ToolType =>
+  (TOOL_TYPES as string[]).includes(value);
 
 export function generateStaticParams() {
   const present = new Set(getTools().map(tool => tool.type));
@@ -34,7 +35,9 @@ export default async function TypePage({ params }: Props) {
     notFound();
   }
 
-  const categories = getCategories().filter(c => tools.some(t => t.category === c.slug));
+  const categories = getCategories().filter(c =>
+    tools.some(t => t.category === c.slug)
+  );
   const label = TYPE_META[type].label;
   return (
     <main
@@ -55,7 +58,11 @@ export default async function TypePage({ params }: Props) {
           basePath={`/type/${type}`}
           tools={tools}
           groupBy={GroupBy.Category}
-          groups={categories.map(c => ({ key: c.slug, label: c.name, emoji: c.emoji }))}
+          groups={categories.map(c => ({
+            key: c.slug,
+            label: c.name,
+            emoji: c.emoji,
+          }))}
           lockedType={type}
         />
       </Suspense>

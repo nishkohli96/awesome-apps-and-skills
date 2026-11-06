@@ -34,7 +34,7 @@ function plainText(value: string): string {
 function parseEntry(
   block: string[],
   category: string,
-  subcategory: string,
+  subcategory: string
 ): ParsedTool | null {
   const head = ENTRY_START.exec(block[0]);
   if (!head) {
@@ -78,11 +78,13 @@ function parseEntry(
 
 export function parseCategoryFile(
   fileName: string,
-  source: string,
+  source: string
 ): { category: ParsedCategory; tools: ParsedTool[] } {
   const lines = source.split('\n');
-  const heading = (/^# (\S+)\s+(.+)$/).exec(lines.find(l => l.startsWith('# ')) ?? '');
-  const blurb = lines.find(l => (/^_.+_$/).test(l.trim())) ?? '';
+  const heading = /^# (\S+)\s+(.+)$/.exec(
+    lines.find(l => l.startsWith('# ')) ?? ''
+  );
+  const blurb = lines.find(l => /^_.+_$/.test(l.trim())) ?? '';
   const slug = slugify(heading?.[2] ?? fileName);
 
   const tools: ParsedTool[] = [];
@@ -123,7 +125,8 @@ export function parseCategoryFile(
       name: heading?.[2].trim() ?? slug,
       description: blurb.trim().replace(/^_|_$/g, ''),
       subcategories: subcategories.filter(name =>
-        tools.some(tool => tool.subcategory === name),),
+        tools.some(tool => tool.subcategory === name)
+      ),
     },
     tools,
   };
