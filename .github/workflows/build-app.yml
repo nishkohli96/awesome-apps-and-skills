@@ -1,0 +1,59 @@
+# Triggers: pushes to main and pull requests that touch app/**,
+# categories/** or the workflow itself, plus a manual run button.
+# A PR that only adds a tool to the markdown also triggers a build,
+# so it checks the site still builds with that entry.
+
+name: Build app
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'categories/**'
+      - '.github/workflows/build-app.yml'
+  pull_request:
+    paths:
+      - 'app/**'
+      - 'categories/**'
+      - '.github/workflows/build-app.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: build-app-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # The site reads git history to flag recently added tools as "New".
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v6
+        with:
+          package_json_file: app/package.json
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: app/.nvmrc
+          cache: pnpm
+          cache-dependency-path: app/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint:check
+
+      - name: Build
+        run: pnpm build

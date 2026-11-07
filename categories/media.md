@@ -43,6 +43,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[HyperFrames](https://www.hyperframes.dev/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   Open-source framework that renders HTML into MP4 video for AI agents, plus a desktop Studio editor.<br>
   🏷 `html-to-video` `video-rendering` `agent-skills` `motion-graphics`
+- **[lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Claude Code toolbox of 66 film styles, each a style prompt that makes short films entirely in code, with no video model.<br>
+  🏷 `claude-code` `ai-video` `animation` `creative-coding`<br>
+  💰 free
 - **[Prompt Motion](https://prompt-motion.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   Gallery of motion videos made with Claude, with the prompts and skills behind each one, plus customizable templates.<br>
   🏷 `motion-design` `prompts` `video` `gallery`<br>
@@ -139,12 +143,20 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Free AI image & video studio with a prompt library; freemium signup credits, no card required.<br>
   🏷 `ai-image` `ai-video` `prompt-library` `image-generation`<br>
   💰 freemium
+- **[YouTube Agentic AI Studio](https://github.com/raunakpatil/youtube-agentic-ai-studio)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source Python pipeline that researches, scripts, narrates and uploads faceless YouTube videos from one topic, with a local web GUI.<br>
+  🏷 `youtube-automation` `faceless-youtube` `ai-agents` `video-generation`<br>
+  💰 free
 
 ## Audio & Music
 
 - **[Nuclear](https://nuclearplayer.com/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Free open-source desktop music player without ads or tracking, with search, playlists and streaming.<br>
   🏷 `music-player` `streaming` `desktop`<br>
+  💰 free
+- **[Roam Radio](https://roamradios.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  Free web directory and player for live radio stations worldwide, browsable by country, genre, language or on a globe map.<br>
+  🏷 `radio` `streaming` `music`<br>
   💰 free
 - **[Udio](https://www.udio.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   AI music generator for creating, discovering and sharing songs in seconds.<br>

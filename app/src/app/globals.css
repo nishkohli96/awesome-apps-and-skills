@@ -1,0 +1,278 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Tokens ported from the approved design (.ds / .ds.dark). */
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --surface-2: #f3f1eb;
+  --border: #e5e1d8;
+  --border-strong: #8c8578;
+  --text: #1a1814;
+  --text-2: #57524a;
+  --text-3: #6b655b;
+  --accent: #d97757;
+  --accent-ink: #a84b2c;
+  --accent-soft: #f8e7df;
+  --btn: #1a1814;
+  --btn-text: #fbfaf7;
+  --shadow:
+    0 1px 2px rgba(26, 24, 20, 0.04), 0 10px 28px -10px rgba(26, 24, 20, 0.16);
+  --shadow-pop:
+    0 1px 2px rgba(26, 24, 20, 0.04), 0 18px 40px -12px rgba(26, 24, 20, 0.22);
+  --t-app: #1a7f37;
+  --t-web-tool: #4f46e5;
+  --t-skill: #b0502c;
+  --t-website: #0e7490;
+  --t-mcp-server: #0550ae;
+  --t-library: #57606a;
+  --t-guide: #8a5a00;
+  --t-starter: #7d4fb6;
+  --t-plugin: #b3306f;
+  --t-newsletter: #cf222e;
+  --t-video-channel: #6e7781;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #131210;
+  --surface: #1b1a17;
+  --surface-2: #24221e;
+  --border: #33302a;
+  --border-strong: #77705f;
+  --text: #f3f0e9;
+  --text-2: #bdb7ab;
+  --text-3: #a39d91;
+  --accent: #e0866a;
+  --accent-ink: #f09a7d;
+  --accent-soft: #3a2620;
+  --btn: #f3f0e9;
+  --btn-text: #131210;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -10px rgba(0, 0, 0, 0.65);
+  --shadow-pop:
+    0 1px 2px rgba(0, 0, 0, 0.3), 0 18px 40px -12px rgba(0, 0, 0, 0.7);
+  --t-app: #56c271;
+  --t-web-tool: #a9a4ff;
+  --t-skill: #f0a383;
+  --t-website: #5cc8de;
+  --t-mcp-server: #7db6ff;
+  --t-library: #b3bac2;
+  --t-guide: #e3b341;
+  --t-starter: #cda8f3;
+  --t-plugin: #f592c3;
+  --t-newsletter: #ff7b72;
+  --t-video-channel: #9ba3ad;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-ink: var(--text);
+  --color-ink-2: var(--text-2);
+  --color-ink-3: var(--text-3);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-btn: var(--btn);
+  --color-btn-text: var(--btn-text);
+  --shadow-card: var(--shadow);
+  --shadow-pop: var(--shadow-pop);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before {
+    border-color: var(--border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  a {
+    color: var(--accent-ink);
+  }
+  a:hover {
+    color: var(--text);
+  }
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  button {
+    cursor: pointer;
+  }
+  ::selection {
+    background: var(--accent-soft);
+  }
+}
+
+/* Type badge: tinted by the tool-type colour. */
+.tb {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 6px;
+  font:
+    500 12px/1 var(--font-geist-mono),
+    ui-monospace,
+    monospace;
+  color: var(--c);
+  background: color-mix(in oklab, var(--c) 9%, var(--surface));
+  border: 1px solid color-mix(in oklab, var(--c) 28%, transparent);
+  white-space: nowrap;
+}
+.tb-app {
+  --c: var(--t-app);
+}
+.tb-web-tool {
+  --c: var(--t-web-tool);
+}
+.tb-skill {
+  --c: var(--t-skill);
+}
+.tb-website {
+  --c: var(--t-website);
+}
+.tb-mcp-server {
+  --c: var(--t-mcp-server);
+}
+.tb-library {
+  --c: var(--t-library);
+}
+.tb-guide {
+  --c: var(--t-guide);
+}
+.tb-starter {
+  --c: var(--t-starter);
+}
+.tb-plugin {
+  --c: var(--t-plugin);
+}
+.tb-newsletter {
+  --c: var(--t-newsletter);
+}
+.tb-video-channel {
+  --c: var(--t-video-channel);
+}
+
+/* Cards and category tiles lift on hover. */
+.lift {
+  transition:
+    transform 0.18s ease-out,
+    box-shadow 0.18s ease-out,
+    border-color 0.18s;
+}
+.lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--border-strong);
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.skeleton {
+  background: var(--surface-2);
+  border-radius: 6px;
+  animation: pulse-soft 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .lift {
+    transition: none;
+  }
+  .lift:hover {
+    transform: none;
+  }
+  .skeleton {
+    animation: none;
+  }
+}
+
+/*
+ * shadcn/ui reads these names. They point at the design tokens above so its
+ * components (dialog, button) follow the same light/dark palette. The design's
+ * own --accent (clay) is kept; shadcn's hover-surface accent is not used.
+ */
+:root,
+.dark {
+  --background: var(--bg);
+  --foreground: var(--text);
+  --card: var(--surface);
+  --card-foreground: var(--text);
+  --popover: var(--bg);
+  --popover-foreground: var(--text);
+  --primary: var(--btn);
+  --primary-foreground: var(--btn-text);
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--text);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--text-2);
+  --accent-foreground: var(--text);
+  --destructive: #b42318;
+  --input: var(--border-strong);
+  --ring: var(--accent);
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+/* Native select with its own chevron, so it can sit inset from the border. */
+.filter-select {
+  appearance: none;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23878175' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}

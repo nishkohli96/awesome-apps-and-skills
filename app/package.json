@@ -1,0 +1,65 @@
+{
+  "name": "awesome-apps-and-skills-web",
+  "version": "1.0.0",
+  "author": "Nishant Kohli",
+  "description": "Discovery site for the Awesome Apps & Skills directory",
+  "private": true,
+  "scripts": {
+    "set-up": "sh setup.sh",
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "prod": "pnpm build && pnpm start",
+    "lint": "eslint --fix",
+    "lint:check": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "cd .. && husky app/.husky || true",
+    "check-updates": "ncu --format group -u",
+    "install-updates": "pnpm check-updates && pnpm install"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.9.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "fuse.js": "^7.5.0",
+    "lucide-react": "^1.70.0",
+    "mixpanel-browser": "^2.84.0",
+    "next": "16.4.5",
+    "next-themes": "^0.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "shadcn": "^4.23.0",
+    "tailwind-merge": "^3.7.0",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@nish1896/eslint-flat-config": "^4.0.0",
+    "@tailwindcss/postcss": "^4.3.4",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^10.14.0",
+    "eslint-config-next": "16.4.5",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "npm-check-updates": "^23.1.1",
+    "postcss": "^8.5.32",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.4",
+    "typescript": "^6.0.3"
+  },
+  "lint-staged": {
+    "*.{json,html,css,sass,scss}": [
+      "prettier --write --ignore-unknown"
+    ],
+    "*.{js,jsx,mjs,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "packageManager": "pnpm@11.20.0",
+  "license": "MIT"
+}

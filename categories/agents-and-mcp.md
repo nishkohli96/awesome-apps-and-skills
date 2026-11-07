@@ -60,6 +60,11 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 - **[ATS Jobs MCP](https://github.com/GeminiGeorge22/ats-jobs-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Local stdio MCP server that forwards calls to a hosted Apify endpoint (needs your own `APIFY_TOKEN`), for new job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters job boards.<br>
   🏷 `mcp` `jobs` `recruiting` `data`
+- **[ArtiGram](https://artigram.cafeboon.com)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Free gallery where people and AI assistants post interactive HTML artifacts, with a remote MCP server so an assistant can publish and update a post from a chat.<br>
+  🏷 `mcp` `artifacts` `publishing` `gallery`<br>
+  💰 free<br>
+  🔗 [mcp](https://artigram.cafeboon.com/mcp)
 - **[camofox-browser](https://github.com/jo-inc/camofox-browser)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Headless browser server for AI agents, built on Camoufox with fingerprint spoofing as a Puppeteer and Playwright replacement.<br>
   🏷 `headless-browser` `browser-automation` `ai-agents` `scraping`
@@ -78,12 +83,23 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   🏷 `mcp` `hosting` `static-sites` `ai-agents`<br>
   💰 freemium<br>
   🔗 [mcp](https://deed.page/mcp)
+- **[Etsy Sales MCP](https://github.com/GeminiGeorge22/etsy-sales-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Local stdio MCP server that forwards calls to a hosted Apify endpoint (needs your own `APIFY_TOKEN`), for Etsy search results by keyword, marketplace and category, plus daily sales counts and growth for any Etsy shop.<br>
+  🏷 `mcp` `etsy` `ecommerce` `data`
 - **[Firecrawl](https://www.firecrawl.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Web data API that lets AI agents search, scrape, map and crawl the web. The core is open source.<br>
   🏷 `web-scraping` `ai-agents` `api` `crawler`<br>
   💰 freemium
+- **[Kilobat CLI](https://github.com/seifip/kilobat-cli)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Local macOS CLI and stdio MCP server for network diagnostics and keeping the Mac awake during a command.<br>
+  🏷 `mcp` `macos` `network-diagnostics` `cli`<br>
+  💰 free
 - **[PlaceCall](https://github.com/voygr-tech/placecall)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Lets an AI agent phone US businesses to book, ask questions or get quotes, and returns the call outcome, transcript and recording.<br>
   🏷 `mcp` `phone-calls` `voice-agents` `ai-agents`<br>
   💰 paid<br>
   🔗 [mcp](https://api.voygr.tech/mcp)
+- **[Scrapling](https://github.com/D4Vinci/Scrapling)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
+  Python web scraping framework for everything from a single request to a full crawl, with stealth fetching and a built-in MCP server.<br>
+  🏷 `web-scraping` `crawler` `mcp` `python`<br>
+  💰 free

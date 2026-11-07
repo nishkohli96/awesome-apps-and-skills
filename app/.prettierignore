@@ -1,0 +1,41 @@
+# folders
+node_modules
+public
+build
+dist
+.next
+.vercel
+
+# config-files
+nest-cli.json
+package.json
+package-lock.json
+test/jest-e2e.json
+tsconfig.json
+tsconfig.build.json
+turbo.json
+yarn.lock
+pnpm-lock.yaml
+
+eslint.config.mjs
+.gitignore
+.prettierignore
+.prettierrc
+.prettierrc.*
+.tsbuildinfo
+
+# static asset files
+*.jpg
+*.jpeg
+*.png
+*.svg
+*.otf
+*.ttf
+*.woff
+
+# custom files
+*.md
+*.log
+*.d.ts
+*.yml
+*.yaml

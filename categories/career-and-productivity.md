@@ -39,6 +39,10 @@ _Resume, job search and personal productivity resources._
 - **[CopyQ](https://github.com/hluk/CopyQ)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source clipboard manager for Windows, macOS and Linux, with history, editing and scripting.<br>
   🏷 `clipboard` `clipboard-manager` `productivity` `scripting`
+- **[EpicMail](https://epicmail.org/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  A unified inbox for Gmail, Outlook, Yahoo, iCloud, IMAP, and POP3. Adventurer: 3 accounts, $0 unless upgraded; signup and valid card required.<br>
+  🏷 `email` `unified-inbox` `webmail`<br>
+  💰 freemium
 - **[Granola](https://www.granola.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
@@ -54,6 +58,10 @@ _Resume, job search and personal productivity resources._
 - **[Mind Elixir](https://app.mind-elixir.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Mind mapping web app for turning ideas into interactive maps, with outline mode, tags, local storage and MCP support.<br>
   🏷 `mind-map` `productivity` `mcp`<br>
+  💰 freemium
+- **[minulo](https://minulo.app/en/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  iPhone app that hides Instagram Reels, YouTube Shorts and TikTok For You while DMs, the following feed and search keep working.<br>
+  🏷 `focus` `screen-time` `ios`<br>
   💰 freemium
 - **[Orkas](https://github.com/Orkas-AI/Orkas)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Local-first desktop workspace where AI specialists turn project goals and files into reports, slides and code; model usage may cost extra.<br>
