@@ -39,6 +39,10 @@ _Resume, job search and personal productivity resources._
 - **[CopyQ](https://github.com/hluk/CopyQ)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source clipboard manager for Windows, macOS and Linux, with history, editing and scripting.<br>
   🏷 `clipboard` `clipboard-manager` `productivity` `scripting`
+- **[EpicMail](https://epicmail.org/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  A unified inbox for Gmail, Outlook, Yahoo, iCloud, IMAP, and POP3. Adventurer: 3 accounts, $0 unless upgraded; signup and valid card required.<br>
+  🏷 `email` `unified-inbox` `webmail`<br>
+  💰 freemium
 - **[Granola](https://www.granola.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   AI notepad for meetings that writes notes and actions without a meeting bot. Available on desktop and mobile.<br>
   🏷 `meeting-notes` `ai-notes` `transcription`<br>
