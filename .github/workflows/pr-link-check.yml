@@ -24,9 +24,11 @@ jobs:
           # Passed through env, never interpolated into the script.
           PR_BODY: ${{ github.event.pull_request.body }}
         run: |
-          if printf '%s' "$PR_BODY" | grep -Eq 'https?://[^[:space:])>]+'; then
+          # The link must sit on the template's "Website or app link" line,
+          # so an unrelated URL elsewhere in the body does not count.
+          if printf '%s' "$PR_BODY" | tr -d '\r' | grep -Eiq '^[[:space:]]*[-*][[:space:]]*Website or app link[^:]*:[[:space:]]*(<|\[[^]]*\]\()?https?://[^[:space:])>]+'; then
             echo "Link found."
           else
-            echo "::error title=Missing link::Add the website or app link of the tool to the PR description (the 'Website or app link' line)."
+            echo "::error title=Missing link::Put the tool's website or app link on the 'Website or app link' line of the PR description (https://...)."
             exit 1
           fi
