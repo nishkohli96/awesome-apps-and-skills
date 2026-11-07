@@ -73,6 +73,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[ArtCraft](https://github.com/storytold/artcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source desktop app for artists, designers and filmmakers to create with AI image, video and 3D tools.<br>
   🏷 `ai-art` `filmmaking` `3d` `image-generation`
+- **[GifLoom](https://gifloom.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Free browser-based GIF compressor and editor with local processing and no account required.<br>
+  🏷 `gif` `image-editing` `local-first`<br>
+  💰 free
 - **[image-blaster](https://github.com/neilsonnn/image-blaster)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude skills that turn a single image into a 3D environment, meshes and sound effects. Needs World Labs and FAL API keys.<br>
   🏷 `3d` `image-to-3d` `gaussian-splat` `claude-skills`
