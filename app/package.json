@@ -60,5 +60,6 @@
       "eslint --fix"
     ]
   },
+  "packageManager": "pnpm@12.18.0",
   "license": "MIT"
 }
