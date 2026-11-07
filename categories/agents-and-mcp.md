@@ -57,14 +57,14 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 
 ## Agent Tools & Data
 
-- **[ATS Jobs MCP](https://github.com/GeminiGeorge22/ats-jobs-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
-  Local stdio MCP server that forwards calls to a hosted Apify endpoint (needs your own `APIFY_TOKEN`), for new job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters job boards.<br>
-  🏷 `mcp` `jobs` `recruiting` `data`
 - **[ArtiGram](https://artigram.cafeboon.com)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Free gallery where people and AI assistants post interactive HTML artifacts, with a remote MCP server so an assistant can publish and update a post from a chat.<br>
   🏷 `mcp` `artifacts` `publishing` `gallery`<br>
   💰 free<br>
   🔗 [mcp](https://artigram.cafeboon.com/mcp)
+- **[ATS Jobs MCP](https://github.com/GeminiGeorge22/ats-jobs-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Local stdio MCP server that forwards calls to a hosted Apify endpoint (needs your own `APIFY_TOKEN`), for new job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters job boards.<br>
+  🏷 `mcp` `jobs` `recruiting` `data`
 - **[camofox-browser](https://github.com/jo-inc/camofox-browser)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Headless browser server for AI agents, built on Camoufox with fingerprint spoofing as a Puppeteer and Playwright replacement.<br>
   🏷 `headless-browser` `browser-automation` `ai-agents` `scraping`

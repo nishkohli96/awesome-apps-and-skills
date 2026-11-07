@@ -1,5 +1,6 @@
 ### Resource(s) added
-- Name / URL:
+- Name:
+- Website or app link (required):
 
 ### Checklist
 - [ ] Added to the correct file in `categories/`, under the best-fitting subsection, alphabetical
