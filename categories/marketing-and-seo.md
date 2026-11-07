@@ -45,3 +45,10 @@ _Tools and skills for SEO audits, content strategy and growth._
 - **[youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Eleven free Claude skills that help run a YouTube channel, covering scripts, titles and thumbnails, edit lists and retention analysis.<br>
   🏷 `youtube` `video-content` `social-media` `claude-skills`
+
+## AI Directories
+
+- **[MeetNewAI](https://meetnewai.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  Free bilingual directory of AI tools, AI games and MCP servers, organized by the job to get done.<br>
+  🏷 `ai-directory` `mcp` `discovery` `bilingual`<br>
+  💰 free
