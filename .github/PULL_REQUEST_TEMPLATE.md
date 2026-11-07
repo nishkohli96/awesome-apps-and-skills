@@ -7,3 +7,4 @@
 - [ ] Entry has a type badge and tags (plus pricing for websites and tools)
 - [ ] Link works, repo is licensed and maintained
 - [ ] One-line description, no marketing language
+- [ ] All code review comments are resolved
