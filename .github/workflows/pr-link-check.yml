@@ -1,0 +1,34 @@
+# New contributors must put the website or app link in the PR description,
+# so a reviewer can open the tool without hunting for it in the diff.
+# Maintainers (owner, member, collaborator) are skipped.
+
+name: PR link check
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+    paths:
+      - 'categories/**'
+
+permissions:
+  contents: read
+
+jobs:
+  link:
+    if: ${{ !contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.pull_request.author_association) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Require a website or app link in the description
+        env:
+          # Passed through env, never interpolated into the script.
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          # The link must sit on the template's "Website or app link" line,
+          # so an unrelated URL elsewhere in the body does not count.
+          if printf '%s' "$PR_BODY" | tr -d '\r' | grep -Eiq '^[[:space:]]*[-*][[:space:]]*Website or app link[^:]*:[[:space:]]*(<|\[[^]]*\]\()?https?://[^[:space:])>]+'; then
+            echo "Link found."
+          else
+            echo "::error title=Missing link::Put the tool's website or app link on the 'Website or app link' line of the PR description (https://...)."
+            exit 1
+          fi
