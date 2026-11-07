@@ -34,6 +34,9 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 
 ## Local Models
 
+- **[LitServe](https://github.com/Lightning-AI/LitServe)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
+  Minimal Python framework for building custom AI inference servers, with full control over batching, streaming, routing and scaling for models, agents and RAG pipelines.<br>
+  🏷 `inference` `model-serving` `python` `batching`
 - **[Magnitude](https://magnitude.dev/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source inference engine that tunes itself to your hardware to run open models locally on Mac, Windows and Linux.<br>
   🏷 `inference` `local-llm` `open-models` `self-hosted`<br>
@@ -62,6 +65,9 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   🏷 `mcp` `artifacts` `publishing` `gallery`<br>
   💰 free<br>
   🔗 [mcp](https://artigram.cafeboon.com/mcp)
+- **[assistant-ui](https://www.assistant-ui.com/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"> <img align="absmiddle" alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"><br>
+  Open-source React components and runtimes for building AI chat interfaces, with streaming, tool calls and persistence in TypeScript.<br>
+  🏷 `chat-ui` `ai-agents` `react` `typescript` `open-source`
 - **[ATS Jobs MCP](https://github.com/GeminiGeorge22/ats-jobs-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Local stdio MCP server that forwards calls to a hosted Apify endpoint (needs your own `APIFY_TOKEN`), for new job postings since any date from Ashby, Greenhouse, Lever and SmartRecruiters job boards.<br>
   🏷 `mcp` `jobs` `recruiting` `data`

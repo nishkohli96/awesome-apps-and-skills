@@ -38,6 +38,9 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
   Open-source design and prototyping platform for teams, with real-time collaboration. Can be self-hosted.<br>
   🏷 `design` `prototyping` `collaboration` `open-source`<br>
   💰 freemium
+- **[Puck](https://puckeditor.com/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"> <img align="absmiddle" alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"><br>
+  Open-source visual editor for React that you embed in your own app, so users can build and refine pages with your components, including with AI.<br>
+  🏷 `visual-editor` `page-builder` `react` `open-source`
 - **[Superdesign](https://superdesign.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   AI product design agent that turns prompts into UI mockups, components and full designs on an infinite canvas.<br>
   🏷 `ai-design` `ui` `mockups` `prototyping`<br>

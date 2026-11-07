@@ -1,6 +1,6 @@
 # 💻 Coding
 
-_Skills, MCP servers and apps for writing, reviewing, testing and shipping code._
+_Skills, MCP servers, apps and starter templates for writing, reviewing, testing and shipping code._
 
 ## Agent Skills
 
@@ -32,3 +32,9 @@ _Skills, MCP servers and apps for writing, reviewing, testing and shipping code.
 - **[agent-qa](https://github.com/vostride/agent-qa)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Tests web and mobile apps via CLI/MCP, with persistent memidex memory, validated self-improvement, and reviewable run evidence.<br>
   🏷 `testing` `mcp` `memory` `self-improvement`
+
+## Starters & Templates
+
+- **[next-forge](https://www.next-forge.com/)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-7d5ba6?style=flat-square"> <img align="absmiddle" alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"><br>
+  Production-grade Turborepo monorepo template for building a SaaS app with Next.js. Free and open source.<br>
+  🏷 `saas` `monorepo` `turborepo` `nextjs` `boilerplate`

@@ -15,6 +15,10 @@ _Customer support, data, analytics, email delivery and operations tools for runn
   Open-source no-code database and app builder, an Airtable alternative. Runs in the cloud or self-hosted.<br>
   🏷 `no-code` `database` `airtable-alternative` `open-source`<br>
   💰 freemium
+- **[OpnForm](https://opnform.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Form and survey builder with unlimited responses on the free plan. Use the cloud, EU hosting or self-host it for full control of your data.<br>
+  🏷 `forms` `surveys` `no-code` `self-hosted`<br>
+  💰 freemium
 - **[PostHog](https://posthog.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Open-source product analytics platform with session replay, feature flags, experiments and error tracking.<br>
   🏷 `analytics` `session-replay` `feature-flags` `open-source`<br>

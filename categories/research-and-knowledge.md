@@ -27,6 +27,10 @@ _Research, data analysis, prediction and knowledge-base tooling._
 - **[MiroFish](https://mirofish.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source swarm-intelligence engine that runs multi-agent simulations to predict outcomes.<br>
   🏷 `prediction` `multi-agent` `simulation` `forecasting`
+- **[Morphic](https://github.com/miurla/morphic)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source AI search engine with a generative UI that answers with cited sources and rich inline components. Self-host it with Docker and choose your own models and search providers.<br>
+  🏷 `ai-search` `answer-engine` `generative-ui` `self-hosted`<br>
+  🔗 [demo](https://chat.morphic.sh)
 - **[Vane](https://github.com/ItzCrazyKns/Vane)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Privacy-focused, self-hosted AI answering engine that searches the web through SearxNG and answers with cited sources, using local models via Ollama or cloud providers.<br>
   🏷 `ai-search` `answer-engine` `self-hosted` `ollama` `privacy`

@@ -35,7 +35,13 @@ _Create, edit, store and share documents, slides, PDFs and files._
   Open-source platform for file storage, sharing and collaboration that you can self-host or get from a provider.<br>
   🏷 `file-sync` `collaboration` `self-hosted` `open-source`<br>
   💰 freemium
+- **[pdfme](https://github.com/pdfme/pdfme)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
+  Open-source TypeScript library for generating PDFs from templates, with a WYSIWYG template designer and a PDF viewer. Works in the browser and Node.js.<br>
+  🏷 `pdf` `pdf-generation` `template-designer` `typescript`
 - **[Stirling PDF](https://www.stirling.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Open-source PDF editor you can run on your own infrastructure, with a free plan and paid team plans.<br>
   🏷 `pdf` `editor` `self-hosted` `open-source`<br>
   💰 freemium
+- **[Unstract](https://github.com/Zipstack/unstract)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source platform that uses LLMs to turn PDFs, images and scans into structured JSON from natural-language prompts. Deploy it as an API or ETL pipeline, with any LLM provider.<br>
+  🏷 `document-extraction` `llm` `pdf` `etl` `self-hosted`

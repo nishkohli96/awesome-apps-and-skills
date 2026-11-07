@@ -4,13 +4,25 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 
 ## Video Editing & Recording
 
+- **[awesome-claude-video-skills](https://github.com/zhuyansen/awesome-claude-video-skills)** <img align="absmiddle" alt="guide" src="https://img.shields.io/badge/guide-9a6700?style=flat-square"><br>
+  Curated list of open-source skills and toolkits that let Claude Code, Codex and other coding agents make video, grouped by type and security-graded, with end-to-end test results.<br>
+  🏷 `awesome-list` `video` `claude-skills` `remotion` `hyperframes`
 - **[Cap](https://cap.so/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source screen recorder for Mac, Windows and Linux with editing and link sharing, an alternative to Loom.<br>
   🏷 `screen-recording` `loom-alternative` `video`<br>
   💰 freemium
+- **[claude-shorts](https://github.com/agricidaniel/claude-shorts)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Claude Code skill that turns long videos into vertical shorts: it scores the best segments, snaps cuts to natural boundaries and renders animated captions with Remotion.<br>
+  🏷 `shorts` `video-editing` `captions` `remotion` `claude-skills`
+- **[ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Local video editor for coding agents with 42 FFmpeg tools and an MCP server: cut, captions, reframe, loudness and platform exports, with no cloud or API keys.<br>
+  🏷 `ffmpeg` `video-editing` `mcp` `claude-skills`
 - **[FilmCraft](https://github.com/storytold/filmcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source nonlinear video editor written in Rust, a clean-room take on Premiere Pro.<br>
   🏷 `video-editing` `nonlinear-editor` `rust`
+- **[ghost-editor](https://github.com/kurbaitaev/ghost-editor)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Open-source Claude Code skill that turns a raw talking-head take into a finished short reel in a choice of styles, rendered on your Mac.<br>
+  🏷 `video-editing` `reels` `talking-head` `claude-skills`
 - **[LosslessCut](https://losslesscut.app/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source app for cutting, trimming and merging video and audio without re-encoding, on Mac, Windows and Linux.<br>
   🏷 `video-cutter` `lossless` `ffmpeg` `video-editing`
@@ -47,6 +59,12 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Claude Code toolbox of 66 film styles, each a style prompt that makes short films entirely in code, with no video model.<br>
   🏷 `claude-code` `ai-video` `animation` `creative-coding`<br>
   💰 free
+- **[MotionClone](https://motionclone.lol/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Windows app that rebuilds a reference video as editable AI motion graphics for product demos and launch videos, powered by Codex with your own ChatGPT account. A hosted studio is in early access.<br>
+  🏷 `motion-graphics` `ai-video` `product-demo` `hyperframes`
+- **[motion-skills](https://github.com/iart-ai/motion-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Open-source collection of skills, split into installable packs, that teach coding agents to make motion graphics, animation and video: kinetic typography, data charts, explainers, short-form video, WebGL and Manim.<br>
+  🏷 `motion-graphics` `animation` `video` `claude-skills`
 - **[Prompt Motion](https://prompt-motion.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   Gallery of motion videos made with Claude, with the prompts and skills behind each one, plus customizable templates.<br>
   🏷 `motion-design` `prompts` `video` `gallery`<br>
@@ -150,6 +168,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 
 ## Audio & Music
 
+- **[Moonshine](https://github.com/moonshine-ai/moonshine)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
+  Open-source toolkit for real-time voice agents with low-latency speech-to-text and text-to-speech that run fully on-device, with no account or API keys.<br>
+  🏷 `speech-to-text` `text-to-speech` `voice-agents` `on-device`
 - **[Nuclear](https://nuclearplayer.com/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Free open-source desktop music player without ads or tracking, with search, playlists and streaming.<br>
   🏷 `music-player` `streaming` `desktop`<br>
@@ -165,6 +186,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Free open-source desktop app for voice cloning, voice design, video dubbing and transcription that runs on your own machine.<br>
   🏷 `voice-cloning` `dubbing` `text-to-speech` `local-first`<br>
   💰 freemium
+- **[Whisper](https://github.com/openai/whisper)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
+  OpenAI's open-source general-purpose speech recognition model, usable from Python or the command line to transcribe and translate audio.<br>
+  🏷 `speech-to-text` `transcription` `translation` `open-source`
 
 ## Downloaders
 
@@ -175,3 +199,6 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[Seal](https://github.com/JunkFood02/Seal)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source Android app for downloading video and audio, built on yt-dlp.<br>
   🏷 `downloader` `android` `yt-dlp` `video`
+- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Feature-rich command-line audio and video downloader with a large and actively maintained list of supported sites.<br>
+  🏷 `downloader` `video` `audio` `cli`
