@@ -9,18 +9,18 @@
 </p>
 
 <p align="center">
-  Hand-picked apps, AI skills, MCP servers, plugins, web tools and learning resources, sorted by what you want to get done.<br>
-  Built for developers, designers, founders and anyone who lives in a terminal or a browser.
-</p>
-
-<p align="center">
   <b>⭐ Star this repo to keep it close</b>
 </p>
 <p align="center">
-  <a href="https://awesome-apps-and-skills.vercel.app/">🌐 Browse the website</a> ·
-  <a href="CONTRIBUTING.md">Contribute</a> ·
-  <a href="https://github.com/nishkohli96/awesome-apps-and-skills/compare">Add a resource (open a PR)</a> ·
-  <a href="https://github.com/sponsors/nishkohli96">❤️ Sponsor</a>
+  🌐 <a href="https://awesome-apps-and-skills.vercel.app/">Browse the website</a> ·
+  🤝 <a href="CONTRIBUTING.md">Contribute</a> ·
+  ➕ <a href="https://github.com/nishkohli96/awesome-apps-and-skills/compare">Add a resource (open a PR)</a> ·
+  ❤️ <a href="https://github.com/sponsors/nishkohli96">Sponsor</a>
+</p>
+
+<p align="center">
+  Hand-picked apps, AI skills, MCP servers, plugins, web tools and learning resources, sorted by what you want to get done.<br>
+  Built for developers, designers, founders and anyone who lives in a terminal or a browser.
 </p>
 
 <p align="center">
@@ -35,7 +35,7 @@ Each entry has a colored type badge:
 
 ## Categories
 
-- 💻 [Coding](categories/coding.md) – Skills, MCP servers and apps for writing, reviewing, testing and shipping code.
+- 💻 [Coding](categories/coding.md) – Skills, MCP servers, apps and starter templates for writing, reviewing, testing and shipping code.
 - ✍️ [Writing & Editing](categories/writing-and-editing.md) – Tools and apps for drafting, editing and publishing text.
 - 📄 [Documents & Files](categories/documents-and-files.md) – Create, edit, store and share documents, slides, PDFs and files.
 - 🎬 [Media](categories/media.md) – Tools for creating, editing, downloading and playing video, audio, images and 3D.

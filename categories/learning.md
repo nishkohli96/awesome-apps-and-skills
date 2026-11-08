@@ -23,6 +23,9 @@ _Guides, books, courses, learning tools, newsletters and channels worth followin
 
 ## Learning Tools
 
+- **[Anx Reader](https://github.com/Anxcye/anx-reader)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source e-book reader for Android, iOS, macOS and Windows that reads EPUB, MOBI, PDF and more, with an AI assistant and sync over WebDAV.<br>
+  🏷 `ebook-reader` `reading` `ai-assistant` `open-source`
 - **[DeepTutor](https://github.com/HKUDS/DeepTutor)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source personalized AI tutor that learns from your documents, with practice questions, a learning journal and a CLI.<br>
   🏷 `ai-tutor` `education` `personalized-learning` `self-hosted`

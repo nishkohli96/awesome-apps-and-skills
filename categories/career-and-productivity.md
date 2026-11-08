@@ -29,6 +29,10 @@ _Resume, job search and personal productivity resources._
   Hosted MCP server that lets Claude, Cursor and other MCP clients search jobs, tailor resumes and apply to jobs you approve.<br>
   🏷 `job-search` `mcp` `resume` `auto-apply`<br>
   💰 freemium
+- **[Reactive Resume](https://rxresu.me/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Free, open-source resume builder with templates, PDF and Word downloads, no ads and no paywall. You can also self-host it.<br>
+  🏷 `resume` `cv` `resume-builder` `open-source` `self-hosted`<br>
+  💰 free
 
 ## Productivity
 
@@ -63,6 +67,10 @@ _Resume, job search and personal productivity resources._
   iPhone app that hides Instagram Reels, YouTube Shorts and TikTok For You while DMs, the following feed and search keep working.<br>
   🏷 `focus` `screen-time` `ios`<br>
   💰 freemium
+- **[openGym](https://github.com/DuarteSantos8/openGym)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source gym and body-weight tracker for planning routines and logging workouts, with a muscle map and imports from Strong, Hevy and FitNotes. Self-host it or use it on your phone.<br>
+  🏷 `fitness` `workout-tracker` `self-hosted` `open-source`<br>
+  🔗 [demo](https://opengym.ch/demo/)
 - **[Orkas](https://github.com/Orkas-AI/Orkas)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Local-first desktop workspace where AI specialists turn project goals and files into reports, slides and code; model usage may cost extra.<br>
   🏷 `ai-agents` `productivity` `local-first`<br>

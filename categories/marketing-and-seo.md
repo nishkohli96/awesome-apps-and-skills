@@ -38,6 +38,10 @@ _Tools and skills for SEO audits, content strategy and growth._
 - **[linkedin-skills](https://github.com/sergebulaev/linkedin-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Twelve Claude Code and Codex skills that draft LinkedIn posts, comments and replies in your voice for your approval.<br>
   🏷 `linkedin` `social-media` `content` `claude-skills`
+- **[OpenReply](https://github.com/diwenne/openreply)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Self-hosted, open-source alternative to ManyChat that sends an Instagram DM when someone comments a keyword on your post, using Meta's official private replies. It's software you deploy yourself, not a hosted service.<br>
+  🏷 `instagram` `dm-automation` `self-hosted` `open-source` `manychat-alternative`<br>
+  🔗 [demo](https://openreply.diwen.dev)
 - **[OpenSparta](https://opensparta.com/en)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Telegram marketing workspace for teams to manage connected accounts and proxies, discover conversations, and coordinate campaign workflows.<br>
   🏷 `telegram` `marketing` `community-discovery`<br>
