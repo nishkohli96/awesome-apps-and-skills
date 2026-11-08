@@ -19,6 +19,9 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 
 ## Design & Prototyping Tools
 
+- **[Archify](https://github.com/tt-a1i/archify)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Agent skill for Claude Code, Codex and more that turns an idea, plan or codebase into an interactive diagram.<br>
+  🏷 `diagrams` `architecture` `visualization` `claude-skills`
 - **[diagram-design](https://github.com/cathrynlavery/diagram-design)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill that draws diagrams as a single HTML and SVG file in your brand, with dozens of diagram types.<br>
   🏷 `diagrams` `svg` `agent-skills` `data-visualization`
@@ -57,6 +60,9 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 - **[Rive Agent Skills](https://github.com/rive-app/skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Official Rive skill that tells coding agents when Rive fits and points them to the runtime docs and CLI for building interactive animations. Installs as a plugin for Claude Code, Codex, Gemini CLI and more.<br>
   🏷 `rive` `interactive-animation` `claude-skills` `ui-motion`
+- **[SVG.js](https://github.com/svgdotjs/svg.js)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
+  Lightweight JavaScript library for manipulating and animating SVG, with no dependencies.<br>
+  🏷 `svg` `animation` `javascript` `vector-graphics`
 - **[Transitions.dev](https://transitions.dev/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Library of production-ready UI transitions to copy and paste, or use with your coding agent through a skill.<br>
   🏷 `ui-motion` `transitions` `animation` `claude-skills`<br>
@@ -64,9 +70,15 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 
 ## Frontend Skills
 
+- **[ai-design-skills](https://github.com/elayadesign/ai-design-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Collection of design skills for AI coding tools, including a landing page builder and a Figma designer that works with real structure like variables, text styles and components.<br>
+  🏷 `web-design` `landing-page` `figma` `claude-skills`
 - **[awesome-design-skills](https://github.com/bergside/awesome-design-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Registry of 67 design-system skill files for AI agents, each with agent instructions and a human-readable design guide.<br>
   🏷 `design-system` `agent-skills` `design-md` `ui`
+- **[Hallmark](https://github.com/nutlope/hallmark)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Design skill for Claude Code, Codex, Cursor and OpenCode that builds pages from a catalog of themes and checks them against common AI-generated design tells. Includes redesign and audit commands.<br>
+  🏷 `web-design` `anti-ai-slop` `themes` `claude-skills`
 - **[Taste Skill](https://www.tasteskill.dev/)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Open-source skill files that stop AI coding agents from generating generic frontends, installed with one command.<br>
   🏷 `frontend` `design` `agent-skills` `anti-slop`

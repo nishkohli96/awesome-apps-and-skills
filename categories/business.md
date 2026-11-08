@@ -26,6 +26,12 @@ _Customer support, data, analytics, email delivery and operations tools for runn
 
 ## Email & Messaging
 
+- **[Agentic Inbox](https://github.com/cloudflare/agentic-inbox)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Self-hosted email client with an AI agent that reads your inbox, searches conversations and drafts replies. Runs on your own Cloudflare account using Workers.<br>
+  🏷 `email-client` `ai-agents` `self-hosted` `cloudflare`
+- **[check-if-email-exists](https://github.com/reacherhq/check-if-email-exists)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source email verifier written in Rust that checks whether an address exists without sending an email. Run it with Docker as an HTTP backend.<br>
+  🏷 `email-verification` `rust` `self-hosted` `open-source`
 - **[Emitlo](https://emitlo.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Transactional email API and SMTP relay with domain authentication, webhooks and analytics. Currently in early access.<br>
   🏷 `email-api` `smtp` `transactional-email` `developer-tools`<br>
@@ -40,6 +46,10 @@ _Customer support, data, analytics, email delivery and operations tools for runn
 - **[founder-skill](https://github.com/Jakeschincariol/founder-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Eleven free Claude skills that test a business idea before launch, covering board review, marketing, finances and pricing.<br>
   🏷 `startup` `business-plan` `unit-economics` `claude-skills`
+- **[Invoice Ninja](https://invoiceninja.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Invoicing software for freelancers and small businesses to send invoices and quotes, get paid online and track time and expenses. Source-available, so you can also self-host it.<br>
+  🏷 `invoicing` `freelance` `time-tracking` `self-hosted`<br>
+  💰 freemium
 - **[Minimalist Entrepreneur Skills](https://github.com/slavingia/skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Ten Claude Code skills based on The Minimalist Entrepreneur book by Sahil Lavingia, installed as a plugin.<br>
   🏷 `startup` `entrepreneurship` `minimalist` `claude-skills`
