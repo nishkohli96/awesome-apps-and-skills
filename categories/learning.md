@@ -41,6 +41,11 @@ _Guides, books, courses, learning tools, newsletters and channels worth followin
   Compare three anonymous AI answers to a study question, vote, then reveal the models. Free account required.<br>
   🏷 `education` `ai` `learning`<br>
   💰 freemium
+- **[Transcribe Video: To The Text](https://video2text.ttt.so)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  iPhone app that transcribes videos, YouTube/Vimeo links and live voice into searchable text, with speaker split, summaries and TXT/DOCX export.<br>
+  🏷 `transcription` `speech-to-text` `ios` `notes`<br>
+  💰 freemium<br>
+  🔗 [App Store](https://apps.apple.com/us/app/transcribe-video-to-the-text/id6757491608)
 - **[Turbo AI](https://www.turbo.ai/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   AI study assistant that turns files, videos and lectures into notes, flashcards, quizzes and lessons.<br>
   🏷 `study` `flashcards` `ai-notes` `education`<br>

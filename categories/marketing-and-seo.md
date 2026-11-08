@@ -15,6 +15,10 @@ _Tools and skills for SEO audits, content strategy and growth._
   SEO tool for keyword research, competitor analysis and site audits, with a free search tier and paid plans.<br>
   🏷 `seo` `keyword-research` `site-audit` `competitor-analysis`<br>
   💰 freemium
+- **[Vaneform](https://vaneform.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Free website traffic checker: look up monthly visitors, traffic trends and visitor sources for any domain.<br>
+  🏷 `seo` `traffic` `analytics` `competitor-analysis`<br>
+  💰 freemium
 
 ## Marketing & Growth
 

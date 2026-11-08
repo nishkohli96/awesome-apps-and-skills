@@ -115,6 +115,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[claude-drawing-skill](https://github.com/cloveric/claude-drawing-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude Code skill that paints procedural illustrations in dozens of styles, from ink wash and watercolour to stained glass and pixel art, using code instead of an image model. Outputs images and draw-on GIFs.<br>
   🏷 `illustration` `procedural-art` `generative-art` `claude-skills`
+- **[GifLoom](https://gifloom.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Free browser-based GIF compressor and editor with local processing and no account required.<br>
+  🏷 `gif` `image-editing` `local-first`<br>
+  💰 free
 - **[image-blaster](https://github.com/neilsonnn/image-blaster)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude skills that turn a single image into a 3D environment, meshes and sound effects. Needs World Labs and FAL API keys.<br>
   🏷 `3d` `image-to-3d` `gaussian-splat` `claude-skills`
