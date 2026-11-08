@@ -79,6 +79,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[LightCraft](https://github.com/storytold/lightcraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source non-destructive photo and RAW editor written in Rust that runs on your machine.<br>
   🏷 `photo-editing` `raw` `photography` `rust`
+- **[My Nine Games](https://myninegames.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Free browser maker for the "my 9 games" 3×3 grid: search games, reorder tiles and download a 1080px PNG. No account needed.<br>
+  🏷 `image-generator` `games` `grid-maker`<br>
+  💰 free
 - **[PhotoCraft](https://github.com/storytold/photocraft)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source photo editor written in Rust, a clean-room take on Photoshop with layers, masks and PSD support.<br>
   🏷 `photo-editing` `image-editor` `rust` `psd`
