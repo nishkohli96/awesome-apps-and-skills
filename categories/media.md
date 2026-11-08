@@ -199,9 +199,6 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 
 ## Audio & Music
 
-- **[Jellyfin](https://jellyfin.org/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
-  Free, volunteer-built media server for streaming your own video, music and photos to any device from your own server.<br>
-  🏷 `media-server` `streaming` `self-hosted` `open-source`
 - **[Moonshine](https://github.com/moonshine-ai/moonshine)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   Open-source toolkit for real-time voice agents with low-latency speech-to-text and text-to-speech that run fully on-device, with no account or API keys.<br>
   🏷 `speech-to-text` `text-to-speech` `voice-agents` `on-device`
@@ -226,6 +223,12 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[Whisper](https://github.com/openai/whisper)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   OpenAI's open-source general-purpose speech recognition model, usable from Python or the command line to transcribe and translate audio.<br>
   🏷 `speech-to-text` `transcription` `translation` `open-source`
+
+## Media Servers
+
+- **[Jellyfin](https://jellyfin.org/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Free, volunteer-built media server for streaming your own video, music and photos to any device from your own server.<br>
+  🏷 `media-server` `streaming` `self-hosted` `open-source`
 
 ## Downloaders
 
