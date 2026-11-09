@@ -165,6 +165,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Independent text/image-to-video via the Grok Imagine API (not affiliated with xAI or X); free trial credits.<br>
   🏷 `ai-video` `text-to-video` `image-to-video`<br>
   💰 freemium
+- **[H3 MiniMax](https://h3minimax.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Turn a text prompt or a photo into a short AI video with the MiniMax H3 model.<br>
+  🏷 `ai-video` `text-to-video` `image-to-video` `minimax`<br>
+  💰 freemium
 - **[Hailuo AI](https://hailuoai.video/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Create AI videos and images from text or photos, with video, image and audio tools for creators. Built on MiniMax models.<br>
   🏷 `ai-video` `ai-image` `text-to-video` `minimax`<br>
