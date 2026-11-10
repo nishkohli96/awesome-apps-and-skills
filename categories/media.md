@@ -177,6 +177,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   AI scene effect that turns two photos into a balcony and spotlight meeting video. Independent; paid from $7.99.<br>
   🏷 `ai-video` `photo-to-video` `effects`<br>
   💰 paid
+- **[Imagera](https://imagera.ai)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Web studio that runs many image and video models side by side, plus voice and music; Character IDs keep a face or product the same across shots.<br>
+  🏷 `ai-video` `ai-image` `text-to-video` `image-to-video`<br>
+  💰 paid
 - **[KDA Firestarter AI Dance](https://kdafirestarterai.dev)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   AI dance effect that turns one photo into a 13s 480p 21:9 solo dance video. Independent and unofficial; not affiliated with Riot Games or K/DA; paid from $7.99.<br>
   🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
