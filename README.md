@@ -31,9 +31,8 @@
 </p>
 
 <p align="center">
-  <video src="https://github.com/nishkohli96/awesome-apps-and-skills/raw/main/assets/promo.mp4" controls muted width="860">
-    Your browser can't play this video. <a href="assets/promo.mp4">Watch the 30s promo</a>.
-  </video>
+  <a href="assets/promo.mp4"><img src="assets/promo.gif" alt="30 second promo of Awesome Apps and Skills: search, browse categories, filter by tag" width="720"></a><br>
+  <sub>Silent preview. <a href="assets/promo.mp4">Watch the full 30s video with sound</a>.</sub>
 </p>
 
 Each entry has a colored type badge:
