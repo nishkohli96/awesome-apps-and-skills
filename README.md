@@ -29,6 +29,12 @@
   <a href="https://m8ven.ai/mcp/nishkohli96-awesome-apps-and-skills-tyfrn0?s=readme"><img alt="M8ven Score" src="https://m8ven.ai/badge/mcp/nishkohli96-awesome-apps-and-skills-tyfrn0" /></a>
 </p>
 
+<p align="center">
+  <video src="https://github.com/nishkohli96/awesome-apps-and-skills/raw/main/assets/promo.mp4" controls muted width="860">
+    Your browser can't play this video. <a href="assets/promo.mp4">Watch the 30s promo</a>.
+  </video>
+</p>
+
 Each entry has a colored type badge:
 
 ![website](https://img.shields.io/badge/website-218bff?style=flat-square) ![web-tool](https://img.shields.io/badge/web--tool-4f46e5?style=flat-square) ![app](https://img.shields.io/badge/app-1f883d?style=flat-square) ![library](https://img.shields.io/badge/library-0a7ea4?style=flat-square) ![skill](https://img.shields.io/badge/skill-d97757?style=flat-square) ![mcp-server](https://img.shields.io/badge/mcp--server-0969da?style=flat-square) ![plugin](https://img.shields.io/badge/plugin-bf3989?style=flat-square) ![starter](https://img.shields.io/badge/starter-7d5ba6?style=flat-square) ![guide](https://img.shields.io/badge/guide-9a6700?style=flat-square) ![newsletter](https://img.shields.io/badge/newsletter-cf222e?style=flat-square) ![video-channel](https://img.shields.io/badge/video--channel-6e7781?style=flat-square)
