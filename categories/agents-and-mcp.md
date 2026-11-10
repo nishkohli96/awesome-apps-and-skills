@@ -71,6 +71,10 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 - **[FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Gateway that puts many free LLM provider tiers behind one OpenAI-compatible endpoint, with routing and failover. Personal use only.<br>
   🏷 `llm-gateway` `free-llm` `openai-compatible` `routing`
+- **[Imagera LLM API](https://imagera.ai/llm-api)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  One OpenAI-compatible endpoint and API key for 320+ language models from 48 labs, billed per token, with streaming.<br>
+  🏷 `llm-api` `openai-compatible` `ai-models`<br>
+  💰 paid
 - **[MiniMax](https://www.minimax.io/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   AI lab and platform offering multimodal models for text, video, speech and music, with an API and coding and design agents.<br>
   🏷 `llm` `multimodal` `ai-api` `agents`
