@@ -46,6 +46,10 @@ _Create, edit, store and share documents, slides, PDFs and files._
   Open-source platform for file storage, sharing and collaboration that you can self-host or get from a provider.<br>
   🏷 `file-sync` `collaboration` `self-hosted` `open-source`<br>
   💰 freemium
+- **[Nyxiontech PDF Tools](https://tools.nyxiontech.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Browser toolkit with 25 PDF and image operations: merge, split, sign, redact, convert and OCR. Nothing is uploaded. Also ships as a Windows desktop app.<br>
+  🏷 `pdf` `ocr` `privacy` `open-source`<br>
+  💰 free
 - **[PDF Tools](https://github.com/sammyZi/pdf-tools)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Free Android app with 24 PDF tools and a document scanner. Everything runs on-device, with no ads or sign-up.<br>
   🏷 `pdf` `android` `document-scanner` `offline` `open-source`
