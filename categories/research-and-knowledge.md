@@ -31,6 +31,11 @@ _Research, data analysis, prediction and knowledge-base tooling._
 - **[Consensus](https://consensus.app/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   AI academic search engine for finding, organizing and analyzing peer-reviewed research.<br>
   🏷 `academic-search` `research` `papers` `ai-search`
+- **[EarlyLore](https://earlylore.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Validate a product idea against real software competitors, demand, pricing and acquisition signals before you build.<br>
+  🏷 `market-research` `competitor-analysis` `idea-validation` `saas`<br>
+  💰 freemium<br>
+  🔗 [demo](https://www.youtube.com/watch?v=MZESeiHWNgY)
 - **[MiroFish](https://mirofish.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source swarm-intelligence engine that runs multi-agent simulations to predict outcomes.<br>
   🏷 `prediction` `multi-agent` `simulation` `forecasting`
