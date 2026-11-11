@@ -32,6 +32,11 @@ _Create, edit, store and share documents, slides, PDFs and files._
   Open-source, end-to-end encrypted photo storage and sharing app for phone and desktop, with on-device face detection. You can self-host it, and 10GB is free.<br>
   🏷 `photos` `encrypted-storage` `privacy` `self-hosted` `open-source`<br>
   💰 freemium
+- **[Free PDF Converter](https://free-pdf-converter.web-free.site/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Browser-based PDF toolkit (merge, split, compress, convert and related tools); processing runs locally in the browser.<br>
+  🏷 `pdf` `privacy` `browser`<br>
+  💰 free
+
 - **[iLovePDF PDF to Markdown](https://www.ilovepdf.com/pdf-to-markdown)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Online converter that turns a PDF into a Markdown file, keeping headings, tables and lists.<br>
   🏷 `pdf` `markdown` `file-conversion` `online-tool`<br>
