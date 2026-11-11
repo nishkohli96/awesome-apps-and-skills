@@ -115,6 +115,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[claude-drawing-skill](https://github.com/cloveric/claude-drawing-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude Code skill that paints procedural illustrations in dozens of styles, from ink wash and watercolour to stained glass and pixel art, using code instead of an image model. Outputs images and draw-on GIFs.<br>
   🏷 `illustration` `procedural-art` `generative-art` `claude-skills`
+- **[Cutout.Free](https://cutout.free/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Free online background remover that exports a transparent PNG or a JPG with a white, blue, red or custom image background; no account needed.<br>
+  🏷 `background-remover` `image-editing` `transparent-png`<br>
+  💰 free
 - **[GifLoom](https://gifloom.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Free browser-based GIF compressor and editor with local processing and no account required.<br>
   🏷 `gif` `image-editing` `local-first`<br>
