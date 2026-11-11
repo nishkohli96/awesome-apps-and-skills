@@ -1,6 +1,6 @@
 # 💻 Coding
 
-_Skills, MCP servers, apps and starter templates for writing, reviewing, testing and shipping code._
+_Skills, MCP servers, apps, browser developer utilities and starter templates for writing, reviewing, testing and shipping code._
 
 ## Agent Skills
 
@@ -25,6 +25,13 @@ _Skills, MCP servers, apps and starter templates for writing, reviewing, testing
 - **[Solaris Dev Shop](https://github.com/Shaisolaris/solaris-dev-shop)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   61 portable specialist skills with searchable discovery and an explainable deterministic task router.<br>
   🏷 `agent-skills` `discovery` `task-router`<br>
+  💰 free
+
+## Browser Developer Utilities
+
+- **[BestJSON](https://bestjson.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Format, validate, repair, compare and convert JSON locally in the browser without an account.<br>
+  🏷 `json` `developer-tools` `client-side`<br>
   💰 free
 
 ## Reverse Engineering
