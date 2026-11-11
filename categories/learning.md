@@ -20,6 +20,10 @@ _Guides, books, courses, learning tools, newsletters and channels worth followin
   Free course that takes you from beginner to building AI agents, with hands-on units, assignments and a certificate.<br>
   🏷 `ai-agents` `course` `huggingface` `learning`<br>
   💰 free
+- **[SolidCraft CAD](https://solidcraftcad.com/)** <img align="absmiddle" alt="guide" src="https://img.shields.io/badge/guide-9a6700?style=flat-square"><br>
+  Guide to SolidCraft, the open-source parametric 3D CAD app in Rust: browser use, downloads, MCP setup.<br>
+  🏷 `cad` `3d-modeling` `open-source` `guide`<br>
+  💰 free
 
 ## Learning Tools
 
