@@ -200,6 +200,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Free AI image & video studio with a prompt library; freemium signup credits, no card required.<br>
   🏷 `ai-image` `ai-video` `prompt-library` `image-generation`<br>
   💰 freemium
+- **[Seedream 5.5 Image Generator](https://seedream55.io/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Browser app for Seedream image generation: text-to-image and image-to-image with up to 10 reference images. Free trial credits.<br>
+  🏷 `ai-image` `text-to-image` `image-to-image` `seedream`<br>
+  💰 freemium
 - **[YouTube Agentic AI Studio](https://github.com/raunakpatil/youtube-agentic-ai-studio)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source Python pipeline that researches, scripts, narrates and uploads faceless YouTube videos from one topic, with a local web GUI.<br>
   🏷 `youtube-automation` `faceless-youtube` `ai-agents` `video-generation`<br>
