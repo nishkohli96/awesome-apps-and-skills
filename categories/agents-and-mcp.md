@@ -107,9 +107,8 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   💰 freemium<br>
   🔗 [mcp](https://curlshot.com/api/mcp)
 - **[DC Hub](https://github.com/azmartone67/dchub-mcp-server)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
-  Live data layer for data-center site selection; DCPI scores grid power across 300+ markets daily (94 MCP tools).<br>
+  Orchestration layer for data center and energy intelligence. Start with execute_plan for grid power, electricity prices or interconnection queues. Publishes the Data Center Power Index (DCPI) across 300+ markets daily (96 MCP tools). DCHUB_API_KEY is optional.<br>
   🏷 `mcp` `data-centers` `energy` `site-selection`<br>
-  💰 freemium<br>
   🔗 [mcp](https://dchub.cloud/mcp)
 - **[deed.page](https://deed.page/)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
   Static hosting for AI agents: publish HTML to a live `<slug>.deed.page` URL with one HTTP PUT or a remote MCP call.<br>
