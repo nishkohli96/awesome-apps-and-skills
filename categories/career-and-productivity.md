@@ -82,3 +82,7 @@ _Resume, job search and personal productivity resources._
   Free Android and iOS 16+ focus app that blocks Shorts and Reels while keeping chat, with parent unlock and uninstall lock.<br>
   🏷 `focus` `screen-time` `android` `ios`<br>
   💰 free
+- **[Yellow Tomato](https://yellowtomato.app/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Pomodoro timer for Chrome, iPhone and iPad that blocks chosen sites and apps only during focus sessions, with tasks and stats.<br>
+  🏷 `focus` `pomodoro` `chrome-extension` `ios`<br>
+  💰 free
