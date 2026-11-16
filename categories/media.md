@@ -119,6 +119,11 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Free online background remover that exports a transparent PNG or a JPG with a white, blue, red or custom image background; no account needed.<br>
   🏷 `background-remover` `image-editing` `transparent-png`<br>
   💰 free
+- **[Free Image Resizer](https://free-image-resizer.web-free.site/en/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Resize, compress, crop, rotate and convert images (HEIC, WebP, PNG, JPG) in the browser without uploading files.<br>
+  🏷 `image` `resize` `privacy`<br>
+  💰 free
+
 - **[GifLoom](https://gifloom.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Free browser-based GIF compressor and editor with local processing and no account required.<br>
   🏷 `gif` `image-editing` `local-first`<br>
