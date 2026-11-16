@@ -150,6 +150,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   AI dance effect that turns two photos into a 15s 480p 16:9 duo neon dance video with a reference soundtrack. Independent and unofficial; paid from $7.99.<br>
   🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
   💰 paid
+- **[AI Image to Image](https://aimagetoimage.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Upload a JPG, PNG or WEBP and describe the edit in a prompt; returns a new version that keeps the subject and framing. No signup, no watermark.<br>
+  🏷 `ai-image` `image-to-image` `photo-editing`<br>
+  💰 freemium
 - **[Alors On Danse Video Maker](https://alorsondansevideo.com)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   AI effect that turns two photos into a 13s studio dance video. Independent; not affiliated with Stromae or TikTok.<br>
   🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
