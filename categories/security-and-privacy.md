@@ -9,6 +9,12 @@ _Password managers, privacy tools, security testing and threat modeling._
   🏷 `password-manager` `passkeys` `open-source` `security`<br>
   💰 freemium
 
+## Privacy
+
+- **[remove-your-data](https://github.com/k7cfo/remove-your-data)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Agent skill that files free opt-outs to remove you from people-search sites and data brokers, and logs every request locally.<br>
+  🏷 `data-privacy` `data-brokers` `opt-out` `claude-skills`
+
 ## Security Testing
 
 - **[Grim Prompter](https://github.com/jmanico/grim-prompter)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>

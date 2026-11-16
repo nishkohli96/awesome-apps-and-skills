@@ -41,6 +41,9 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 - **[Paperclip](https://github.com/paperclipai/paperclip)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source app that orchestrates a team of AI agents, with goals, budgets and a dashboard to track work and costs.<br>
   🏷 `agent-orchestration` `ai-agents` `self-hosted` `dashboard`
+- **[T3 Code](https://github.com/pingdotgg/t3code)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source desktop, web and mobile app that controls Claude Code, Codex, Cursor and other coding agents from one interface, using your own subscriptions.<br>
+  🏷 `coding-agents` `agent-orchestration` `claude-code` `open-source`
 
 ## Memory & Context
 

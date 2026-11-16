@@ -52,6 +52,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[bang-motion](https://github.com/bangtutorial/bang-motion)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill for browser motion graphics: openers, promos, product demos, kinetic typography and explainers built as a single HTML file that plays like video. Works with Claude Code, Codex, Gemini CLI and Cursor.<br>
   🏷 `motion-graphics` `kinetic-typography` `explainer` `claude-skills`
+- **[Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase)** <img align="absmiddle" alt="starter" src="https://img.shields.io/badge/starter-7d5ba6?style=flat-square"><br>
+  Starter kit for animating hand-painted cartoons with Claude, using p5.js and p5.brush, the Clawd character with 31 acted emotions, and a guide for the model.<br>
+  🏷 `animation` `p5js` `claude-code` `cartoon`
 - **[claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude skill that teaches Claude to create and edit motion graphics videos with Remotion from a plain-English prompt.<br>
   🏷 `motion-graphics` `remotion` `video-editing` `claude-skills`
@@ -80,6 +83,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[motion-skills](https://github.com/iart-ai/motion-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Open-source collection of skills, split into installable packs, that teach coding agents to make motion graphics, animation and video: kinetic typography, data charts, explainers, short-form video, WebGL and Manim.<br>
   🏷 `motion-graphics` `animation` `video` `claude-skills`
+- **[onetake](https://github.com/feitangyuan/onetake)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Claude skill for product launch films and feature demos as one continuous camera take, where each beat grows out of the last. Free for noncommercial use.<br>
+  🏷 `launch-video` `motion-graphics` `product-video` `claude-skills`
 - **[OpenToonz](https://opentoonz.github.io/e/index.html)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source software for producing 2D animation, based on the Toonz software that Studio Ghibli used for years. Free for commercial and non-commercial projects.<br>
   🏷 `2d-animation` `animation-production` `open-source` `desktop`

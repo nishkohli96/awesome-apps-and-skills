@@ -1,6 +1,6 @@
 # 🎨 Design & Frontend
 
-_Design inspiration, design and prototyping tools, motion, and frontend skills._
+_Design inspiration, design systems, design and prototyping tools, motion, and frontend skills._
 
 ## Design Inspiration
 
@@ -26,6 +26,9 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 - **[Archify](https://github.com/tt-a1i/archify)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill for Claude Code, Codex and more that turns an idea, plan or codebase into an interactive diagram.<br>
   🏷 `diagrams` `architecture` `visualization` `claude-skills`
+- **[Astryx](https://astryx.atmeta.com/)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"> <img align="absmiddle" alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"><br>
+  Meta's open-source React design system with 180+ themeable components and templates, plus a CLI and MCP server so coding agents can use it. In beta.<br>
+  🏷 `design-system` `react` `components` `mcp`
 - **[diagram-design](https://github.com/cathrynlavery/diagram-design)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill that draws diagrams as a single HTML and SVG file in your brand, with dozens of diagram types.<br>
   🏷 `diagrams` `svg` `agent-skills` `data-visualization`

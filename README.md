@@ -47,7 +47,7 @@ Each entry has a colored type badge:
 - 📣 [Marketing & SEO](categories/marketing-and-seo.md) – Tools and skills for SEO audits, content strategy and growth.
 - 💼 [Business](categories/business.md) – Customer support, data, analytics, email delivery and operations tools for running a business.
 - 🔎 [Research & Knowledge](categories/research-and-knowledge.md) – Research, data analysis, prediction and knowledge-base tooling.
-- 🎨 [Design & Frontend](categories/design-and-frontend.md) – Design inspiration, design and prototyping tools, motion, and frontend skills.
+- 🎨 [Design & Frontend](categories/design-and-frontend.md) – Design inspiration, design systems, design and prototyping tools, motion, and frontend skills.
 - ⚙️ [Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.
 - 📈 [Career & Productivity](categories/career-and-productivity.md) – Resume, job search and personal productivity resources.
 - 🤖 [Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins, plus agent memory, local model runtimes, LLM gateways and APIs, web data tools, and publishing and hosting tools for agents.
