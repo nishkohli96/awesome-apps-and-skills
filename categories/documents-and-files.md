@@ -32,6 +32,9 @@ _Create, edit, store and share documents, slides, PDFs and files._
   Open-source, end-to-end encrypted photo storage and sharing app for phone and desktop, with on-device face detection. You can self-host it, and 10GB is free.<br>
   🏷 `photos` `encrypted-storage` `privacy` `self-hosted` `open-source`<br>
   💰 freemium
+- **[Free PDF Converter](https://free-pdf-converter.web-free.site/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Browser-based PDF toolkit (merge, split, compress, convert and related tools); processing runs locally in the browser.<br>
+  🏷 `pdf` `privacy` `browser`<br>
 - **[Free QR Code Creator](https://free-qr-code-creator.web-free.site/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Creates styled QR codes and barcodes and can scan codes in the browser with no sign-up.<br>
   🏷 `qr-code` `generator` `privacy`<br>
