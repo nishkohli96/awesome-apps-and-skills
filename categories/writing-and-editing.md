@@ -13,6 +13,9 @@ _Tools and apps for drafting, editing and publishing text._
 - **[no-ai-slop](https://github.com/petergyang/no-ai-slop)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill that removes 20+ patterns of AI slop from writing while keeping your own voice.<br>
   🏷 `ai-writing` `editing` `claude-skills`
+- **[prompt-master](https://github.com/nidhinjs/prompt-master)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Claude skill that writes accurate, tool-specific prompts for ChatGPT, Gemini, Cursor, Midjourney and other AI tools, so you re-prompt less.<br>
+  🏷 `prompt-engineering` `claude-skills` `prompts`
 
 ## Grammar & Proofreading
 

@@ -46,6 +46,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[anidoodle](https://github.com/alexgreensh/anidoodle)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill that makes illustrations, animations and short films as code in 32 hand-drawn styles, identical on every render.<br>
   🏷 `animation` `illustration` `generative-art` `claude-skills`
+- **[anything2explainer](https://github.com/Vincentwei1021/anything2explainer)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Skill for Claude Code and Codex that turns a topic into a narrated Remotion explainer video with subtitles and chapters. Noncommercial license.<br>
+  🏷 `explainer-video` `remotion` `text-to-video` `claude-skills`
 - **[bang-motion](https://github.com/bangtutorial/bang-motion)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill for browser motion graphics: openers, promos, product demos, kinetic typography and explainers built as a single HTML file that plays like video. Works with Claude Code, Codex, Gemini CLI and Cursor.<br>
   🏷 `motion-graphics` `kinetic-typography` `explainer` `claude-skills`
@@ -80,6 +83,9 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[OpenToonz](https://opentoonz.github.io/e/index.html)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source software for producing 2D animation, based on the Toonz software that Studio Ghibli used for years. Free for commercial and non-commercial projects.<br>
   🏷 `2d-animation` `animation-production` `open-source` `desktop`
+- **[paint-mv-skills](https://github.com/lintsinghua/paint-mv-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Agent skills that turn a song and its lyrics into a hand-painted watercolour music video, drawn with p5.brush in headless Chrome and assembled with ffmpeg.<br>
+  🏷 `music-video` `watercolor` `p5js` `claude-skills`
 - **[Prompt Motion](https://prompt-motion.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   Gallery of motion videos made with Claude, with the prompts and skills behind each one, plus customizable templates.<br>
   🏷 `motion-design` `prompts` `video` `gallery`<br>
@@ -100,6 +106,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[text-to-lottie](https://github.com/diffusionstudio/lottie)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Open-source skill and player that lets coding agents generate production-ready Lottie animations from text prompts, SVGs and screenshots.<br>
   🏷 `lottie` `animation` `text-to-animation` `claude-skills`
+- **[video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Skill for Claude Code and Codex that builds editable product promo videos with Remotion from a library of shot recipes, with beat sync and sound design.<br>
+  🏷 `remotion` `promo-video` `motion-graphics` `claude-skills`<br>
+  🔗 [demo](https://vincentwei1021.github.io/video-shotcraft/)
 - **[vox-ai-motion-graphics-generator](https://github.com/Anil-matcha/vox-ai-motion-graphics-generator)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill that turns a topic into a Vox-style paper-collage explainer video, automating script, keyframes, animation, voice-over, music and captions. Needs a MuAPI key and ffmpeg.<br>
   🏷 `explainer-video` `motion-graphics` `ai-video` `claude-skills`

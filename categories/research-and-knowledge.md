@@ -36,6 +36,9 @@ _Research, data analysis, prediction and knowledge-base tooling._
   🏷 `market-research` `competitor-analysis` `idea-validation` `saas`<br>
   💰 freemium<br>
   🔗 [demo](https://www.youtube.com/watch?v=MZESeiHWNgY)
+- **[Fincept Terminal](https://github.com/Fincept-Corporation/FinceptTerminal)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source desktop terminal for financial research, with market analytics, portfolio tools, economic data and AI agents, built with C++ and Qt.<br>
+  🏷 `finance` `market-analytics` `investment-research` `open-source`
 - **[MiroFish](https://mirofish.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source swarm-intelligence engine that runs multi-agent simulations to predict outcomes.<br>
   🏷 `prediction` `multi-agent` `simulation` `forecasting`

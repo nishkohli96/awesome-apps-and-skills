@@ -25,6 +25,10 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 - **[LangGraph](https://github.com/langchain-ai/langgraph)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   Low-level orchestration framework for building stateful, long-running AI agents, from the LangChain team.<br>
   🏷 `ai-agents` `orchestration` `stateful-agents` `python` `open-source`
+- **[MausBot](https://mausbot.com/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Open-source desktop app where a team of AI bots, each with its own job and computer, runs on your machine using your Claude or Codex account.<br>
+  🏷 `ai-agents` `agent-orchestration` `desktop-app` `open-source`<br>
+  💰 freemium
 - **[OpenClaw](https://openclaw.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source AI assistant that runs on your machine and works from WhatsApp, Telegram or any chat app.<br>
   🏷 `ai-assistant` `agent` `self-hosted` `chat`

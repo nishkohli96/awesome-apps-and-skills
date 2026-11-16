@@ -10,6 +10,9 @@ _Skills, MCP servers, apps, browser developer utilities and starter templates fo
 - **[caveman](https://github.com/juliusbrussee/caveman)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Skill and proxy for coding agents that makes them reply in terse caveman-style language to save tokens.<br>
   🏷 `token-saving` `claude-skills` `prompt-engineering`
+- **[ECC](https://github.com/affaan-m/ecc)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Skills, instincts, memory and security rules that tune coding agents such as Claude Code, Codex, OpenCode and Cursor for research-first development.<br>
+  🏷 `claude-code` `agent-skills` `memory` `claude-skills`
 - **[gstack](https://github.com/garrytan/gstack)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Garry Tan's Claude Code setup: a set of skills that act as a virtual engineering team, covering product review, architecture, design, code review, QA and release.<br>
   🏷 `claude-code` `code-review` `qa` `workflow` `claude-skills`
