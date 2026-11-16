@@ -31,9 +31,7 @@
 </p>
 
 <p align="center">
-  <video src="https://github.com/nishkohli96/awesome-apps-and-skills/raw/main/assets/promo.mp4" controls muted width="860">
-    Your browser can't play this video. <a href="assets/promo.mp4">Watch the 30s promo</a>.
-  </video>
+  <a href="https://github.com/nishkohli96/awesome-apps-and-skills/blob/main/assets/promo.mp4"><img src="https://raw.githubusercontent.com/nishkohli96/awesome-apps-and-skills/main/assets/promo.gif" alt="30 second promo of Awesome Apps &amp; Skills. Click to watch the full video." width="640" /></a>
 </p>
 
 Each entry has a colored type badge:
@@ -58,7 +56,7 @@ Each entry has a colored type badge:
 
 ## Open to work
 
-I am [Nishant](https://www.nishkohli.in/), the author of this list and I'm looking for new paid opportunities. If you're a contributor or maintainer here and your team has an opening where I could help, reach out via: [LinkedIn](https://www.linkedin.com/in/nishkohli96/) or [Email](mailto:nishantkohli96@gmail.com).
+I am [Nishant](https://www.nishkohli.in/), the author of this list is looking for new paid opportunities. If you're a contributor or maintainer here and your team has an opening where I could help, reach out via: [LinkedIn](https://www.linkedin.com/in/nishkohli96/) or [Email](mailto:nishantkohli96@gmail.com).
 
 ## Add a resource with AI
 
