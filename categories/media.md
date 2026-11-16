@@ -150,6 +150,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   AI dance effect that turns two photos into a 15s 480p 16:9 duo neon dance video with a reference soundtrack. Independent and unofficial; paid from $7.99.<br>
   🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
   💰 paid
+- **[AI Image to Image](https://aimagetoimage.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Upload a JPG, PNG or WEBP and describe the edit in a prompt; returns a new version that keeps the subject and framing. No signup, no watermark.<br>
+  🏷 `ai-image` `image-to-image` `photo-editing`<br>
+  💰 freemium
 - **[Alors On Danse Video Maker](https://alorsondansevideo.com)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
   AI effect that turns two photos into a 13s studio dance video. Independent; not affiliated with Stromae or TikTok.<br>
   🏷 `ai-video` `dance` `photo-to-video` `effects`<br>
@@ -200,6 +204,13 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   Free AI image & video studio with a prompt library; freemium signup credits, no card required.<br>
   🏷 `ai-image` `ai-video` `prompt-library` `image-generation`<br>
   💰 freemium
+- **[Seedream 5.5 Image Generator](https://seedream55.io/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Browser app for Seedream image generation: text-to-image and image-to-image with up to 10 reference images. Free trial credits.<br>
+  🏷 `ai-image` `text-to-image` `image-to-image` `seedream`<br>
+- **[RefVid](https://refvid.com/?utm_source=github&utm_medium=awesome&utm_campaign=awesome-apps-and-skills)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Make AI videos that keep a character or product the same in every shot, from a few reference images.<br>
+  🏷 `ai-video` `image-to-video` `consistent-character` `product-video`<br>
+  💰 freemium
 - **[YouTube Agentic AI Studio](https://github.com/raunakpatil/youtube-agentic-ai-studio)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source Python pipeline that researches, scripts, narrates and uploads faceless YouTube videos from one topic, with a local web GUI.<br>
   🏷 `youtube-automation` `faceless-youtube` `ai-agents` `video-generation`<br>
@@ -240,6 +251,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 
 ## Downloaders
 
+- **[InstaNoMark](https://instagramvideodownloadwithoutwatermaker.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Paste a public Instagram Reel, post or IGTV link and save the original MP4 or MP3 audio, without the Instagram logo or @username.<br>
+  🏷 `downloader` `instagram` `video`<br>
+  💰 free
 - **[OmniGet](https://www.omniget.in/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Online downloader for videos, reels and photos from YouTube, Instagram, Facebook and X. No login needed.<br>
   🏷 `downloader` `video` `social-media`<br>

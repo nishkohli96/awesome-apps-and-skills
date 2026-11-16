@@ -19,6 +19,10 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
 
 ## Design & Prototyping Tools
 
+- **[AppScreen](https://appscreen.pro/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Browser editor for App Store and Google Play screenshots: device frames, captions and backgrounds on one wide canvas, exported at store sizes.<br>
+  🏷 `app-store` `screenshots` `mockups` `mobile-design`<br>
+  💰 freemium
 - **[Archify](https://github.com/tt-a1i/archify)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Agent skill for Claude Code, Codex and more that turns an idea, plan or codebase into an interactive diagram.<br>
   🏷 `diagrams` `architecture` `visualization` `claude-skills`
