@@ -9,3 +9,6 @@
 ^https://artigram\.cafeboon\.com/mcp$
 ^https://curlshot\.com/api/mcp$
 ^https://api\.voygr\.tech/mcp$
+
+# LinkedIn answers bots with a non-standard 999 status
+^https://www\.linkedin\.com/
