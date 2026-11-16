@@ -15,7 +15,8 @@
   🌐 <a href="https://awesome-apps-and-skills.vercel.app/">Browse the website</a> ·
   🤝 <a href="CONTRIBUTING.md">Contribute</a> ·
   ➕ <a href="https://github.com/nishkohli96/awesome-apps-and-skills/compare">Add a resource (open a PR)</a> ·
-  ❤️ <a href="https://github.com/sponsors/nishkohli96">Sponsor</a>
+  ❤️ <a href="https://github.com/sponsors/nishkohli96">Sponsor</a> ·
+  💼 <a href="#open-to-work">Open to work</a>
 </p>
 
 <p align="center">
@@ -54,6 +55,10 @@ Each entry has a colored type badge:
 - 🤖 [Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins, plus agent memory, local model runtimes, LLM gateways and APIs, web data tools, and publishing and hosting tools for agents.
 - 🔒 [Security & Privacy](categories/security-and-privacy.md) – Password managers, privacy tools and security testing.
 - 🎓 [Learning](categories/learning.md) – Guides, books, courses, learning tools, newsletters and channels worth following.
+
+## Open to work
+
+I am [Nishant](https://www.nishkohli.in/), the author of this list and I'm looking for new paid opportunities. If you're a contributor or maintainer here and your team has an opening where I could help, reach out via: [LinkedIn](https://www.linkedin.com/in/nishkohli96/) or [Email](mailto:nishantkohli96@gmail.com).
 
 ## Add a resource with AI
 

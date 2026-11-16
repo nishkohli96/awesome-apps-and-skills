@@ -1,0 +1,11 @@
+# Placeholders in CONTRIBUTING.md's entry-format example
+^https://\.\.\.$
+^https://github\.com/owner/example$
+
+# Badge images: ~270 requests per run, trips shields.io rate limits, and the URLs are static
+^https://img\.shields\.io/
+
+# MCP endpoints only answer POST, a GET returns 405
+^https://artigram\.cafeboon\.com/mcp$
+^https://curlshot\.com/api/mcp$
+^https://api\.voygr\.tech/mcp$
