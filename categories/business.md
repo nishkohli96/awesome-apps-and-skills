@@ -53,3 +53,6 @@ _Customer support, data, analytics, email delivery and operations tools for runn
 - **[Minimalist Entrepreneur Skills](https://github.com/slavingia/skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Ten Claude Code skills based on The Minimalist Entrepreneur book by Sahil Lavingia, installed as a plugin.<br>
   🏷 `startup` `entrepreneurship` `minimalist` `claude-skills`
+- **[seed-skill](https://github.com/Jakeschincariol/seed-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
+  Eleven free Claude skills that take a startup from idea to funded: competitor research, investor matching, a business plan, a pitch deck and investor outreach.<br>
+  🏷 `fundraising` `pitch-deck` `startup` `claude-skills`
