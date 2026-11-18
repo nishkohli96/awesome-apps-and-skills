@@ -136,3 +136,8 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   Python web scraping framework for everything from a single request to a full crawl, with stealth fetching and a built-in MCP server.<br>
   🏷 `web-scraping` `crawler` `mcp` `python`<br>
   💰 free
+- **[YouTube Transcripts](https://apify.com/johnvc/YoutubeTranscripts)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Hosted Apify Actor that returns YouTube video transcripts and subtitles as JSON, callable from MCP clients with your own Apify token.<br>
+  🏷 `mcp` `youtube` `transcripts`<br>
+  💰 paid<br>
+  🔗 [mcp](https://mcp.apify.com/?tools=johnvc/YoutubeTranscripts)
