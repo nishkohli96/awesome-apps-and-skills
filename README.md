@@ -51,7 +51,7 @@ Each entry has a colored type badge:
 - ⚙️ [Automation & DevOps](categories/automation-and-devops.md) – CI/CD, scheduling, and workflow automation.
 - 📈 [Career & Productivity](categories/career-and-productivity.md) – Resume, job search and personal productivity resources.
 - 🤖 [Agents & MCP](categories/agents-and-mcp.md) – MCP servers, agent frameworks and plugins, plus agent memory, local model runtimes, LLM gateways and APIs, web data tools, and publishing and hosting tools for agents.
-- 🔒 [Security & Privacy](categories/security-and-privacy.md) – Password managers, privacy tools and security testing.
+- 🔒 [Security & Privacy](categories/security-and-privacy.md) – Password managers, offline signing, privacy tools and security testing.
 - 🎓 [Learning](categories/learning.md) – Guides, books, courses, learning tools, newsletters and channels worth following.
 
 ## Open to work

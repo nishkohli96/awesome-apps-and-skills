@@ -1,6 +1,13 @@
 # 🔒 Security & Privacy
 
-_Password managers, privacy tools and security testing._
+_Password managers, offline signing, privacy tools and security testing._
+
+## Offline Signing
+
+- **[BitTool Signer for iOS](https://bittool.com/signer/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Offline iPhone signing app that keeps keys on a dedicated device and exchanges requests and signatures via QR codes.<br>
+  🏷 `ios` `offline-signing` `qr-codes` `open-source`<br>
+  💰 free
 
 ## Passwords & Authentication
 
