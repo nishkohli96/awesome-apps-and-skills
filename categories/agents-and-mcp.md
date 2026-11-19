@@ -98,6 +98,11 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 - **[camofox-browser](https://github.com/jo-inc/camofox-browser)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Headless browser server for AI agents, built on Camoufox with fingerprint spoofing as a Puppeteer and Playwright replacement.<br>
   🏷 `headless-browser` `browser-automation` `ai-agents` `scraping`
+- **[CheapCarRent](https://github.com/aleksandrjefimov4-crypto/cheapcarent-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Read-only remote MCP server for searching rental cars and listing pickup cities and airports.<br>
+  🏷 `mcp` `travel` `car-rental` `search`<br>
+  💰 free<br>
+  🔗 [mcp](https://cheapcarent.com/mcp)
 - **[Crawl4AI](https://github.com/unclecode/crawl4ai)** <img align="absmiddle" alt="library" src="https://img.shields.io/badge/library-0a7ea4?style=flat-square"><br>
   Open-source web crawler and scraper that turns pages into clean Markdown or structured JSON for RAG and AI agents. Run it yourself with Python or Docker, or use the hosted API.<br>
   🏷 `web-scraping` `crawler` `rag` `markdown` `open-source`
