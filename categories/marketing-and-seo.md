@@ -25,7 +25,6 @@ _Tools and skills for SEO audits, content strategy and growth._
 - **[ASOScan ASO Skills](https://github.com/ASOScan/aso-skills)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Nine App Store Optimization skills for Claude Code and Cursor. Two work with no account; the keyword, competitor and review skills need an ASOScan API key.<br>
   🏷 `aso` `app-store` `google-play` `claude-skills`<br>
-  💰 freemium
 - **[claude-ads](https://github.com/AgriciDaniel/claude-ads)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Claude Code skill that audits paid ad accounts across 12 platforms, including Google, Meta, LinkedIn and TikTok.<br>
   🏷 `paid-ads` `ppc` `claude-skills` `marketing`
