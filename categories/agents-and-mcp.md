@@ -40,6 +40,9 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
 
 ## Memory & Context
 
+- **[Alter Ego](https://cloudalterego.cafeboon.com)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Logs questions automatically in your cloud for Claude, ChatGPT, Gemini and any AI chat with MCP, without account instructions.<br>
+  🏷 `ai-memory` `mcp` `context` `cloud-storage`
 - **[claude-mem](https://github.com/thedotmack/claude-mem)** <img align="absmiddle" alt="plugin" src="https://img.shields.io/badge/plugin-bf3989?style=flat-square"><br>
   Plugin that captures what your coding agent does, compresses it and injects relevant context into future sessions.<br>
   🏷 `ai-memory` `claude-code` `context` `agents`
