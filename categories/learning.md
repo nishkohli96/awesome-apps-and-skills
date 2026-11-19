@@ -50,3 +50,8 @@ _Guides, books, courses, learning tools, newsletters and channels worth followin
   AI study assistant that turns files, videos and lectures into notes, flashcards, quizzes and lessons.<br>
   🏷 `study` `flashcards` `ai-notes` `education`<br>
   💰 freemium
+
+- **[WebCheatSheet](https://webcheatsheet.com/)** <img align="absmiddle" alt="website" src="https://img.shields.io/badge/website-218bff?style=flat-square"><br>
+  Free, example-driven reference for PHP, SQL, JavaScript, and Microsoft Access.<br>
+  🏷 `web-development` `sql` `php`<br>
+  💰 free
