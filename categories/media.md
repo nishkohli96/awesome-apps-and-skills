@@ -124,6 +124,11 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   🏷 `image` `resize` `privacy`<br>
   💰 free
 
+- **[FujinAI Image Compressor](https://www.fujindeai.com/tools/compress-image)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Compress JPG, PNG and WebP in the browser with adjustable quality and a maximum width.<br>
+  🏷 `image-compression` `resize` `browser`<br>
+  💰 free
+
 - **[GifLoom](https://gifloom.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Free browser-based GIF compressor and editor with local processing and no account required.<br>
   🏷 `gif` `image-editing` `local-first`<br>
