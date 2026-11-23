@@ -136,3 +136,7 @@ _MCP servers, agent frameworks and plugins, plus agent memory, local model runti
   Python web scraping framework for everything from a single request to a full crawl, with stealth fetching and a built-in MCP server.<br>
   🏷 `web-scraping` `crawler` `mcp` `python`<br>
   💰 free
+- **[Skool Community Scraper](https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/skool-community-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Search Skool communities by keyword and read members, price, rating, estimated monthly revenue, and daily growth.<br>
+  🏷 `mcp` `skool` `communities` `research`<br>
+  💰 paid
