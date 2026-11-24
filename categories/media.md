@@ -141,6 +141,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   AI photo editor for product pictures that removes backgrounds, generates scenes and makes marketplace-ready images.<br>
   🏷 `photo-editing` `background-remover` `product-photos` `ai`<br>
   💰 freemium
+- **[PixelArtHive](https://pixelarthive.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Convert images to pixel art and upscale pixel art for free, with local browser processing.<br>
+  🏷 `pixel-art` `image-editing` `local-first`<br>
+  💰 free
 - **[TeslaWraps](https://teslawraps.design)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Free browser Tesla Paint Shop wrap editor with model templates and PNG export; no account required for core editing.<br>
   🏷 `design` `mockup` `tesla` `image-editor`<br>
