@@ -40,6 +40,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[OpenCut](https://opencut.app/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Open-source, privacy-first video editor that runs in your browser, an alternative to CapCut. In early beta.<br>
   🏷 `video-editing` `capcut-alternative` `open-source`
+- **[Vertov](https://vertov.app/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Browser screen recorder that edits video through its transcript and shares recordings by link. The core is self-hostable.<br>
+  🏷 `screen-recording` `video-editing` `captions`<br>
+  💰 freemium
 
 ## Motion Graphics & Animation
 
