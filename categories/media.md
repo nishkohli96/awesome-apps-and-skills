@@ -40,6 +40,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
 - **[OpenCut](https://opencut.app/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Open-source, privacy-first video editor that runs in your browser, an alternative to CapCut. In early beta.<br>
   🏷 `video-editing` `capcut-alternative` `open-source`
+- **[Valmera MCP](https://github.com/ABO3SKRALMASAOODI/valmera-mcp)** <img align="absmiddle" alt="mcp-server" src="https://img.shields.io/badge/mcp--server-0969da?style=flat-square"><br>
+  Hosted MCP connector for cutting uploaded footage, reviewing a preview and exporting MP4. Editing requires paid Valmera access.<br>
+  🏷 `video-editing` `mcp` `captions`<br>
+  🔗 [demo](https://valmera.io/claude-video-editor#revision-trial)
 
 ## Motion Graphics & Animation
 
