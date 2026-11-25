@@ -43,6 +43,10 @@ _Research, data analysis, prediction and knowledge-base tooling._
   Open-source AI search engine with a generative UI that answers with cited sources and rich inline components. Self-host it with Docker and choose your own models and search providers.<br>
   🏷 `ai-search` `answer-engine` `generative-ui` `self-hosted`<br>
   🔗 [demo](https://chat.morphic.sh)
+- **[QuestionPunk](https://www.questionpunk.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Run surveys and AI-moderated voice or chat interviews, then compare responses across groups.<br>
+  🏷 `surveys` `user-interviews` `market-research` `ai-interviews`<br>
+  💰 freemium
 - **[Vane](https://github.com/ItzCrazyKns/Vane)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Privacy-focused, self-hosted AI answering engine that searches the web through SearxNG and answers with cited sources, using local models via Ollama or cloud providers.<br>
   🏷 `ai-search` `answer-engine` `self-hosted` `ollama` `privacy`
