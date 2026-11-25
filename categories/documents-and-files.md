@@ -58,6 +58,10 @@ _Create, edit, store and share documents, slides, PDFs and files._
   Browser toolkit with 25 PDF and image operations: merge, split, sign, redact, convert and OCR. Nothing is uploaded. Also ships as a Windows desktop app.<br>
   🏷 `pdf` `ocr` `privacy` `open-source`<br>
   💰 free
+- **[PDF Fan — Insertar páginas PDF](https://pdf.fan/es/insertar-paginas-pdf/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Insert selected pages from another PDF at a chosen spot. Spanish UI, no signup. Source PDFs stay in the browser; the output copy is stored temporarily.<br>
+  🏷 `pdf` `page-editing` `browser` `spanish`<br>
+  💰 free
 - **[PDF Tools](https://github.com/sammyZi/pdf-tools)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Free Android app with 24 PDF tools and a document scanner. Everything runs on-device, with no ads or sign-up.<br>
   🏷 `pdf` `android` `document-scanner` `offline` `open-source`
