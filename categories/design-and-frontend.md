@@ -33,14 +33,14 @@ _Design inspiration, design and prototyping tools, motion, and frontend skills._
   Collaborative whiteboard for hand-drawn style diagrams.<br>
   🏷 `diagrams` `whiteboard`<br>
   💰 free
-- **[Linger](https://withlinger.com/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
-  Local macOS image library for design references, source links and notes, with color search and a canvas for arranging ideas.<br>
-  🏷 `macos` `design-references` `visual-library` `local-first`<br>
-  💰 paid
 - **[Lovart](https://www.lovart.ai/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   AI design agent that turns a conversation into logos, posters, packaging, social content and video ads.<br>
   🏷 `ai-design` `branding` `graphic-design` `ai-agent`<br>
   💰 freemium
+- **[Linger](https://withlinger.com/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
+  Local macOS image library for design references, source links and notes, with color search and a canvas for arranging ideas.<br>
+  🏷 `macos` `design-references` `visual-library` `local-first`<br>
+  💰 paid
 - **[Open Design](https://open-design.ai/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source, local-first design workspace where you and your coding agents build prototypes, sites, slides and dashboards.<br>
   🏷 `ai-design` `prototyping` `open-source` `local-first`<br>
