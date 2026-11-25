@@ -50,6 +50,10 @@ _Tools and skills for SEO audits, content strategy and growth._
   Social media management tool for scheduling posts, managing multiple accounts, collaborating and tracking performance.<br>
   🏷 `social-media` `scheduling` `analytics` `content`<br>
   💰 freemium
+- **[Transformer.gg](https://transformer.gg/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Marketplace for booking sponsored posts from X creators, with tracked links and an MCP server, CLI and REST API for AI agents.<br>
+  🏷 `social-media` `marketing` `mcp` `creators`<br>
+  💰 freemium
 - **[youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Eleven free Claude skills that help run a YouTube channel, covering scripts, titles and thumbnails, edit lists and retention analysis.<br>
   🏷 `youtube` `video-content` `social-media` `claude-skills`
