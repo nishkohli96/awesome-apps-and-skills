@@ -141,6 +141,10 @@ _Tools for creating, editing, downloading and playing video, audio, images and 3
   AI photo editor for product pictures that removes backgrounds, generates scenes and makes marketplace-ready images.<br>
   🏷 `photo-editing` `background-remover` `product-photos` `ai`<br>
   💰 freemium
+- **[StagePeek](https://stagepeek.live/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Interactive 2D seating maps and 3D concert stage-view simulator covering 201 stadiums and arenas with 1x–10x zoom framing; free 1st seat without login.<br>
+  🏷 `3d` `webgl` `visualization` `concerts`<br>
+  💰 freemium
 - **[TeslaWraps](https://teslawraps.design)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Free browser Tesla Paint Shop wrap editor with model templates and PNG export; no account required for core editing.<br>
   🏷 `design` `mockup` `tesla` `image-editor`<br>
