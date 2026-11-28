@@ -46,6 +46,10 @@ _Customer support, data, analytics, email delivery and operations tools for runn
 - **[founder-skill](https://github.com/Jakeschincariol/founder-skill)** <img align="absmiddle" alt="skill" src="https://img.shields.io/badge/skill-d97757?style=flat-square"><br>
   Eleven free Claude skills that test a business idea before launch, covering board review, marketing, finances and pricing.<br>
   🏷 `startup` `business-plan` `unit-economics` `claude-skills`
+- **[Genaya Free Tools](https://www.genaya.com/tools)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
+  Ten free calculators and generators for service businesses, from invoice and estimate generators to hourly rate and profit margin, with no sign-up.<br>
+  🏷 `invoicing` `pricing` `calculator` `small-business`<br>
+  💰 free
 - **[Invoice Ninja](https://invoiceninja.com/)** <img align="absmiddle" alt="web-tool" src="https://img.shields.io/badge/web--tool-4f46e5?style=flat-square"><br>
   Invoicing software for freelancers and small businesses to send invoices and quotes, get paid online and track time and expenses. Source-available, so you can also self-host it.<br>
   🏷 `invoicing` `freelance` `time-tracking` `self-hosted`<br>
