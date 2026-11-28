@@ -64,8 +64,8 @@ _Resume, job search and personal productivity resources._
   🏷 `mind-map` `productivity` `mcp`<br>
   💰 freemium
 - **[minulo](https://minulo.app/en/)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
-  iPhone app that hides Instagram Reels, YouTube Shorts and TikTok For You while DMs, the following feed and search keep working.<br>
-  🏷 `focus` `screen-time` `ios`<br>
+  App for iPhone, Android and Mac that hides Instagram Reels, YouTube Shorts and other short-video feeds while the rest of each app keeps working.<br>
+  🏷 `focus` `screen-time` `android` `ios`<br>
   💰 freemium
 - **[openGym](https://github.com/DuarteSantos8/openGym)** <img align="absmiddle" alt="app" src="https://img.shields.io/badge/app-1f883d?style=flat-square"><br>
   Open-source gym and body-weight tracker for planning routines and logging workouts, with a muscle map and imports from Strong, Hevy and FitNotes. Self-host it or use it on your phone.<br>
